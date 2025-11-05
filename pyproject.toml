@@ -1,0 +1,15 @@
+[project]
+name = "fk-project"
+version = "0.1.0"
+description = "books.toscrape.com product monitor"
+authors = [
+    {name = "toludaree", email = "isaactoluwani30@gmail.com"},
+]
+dependencies = ["httpx>=0.28.1", "pydantic>=2.12.4"]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
