@@ -29,7 +29,7 @@ class TestProcess(unittest.TestCase):
         "https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html"
 
     ]
-    page4_urls = [
+    page2_urls = [
         "https://books.toscrape.com/catalogue/the-nameless-city-the-nameless-city-1_940/index.html",
         "https://books.toscrape.com/catalogue/the-murder-that-never-was-forensic-instincts-5_939/index.html",
         "https://books.toscrape.com/catalogue/the-most-perfect-thing-inside-and-outside-a-birds-egg_938/index.html",
@@ -52,23 +52,19 @@ class TestProcess(unittest.TestCase):
         "https://books.toscrape.com/catalogue/rat-queens-vol-3-demons-rat-queens-collected-editions-11-15_921/index.html",
     ]
 
-    def test__process_page(self):
+    def test__process_page_1(self):
         with open("./bookstoscrape/tests/page1.html", "rb") as f1:
             page1 = f1.read()
-        with open("./bookstoscrape/tests/page4.html", "rb") as f4:
-            page4 = f4.read()
-
         self.assertEqual(process_page(page1, "https://books.toscrape.com/"), self.page1_urls)
-        self.assertEqual(process_page(page4, "https://books.toscrape.com/catalogue/page-4.html"), self.page4_urls)
 
-    def test__process_book(self):
+    def test__process_page_2(self):
+        with open("./bookstoscrape/tests/page2.html", "rb") as f2:
+            page2 = f2.read()
+        self.assertEqual(process_page(page2, "https://books.toscrape.com/catalogue/page-4.html"), self.page2_urls)
+
+    def test__process_book_1(self):
         with open("./bookstoscrape/tests/book1.html", "rb") as f1:
             book1 = f1.read()
-        with open("./bookstoscrape/tests/book2.html", "rb") as f2:
-            book2 = f2.read()
-        with open("./bookstoscrape/tests/book3.html", "rb") as f3:
-            book3 = f3.read()
-
         self.assertEqual(
             process_book(book1, "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"),
             Book(
@@ -85,6 +81,10 @@ class TestProcess(unittest.TestCase):
                 rating=3
             )
         )
+    
+    def test__process_book_2(self):
+        with open("./bookstoscrape/tests/book2.html", "rb") as f2:
+            book2 = f2.read()
         self.assertEqual(
             process_book(book2, "https://books.toscrape.com/catalogue/angels-walking-angels-walking-1_662/index.html"),
             Book(
@@ -101,6 +101,10 @@ class TestProcess(unittest.TestCase):
                 rating=2
             )
         )
+    
+    def test__process_book_3(self):
+        with open("./bookstoscrape/tests/book3.html", "rb") as f3:
+            book3 = f3.read()
         self.assertEqual(
             process_book(book3, "https://books.toscrape.com/catalogue/the-lonely-city-adventures-in-the-art-of-being-alone_639/index.html"),
             Book(
@@ -109,11 +113,11 @@ class TestProcess(unittest.TestCase):
                 description="An expertly crafted work of reportage, memoir and biography on the subject of loneliness told through the lives of iconic artists, by the acclaimed author of The Trip to Echo Spring What does it mean to be lonely? How do we live, if we're not intimately engaged with another human being? How do we connect with other people? Does technology draw us closer together or trap us An expertly crafted work of reportage, memoir and biography on the subject of loneliness told through the lives of iconic artists, by the acclaimed author of The Trip to Echo Spring What does it mean to be lonely? How do we live, if we're not intimately engaged with another human being? How do we connect with other people? Does technology draw us closer together or trap us behind screens?When Olivia Laing moved to New York City in her mid-thirties, she found herself inhabiting loneliness on a daily basis. Increasingly fascinated by this most shameful of experiences, she began to explore the lonely city by way of art. Moving fluidly between works and lives - from Edward Hopper's Nighthawks to Andy Warhol's Time Capsules, from Henry Darger's hoarding to the depredations of the AIDS crisis - Laing conducts an electric, dazzling investigation into what it means to be alone, illuminating not only the causes of loneliness but also how it might be resisted and redeemed.Humane, provocative and deeply moving, The Lonely City is about the spaces between people and the things that draw them together, about sexuality, mortality and the magical possibilities of art. It's a celebration of a strange and lovely state, adrift from the larger continent of human experience, but intrinsic to the very act of being alive. ...more",
                 category="Nonfiction",
                 price_including_tax=33.26,
-                price_excludign_tax=33.26,
+                price_excluding_tax=33.26,
                 in_stock=True,
                 stock_count=12,
                 review_count=0,
                 cover_image_url="https://books.toscrape.com/media/cache/79/66/79660d2683a90670aa014cae6e02b2dc.jpg",
                 rating=2
             )
-        )
+        )        
