@@ -1,0 +1,1 @@
+- Research the usage of the LastModified and Etag header for detecting changes in site structure
