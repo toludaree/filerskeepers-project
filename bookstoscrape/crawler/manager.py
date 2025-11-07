@@ -12,7 +12,6 @@ from .models import Book
 class PageSession:
     sid: int
     stype = "page"
-    page_num: int
     page_url: str
     first_page: bool = False
     retry_count: int = 0

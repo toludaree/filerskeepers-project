@@ -15,7 +15,7 @@ async def bookstoscrape_crawler(
 ):
     manager = Manager(env=env, max_retry_count=max_retry_count)
     await manager.queue.put(PageSession(
-        sid=1, page_num=1,
+        sid=1,
         page_url=f"{settings.BASE_URL}/page-1.html",
         first_page=True
     ))
@@ -52,7 +52,7 @@ async def worker(wid: int, manager: Manager):
                             page_count = math.ceil(book_count / len(book_urls))
                             for i in range(2, page_count+1):
                                 await manager.queue.put(PageSession(
-                                    sid=i, page_num=i,
+                                    sid=i,
                                     page_url=f"{settings.BASE_URL}/page-{i}.html"
                                 ))
                         for url in book_urls:
