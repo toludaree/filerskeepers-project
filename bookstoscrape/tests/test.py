@@ -1,11 +1,18 @@
+from bs4 import BeautifulSoup
 import unittest
 
+from ..crawler import process
 from ..crawler.models import Book
-from ..crawler.process import process_page, process_book
 
 
 class TestProcess(unittest.TestCase):
 
+    with open("./bookstoscrape/tests/page1.html", "rb") as f1:
+        page1 = f1.read()
+    with open("./bookstoscrape/tests/page2.html", "rb") as f2:
+        page2 = f2.read()
+    page1_soup = BeautifulSoup(page1, "html.parser")
+    page2_soup = BeautifulSoup(page2, "html.parser")
     page1_urls = [
         "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
         "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html",
@@ -52,27 +59,57 @@ class TestProcess(unittest.TestCase):
         "https://books.toscrape.com/catalogue/rat-queens-vol-3-demons-rat-queens-collected-editions-11-15_921/index.html",
     ]
 
+    with open("./bookstoscrape/tests/book1.html", "rb") as f1:
+        book1 = f1.read()
+    with open("./bookstoscrape/tests/book2.html", "rb") as f2:
+        book2 = f2.read()
+    with open("./bookstoscrape/tests/book3.html", "rb") as f3:
+        book3 = f3.read()
+    book1_soup = BeautifulSoup(book1, "html.parser")
+    book2_soup = BeautifulSoup(book2, "html.parser")
+    book3_soup = BeautifulSoup(book3, "html.parser")
+    book1_article_tag = book1_soup.find("article", class_="product_page")
+    book2_article_tag = book2_soup.find("article", class_="product_page")
+
     def test__process_page_1(self):
-        with open("./bookstoscrape/tests/page1.html", "rb") as f1:
-            page1 = f1.read()
         self.assertEqual(
-            process_page(page1, "https://books.toscrape.com/"),
+            process.process_page(self.page1, "https://books.toscrape.com/"),
             (1000, self.page1_urls)
         )
 
     def test__process_page_2(self):
-        with open("./bookstoscrape/tests/page2.html", "rb") as f2:
-            page2 = f2.read()
         self.assertEqual(
-            process_page(page2, "https://books.toscrape.com/catalogue/page-4.html"),
+            process.process_page(self.page2, "https://books.toscrape.com/catalogue/page-4.html"),
             (1000, self.page2_urls)
         )
 
-    def test__process_book_1(self):
-        with open("./bookstoscrape/tests/book1.html", "rb") as f1:
-            book1 = f1.read()
+    def test__extract_total_book_count_1(self):
         self.assertEqual(
-            process_book(book1, "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"),
+            process.extract_total_book_count(self.page1_soup),
+            1000
+        )
+
+    def test__extract_total_book_count_2(self):
+        self.assertEqual(
+            process.extract_total_book_count(self.page2_soup),
+            1000
+        )
+
+    def test__extract_book_urls_1(self):
+        self.assertEqual(
+            process.extract_book_urls(self.page1_soup, "https://books.toscrape.com/"),
+            self.page1_urls
+        )
+
+    def test__extract_book_urls_2(self):
+        self.assertEqual(
+            process.extract_book_urls(self.page2_soup, "https://books.toscrape.com/catalogue/page-4.html"),
+            self.page2_urls
+        )
+
+    def test__process_book_1(self):
+        self.assertEqual(
+            process.process_book(self.book1, 1000, "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"),
             Book(
                 id=1000,
                 name="A Light in the Attic",
@@ -89,10 +126,8 @@ class TestProcess(unittest.TestCase):
         )
     
     def test__process_book_2(self):
-        with open("./bookstoscrape/tests/book2.html", "rb") as f2:
-            book2 = f2.read()
         self.assertEqual(
-            process_book(book2, "https://books.toscrape.com/catalogue/angels-walking-angels-walking-1_662/index.html"),
+            process.process_book(self.book2, 662, "https://books.toscrape.com/catalogue/angels-walking-angels-walking-1_662/index.html"),
             Book(
                 id=662,
                 name="Angels Walking (Angels Walking #1)",
@@ -109,10 +144,8 @@ class TestProcess(unittest.TestCase):
         )
     
     def test__process_book_3(self):
-        with open("./bookstoscrape/tests/book3.html", "rb") as f3:
-            book3 = f3.read()
         self.assertEqual(
-            process_book(book3, "https://books.toscrape.com/catalogue/the-lonely-city-adventures-in-the-art-of-being-alone_639/index.html"),
+            process.process_book(self.book3, 639, "https://books.toscrape.com/catalogue/the-lonely-city-adventures-in-the-art-of-being-alone_639/index.html"),
             Book(
                 id=639,
                 name="The Lonely City: Adventures in the Art of Being Alone",
@@ -126,4 +159,124 @@ class TestProcess(unittest.TestCase):
                 cover_image_url="https://books.toscrape.com/media/cache/79/66/79660d2683a90670aa014cae6e02b2dc.jpg",
                 rating=2
             )
-        )        
+        )
+
+    def test__extract_book_name_1(self):
+        self.assertEqual(
+            process.extract_book_name(self.book1_article_tag),
+            "A Light in the Attic"
+        )
+
+    def test__extract_book_name_2(self):
+        self.assertEqual(
+            process.extract_book_name(self.book2_article_tag),
+            "Angels Walking (Angels Walking #1)"
+        )
+
+    def test__extract_book_description_1(self):
+        self.assertEqual(
+            process.extract_book_description(self.book1_article_tag),
+            "It's hard to imagine a world without A Light in the Attic. This now-classic collection of poetry and drawings from Shel Silverstein celebrates its 20th anniversary with this special edition. Silverstein's humorous and creative verse can amuse the dowdiest of readers. Lemon-faced adults and fidgety kids sit still and read these rhythmic words and laugh and smile and love th It's hard to imagine a world without A Light in the Attic. This now-classic collection of poetry and drawings from Shel Silverstein celebrates its 20th anniversary with this special edition. Silverstein's humorous and creative verse can amuse the dowdiest of readers. Lemon-faced adults and fidgety kids sit still and read these rhythmic words and laugh and smile and love that Silverstein. Need proof of his genius? RockabyeRockabye baby, in the treetopDon't you know a treetopIs no safe place to rock?And who put you up there,And your cradle, too?Baby, I think someone down here'sGot it in for you. Shel, you never sounded so good. ...more"
+        )
+
+    def test__extract_book_description_2(self):
+        self.assertEqual(
+            process.extract_book_description(self.book2_article_tag),
+            "When former national baseball star Tyler Ames suffers a career-ending injury, all he can think about is putting his life back together the way it was before. He has lost everyone he loves on his way to the big leagues. Then just when things seem to be turning around, Tyler hits rock bottom. Across the country, Tyler’s one true love Sami Dawson has moved on. A series of sma When former national baseball star Tyler Ames suffers a career-ending injury, all he can think about is putting his life back together the way it was before. He has lost everyone he loves on his way to the big leagues. Then just when things seem to be turning around, Tyler hits rock bottom. Across the country, Tyler’s one true love Sami Dawson has moved on. A series of small miracles leads Tyler to a maintenance job at a retirement home and a friendship with Virginia Hutcheson, an old woman with Alzheimer’s who strangely might have the answers he so desperately seeks.A team of Angels Walking take on the mission to restore hope for Tyler, Sami, and Virginia. Can such small and seemingly insignificant actions of the unseen bring healing and redemption? And can the words of a stranger rekindle lost love? Every journey begins with a step.It is time for the mission to begin… ...more"
+        )
+
+    def test__extract_book_category_1(self):
+        self.assertEqual(
+            process.extract_book_category(self.book1_soup),
+            "Poetry"
+        )
+
+    def test__extract_book_category_2(self):
+        self.assertEqual(
+            process.extract_book_category(self.book2_soup),
+            "Add a comment"
+        )
+
+    def test__extract_td_given_th_1(self):
+        self.assertEqual(
+            process.extract_td_given_th(self.book1_article_tag.table, "Number of reviews"),
+            "0"
+        )
+    
+    def test__extract_td_given_th_2(self):
+        self.assertEqual(
+            process.extract_td_given_th(self.book1_article_tag.table, "Price (incl. tax)"),
+            "£51.77"
+        )
+
+    def test__extract_price_excl_tax_1(self):
+        self.assertEqual(
+            process.extract_price_excl_tax(self.book1_article_tag.table),
+            51.77
+        )
+
+    def test__extract_price_excl_tax_2(self):
+        self.assertEqual(
+            process.extract_price_excl_tax(self.book2_article_tag.table),
+            34.20
+        )
+
+    def test__extract_price_incl_tax_1(self):
+        self.assertEqual(
+            process.extract_price_incl_tax(self.book1_article_tag.table),
+            51.77
+        )
+
+    def test__extract_price_incl_tax_2(self):
+        self.assertEqual(
+            process.extract_price_incl_tax(self.book2_article_tag.table),
+            34.20
+        )
+
+    def test__extract_availability_1(self):
+        self.assertEqual(
+            process.extract_availability(self.book1_article_tag.table),
+            "In stock (22 available)"
+        )
+
+    def test__extract_availability_2(self):
+        self.assertEqual(
+            process.extract_availability(self.book2_article_tag.table),
+            "In stock (14 available)"
+        )
+
+    def test__extract_review_count_1(self):
+        self.assertEqual(
+            process.extract_review_count(self.book1_article_tag.table),
+            0
+        )
+
+    def test__extract_review_count_2(self):
+        self.assertEqual(
+            process.extract_review_count(self.book2_article_tag.table),
+            0
+        )
+
+    def test__extract_cover_image_1(self):
+        self.assertEqual(
+            process.extract_cover_image(self.book1_article_tag, "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"),
+            "https://books.toscrape.com/media/cache/fe/72/fe72f0532301ec28892ae79a629a293c.jpg"
+        )
+
+    def test__extract_cover_image_2(self):
+        self.assertEqual(
+            process.extract_cover_image(self.book2_article_tag, "https://books.toscrape.com/catalogue/angels-walking-angels-walking-1_662/index.html"),
+            "https://books.toscrape.com/media/cache/ba/d9/bad95369105e8e403bf1f2b9288c5e41.jpg"
+        )
+
+    def test__extract_book_rating_1(self):
+        self.assertEqual(
+            process.extract_book_rating(self.book1_article_tag),
+            "Three"
+        )
+
+    def test__extract_book_rating_2(self):
+        self.assertEqual(
+            process.extract_book_rating(self.book2_article_tag),
+            "Two"
+        )
