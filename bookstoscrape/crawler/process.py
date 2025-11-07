@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup, Tag
 from typing import Literal
 from urllib.parse import urljoin
 
+from .exceptions import ProcessingError
 from .models import Book
 from .settings import BOOK_RATING_MAPPER
 
@@ -11,10 +12,13 @@ def process_page(page: bytes, page_url: str) -> tuple[int, list[str]]:
     """
     Extract the total number of books and all the book urls on a given page.
     """
-    soup = BeautifulSoup(page, "html.parser")
-    total_book_count = extract_total_book_count(soup)
-    book_urls = extract_book_urls(soup, page_url)
-    return total_book_count, book_urls
+    try:
+        soup = BeautifulSoup(page, "html.parser")
+        total_book_count = extract_total_book_count(soup)
+        book_urls = extract_book_urls(soup, page_url)
+        return total_book_count, book_urls
+    except Exception as exc:
+        raise ProcessingError("page") from exc
 
 def extract_total_book_count(soup: BeautifulSoup) -> int:
     """Extract the total number of books"""
@@ -35,31 +39,34 @@ def process_book(content: bytes, book_id: int, book_url: str) -> Book:
     """
     Process book page and return a Book pydantic model.
     """
-    soup = BeautifulSoup(content, "html.parser")
-    article_tag = soup.find(name="article", class_="product_page")
-    info_table = article_tag.table
+    try:
+        soup = BeautifulSoup(content, "html.parser")
+        article_tag = soup.find(name="article", class_="product_page")
+        info_table = article_tag.table
 
-    availability = extract_availability(info_table)
-    if availability.startswith("In stock"):
-        in_stock = True
-        stock_count = re.search(r"(\d+)", availability).group()
-    else:
-        in_stock = False
-        stock_count = 0
-    
-    return Book(
-        id=book_id,
-        name=extract_book_name(article_tag),
-        description=extract_book_description(article_tag),
-        category=extract_book_category(soup),
-        price_excluding_tax=extract_price_excl_tax(info_table),
-        price_including_tax=extract_price_incl_tax(info_table),
-        in_stock=in_stock,
-        stock_count=stock_count,
-        review_count=extract_review_count(info_table),
-        cover_image_url=extract_cover_image(article_tag, book_url),
-        rating=BOOK_RATING_MAPPER[extract_book_rating(article_tag)]
-    )
+        availability = extract_availability(info_table)
+        if availability.startswith("In stock"):
+            in_stock = True
+            stock_count = re.search(r"(\d+)", availability).group()
+        else:
+            in_stock = False
+            stock_count = 0
+        
+        return Book(
+            id=book_id,
+            name=extract_book_name(article_tag),
+            description=extract_book_description(article_tag),
+            category=extract_book_category(soup),
+            price_excluding_tax=extract_price_excl_tax(info_table),
+            price_including_tax=extract_price_incl_tax(info_table),
+            in_stock=in_stock,
+            stock_count=stock_count,
+            review_count=extract_review_count(info_table),
+            cover_image_url=extract_cover_image(article_tag, book_url),
+            rating=BOOK_RATING_MAPPER[extract_book_rating(article_tag)]
+        )
+    except Exception as exc:
+        raise ProcessingError("book") from exc
 
 def extract_book_name(article_tag: Tag) -> str:
     """Extract book name"""
