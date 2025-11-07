@@ -12,10 +12,7 @@ async def bookstoscrape_crawler(
     max_workers=5,
     env="dev"
 ):
-    logging.basicConfig(level=logging.INFO)
-    logger = logging.getLogger(__name__)
-
-    manager = Manager(logger=logger, env=env)
+    manager = Manager(env=env)
 
     async with AsyncClient() as client:
         book_count, first_page_urls = await fetch_page(

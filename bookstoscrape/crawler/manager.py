@@ -1,7 +1,7 @@
 import json
+import logging
 from asyncio import Queue, Task
 from dataclasses import dataclass
-from logging import Logger
 from pathlib import Path
 from typing import Literal, Optional
 
@@ -23,10 +23,11 @@ class BookSession:
     retry_count: int = 0
 
 class Manager:
-    def __init__(self, logger: Logger, env: Literal["dev", "prod"]):
+    def __init__(self, env: Literal["dev", "prod"]):
         self.queue = Queue()
         self.workers: list[Task] = []
-        self.logger = logger
+        logging.basicConfig(level=logging.INFO)
+        self.logger = logging.getLogger(__name__)
         self.env =  env
         self.storage_dev_path = Path("C:/Users/Isaac/Desktop/me/jobs/filerskeepers/project/storage_dev")
 
