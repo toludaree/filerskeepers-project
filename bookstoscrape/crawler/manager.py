@@ -11,15 +11,18 @@ from .models import Book
 @dataclass
 class PageSession:
     sid: int
-    page_num : int
+    stype = "page"
+    page_num: int
     page_url: str
+    first_page: bool = False
     retry_count: int = 0
 
 @dataclass
 class BookSession:
     sid: int
+    stype = "book"
     book_url: str
-    result: Optional[Book] = None
+    # result: Optional[Book] = None
     retry_count: int = 0
 
 class Manager:
