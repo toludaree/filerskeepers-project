@@ -41,17 +41,17 @@ book_headers = {
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 }
 
-async def fetch_page(client: AsyncClient, page_url: str) -> list[str]:
+async def fetch_page(client: AsyncClient, page_url: str) -> tuple[int, list[str]]:
     page = await client.get(
         url=page_url,
         headers=page_headers
     )
     page.raise_for_status()
     
-    urls = await asyncio.to_thread(
+    book_count, urls = await asyncio.to_thread(
         process_page, page.content, page_url
     )
-    return urls
+    return book_count, urls
 
 async def fetch_book(client: AsyncClient, book_url: str) -> Book:
     book_page = await client.get(

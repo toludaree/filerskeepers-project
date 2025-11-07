@@ -5,17 +5,18 @@ from urllib.parse import urljoin
 from .models import Book
 
 
-def process_page(page: bytes, page_url: str) -> list[str]:
+def process_page(page: bytes, page_url: str) -> tuple[int, list[str]]:
     """
     Retrieve all the book urls on a given page.
     """
     soup = BeautifulSoup(page, "html.parser")
+    book_count = int(soup.find("form", class_="form-horizontal").find(string=re.compile("results")).find_previous_sibling().text)
     books_tag = soup.find_all(name="article", class_="product_pod")
     books_url = [
         urljoin(page_url, tag.h3.a.attrs["href"])
         for tag in books_tag
     ]
-    return books_url
+    return book_count, books_url
 
 def process_book(content: bytes, book_url: str) -> Book:
     """

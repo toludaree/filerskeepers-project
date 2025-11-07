@@ -55,12 +55,18 @@ class TestProcess(unittest.TestCase):
     def test__process_page_1(self):
         with open("./bookstoscrape/tests/page1.html", "rb") as f1:
             page1 = f1.read()
-        self.assertEqual(process_page(page1, "https://books.toscrape.com/"), self.page1_urls)
+        self.assertEqual(
+            process_page(page1, "https://books.toscrape.com/"),
+            (1000, self.page1_urls)
+        )
 
     def test__process_page_2(self):
         with open("./bookstoscrape/tests/page2.html", "rb") as f2:
             page2 = f2.read()
-        self.assertEqual(process_page(page2, "https://books.toscrape.com/catalogue/page-4.html"), self.page2_urls)
+        self.assertEqual(
+            process_page(page2, "https://books.toscrape.com/catalogue/page-4.html"),
+            (1000, self.page2_urls)
+        )
 
     def test__process_book_1(self):
         with open("./bookstoscrape/tests/book1.html", "rb") as f1:
