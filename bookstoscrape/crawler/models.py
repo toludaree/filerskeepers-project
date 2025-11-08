@@ -3,7 +3,6 @@ from typing import Literal, Optional
 
 
 class Book(BaseModel):
-    _id: int
     name: str
     description: Optional[str]
     category: str

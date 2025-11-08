@@ -21,10 +21,7 @@ async def fetch_page(
     )
     return book_count, urls
 
-async def fetch_book(
-    client: AsyncClient,
-    book_id: int, book_url: str
-) -> Book:
+async def fetch_book(client: AsyncClient, book_url: str) -> Book:
     book_page = await client.get(
         url=book_url,
         headers=BROWSER_HEADERS
@@ -32,6 +29,6 @@ async def fetch_book(
     book_page.raise_for_status()
 
     book = await asyncio.to_thread(
-        process_book, book_page, book_id, book_url
+        process_book, book_page, book_url
     )
     return book

@@ -18,6 +18,7 @@ async def bookstoscrape_crawler(
     env="dev"
 ):
     manager = Manager(env=env, max_retry_count=max_retry_count)
+    await manager.drop_collection_if_exists()
     await manager.queue.put(PageSession(
         sid=1,
         page_url=f"{settings.BASE_URL}/page-1.html",
@@ -30,6 +31,7 @@ async def bookstoscrape_crawler(
     
     await manager.queue.join()
 
+    await manager.mongodb_client.close()
     for w in manager.workers:
         w.cancel()
     worker_results = await asyncio.gather(*manager.workers, return_exceptions=True)
@@ -54,22 +56,20 @@ async def worker(wid: int, manager: Manager):
                         book_count, book_urls = await fetch_page(client, session.page_url)
                         if session.first_page:
                             page_count = math.ceil(book_count / len(book_urls))
-                            for i in range(2, page_count+1):
-                                await manager.queue.put(PageSession(
-                                    sid=i,
-                                    page_url=f"{settings.BASE_URL}/page-{i}.html"
-                                ))
+                            if manager.env == "prod":
+                                for i in range(2, page_count+1):
+                                    await manager.queue.put(PageSession(
+                                        sid=i,
+                                        page_url=f"{settings.BASE_URL}/page-{i}.html"
+                                    ))
                         for url in book_urls:
                             await manager.queue.put(BookSession(
                                 sid=extract_id_from_book_url(url),
                                 book_url=url
                             ))
                     else:
-                        book = await fetch_book(
-                            client,
-                            session.sid, session.book_url
-                        )
-                        manager.cleanup(book, session.sid)
+                        session.result = await fetch_book(client, session.book_url)
+                        await manager.cleanup(session)
                 except RequestError as exc:
                     manager.logger.warning(f"[{wid}][{session.stype}][{session.sid}] ❌ {repr(exc)}")
                     if session.retry_count < manager.max_retry_count:
@@ -78,6 +78,7 @@ async def worker(wid: int, manager: Manager):
                         manager.logger.info(f"[{wid}][{session.stype}][{session.sid}] 🤞 Queued for retry")
                     else:
                         manager.logger.info(f"[manager][{session.stype}][{session.sid}] 😑 Retry limit reached")
+                        await manager.cleanup(session)
                     continue
                 
         except asyncio.CancelledError:

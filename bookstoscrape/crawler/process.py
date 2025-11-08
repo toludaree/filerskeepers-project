@@ -35,7 +35,7 @@ def extract_book_urls(soup: BeautifulSoup, page_url: str) -> list[str]:
         for tag in article_tags
     ]
 
-def process_book(content: bytes, book_id: int, book_url: str) -> Book:
+def process_book(content: bytes, book_url: str) -> Book:
     """
     Process book page and return a Book pydantic model.
     """
@@ -53,7 +53,6 @@ def process_book(content: bytes, book_id: int, book_url: str) -> Book:
             stock_count = 0
         
         return Book(
-            _id=book_id,
             name=extract_book_name(article_tag),
             description=extract_book_description(article_tag),
             category=extract_book_category(soup),
