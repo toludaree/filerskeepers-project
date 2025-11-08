@@ -1,4 +1,6 @@
 import asyncio
+import os
+from dotenv import load_dotenv
 import math
 from httpx import AsyncClient, RequestError
 
@@ -7,6 +9,8 @@ from .fetch import fetch_page, fetch_book
 from .manager import BookSession, PageSession, Manager
 from .utils import extract_id_from_book_url
 
+
+load_dotenv()
 
 async def bookstoscrape_crawler(
     worker_count=5,

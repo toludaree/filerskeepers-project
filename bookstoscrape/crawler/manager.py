@@ -3,9 +3,10 @@ import logging
 from asyncio import Queue, Task
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Literal, Optional
+from typing import Literal
 
 from .models import Book
+from .settings import STORAGE_DEV
 
 
 @dataclass
@@ -21,7 +22,6 @@ class BookSession:
     sid: int
     stype = "book"
     book_url: str
-    # result: Optional[Book] = None
     retry_count: int = 0
 
 class Manager:
@@ -32,7 +32,7 @@ class Manager:
         self.logger = logging.getLogger(__name__)
         self.env =  env
         self.max_retry_count = max_retry_count
-        self.storage_dev_path = Path("C:/Users/Isaac/Desktop/me/jobs/filerskeepers/project/storage_dev")
+        self.storage_dev_path = Path(STORAGE_DEV)
 
     def cleanup(self, result: Book, sid: int):
         if self.env == "dev":

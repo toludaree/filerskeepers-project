@@ -1,3 +1,6 @@
+import os
+
+
 BASE_URL = "https://books.toscrape.com/catalogue"
 PROXY = None
 REQUEST_TIMEOUT = 5
@@ -25,3 +28,4 @@ BOOK_RATING_MAPPER = {
     "Four": 4,
     "Five": 5
 }
+STORAGE_DEV = os.getenv("STORAGE_DEV")
