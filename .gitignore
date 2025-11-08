@@ -8,3 +8,4 @@ pdm.lock
 test.ipynb
 playground/
 storage_dev/
+.env
