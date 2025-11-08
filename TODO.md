@@ -3,3 +3,4 @@
 - Think again of whether conditionally processing total book count makes sense
 - Consider notifying user if category is not in the list of known categories
 - Change bookstoscrape_scraper to bts_scraper
+- add upc later; check the meaning first.
