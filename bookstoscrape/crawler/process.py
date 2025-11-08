@@ -53,7 +53,7 @@ def process_book(content: bytes, book_id: int, book_url: str) -> Book:
             stock_count = 0
         
         return Book(
-            id=book_id,
+            _id=book_id,
             name=extract_book_name(article_tag),
             description=extract_book_description(article_tag),
             category=extract_book_category(soup),
