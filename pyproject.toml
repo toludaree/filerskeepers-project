@@ -5,7 +5,7 @@ description = "books.toscrape.com product monitor"
 authors = [
     {name = "toludaree", email = "isaactoluwani30@gmail.com"},
 ]
-dependencies = ["pydantic>=2.12.4", "beautifulsoup4>=4.14.2", "httpx[brotli,zstd]>=0.28.1", "python-dotenv>=1.2.1"]
+dependencies = ["pydantic>=2.12.4", "beautifulsoup4>=4.14.2", "httpx[brotli,zstd]>=0.28.1", "python-dotenv>=1.2.1", "pymongo>=4.15.3"]
 requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "MIT"}
