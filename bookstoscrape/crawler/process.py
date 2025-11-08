@@ -1,6 +1,6 @@
 import re
 from bs4 import BeautifulSoup, Tag
-from typing import Literal
+from typing import Literal, Optional
 from urllib.parse import urljoin
 
 from .exceptions import ProcessingError
@@ -73,11 +73,12 @@ def extract_book_name(article_tag: Tag) -> str:
     name: str = article_tag.h1.text
     return name.strip()
 
-def extract_book_description(article_tag: Tag) -> str:
+def extract_book_description(article_tag: Tag) -> Optional[str]:
     """Extract book description"""
-    description: str = article_tag.find("div", id="product_description") \
-        .find_next_sibling(name="p").text
-    return description.strip()
+    description_tag = article_tag.find("div", id="product_description")
+    if description_tag:
+        description: str = description_tag.find_next_sibling(name="p").text
+        return description.strip()
 
 def extract_book_category(soup: BeautifulSoup) -> str:
     """ Extract book category"""

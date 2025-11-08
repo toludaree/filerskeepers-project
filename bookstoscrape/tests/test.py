@@ -65,11 +65,15 @@ class TestProcess(unittest.TestCase):
         book2 = f2.read()
     with open("./bookstoscrape/tests/book3.html", "rb") as f3:
         book3 = f3.read()
+    with open("./bookstoscrape/tests/book4.html", "rb") as f3:
+        book4 = f3.read()
     book1_soup = BeautifulSoup(book1, "html.parser")
     book2_soup = BeautifulSoup(book2, "html.parser")
     book3_soup = BeautifulSoup(book3, "html.parser")
+    book4_soup = BeautifulSoup(book4, "html.parser")
     book1_article_tag = book1_soup.find("article", class_="product_page")
     book2_article_tag = book2_soup.find("article", class_="product_page")
+    book4_article_tag = book4_soup.find("article", class_="product_page")
 
     def test__process_page_1(self):
         self.assertEqual(
@@ -161,6 +165,24 @@ class TestProcess(unittest.TestCase):
             )
         )
 
+    def test__process_book_4(self):
+        self.assertEqual(
+            process.process_book(self.book4, 5, "https://books.toscrape.com/catalogue/alice-in-wonderland-alices-adventures-in-wonderland-1_5/index.html"),
+            Book(
+                id=5,
+                name="Alice in Wonderland (Alice's Adventures in Wonderland #1)",
+                description=None,
+                category="Classics",
+                price_including_tax=55.53,
+                price_excluding_tax=55.53,
+                in_stock=True,
+                stock_count=1,
+                review_count=0,
+                cover_image_url="https://books.toscrape.com/media/cache/99/df/99df494c230127c3d5ff53153d1f23a3.jpg",
+                rating=1
+            )
+        )
+
     def test__extract_book_name_1(self):
         self.assertEqual(
             process.extract_book_name(self.book1_article_tag),
@@ -183,6 +205,12 @@ class TestProcess(unittest.TestCase):
         self.assertEqual(
             process.extract_book_description(self.book2_article_tag),
             "When former national baseball star Tyler Ames suffers a career-ending injury, all he can think about is putting his life back together the way it was before. He has lost everyone he loves on his way to the big leagues. Then just when things seem to be turning around, Tyler hits rock bottom. Across the country, Tyler’s one true love Sami Dawson has moved on. A series of sma When former national baseball star Tyler Ames suffers a career-ending injury, all he can think about is putting his life back together the way it was before. He has lost everyone he loves on his way to the big leagues. Then just when things seem to be turning around, Tyler hits rock bottom. Across the country, Tyler’s one true love Sami Dawson has moved on. A series of small miracles leads Tyler to a maintenance job at a retirement home and a friendship with Virginia Hutcheson, an old woman with Alzheimer’s who strangely might have the answers he so desperately seeks.A team of Angels Walking take on the mission to restore hope for Tyler, Sami, and Virginia. Can such small and seemingly insignificant actions of the unseen bring healing and redemption? And can the words of a stranger rekindle lost love? Every journey begins with a step.It is time for the mission to begin… ...more"
+        )
+
+    def test__extract_book_description_3(self):
+        self.assertEqual(
+            process.extract_book_description(self.book4_article_tag),
+            None
         )
 
     def test__extract_book_category_1(self):
