@@ -8,4 +8,3 @@ def extract_id_from_book_url(url: str):
 
 def get_milliseconds_since_epoch():
     return int(time.time() * 1000)
-

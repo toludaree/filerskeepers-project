@@ -1,5 +1,6 @@
 import asyncio
 import logging
+from typing import Literal
 
 from ..settings import BASE_URL
 from ..utils.manager import Manager
@@ -8,14 +9,14 @@ from ..utils.models import PageSession
 
 logging.basicConfig(level=logging.INFO)
 
-async def bookstoscrape_crawler(
-    worker_count=5,
-    max_retry_count=3,
-    env="dev"
+async def bts_scheduler(
+    worker_count: int = 5,
+    max_retry_count: int = 3,
+    env: Literal["dev", "prod"] = "dev"
 ):
     logger = logging.getLogger(__name__)
-    manager = Manager(env=env, logger=logger, crawler=True, max_retry_count=max_retry_count)
-    await manager.drop_collections()
+    manager = Manager(env=env, logger=logger, crawler=False, max_retry_count=max_retry_count)
+    await manager.get_current_books_etag()
     await manager.queue.put(PageSession(
         sid=1,
         page_url=f"{BASE_URL}/page-1.html",
