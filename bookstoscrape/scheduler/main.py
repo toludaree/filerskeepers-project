@@ -16,7 +16,7 @@ async def bts_scheduler(
 ):
     logger = logging.getLogger(__name__)
     manager = Manager(env=env, logger=logger, crawler=False, max_retry_count=max_retry_count)
-    await manager.get_current_books_etag()
+    await manager.get_current_books()
     await manager.queue.put(PageSession(
         sid=1,
         page_url=f"{BASE_URL}/page-1.html",

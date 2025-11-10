@@ -10,8 +10,9 @@ from .exceptions import ProcessingError
 from .fetch import fetch_page, fetch_book
 from .models import PageSession, Book, BookSession, SchedulerContext
 from ..settings import (
-    BASE_URL, MONGODB_CONNECTION_URI, MONGODB_DB, MONGODB_BOOK_COLLECTION,
-    MONGODB_CHANGELOG_COLLECTION, PROXY, REQUEST_TIMEOUT,
+    BASE_URL, CHANGE_DETECTION_FIELDS, MONGODB_CONNECTION_URI, MONGODB_DB,
+    MONGODB_BOOK_COLLECTION, MONGODB_CHANGELOG_COLLECTION, PROXY,
+    REQUEST_TIMEOUT,
 )
 
 
@@ -29,7 +30,7 @@ class Manager:
         self.db = self.mongodb_client[MONGODB_DB]
         self.book_collection = self.db[MONGODB_BOOK_COLLECTION]
         self.changelog_collection = self.db[MONGODB_CHANGELOG_COLLECTION]
-        self.current_books_etag = {}
+        self.current_books = {}
 
     async def drop_collections(self):
         collection_names = await self.db.list_collection_names()
@@ -40,10 +41,9 @@ class Manager:
             await self.changelog_collection.drop()
             self.logger.info(f"[manager] Dropped collection: {MONGODB_CHANGELOG_COLLECTION}")
     
-    async def get_current_books_etag(self):
-        async for book in self.book_collection.find():
-            crawl_metadata = book["crawl_metadata"]
-            self.current_books_etag[crawl_metadata["source_url"]] = crawl_metadata["etag"]
+    async def get_current_books(self):
+        async for book in self.book_collection.find({}, CHANGE_DETECTION_FIELDS):
+            self.current_books[book["bts_id"]] = book
 
     async def worker(self, wid: int):
         while True:
@@ -73,15 +73,16 @@ class Manager:
                                         ))
 
                             for url in book_urls:
+                                book_id = extract_id_from_book_url(url)
                                 if self.crawler:
                                     scheduler_context = None
                                 else:
+                                    stored_book = self.current_books.get(book_id)
                                     scheduler_context = SchedulerContext(
-                                        etag=self.current_books_etag.get(url)
+                                        etag=stored_book["crawl_metadata"]["etag"] if stored_book else None
                                     )
-                                    self.logger.warning(f"Etag {extract_id_from_book_url(url)}: {scheduler_context.etag}")
                                 await self.queue.put(BookSession(
-                                    sid=extract_id_from_book_url(url),
+                                    sid=book_id,
                                     book_url=url,
                                     scheduler_context=scheduler_context,
                                 ))
@@ -142,15 +143,30 @@ class Manager:
             )
             if update_record.did_upsert:
                 self.logger.info(f"[manager] Book created: {session.sid}")
-                change_type = "created"
+                event = "create"
+                changes = {}
             else:
                 self.logger.info(f"[manager] Book updated: {session.sid}")
-                change_type = "updated"
+                event = "update"
+                changes = self.get_update_changes(book.model_dump(mode="json"))
             await self.changelog_collection.insert_one({
                 "bts_id": session.sid,
-                "change_type": change_type,
-                "timestamp": timestamp
+                "event": event,
+                "timestamp": timestamp,
+                "changes": changes
             })
+
+    def get_update_changes(self, book: dict):
+        changes = {}
+        old_version: dict = self.current_books[book["bts_id"]]
+
+        for k in old_version.keys():
+            if k  in ("bts_id", "crawl_metadata"):
+                continue
+            if (old:=old_version[k]) != (new:=book[k]):
+                changes[k] = {"old": old, "new": new}
+        
+        return changes
 
     async def cancel_workers(self):
         for w in self.workers:

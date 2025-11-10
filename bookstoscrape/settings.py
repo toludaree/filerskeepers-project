@@ -32,3 +32,14 @@ MONGODB_CONNECTION_URI = os.getenv("MONGODB_CONNECTION_URI")
 MONGODB_DB = os.getenv("MONGODB_DB")
 MONGODB_BOOK_COLLECTION = os.getenv("MONGODB_BOOK_COLLECTION")
 MONGODB_CHANGELOG_COLLECTION = os.getenv("MONGODB_CHANGELOG_COLLECTION")
+CHANGE_DETECTION_FIELDS = {
+    "_id": 0,
+    "bts_id": 1,
+    "price_excluding_tax": 1,
+    "price_including_tax": 1,
+    "stock_count": 1,
+    "review_count": 1,
+    "rating": 1,
+    "crawl_metadata.etag": 1,
+    "crawl_metadata.source_url": 1
+}
