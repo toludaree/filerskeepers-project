@@ -1,32 +1,72 @@
 import asyncio
 import logging
-from typing import Literal
+import threading
+from datetime import datetime
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from apscheduler.jobstores.mongodb import MongoDBJobStore
 
-from ..settings import BASE_URL
-from ..utils.manager import Manager
-from ..utils.models import PageSession
+from job import bts_scheduler
 
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(
+    filename="scheduler.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+)
 
-async def bts_scheduler(
-    worker_count: int = 5,
-    max_retry_count: int = 3,
-    env: Literal["dev", "prod"] = "dev"
-):
-    logger = logging.getLogger(__name__)
-    manager = Manager(env=env, logger=logger, crawler=False, max_retry_count=max_retry_count)
-    await manager.get_current_books()
-    await manager.queue.put(PageSession(
-        sid=1,
-        page_url=f"{BASE_URL}/page-1.html",
-        first_page=True
-    ))
+logger = logging.getLogger(__name__)
 
-    for i in range(worker_count):
-        task = asyncio.create_task(manager.worker(f"w{i+1}"))
-        manager.workers.append(task)
-    
-    await manager.queue.join()
-    await manager.mongodb_client.close()
-    await manager.cancel_workers()
+
+def job():
+    return bts_scheduler(env="dev")
+
+
+def start_scheduler():
+    # MongoDB job store
+    jobstores = {
+        "default": MongoDBJobStore(
+            host="mongodb://localhost:27017/books",
+            collection="scheduled_jobs",
+        )
+    }
+
+    # AsyncIOScheduler
+    scheduler = AsyncIOScheduler(jobstores=jobstores)
+
+    # Add daily job at 5 AM
+    scheduler.add_job(
+        job,
+        trigger="cron",
+        hour=4,
+        minute=20,
+        id="daily_async_job",
+        replace_existing=True,
+    )
+
+    scheduler.start()
+    logger.info("Scheduler started — will run daily at 5 AM")
+    print("[Scheduler] Started — running in background...")
+
+    # Keep the scheduler alive
+    loop = asyncio.get_event_loop()
+    try:
+        loop.run_forever()
+    except (KeyboardInterrupt, SystemExit):
+        logger.info("Scheduler shutting down")
+        scheduler.shutdown()
+
+
+# --------------------------
+# Run scheduler in background thread
+# --------------------------
+# thread = threading.Thread(target=start_scheduler, daemon=True)
+# thread.start()
+
+# --------------------------
+# Main program does nothing, just waits
+# --------------------------
+try:
+    while True:
+        asyncio.sleep(1)
+except (KeyboardInterrupt, SystemExit):
+    print("\nExiting main program...")
