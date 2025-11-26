@@ -1,5 +1,9 @@
 import os
+from pymongo import AsyncMongoClient
+from dotenv import load_dotenv
 
+
+load_dotenv()
 
 BASE_URL = "https://books.toscrape.com/catalogue"
 PROXY = None
@@ -32,6 +36,9 @@ MONGODB_CONNECTION_URI = os.getenv("MONGODB_CONNECTION_URI")
 MONGODB_DB = os.getenv("MONGODB_DB")
 MONGODB_BOOK_COLLECTION = os.getenv("MONGODB_BOOK_COLLECTION")
 MONGODB_CHANGELOG_COLLECTION = os.getenv("MONGODB_CHANGELOG_COLLECTION")
+
+ASYNC_MONGODB_DB = AsyncMongoClient(MONGODB_CONNECTION_URI, timeoutMs=5000)[MONGODB_DB]
+
 CHANGE_DETECTION_FIELDS = {
     "_id": 0,
     "bts_id": 1,
