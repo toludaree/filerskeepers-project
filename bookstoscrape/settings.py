@@ -50,3 +50,5 @@ CHANGE_DETECTION_FIELDS = {
     "crawl_metadata.etag": 1,
     "crawl_metadata.source_url": 1
 }
+JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY")
+JWT_ALGORITHM = os.getenv("JWT_ALGORITHM", "HS256")

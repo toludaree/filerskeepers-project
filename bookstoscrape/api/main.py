@@ -1,15 +1,84 @@
-from fastapi import FastAPI, Query
+from bson import ObjectId
+from datetime import datetime, timezone
+from fastapi import FastAPI, Depends, HTTPException, Query
 from fastapi.responses import RedirectResponse
+from fastapi.security import OAuth2PasswordRequestForm
 from typing import Annotated, Optional
 
 from ..settings import ASYNC_MONGODB_DB, MONGODB_BOOK_COLLECTION
-from .models import Category, Book, BooksOverview, Rating, SortBy, SortOrder
+from .models import (
+    Category, Book, BooksOverview, Rating, SortBy, SortOrder, UserData,
+    SignUpResponseSchema, LoginResponseSchema,
+)
+from .utils import pl_ctx, create_access_token, get_current_user, create_api_key, require_api_key
+
 
 app = FastAPI()
 
 @app.get("/")
 async def redirect_to_docs():
     return RedirectResponse(url="/docs")
+
+@app.post("/signup", response_model=SignUpResponseSchema)
+async def signup(user_data: UserData):
+    """
+    Sign up to be able to use the API
+    """
+    user_collection = ASYNC_MONGODB_DB["users"]
+
+    if await user_collection.find_one({"email": user_data.email}):
+        raise HTTPException(400, "User already exists")
+    
+    await user_collection.insert_one({
+        "email": user_data.email,
+        "password": pl_ctx.hash(user_data.password)
+    })
+
+    return {
+        "message": "User created."
+    }
+
+@app.post("/login", response_model=LoginResponseSchema)
+async def login(user_data: OAuth2PasswordRequestForm = Depends()):
+    """
+    Login to get API key
+    """
+    user_collection = ASYNC_MONGODB_DB["users"]
+
+    user = await user_collection.find_one({"email": user_data.username})
+    print(user)
+    if (not user) or (not pl_ctx.verify(user_data.password, user["password"])):
+        raise HTTPException(401, "Invalid email or password")
+    
+    return {
+        "access_token": create_access_token(user_id=str(user["_id"]))
+    }
+
+@app.get("/generate-api-key")
+async def generate_api_key(user: dict = Depends(get_current_user)):
+    """
+    Generate an API key. All APIs generated prior to this one will be invalidated
+    """
+    key_collection = ASYNC_MONGODB_DB["api_keys"]
+    time_now = datetime.now(timezone.utc)
+    key, key_hash = create_api_key()
+    await key_collection.update_one(
+        {"user_id": user["_id"]},
+        {
+            "$set": {
+                "key_hash": key_hash,
+                "updated_at": time_now
+            },
+            "$setOnInsert": {
+                "user_id": user["_id"],
+                "created_at": time_now
+            }
+        },
+        upsert=True
+    )
+    return {
+        "key": key
+    }
 
 @app.get("/books", response_model=BooksOverview)
 async def get_books(
@@ -20,7 +89,8 @@ async def get_books(
     sort_by: Annotated[SortBy, Query()] = "rating",
     sort_order: Annotated[SortOrder, Query()] = "desc",
     limit: Annotated[int, Query(gt=0, le=100)] = 20,
-    offset: Annotated[int, Query()] = 0
+    offset: Annotated[int, Query()] = 0,
+    user_id: ObjectId = Depends(require_api_key),
 ):
     """
     Get all books.
@@ -77,7 +147,7 @@ async def get_books(
     }
 
 @app.get("/books/{book_id}", response_model=Book)
-async def get_book(book_id: int):
+async def get_book(book_id: int, user_id: ObjectId = Depends(require_api_key)):
     """
     Given a book ID, return full details about the book
     """

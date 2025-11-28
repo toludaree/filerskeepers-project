@@ -1,7 +1,7 @@
 from __future__ import annotations
 from enum import IntEnum
 from typing import Literal
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr
 
 
 class BooksOverview(BaseModel):
@@ -48,3 +48,13 @@ class Rating(IntEnum):
     FIVE = 5
 SortBy = Literal["rating", "price", "review_count"]
 SortOrder = Literal["asc", "desc"]
+
+class UserData(BaseModel):
+    email: EmailStr
+    password: str
+
+class SignUpResponseSchema(BaseModel):
+    message: str
+
+class LoginResponseSchema(BaseModel):
+    access_token: str
