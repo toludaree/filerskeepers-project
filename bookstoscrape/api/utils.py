@@ -2,7 +2,7 @@ import hashlib
 import secrets
 import time
 from bson import ObjectId
-from fastapi import Depends, Header, HTTPException
+from fastapi import Depends, Header, HTTPException, Request
 from fastapi.security import OAuth2PasswordBearer
 from jose import jwt, JWTError
 from passlib.context import CryptContext
@@ -12,6 +12,9 @@ from ..settings import JWT_SECRET_KEY, JWT_ALGORITHM, ASYNC_MONGODB_DB
 
 pl_ctx = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2 = OAuth2PasswordBearer(tokenUrl="/login")
+
+def rate_limit_func(request: Request):
+    return request.headers.get("x-api-key")
 
 def create_access_token(user_id: str, expires_mins: int = 15) -> str:
     """Create access token for auth-based endpoints"""

@@ -1,26 +1,31 @@
 from bson import ObjectId
 from datetime import datetime, timezone
-from fastapi import FastAPI, Depends, HTTPException, Query
+from fastapi import FastAPI, Depends, HTTPException, Request, Query
 from fastapi.responses import RedirectResponse
 from fastapi.security import OAuth2PasswordRequestForm
+from slowapi import Limiter
+from slowapi.util import get_remote_address
 from typing import Annotated, Optional
 
-from ..settings import ASYNC_MONGODB_DB, MONGODB_BOOK_COLLECTION
+from ..settings import ASYNC_MONGODB_DB, MONGODB_BOOK_COLLECTION, AUTH_RATE_LIMIT, API_RATE_LIMIT
 from .models import (
     Category, Book, BooksOverview, Rating, SortBy, SortOrder, UserData,
     SignUpResponseSchema, LoginResponseSchema,
 )
-from .utils import pl_ctx, create_access_token, get_current_user, create_api_key, require_api_key
+from .utils import pl_ctx, create_access_token, get_current_user, create_api_key, require_api_key, rate_limit_func
 
 
 app = FastAPI()
+auth_limiter = Limiter(key_func=get_remote_address)
+api_limiter = Limiter(key_func=rate_limit_func)
 
 @app.get("/")
 async def redirect_to_docs():
     return RedirectResponse(url="/docs")
 
 @app.post("/signup", response_model=SignUpResponseSchema)
-async def signup(user_data: UserData):
+@auth_limiter.limit(AUTH_RATE_LIMIT)
+async def signup(request: Request, user_data: UserData):
     """
     Sign up to be able to use the API
     """
@@ -39,7 +44,8 @@ async def signup(user_data: UserData):
     }
 
 @app.post("/login", response_model=LoginResponseSchema)
-async def login(user_data: OAuth2PasswordRequestForm = Depends()):
+@auth_limiter.limit(AUTH_RATE_LIMIT)
+async def login(request: Request, user_data: OAuth2PasswordRequestForm = Depends()):
     """
     Login to get API key
     """
@@ -55,7 +61,8 @@ async def login(user_data: OAuth2PasswordRequestForm = Depends()):
     }
 
 @app.get("/generate-api-key")
-async def generate_api_key(user: dict = Depends(get_current_user)):
+@auth_limiter.limit(AUTH_RATE_LIMIT)
+async def generate_api_key(request: Request, user: dict = Depends(get_current_user)):
     """
     Generate an API key. All APIs generated prior to this one will be invalidated
     """
@@ -81,7 +88,9 @@ async def generate_api_key(user: dict = Depends(get_current_user)):
     }
 
 @app.get("/books", response_model=BooksOverview)
+@api_limiter.limit(API_RATE_LIMIT)
 async def get_books(
+    request: Request,
     categories: Annotated[list[Category], Query()] = [],
     min_price: Annotated[Optional[float], Query()] = None,
     max_price: Annotated[Optional[float], Query()] = None,
@@ -118,11 +127,6 @@ async def get_books(
     if ratings:
         filters["rating"] = {"$in": ratings}
 
-    # print(f"Categories: {categories}")
-    # print(f"Minimum Price: {min_price}")
-    # print(f"Maximum Price: {max_price}")
-    # print(f"Ratings: {ratings}")
-    # print(filters)
     books = await book_collection.find(
         filter=filters,
         projection={
@@ -147,7 +151,8 @@ async def get_books(
     }
 
 @app.get("/books/{book_id}", response_model=Book)
-async def get_book(book_id: int, user_id: ObjectId = Depends(require_api_key)):
+@api_limiter.limit(API_RATE_LIMIT)
+async def get_book(request: Request, book_id: int, user_id: ObjectId = Depends(require_api_key)):
     """
     Given a book ID, return full details about the book
     """
