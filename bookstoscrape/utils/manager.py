@@ -142,8 +142,8 @@ class Manager:
                 upsert=True
             )
             if update_record.did_upsert:
-                self.logger.info(f"[manager] Book created: {session.sid}")
-                event = "create"
+                self.logger.info(f"[manager] Book added: {session.sid}")
+                event = "add"
                 changes = {}
             else:
                 self.logger.info(f"[manager] Book updated: {session.sid}")
@@ -161,7 +161,7 @@ class Manager:
         old_version: dict = self.current_books[book["bts_id"]]
 
         for k in old_version.keys():
-            if k  in ("bts_id", "crawl_metadata"):
+            if k in ("bts_id", "crawl_metadata"):
                 continue
             if (old:=old_version[k]) != (new:=book[k]):
                 changes[k] = {"old": old, "new": new}
