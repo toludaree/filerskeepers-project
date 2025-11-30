@@ -26,6 +26,11 @@ class Manager:
         self.crawler = crawler
         self.max_retry_count = max_retry_count
 
+        self.shutdown_event = asyncio.Event()
+        self.consecutive_failures = 0
+        self.max_consecutive_failures = 5
+        self.failure_lock = asyncio.Lock()
+
         self.mongodb_client = AsyncMongoClient(MONGODB_CONNECTION_URI, timeoutMS=5000)
         self.db = self.mongodb_client[MONGODB_DB]
         self.book_collection = self.db[MONGODB_BOOK_COLLECTION]
@@ -46,10 +51,17 @@ class Manager:
             self.current_books[book["bts_id"]] = book
 
     async def worker(self, wid: int):
-        while True:
+        while not self.shutdown_event.is_set():
             session = None
             try:
-                session: PageSession | BookSession = await self.queue.get()
+                try:
+                    session: PageSession | BookSession = await asyncio.wait_for(self.queue.get(), 10)
+                except asyncio.TimeoutError:
+                    if not self.shutdown_event.is_set():
+                        self.logger.info("No new queue entry for 10 seconds. Run complete")
+                        self.shutdown_event.set()
+                    continue
+
                 log_id = f"[{wid}][{session.stype}][{session.sid}]"
                 initial_message = self._get_initial_worker_message(session.retry_count)
                 self.logger.info(f"{log_id} {initial_message}")
@@ -89,6 +101,7 @@ class Manager:
                         else:
                             etag, book = await fetch_book(client, session)
                             await self._push_to_storage(session, etag, book)
+                        await self.track_run_status(True)
                     except HTTPError as exc:
                         self.logger.warning(f"[{log_id}] ❌ {repr(exc)}")
                         if session.retry_count < self.max_retry_count:
@@ -99,24 +112,42 @@ class Manager:
                             self.logger.warning(f"[{log_id}] Retry limit reached")
                             if isinstance(session, BookSession) and self.crawler:
                                 await self._push_to_storage(session, None, None)
+                        await self.track_run_status(False)
                         continue
                     except ProcessingError:
                         self.logger.exception(f"[{log_id}] ❌ {repr(exc)}")
+                        self.track_run_status(False)
                         ... # send email
             except asyncio.CancelledError:
                 self.logger.info(f"Worker {wid} stopped")
                 raise
             except Exception as exc:
                 self.logger.exception(f"[{wid}] ❌ {repr(exc)}")
+                self.track_run_status(False)
             finally:
                 if session:
                     self.queue.task_done()
+        else:
+            self.logger.info(f"Worker {wid} stopped")
 
     def _get_initial_worker_message(self, retry_count: int):
         if not retry_count:
             return "Start"
         else:
             return f"Retry {retry_count}"
+
+
+    async def track_run_status(self, success: bool = True):
+        async with self.failure_lock:
+            if not self.shutdown_event.is_set():
+                if success:
+                    self.consecutive_failures = 0
+                else:
+                    self.consecutive_failures += 1
+                
+                if self.consecutive_failures > self.max_consecutive_failures:
+                    self.logger.info("Maximum failure reached. Setting shutdown event")
+                    self.shutdown_event.set()
 
     async def _push_to_storage(self, session: BookSession, etag: Optional[str], book: Optional[Book]):
         if (not self.crawler) and (not book):  # Scheduler with no result

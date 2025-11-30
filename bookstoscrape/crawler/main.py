@@ -26,6 +26,10 @@ async def bookstoscrape_crawler(
         task = asyncio.create_task(manager.worker(f"w{i+1}"))
         manager.workers.append(task)
     
-    await manager.queue.join()
+    # await manager.queue.join()
+    worker_results = await asyncio.gather(*manager.workers, return_exceptions=True)
+    for wid, result in enumerate(worker_results):
+        if isinstance(result, Exception):
+            manager.logger.info(f"[manager] ❌ Worker w{wid} ended with exception: {repr(result)}")
     await manager.mongodb_client.close()
-    await manager.cancel_workers()
+    # await manager.cancel_workers()
