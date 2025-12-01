@@ -24,17 +24,19 @@ async def fetch_page(
 
 async def fetch_book(
     client: AsyncClient,
-    session: BookSession
+    book_id: int,
+    book_url: str,
+    last_etag: Optional[str]
 ):
-    if session.scheduler_context and session.scheduler_context.etag:
+    if etag is not None:
         headers = BROWSER_HEADERS | {
-            "if-none-match": session.scheduler_context.etag
+            "if-none-match": last_etag
         }
     else:
         headers = BROWSER_HEADERS
     
     book_page = await client.get(
-        url=session.book_url,
+        url=book_url,
         headers=headers
     )
 
@@ -45,6 +47,6 @@ async def fetch_book(
     book_page.raise_for_status()
 
     book = await asyncio.to_thread(
-        process_book, book_page.content, session.book_id, session.book_url
+        process_book, book_page.content, book_id, book_url
     )
     return etag, book

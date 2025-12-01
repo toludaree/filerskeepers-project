@@ -36,5 +36,4 @@ class BookSession:
     book_id: int
     stype = "book"
     book_url: str
-    scheduler_context: Optional[SchedulerContext] = None
     retry_count: int = 0

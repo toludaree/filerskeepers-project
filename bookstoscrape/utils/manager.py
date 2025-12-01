@@ -93,23 +93,20 @@ class Manager:
 
                             for url in book_urls:
                                 book_id = extract_id_from_book_url(url)
-                                if self.is_scheduler:
-                                    stored_book = self.current_books.get(book_id)
-                                    scheduler_context = SchedulerContext(
-                                        etag=stored_book["crawl_metadata"]["etag"] if stored_book else None
-                                    )
-                                else:
-                                    scheduler_context = None
                                 book_session = BookSession(
                                     sid=f"b{book_id}",
                                     book_id=book_id,
                                     book_url=url,
-                                    scheduler_context=scheduler_context,
                                 )
                                 await self.queue.put(book_session)
                                 self.run_state[book_session.sid] = asdict(book_session)
                         else:
-                            etag, book = await fetch_book(client, session)
+                            if self.is_scheduler:
+                                stored_book = self.current_books.get(session.book_id)
+                                last_etag = stored_book["crawl_metadata"]["etag"]
+                            else:
+                                last_etag = None
+                            etag, book = await fetch_book(client, session.book_id, session.book_url, last_etag)
                             await self._push_to_storage(session, etag, book)
 
                         self.run_state.pop(session.sid)
@@ -171,7 +168,7 @@ class Manager:
             "timestamp": datetime.now(timezone.utc),
             "status": "success" if book else "failed",
             "source_url": session.book_url,
-            "etag": etag
+            "etag": etag or ""   # ensure that it is not None
         }
 
         if not self.is_scheduler:
