@@ -57,8 +57,8 @@ def process_book(content: bytes, book_id: int, book_url: str) -> Book:
             name=extract_book_name(article_tag),
             description=extract_book_description(article_tag),
             category=extract_book_category(soup),
-            price_excluding_tax=extract_price_excl_tax(info_table),
-            price_including_tax=extract_price_incl_tax(info_table),
+            price=extract_price(info_table),
+            tax=extract_tax(info_table),
             in_stock=in_stock,
             stock_count=stock_count,
             review_count=extract_review_count(info_table),
@@ -90,14 +90,14 @@ def extract_td_given_th(info_table: Tag, th_text: str) -> str:
     """Extract table data text given the table header text"""
     return info_table.find("th", string=th_text).parent.td.text
 
-def extract_price_excl_tax(info_table: Tag) -> float:
+def extract_price(info_table: Tag) -> float:
     """Extract price (excluding tax)"""
     th_text = extract_td_given_th(info_table, "Price (excl. tax)")
     return float(th_text.replace("£", ""))
 
-def extract_price_incl_tax(info_table: Tag) -> str:
-    """Extract price (including tax)"""
-    th_text = extract_td_given_th(info_table, "Price (incl. tax)")
+def extract_tax(info_table: Tag) -> str:
+    """Extract tax on book"""
+    th_text = extract_td_given_th(info_table, "Tax")
     return float(th_text.replace("£", ""))
 
 def extract_availability(info_table: Tag) -> str:

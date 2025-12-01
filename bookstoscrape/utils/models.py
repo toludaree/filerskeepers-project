@@ -8,8 +8,8 @@ class Book(BaseModel):
     name: str
     description: Optional[str]
     category: str
-    price_including_tax: float
-    price_excluding_tax: float
+    price: float
+    tax: float
     in_stock: bool
     stock_count: int
     review_count: int
