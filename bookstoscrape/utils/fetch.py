@@ -28,7 +28,7 @@ async def fetch_book(
     book_url: str,
     last_etag: Optional[str]
 ):
-    if etag is not None:
+    if last_etag is not None:
         headers = BROWSER_HEADERS | {
             "if-none-match": last_etag
         }
