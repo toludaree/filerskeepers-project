@@ -45,6 +45,6 @@ async def fetch_book(
     book_page.raise_for_status()
 
     book = await asyncio.to_thread(
-        process_book, book_page.content, session.sid, session.book_url
+        process_book, book_page.content, session.book_id, session.book_url
     )
     return etag, book

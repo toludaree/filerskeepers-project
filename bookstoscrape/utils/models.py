@@ -24,7 +24,8 @@ class SchedulerContext:
 
 @dataclass
 class PageSession:
-    sid: int
+    sid: str
+    page_id: int
     stype = "page"
     page_url: str
     first_page: bool = False
@@ -32,7 +33,8 @@ class PageSession:
 
 @dataclass
 class BookSession:
-    sid: int
+    sid: str
+    book_id: int
     stype = "book"
     book_url: str
     scheduler_context: Optional[SchedulerContext] = None

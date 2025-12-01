@@ -81,7 +81,8 @@ class Manager:
                                     page_count = math.ceil(book_count / len(book_urls))
                                     for i in range(2, page_count+1):
                                         await self.queue.put(PageSession(
-                                            sid=i,
+                                            sid=f"p{i}",
+                                            page_id=i,
                                             page_url=f"{BASE_URL}/page-{i}.html"
                                         ))
 
@@ -95,7 +96,8 @@ class Manager:
                                 else:
                                     scheduler_context = None
                                 await self.queue.put(BookSession(
-                                    sid=book_id,
+                                    sid=f"b{book_id}",
+                                    book_id=book_id,
                                     book_url=url,
                                     scheduler_context=scheduler_context,
                                 ))
@@ -115,16 +117,16 @@ class Manager:
                                 await self._push_to_storage(session, None, None)
                         await self.track_run_status(False)
                         continue
-                    except ProcessingError:
+                    except ProcessingError as exc:
                         self.logger.exception(f"[{log_id}] ❌ {repr(exc)}")
-                        self.track_run_status(False)
+                        await self.track_run_status(False)
                         ... # send email
             except asyncio.CancelledError:
                 self.logger.info(f"Worker {wid} stopped")
                 raise
             except Exception as exc:
                 self.logger.exception(f"[{wid}] ❌ {repr(exc)}")
-                self.track_run_status(False)
+                await self.track_run_status(False)
             finally:
                 if session:
                     self.queue.task_done()
@@ -136,7 +138,6 @@ class Manager:
             return "Start"
         else:
             return f"Retry {retry_count}"
-
 
     async def track_run_status(self, success: bool = True):
         async with self.failure_lock:

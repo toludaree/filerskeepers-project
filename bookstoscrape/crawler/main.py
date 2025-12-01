@@ -17,7 +17,8 @@ async def bookstoscrape_crawler(
     manager = Manager(env=env, logger=logger, max_retry_count=max_retry_count)
     await manager.drop_collections()
     await manager.queue.put(PageSession(
-        sid=1,
+        sid="p1",
+        page_id=1,
         page_url=f"{BASE_URL}/page-1.html",
         first_page=True
     ))
