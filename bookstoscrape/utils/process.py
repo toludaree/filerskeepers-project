@@ -88,10 +88,6 @@ def extract_book_category(soup: BeautifulSoup) -> str:
         .find_all("li")[2].text
     return category.strip()
 
-def extract_td_given_th(info_table: Tag, th_text: str) -> str:
-    """Extract table data text given the table header text"""
-    return info_table.find("th", string=th_text).parent.td.text
-
 def extract_upc(info_table: Tag) -> str:
     """Extract the Universal Product Code of the book"""
     return extract_td_given_th(info_table, "UPC")
@@ -122,3 +118,7 @@ def extract_cover_image(article_tag: Tag, book_url: str) -> str:
 def extract_book_rating(article_tag: Tag) -> Literal["One", "Two", "Three", "Four", "Five"]:
     """Extract book rating"""
     return article_tag.find("p", class_="star-rating").attrs["class"][-1]
+
+def extract_td_given_th(info_table: Tag, th_text: str) -> str:
+    """Extract table data text given the table header text"""
+    return info_table.find("th", string=th_text).parent.td.text
