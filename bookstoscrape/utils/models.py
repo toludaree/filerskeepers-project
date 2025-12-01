@@ -28,7 +28,6 @@ class PageSession:
     page_id: int
     stype = "page"
     page_url: str
-    first_page: bool = False
     retry_count: int = 0
 
 @dataclass

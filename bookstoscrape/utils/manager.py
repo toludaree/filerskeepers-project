@@ -77,7 +77,7 @@ class Manager:
                             book_count, book_urls = await fetch_page(client, session.page_url)
 
                             if self.env == "prod":
-                                if session.first_page:
+                                if session.page_id == 1:
                                     page_count = math.ceil(book_count / len(book_urls))
                                     for i in range(2, page_count+1):
                                         await self.queue.put(PageSession(

@@ -20,7 +20,6 @@ async def bookstoscrape_crawler(
         sid="p1",
         page_id=1,
         page_url=f"{BASE_URL}/page-1.html",
-        first_page=True
     ))
 
     for i in range(worker_count):
