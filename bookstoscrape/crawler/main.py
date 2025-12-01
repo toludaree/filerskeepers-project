@@ -14,7 +14,7 @@ async def bookstoscrape_crawler(
     env="dev"
 ):
     logger = logging.getLogger(__name__)
-    manager = Manager(env=env, logger=logger, crawler=True, max_retry_count=max_retry_count)
+    manager = Manager(env=env, logger=logger, max_retry_count=max_retry_count)
     await manager.drop_collections()
     await manager.queue.put(PageSession(
         sid=1,

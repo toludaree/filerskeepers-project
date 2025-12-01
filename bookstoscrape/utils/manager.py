@@ -17,13 +17,13 @@ from ..settings import (
 
 
 class Manager:
-    def __init__(self, env: Literal["dev", "prod"], logger: Logger, crawler: bool, max_retry_count: int):
+    def __init__(self, env: Literal["dev", "prod"], logger: Logger, max_retry_count: int, is_scheduler: bool = False):
         self.queue = asyncio.Queue()
         self.workers: list[asyncio.Task] = []
         self.logger = logger
 
         self.env = env
-        self.crawler = crawler
+        self.is_scheduler = is_scheduler
         self.max_retry_count = max_retry_count
 
         self.shutdown_event = asyncio.Event()
@@ -86,13 +86,13 @@ class Manager:
 
                             for url in book_urls:
                                 book_id = extract_id_from_book_url(url)
-                                if self.crawler:
-                                    scheduler_context = None
-                                else:
+                                if self.is_scheduler:
                                     stored_book = self.current_books.get(book_id)
                                     scheduler_context = SchedulerContext(
                                         etag=stored_book["crawl_metadata"]["etag"] if stored_book else None
                                     )
+                                else:
+                                    scheduler_context = None
                                 await self.queue.put(BookSession(
                                     sid=book_id,
                                     book_url=url,
@@ -110,7 +110,7 @@ class Manager:
                             self.logger.info(f"[{log_id}] 🤞 Queued for retry")
                         else:
                             self.logger.warning(f"[{log_id}] Retry limit reached")
-                            if isinstance(session, BookSession) and self.crawler:
+                            if isinstance(session, BookSession) and (not self.is_scheduler):
                                 await self._push_to_storage(session, None, None)
                         await self.track_run_status(False)
                         continue
@@ -150,7 +150,7 @@ class Manager:
                     self.shutdown_event.set()
 
     async def _push_to_storage(self, session: BookSession, etag: Optional[str], book: Optional[Book]):
-        if (not self.crawler) and (not book):  # Scheduler with no result
+        if self.is_scheduler and (not book):  # Scheduler with no result
             self.logger.info(f"[manager] Unchanged: {session.sid}")
             return
         
@@ -163,7 +163,7 @@ class Manager:
             "etag": etag
         }
 
-        if self.crawler:
+        if not self.is_scheduler:
             await self.book_collection.insert_one(document)
             self.logger.info(f"[manager] Pushed to storage: {session.sid}")
         else:
