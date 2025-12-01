@@ -1,6 +1,7 @@
 import asyncio
 import logging
 from dataclasses import asdict
+from pymongo import IndexModel
 
 from ..settings import BASE_URL
 from ..utils.manager import Manager
@@ -21,6 +22,18 @@ async def bookstoscrape_crawler(
     crawler_state_collection = manager.mongodb_client["bookstoscrape"]["crawler_state"]
     if restart:
         await manager.drop_collections()
+    
+        indexes = await manager.book_collection.create_indexes(
+            indexes=[
+                IndexModel([("bts_id", 1)], unique=True),
+                IndexModel([("category", 1), ("price", 1), ("rating", 1), ("review_count", 1)]),
+                IndexModel([("category", 1), ("rating", 1), ("price", 1), ("review_count", 1)]),
+                IndexModel([("price", 1), ("rating", 1), ("review_count", 1)]),
+                IndexModel([("rating", 1), ("price", 1), ("review_count", 1)])
+            ]
+        )
+        manager.logger.info(f"Indexes: {indexes}")
+
         first_page_session = Session(
             sid="p1",
             resource_id=1,
