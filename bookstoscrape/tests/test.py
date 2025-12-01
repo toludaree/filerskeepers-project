@@ -119,6 +119,7 @@ class TestProcess(unittest.TestCase):
                 name="A Light in the Attic",
                 description="It's hard to imagine a world without A Light in the Attic. This now-classic collection of poetry and drawings from Shel Silverstein celebrates its 20th anniversary with this special edition. Silverstein's humorous and creative verse can amuse the dowdiest of readers. Lemon-faced adults and fidgety kids sit still and read these rhythmic words and laugh and smile and love th It's hard to imagine a world without A Light in the Attic. This now-classic collection of poetry and drawings from Shel Silverstein celebrates its 20th anniversary with this special edition. Silverstein's humorous and creative verse can amuse the dowdiest of readers. Lemon-faced adults and fidgety kids sit still and read these rhythmic words and laugh and smile and love that Silverstein. Need proof of his genius? RockabyeRockabye baby, in the treetopDon't you know a treetopIs no safe place to rock?And who put you up there,And your cradle, too?Baby, I think someone down here'sGot it in for you. Shel, you never sounded so good. ...more",
                 category="Poetry",
+                upc="a897fe39b1053632",
                 price=51.77,
                 tax=0.0,
                 in_stock=True,
@@ -137,6 +138,7 @@ class TestProcess(unittest.TestCase):
                 name="Angels Walking (Angels Walking #1)",
                 description="When former national baseball star Tyler Ames suffers a career-ending injury, all he can think about is putting his life back together the way it was before. He has lost everyone he loves on his way to the big leagues. Then just when things seem to be turning around, Tyler hits rock bottom. Across the country, Tyler’s one true love Sami Dawson has moved on. A series of sma When former national baseball star Tyler Ames suffers a career-ending injury, all he can think about is putting his life back together the way it was before. He has lost everyone he loves on his way to the big leagues. Then just when things seem to be turning around, Tyler hits rock bottom. Across the country, Tyler’s one true love Sami Dawson has moved on. A series of small miracles leads Tyler to a maintenance job at a retirement home and a friendship with Virginia Hutcheson, an old woman with Alzheimer’s who strangely might have the answers he so desperately seeks.A team of Angels Walking take on the mission to restore hope for Tyler, Sami, and Virginia. Can such small and seemingly insignificant actions of the unseen bring healing and redemption? And can the words of a stranger rekindle lost love? Every journey begins with a step.It is time for the mission to begin… ...more",
                 category="Add a comment",
+                upc="1fbb5f786e53a0ce",
                 price=34.20,
                 tax=0.0,
                 in_stock=True,
@@ -155,6 +157,7 @@ class TestProcess(unittest.TestCase):
                 name="The Lonely City: Adventures in the Art of Being Alone",
                 description="An expertly crafted work of reportage, memoir and biography on the subject of loneliness told through the lives of iconic artists, by the acclaimed author of The Trip to Echo Spring What does it mean to be lonely? How do we live, if we're not intimately engaged with another human being? How do we connect with other people? Does technology draw us closer together or trap us An expertly crafted work of reportage, memoir and biography on the subject of loneliness told through the lives of iconic artists, by the acclaimed author of The Trip to Echo Spring What does it mean to be lonely? How do we live, if we're not intimately engaged with another human being? How do we connect with other people? Does technology draw us closer together or trap us behind screens?When Olivia Laing moved to New York City in her mid-thirties, she found herself inhabiting loneliness on a daily basis. Increasingly fascinated by this most shameful of experiences, she began to explore the lonely city by way of art. Moving fluidly between works and lives - from Edward Hopper's Nighthawks to Andy Warhol's Time Capsules, from Henry Darger's hoarding to the depredations of the AIDS crisis - Laing conducts an electric, dazzling investigation into what it means to be alone, illuminating not only the causes of loneliness but also how it might be resisted and redeemed.Humane, provocative and deeply moving, The Lonely City is about the spaces between people and the things that draw them together, about sexuality, mortality and the magical possibilities of art. It's a celebration of a strange and lovely state, adrift from the larger continent of human experience, but intrinsic to the very act of being alive. ...more",
                 category="Nonfiction",
+                upc="582a21a1dbbef3cf",
                 price=33.26,
                 tax=0.0,
                 in_stock=True,
@@ -173,6 +176,7 @@ class TestProcess(unittest.TestCase):
                 name="Alice in Wonderland (Alice's Adventures in Wonderland #1)",
                 description=None,
                 category="Classics",
+                upc="cd2a2a70dd5d176d",
                 price=55.53,
                 tax=0.0,
                 in_stock=True,
@@ -235,6 +239,18 @@ class TestProcess(unittest.TestCase):
         self.assertEqual(
             process.extract_td_given_th(self.book1_article_tag.table, "Price (incl. tax)"),
             "£51.77"
+        )
+
+    def test__extract_upc_1(self):
+        self.assertEqual(
+            process.extract_upc(self.book1_article_tag.table),
+            "a897fe39b1053632"
+        )
+
+    def test__extract_upc_2(self):
+        self.assertEqual(
+            process.extract_upc(self.book2_article_tag.table),
+            "1fbb5f786e53a0ce"
         )
 
     def test__extract_price_1(self):

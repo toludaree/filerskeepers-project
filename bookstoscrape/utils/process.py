@@ -57,6 +57,7 @@ def process_book(content: bytes, book_id: int, book_url: str) -> Book:
             name=extract_book_name(article_tag),
             description=extract_book_description(article_tag),
             category=extract_book_category(soup),
+            upc=extract_upc(soup),
             price=extract_price(info_table),
             tax=extract_tax(info_table),
             in_stock=in_stock,
@@ -89,6 +90,10 @@ def extract_book_category(soup: BeautifulSoup) -> str:
 def extract_td_given_th(info_table: Tag, th_text: str) -> str:
     """Extract table data text given the table header text"""
     return info_table.find("th", string=th_text).parent.td.text
+
+def extract_upc(info_table: Tag) -> str:
+    """Extract the Universal Product Code of the book"""
+    return extract_td_given_th(info_table, "UPC")
 
 def extract_price(info_table: Tag) -> float:
     """Extract price (excluding tax)"""
