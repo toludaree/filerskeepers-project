@@ -12,20 +12,27 @@ logging.basicConfig(level=logging.INFO)
 async def bookstoscrape_crawler(
     worker_count=5,
     max_retry_count=3,
-    env="dev"
+    env="dev",
+    restart: bool = True
 ):
     logger = logging.getLogger(__name__)
     manager = Manager(env=env, logger=logger, max_retry_count=max_retry_count)
-    await manager.drop_collections()
-
-    first_page_session = Session(
-        sid="p1",
-        resource_id=1,
-        resource_type="page",
-        resource_url=f"{BASE_URL}/page-1.html",
-    )
-    await manager.queue.put(first_page_session)
-    manager.run_state[first_page_session.sid] = asdict(first_page_session)
+    
+    crawler_state_collection = manager.mongodb_client["bookstoscrape"]["crawler_state"]
+    if restart:
+        await manager.drop_collections()
+        first_page_session = Session(
+            sid="p1",
+            resource_id=1,
+            resource_type="page",
+            resource_url=f"{BASE_URL}/page-1.html",
+        )
+        await manager.queue.put(first_page_session)
+        manager.run_state[first_page_session.sid] = asdict(first_page_session)
+    else:
+        async for doc in crawler_state_collection.find({}, {"_id": 0}):
+            await manager.queue.put(Session(**doc))
+            manager.run_state[doc["sid"]] = doc
 
     for i in range(worker_count):
         task = asyncio.create_task(manager.worker(f"w{i+1}"))
@@ -37,7 +44,6 @@ async def bookstoscrape_crawler(
         if isinstance(result, Exception):
             manager.logger.info(f"[manager] ❌ Worker w{wid} ended with exception: {repr(result)}")
 
-    crawler_state_collection = manager.mongodb_client["bookstoscrape"]["crawler_state"]
     await crawler_state_collection.drop()
     if manager.run_state:
         await crawler_state_collection.insert_many(manager.run_state.values())
