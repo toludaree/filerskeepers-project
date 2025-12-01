@@ -4,6 +4,7 @@ from dataclasses import asdict
 from datetime import datetime, timezone
 from httpx import AsyncClient, HTTPError
 from logging import Logger
+from pathlib import Path
 from pymongo import AsyncMongoClient
 from typing import Literal, Optional
 
@@ -29,6 +30,12 @@ class Manager:
         self.max_retry_count = max_retry_count
 
         self.run_state = {}
+
+        if self.is_scheduler:
+            self.snapshot_folder = Path(f"bookstoscrape/snapshots/scheduler/{str(datetime.now().date()).replace("-", "")}")
+        else:
+            self.snapshot_folder = Path("bookstoscrape/snapshots/crawler")
+        self.snapshot_folder.mkdir(parents=True, exist_ok=True)
 
         self.shutdown_event = asyncio.Event()
         self.consecutive_failures = 0
@@ -108,7 +115,7 @@ class Manager:
                                 last_etag = stored_book["crawl_metadata"]["etag"]
                             else:
                                 last_etag = None
-                            etag, book = await fetch_book(client, session.resource_id, session.resource_url, last_etag)
+                            etag, book = await fetch_book(client, session.resource_id, session.resource_url, last_etag, self.snapshot_folder)
                             await self._push_to_storage(session, etag, book)
 
                         self.run_state.pop(session.sid)
