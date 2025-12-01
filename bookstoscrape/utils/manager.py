@@ -1,5 +1,6 @@
 import asyncio
 import math
+from datetime import datetime, timezone
 from httpx import AsyncClient, HTTPError
 from logging import Logger
 from pymongo import AsyncMongoClient
@@ -157,7 +158,7 @@ class Manager:
         timestamp = get_milliseconds_since_epoch()
         document = book.model_dump(mode="json") if book else {}
         document["crawl_metadata"] = {
-            "timestamp": timestamp,
+            "timestamp": datetime.now(timezone.utc),
             "status": "success" if book else "failed",
             "source_url": session.book_url,
             "etag": etag
