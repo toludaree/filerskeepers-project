@@ -10,7 +10,7 @@ from typing import Literal, Optional
 from .common import extract_id_from_book_url, get_milliseconds_since_epoch
 from .exceptions import ProcessingError
 from .fetch import fetch_page, fetch_book
-from .models import PageSession, Book, BookSession, SchedulerContext
+from .models import Book, Session
 from ..settings import (
     BASE_URL, CHANGE_DETECTION_FIELDS, MONGODB_CONNECTION_URI, MONGODB_DB,
     MONGODB_BOOK_COLLECTION, MONGODB_CHANGELOG_COLLECTION, PROXY,
@@ -59,14 +59,14 @@ class Manager:
             session = None
             try:
                 try:
-                    session: PageSession | BookSession = await asyncio.wait_for(self.queue.get(), 10)
+                    session: Session = await asyncio.wait_for(self.queue.get(), 10)
                 except asyncio.TimeoutError:
                     if not self.shutdown_event.is_set():
                         self.logger.info("No new queue entry for 10 seconds. Run complete")
                         self.shutdown_event.set()
                     continue
 
-                log_id = f"[{wid}][{session.stype}][{session.sid}]"
+                log_id = f"[{wid}][{session.resource_type}][{session.sid}]"
                 initial_message = self._get_initial_worker_message(session.retry_count)
                 self.logger.info(f"{log_id} {initial_message}")
 
@@ -76,37 +76,39 @@ class Manager:
                     timeout=REQUEST_TIMEOUT
                 ) as client:
                     try:
-                        if isinstance(session, PageSession):
-                            book_count, book_urls = await fetch_page(client, session.page_url)
+                        if session.resource_type == "page":
+                            book_count, book_urls = await fetch_page(client, session.resource_url)
 
                             if self.env == "prod":
-                                if session.page_id == 1:
+                                if session.resource_id == 1:
                                     page_count = math.ceil(book_count / len(book_urls))
                                     for i in range(2, page_count+1):
-                                        page_session = PageSession(
+                                        page_session = Session(
                                             sid=f"p{i}",
-                                            page_id=i,
-                                            page_url=f"{BASE_URL}/page-{i}.html"
+                                            resource_id=i,
+                                            resource_type="page",
+                                            resource_url=f"{BASE_URL}/page-{i}.html"
                                         )
                                         await self.queue.put(page_session)
                                         self.run_state[page_session.sid] = asdict(page_session)
 
                             for url in book_urls:
                                 book_id = extract_id_from_book_url(url)
-                                book_session = BookSession(
+                                book_session = Session(
                                     sid=f"b{book_id}",
-                                    book_id=book_id,
-                                    book_url=url,
+                                    resource_id=book_id,
+                                    resource_type="book",
+                                    resource_url=url,
                                 )
                                 await self.queue.put(book_session)
                                 self.run_state[book_session.sid] = asdict(book_session)
                         else:
                             if self.is_scheduler:
-                                stored_book = self.current_books.get(session.book_id)
+                                stored_book = self.current_books.get(session.resource_id)
                                 last_etag = stored_book["crawl_metadata"]["etag"]
                             else:
                                 last_etag = None
-                            etag, book = await fetch_book(client, session.book_id, session.book_url, last_etag)
+                            etag, book = await fetch_book(client, session.resource_id, session.resource_url, last_etag)
                             await self._push_to_storage(session, etag, book)
 
                         self.run_state.pop(session.sid)
@@ -119,7 +121,7 @@ class Manager:
                             self.logger.info(f"[{log_id}] 🤞 Queued for retry")
                         else:
                             self.logger.warning(f"[{log_id}] Retry limit reached")
-                            if isinstance(session, BookSession) and (not self.is_scheduler):
+                            if (session.resource_type == "book") and (not self.is_scheduler):
                                 await self._push_to_storage(session, None, None)
                         await self.track_run_status(False)
                         continue
@@ -157,7 +159,7 @@ class Manager:
                     self.logger.info("Maximum failure reached. Setting shutdown event")
                     self.shutdown_event.set()
 
-    async def _push_to_storage(self, session: BookSession, etag: Optional[str], book: Optional[Book]):
+    async def _push_to_storage(self, session: Session, etag: Optional[str], book: Optional[Book]):
         if self.is_scheduler and (not book):  # Scheduler with no result
             self.logger.info(f"[manager] Unchanged: {session.sid}")
             return
@@ -167,7 +169,7 @@ class Manager:
         document["crawl_metadata"] = {
             "timestamp": datetime.now(timezone.utc),
             "status": "success" if book else "failed",
-            "source_url": session.book_url,
+            "source_url": session.resource_url,
             "etag": etag or ""   # ensure that it is not None
         }
 
@@ -176,7 +178,7 @@ class Manager:
             self.logger.info(f"[manager] Pushed to storage: {session.sid}")
         else:
             update_record = await self.book_collection.replace_one(
-                filter={"crawl_metadata.source_url": session.book_url},
+                filter={"crawl_metadata.source_url": session.resource_url},
                 replacement=document,
                 upsert=True
             )

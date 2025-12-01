@@ -3,6 +3,14 @@ from pydantic import BaseModel, HttpUrl
 from typing import Literal, Optional
 
 
+@dataclass
+class Session:
+    sid: str
+    resource_id: int
+    resource_type: Literal["page", "book"]
+    resource_url: str
+    retry_count: int = 0
+
 class Book(BaseModel):
     bts_id: int
     name: str
@@ -17,23 +25,3 @@ class Book(BaseModel):
     review_count: int
     cover_image_url: HttpUrl
     rating: Literal[1, 2, 3, 4, 5]
-
-@dataclass
-class SchedulerContext:
-    etag: Optional[str]
-
-@dataclass
-class PageSession:
-    sid: str
-    page_id: int
-    stype = "page"
-    page_url: str
-    retry_count: int = 0
-
-@dataclass
-class BookSession:
-    sid: str
-    book_id: int
-    stype = "book"
-    book_url: str
-    retry_count: int = 0

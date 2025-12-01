@@ -4,7 +4,7 @@ from dataclasses import asdict
 
 from ..settings import BASE_URL
 from ..utils.manager import Manager
-from ..utils.models import PageSession
+from ..utils.models import Session
 
 
 logging.basicConfig(level=logging.INFO)
@@ -18,10 +18,11 @@ async def bookstoscrape_crawler(
     manager = Manager(env=env, logger=logger, max_retry_count=max_retry_count)
     await manager.drop_collections()
 
-    first_page_session = PageSession(
+    first_page_session = Session(
         sid="p1",
-        page_id=1,
-        page_url=f"{BASE_URL}/page-1.html",
+        resource_id=1,
+        resource_type="page",
+        resource_url=f"{BASE_URL}/page-1.html",
     )
     await manager.queue.put(first_page_session)
     manager.run_state[first_page_session.sid] = asdict(first_page_session)
