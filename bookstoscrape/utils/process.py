@@ -56,6 +56,7 @@ def process_book(content: bytes, book_id: int, book_url: str) -> Book:
             bts_id=book_id,
             name=extract_book_name(article_tag),
             description=extract_book_description(article_tag),
+            url=book_url,
             category=extract_book_category(soup),
             upc=extract_upc(soup),
             price=extract_price(info_table),

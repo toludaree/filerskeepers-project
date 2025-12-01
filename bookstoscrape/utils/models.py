@@ -7,6 +7,7 @@ class Book(BaseModel):
     bts_id: int
     name: str
     description: Optional[str]
+    url: HttpUrl
     category: str
     upc: str
     price: float
