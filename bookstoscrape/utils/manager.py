@@ -1,5 +1,6 @@
 import asyncio
 import math
+from dataclasses import asdict
 from datetime import datetime, timezone
 from httpx import AsyncClient, HTTPError
 from logging import Logger
@@ -26,6 +27,8 @@ class Manager:
         self.env = env
         self.is_scheduler = is_scheduler
         self.max_retry_count = max_retry_count
+
+        self.run_state = {}
 
         self.shutdown_event = asyncio.Event()
         self.consecutive_failures = 0
@@ -80,11 +83,13 @@ class Manager:
                                 if session.page_id == 1:
                                     page_count = math.ceil(book_count / len(book_urls))
                                     for i in range(2, page_count+1):
-                                        await self.queue.put(PageSession(
+                                        page_session = PageSession(
                                             sid=f"p{i}",
                                             page_id=i,
                                             page_url=f"{BASE_URL}/page-{i}.html"
-                                        ))
+                                        )
+                                        await self.queue.put(page_session)
+                                        self.run_state[page_session.sid] = asdict(page_session)
 
                             for url in book_urls:
                                 book_id = extract_id_from_book_url(url)
@@ -95,15 +100,19 @@ class Manager:
                                     )
                                 else:
                                     scheduler_context = None
-                                await self.queue.put(BookSession(
+                                book_session = BookSession(
                                     sid=f"b{book_id}",
                                     book_id=book_id,
                                     book_url=url,
                                     scheduler_context=scheduler_context,
-                                ))
+                                )
+                                await self.queue.put(book_session)
+                                self.run_state[book_session.sid] = asdict(book_session)
                         else:
                             etag, book = await fetch_book(client, session)
                             await self._push_to_storage(session, etag, book)
+
+                        self.run_state.pop(session.sid)
                         await self.track_run_status(True)
                     except HTTPError as exc:
                         self.logger.warning(f"[{log_id}] ❌ {repr(exc)}")
