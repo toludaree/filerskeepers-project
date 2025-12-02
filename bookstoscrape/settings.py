@@ -6,12 +6,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# crawler, scheduler
+# crawler
 BASE_URL = "https://books.toscrape.com/catalogue"
 BASE_FOLDER = Path("bookstoscrape")
 PROXY = None
 REQUEST_TIMEOUT_SECONDS = 5
 QUEUE_WAIT_TIMEOUT_SECONDS = 5
+WORKER_COUNT = 5
+MAX_RETRY_COUNT= 3
+MAX_CONSECUTIVE_FAILURES = 5
 BROWSER_HEADERS = {
     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
     "accept-encoding": "gzip, deflate, br, zstd",

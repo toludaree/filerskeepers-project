@@ -19,7 +19,6 @@ class Manager:
     def __init__(
         self,
         env: Literal["dev", "prod"], logger: Logger,
-        max_retry_count: int, max_consecutive_failures: int,
         is_scheduler: bool = False
     ):
         self.queue = asyncio.Queue()
@@ -27,8 +26,6 @@ class Manager:
         self.env = env
         self.logger = logger
         self.is_scheduler = is_scheduler
-        self.max_retry_count = max_retry_count
-        self.max_consecutive_failures = max_consecutive_failures
         self.consecutive_failures = 0
         self.run_status_lock = asyncio.Lock()
         self.shutdown_event = asyncio.Event()
@@ -122,22 +119,22 @@ class Manager:
                         await self.track_run_status(True)
 
                     except HTTPError as exc:
-                        self.logger.warning(f"[{worker_log_id}] Error: {repr(exc)}")
-                        if session.retry_count < self.max_retry_count:
+                        self.logger.warning(f"{worker_log_id} Error: {repr(exc)}")
+                        if session.retry_count < ss.MAX_RETRY_COUNT:
                             session.retry_count += 1
                             await self.queue.put(session)
-                            self.logger.info(f"[{worker_log_id}] Queued for retry")
+                            self.logger.info(f"{worker_log_id} Queued for retry")
                         else:
-                            self.logger.warning(f"[{worker_log_id}] Retry limit reached")
+                            self.logger.warning(f"{worker_log_id} Retry limit reached")
                             if (session.resource_type == "book") and (not self.is_scheduler):
-                                self.logger.info(f"[{worker_log_id}] Saving with failed status...")
+                                self.logger.info(f"{worker_log_id} Saving with failed status...")
                                 await self._push_to_storage(session, None, None)
                         await self.track_run_status(False)
 
                     except ProcessingError as exc:  # No retry on processing errors
-                        self.logger.exception(f"[{worker_log_id}] Error: {repr(exc)}")
+                        self.logger.exception(f"{worker_log_id} Error: {repr(exc)}")
                         if (session.resource_type == "book") and (not self.is_scheduler):
-                            self.logger.info(f"[{worker_log_id}] Saving with failed status...")
+                            self.logger.info(f"{worker_log_id} Saving with failed status...")
                             await self._push_to_storage(session, None, None)
                         await self.track_run_status(False)
 
@@ -164,7 +161,7 @@ class Manager:
                 else:
                     self.consecutive_failures += 1
                 
-                if self.consecutive_failures > self.max_consecutive_failures:
+                if self.consecutive_failures > ss.MAX_CONSECUTIVE_FAILURES:
                     self.logger.warning("[manager] Maximum consecutive failures reached.")
                     self.logger.info("[manager] Shutting down workers...")
                     self.shutdown_event.set()
