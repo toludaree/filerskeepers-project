@@ -6,13 +6,13 @@ from typing import Literal
 from .. import settings as ss
 from ..crawler.manager import Manager
 from ..crawler.models import Session
-from ..utils.common import setup_logging
+from ..utils.common import setup_logger, cleanup_logger
 
 
 async def bts_scheduler(
     env: Literal["dev", "prod"] = "dev"
 ):
-    logger = setup_logging("scheduler")
+    logger = setup_logger("scheduler")
     manager = Manager(env, logger, is_scheduler=True)
 
     manager.logger.info(f"[manager] BEGIN RUN")
@@ -51,5 +51,6 @@ async def bts_scheduler(
         json.dump(manager.daily_change_report, f)
 
     await manager.close_db_client()
+    cleanup_logger("scheduler")
 
     manager.logger.info("[manager] END RUN")

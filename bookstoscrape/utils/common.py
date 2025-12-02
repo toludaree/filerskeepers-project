@@ -8,11 +8,11 @@ from typing import Literal
 
 from .. import settings as ss
 
-def setup_logging(run_type: Literal["crawler", "scheduler"]):
+def setup_logger(name: Literal["crawler", "scheduler"]):
     log_folder = ss.BASE_FOLDER / "logs"
     log_folder.mkdir(exist_ok=True)
 
-    logger = logging.getLogger(run_type)
+    logger = logging.getLogger(name)
     logger.setLevel(logging.INFO)
 
     logger.handlers.clear()
@@ -23,7 +23,7 @@ def setup_logging(run_type: Literal["crawler", "scheduler"]):
 
     # File handler
     time_now = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
-    log_file = log_folder / f"{run_type}_{time_now}.log"
+    log_file = log_folder / f"{name}_{time_now}.log"
     file_handler = logging.FileHandler(log_file)
     file_handler.setLevel(logging.INFO)
 
@@ -40,6 +40,13 @@ def setup_logging(run_type: Literal["crawler", "scheduler"]):
     logger.addHandler(file_handler)
 
     return logger
+
+def cleanup_logger(name: Literal["crawler", "scheduler"]):
+    """Close all handlers for a logger to release file locks"""
+    logger = logging.getLogger(name)
+    for handler in logger.handlers[:]:
+        handler.close()
+        logger.removeHandler(handler)
 
 def send_email(subject: str, body: str):
     msg = MIMEMultipart()

@@ -4,7 +4,7 @@ from pymongo import IndexModel
 from typing import Literal
 
 from ..settings import BASE_URL, WORKER_COUNT
-from ..utils.common import setup_logging
+from ..utils.common import setup_logger, cleanup_logger
 from ..utils.crawler import build_cli_parser
 from .manager import Manager
 from .models import Session
@@ -14,7 +14,7 @@ async def bts_crawler(
     env: Literal["dev", "prod"] ="dev",
     restart: bool = True
 ):
-    logger = setup_logging(run_type="crawler")
+    logger = setup_logger("crawler")
     manager = Manager(env, logger)
 
     manager.logger.info("[manager] BEGIN RUN")
@@ -63,7 +63,9 @@ async def bts_crawler(
     await manager.crawler_state_collection.drop()
     if manager.crawler_state:
         await manager.crawler_state_collection.insert_many(manager.crawler_state.values())
+    
     await manager.close_db_client()
+    cleanup_logger("crawler")
 
     manager.logger.info("[manager] END RUN")
 
