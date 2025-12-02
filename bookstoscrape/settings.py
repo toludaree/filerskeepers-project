@@ -55,6 +55,12 @@ CHANGE_DETECTION_FIELDS = {
     "rating": 1,
     "crawl_metadata.etag": 1,
 }
+GENERATE_DAILY_REPORT = True
+EMAIL_SENDER = os.getenv("EMAIL_SENDER")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+EMAIL_SMTP_SERVER = os.getenv("EMAIL_SMTP_SERVER")
+EMAIL_SMTP_PORT = os.getenv("EMAIL_SMTP_PORT")
+ADMIN_EMAIL = os.getenv("ADMIN_EMAIL")
 JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY")
 JWT_ALGORITHM = os.getenv("JWT_ALGORITHM", "HS256")
 AUTH_RATE_LIMIT = "5/minute"

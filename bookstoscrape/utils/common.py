@@ -1,12 +1,15 @@
 import logging
+import smtplib
 import time
 from datetime import datetime, timezone
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 from typing import Literal
 
-from ..settings import BASE_FOLDER
+from .. import settings as ss
 
 def setup_logging(run_type: Literal["crawler", "scheduler"]):
-    log_folder = BASE_FOLDER / "logs"
+    log_folder = ss.BASE_FOLDER / "logs"
     log_folder.mkdir(exist_ok=True)
 
     logger = logging.getLogger(run_type)
@@ -37,3 +40,15 @@ def setup_logging(run_type: Literal["crawler", "scheduler"]):
     logger.addHandler(file_handler)
 
     return logger
+
+def send_email(subject: str, body: str):
+    msg = MIMEMultipart()
+    msg["From"] = f"BooksToScrape <{ss.EMAIL_SENDER}>"
+    msg["To"] = ss.ADMIN_EMAIL
+    msg["Subject"] = subject
+    msg.attach(MIMEText(body, "plain"))
+
+    with smtplib.SMTP(ss.EMAIL_SMTP_SERVER, ss.EMAIL_SMTP_PORT) as server:
+        server.starttls()
+        server.login(ss.EMAIL_SENDER, ss.EMAIL_PASSWORD)
+        server.send_message(msg)

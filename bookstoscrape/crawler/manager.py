@@ -10,6 +10,7 @@ from typing import Literal, Optional
 
 from .. import settings as ss
 from ..utils.crawler import extract_id_from_book_url
+from ..utils.scheduler import send_alert_email
 from .exceptions import ProcessingError
 from .fetch import fetch_page, fetch_book
 from .models import Book, Session
@@ -39,11 +40,12 @@ class Manager:
         self.crawler_state = {}  # Save to database if run ends prematurely
         self.stored_books = {}  # Books already in the db from past crawler runs; used in scheduler runs
         if self.is_scheduler:
-            current_date = str(datetime.now().date()).replace("-", "")
+            current_date = datetime.now().strftime("%Y%m%d")
             self.snapshot_folder = ss.BASE_FOLDER / "snapshots" / "scheduler" / current_date
         else:
             self.snapshot_folder = ss.BASE_FOLDER / "snapshots" / "crawler"
         self.snapshot_folder.mkdir(parents=True, exist_ok=True)
+        self.daily_change_report = None  # Used in scheduler runs
 
     async def worker(self, wid: int):
         while not self.shutdown_event.is_set():
@@ -98,11 +100,16 @@ class Manager:
                             
                             self.logger.info(f"{worker_log_id} Processed page successfully")
                         else:
-                            if self.is_scheduler:  # Retrieve last etag for the book
+                            # Retrieve last etag for the book
+                            if self.is_scheduler:
                                 stored_book = self.stored_books.get(session.resource_id)
-                                last_etag = stored_book["crawl_metadata"]["etag"]
+                                if stored_book:
+                                    last_etag = stored_book["crawl_metadata"]["etag"]
+                                else:
+                                    last_etag = None
                             else:
                                 last_etag = None
+
                             etag, book = await fetch_book(
                                 client,
                                 session.resource_id, session.resource_url,
@@ -172,7 +179,7 @@ class Manager:
             "timestamp": timestamp,
             "status": "success" if book else "failed",
             "source_url": session.resource_url,
-            "etag": etag or ""  # ensure that it is not None
+            "etag": etag
         }
 
         if not self.is_scheduler:
@@ -202,12 +209,28 @@ class Manager:
                 self.logger.info(f"[manager] Book updated: {session.sid}")
                 event = "update"
                 changes = self._get_update_changes(book.model_dump(mode="json"))
-            await self.changelog_collection.insert_one({
-                "bts_id": session.sid,
+            
+            changelog_doc = {
+                "bts_id": session.resource_id,
                 "event": event,
                 "timestamp": timestamp,
                 "changes": changes
-            })
+            }
+            await self.changelog_collection.insert_one(dict(changelog_doc))
+            if ss.GENERATE_DAILY_REPORT:
+                self.daily_change_report["summary"]["total"] += 1
+                if event == "add":
+                    self.daily_change_report["summary"]["added"] += 1
+                else:
+                    self.daily_change_report["summary"]["updated"] += 1
+                changelog_doc["timestamp"] = changelog_doc["timestamp"].strftime("%Y-%m-%d %H:%M:%S")
+                self.daily_change_report["changelog"].append(changelog_doc)
+                
+            try:
+                await asyncio.to_thread(send_alert_email, event, session.resource_id)
+                self.logger.info(f"[manager] Alert email sent for {event} event: {session.sid}")
+            except Exception as exc:
+                self.logger.warning(f"[manager] Failed to send alert email for {session.sid}: {repr(exc)}")
 
     def _get_update_changes(self, book: dict):
         changes = {}

@@ -22,11 +22,7 @@ async def fetch_book(
     book_id: int, book_url: str,
     last_etag: Optional[str], snapshot_folder: Path
 ) -> tuple[str, Book]:
-    if last_etag is not None:
-        headers = BROWSER_HEADERS | {"if-none-match": last_etag}
-    else:
-        headers = BROWSER_HEADERS
-    
+    headers = BROWSER_HEADERS | {"if-none-match": last_etag or ""}
     book_page = await client.get(book_url, headers=headers)
 
     etag = book_page.headers["etag"]
