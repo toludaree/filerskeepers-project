@@ -117,7 +117,10 @@ class Manager:
                                 session.resource_id, session.resource_url,
                                 last_etag, self.snapshot_folder
                             )
-                            await self._push_to_storage(session, etag, book)
+                            await self._push_to_storage(
+                                session.resource_id, session.resource_url,
+                                etag, book
+                            )
 
                         self.crawler_state.pop(session.sid)
                         await self.track_run_status(True)
@@ -132,14 +135,20 @@ class Manager:
                             self.logger.warning(f"{worker_log_id} Retry limit reached")
                             if (session.resource_type == "book") and (not self.is_scheduler):
                                 self.logger.info(f"{worker_log_id} Saving with failed status...")
-                                await self._push_to_storage(session, None, None)
+                                await self._push_to_storage(
+                                    session.resource_id, session.resource_url,
+                                    None, None
+                                )
                         await self.track_run_status(False)
 
                     except ProcessingError as exc:  # No retry on processing errors
                         self.logger.exception(f"{worker_log_id} Error: {repr(exc)}")
                         if (session.resource_type == "book") and (not self.is_scheduler):
                             self.logger.info(f"{worker_log_id} Saving with failed status...")
-                            await self._push_to_storage(session, None, None)
+                            await self._push_to_storage(
+                                session.resource_id, session.resource_url,
+                                None, None
+                            )
                         await self.track_run_status(False)
 
             except Exception as exc:
@@ -170,17 +179,20 @@ class Manager:
                     self.logger.info("[manager] Shutting down workers...")
                     self.shutdown_event.set()
 
-    async def _push_to_storage(self, session: Session, etag: Optional[str], book: Optional[Book]):
+    async def _push_to_storage(
+        self,
+        book_id: int, book_url: str, etag: Optional[str], book: Optional[Book]
+    ):
         if self.is_scheduler and (not book):  # Book hasn't been updated
-            self.logger.info(f"[manager] Unchanged: {session.resource_id}")
+            self.logger.info(f"[manager] Unchanged: {book_id}")
             return
         
-        document = book.model_dump(mode="json") if book else {"bts_id": session.resource_id}
+        document = book.model_dump(mode="json") if book else {"bts_id": book_id}
         timestamp = datetime.now(timezone.utc)
         document["crawl_metadata"] = {
             "timestamp": timestamp,
             "status": "success" if book else "failed",
-            "source_url": session.resource_url,
+            "source_url": book_url,
             "etag": etag
         }
 
@@ -196,22 +208,22 @@ class Manager:
         )
 
         if not self.is_scheduler:
-            self.logger.info(f"[manager] Pushed to storage: {session.resource_id}")
+            self.logger.info(f"[manager] Pushed to storage: {book_id}")
         else:
             if result.did_upsert:
-                self.logger.info(f"[manager] Book added: {session.resource_id}")
+                self.logger.info(f"[manager] Book added: {book_id}")
                 event = "add"
                 self.daily_change_report["summary"]["added"] += 1
                 changes = {}
             else:
-                self.logger.info(f"[manager] Book updated: {session.resource_id}")
+                self.logger.info(f"[manager] Book updated: {book_id}")
                 event = "update"
                 self.daily_change_report["summary"]["updated"] += 1
                 changes = self._get_update_changes(book.model_dump(mode="json"))
             self.daily_change_report["summary"]["total"] += 1
 
             changelog_doc = {
-                "bts_id": session.resource_id,
+                "bts_id": book_id,
                 "event": event,
                 "timestamp": timestamp,
                 "changes": changes
@@ -222,10 +234,10 @@ class Manager:
             self.daily_change_report["changelog"].append(changelog_doc)
                 
             try:
-                await asyncio.to_thread(send_alert_email, event, session.resource_id)
-                self.logger.info(f"[manager] Alert email sent for {event} event: {session.resource_id}")
+                await asyncio.to_thread(send_alert_email, event, book_id)
+                self.logger.info(f"[manager] Alert email sent for {event} event: {book_id}")
             except Exception as exc:
-                self.logger.warning(f"[manager] Failed to send alert email for {session.resource_id}: {repr(exc)}")
+                self.logger.warning(f"[manager] Failed to send alert email for {book_id}: {repr(exc)}")
 
     def _get_update_changes(self, book: dict):
         changes = {}
