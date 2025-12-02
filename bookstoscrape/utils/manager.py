@@ -91,7 +91,7 @@ class Manager:
                                             resource_url=f"{ss.BASE_URL}/page-{i}.html"
                                         )
                                         await self.queue.put(page_session)
-                                        self.run_state[page_session.sid] = asdict(page_session)
+                                        self.crawler_state[page_session.sid] = asdict(page_session)
 
                             for url in book_urls:
                                 book_id = extract_id_from_book_url(url)
@@ -102,7 +102,7 @@ class Manager:
                                     resource_url=url,
                                 )
                                 await self.queue.put(book_session)
-                                self.run_state[book_session.sid] = asdict(book_session)
+                                self.crawler_state[book_session.sid] = asdict(book_session)
                         else:
                             if self.is_scheduler:  # Retrieve last etag for the book
                                 stored_book = self.stored_books.get(session.resource_id)
