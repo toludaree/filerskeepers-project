@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 from pymongo import AsyncMongoClient
 from dotenv import load_dotenv
 
@@ -7,6 +8,7 @@ load_dotenv()
 
 # crawler, scheduler
 BASE_URL = "https://books.toscrape.com/catalogue"
+BASE_FOLDER = Path("bookstoscrape")
 PROXY = None
 REQUEST_TIMEOUT_SECONDS = 5
 QUEUE_WAIT_TIMEOUT_SECONDS = 5
@@ -34,7 +36,6 @@ BOOK_RATING_MAPPER = {
     "Four": 4,
     "Five": 5
 }
-SNAPSHOT_FOLDER_PATH = "bookstoscrape/snapshots"
 MONGODB_CONNECTION_URI = os.getenv("MONGODB_CONNECTION_URI")
 MONGODB_DB = os.getenv("MONGODB_DB")
 MONGODB_BOOK_COLLECTION = os.getenv("MONGODB_BOOK_COLLECTION")

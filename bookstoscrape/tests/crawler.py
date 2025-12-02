@@ -3,13 +3,15 @@ import unittest
 
 from ..crawler import process
 from ..crawler.models import Book
+from ..settings import BASE_FOLDER
 
 
 class TestProcess(unittest.TestCase):
 
-    with open("bookstoscrape/tests/assets/page1.html", "rb") as f1:
+    test_asset_folder = BASE_FOLDER / "tests" / "assets"
+    with open(test_asset_folder / "page1.html", "rb") as f1:
         page1 = f1.read()
-    with open("bookstoscrape/tests/assets/page2.html", "rb") as f2:
+    with open(test_asset_folder / "page2.html", "rb") as f2:
         page2 = f2.read()
     page1_soup = BeautifulSoup(page1, "html.parser")
     page2_soup = BeautifulSoup(page2, "html.parser")
@@ -59,13 +61,13 @@ class TestProcess(unittest.TestCase):
         "https://books.toscrape.com/catalogue/rat-queens-vol-3-demons-rat-queens-collected-editions-11-15_921/index.html",
     ]
 
-    with open("./bookstoscrape/tests/assets/book1.html", "rb") as f1:
+    with open(test_asset_folder / "book1.html", "rb") as f1:
         book1 = f1.read()
-    with open("./bookstoscrape/tests/assets/book2.html", "rb") as f2:
+    with open(test_asset_folder / "book2.html", "rb") as f2:
         book2 = f2.read()
-    with open("./bookstoscrape/tests/assets/book3.html", "rb") as f3:
+    with open(test_asset_folder / "book3.html", "rb") as f3:
         book3 = f3.read()
-    with open("./bookstoscrape/tests/assets/book4.html", "rb") as f3:
+    with open(test_asset_folder / "book4.html", "rb") as f3:
         book4 = f3.read()
     book1_soup = BeautifulSoup(book1, "html.parser")
     book2_soup = BeautifulSoup(book2, "html.parser")

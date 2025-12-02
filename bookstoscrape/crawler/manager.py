@@ -43,9 +43,9 @@ class Manager:
         self.stored_books = {}  # Books already in the db from past crawler runs; used in scheduler runs
         if self.is_scheduler:
             current_date = str(datetime.now().date()).replace("-", "")
-            self.snapshot_folder = Path(f"{ss.SNAPSHOT_FOLDER_PATH}/scheduler/{current_date}")
+            self.snapshot_folder = ss.BASE_FOLDER / "snapshots" / "scheduler" / current_date
         else:
-            self.snapshot_folder = Path(f"{ss.SNAPSHOT_FOLDER_PATH}/crawler")
+            self.snapshot_folder = ss.BASE_FOLDER / "snapshots" / "crawler"
         self.snapshot_folder.mkdir(parents=True, exist_ok=True)
     
     # Put in scheduler job code
