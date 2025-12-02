@@ -4,6 +4,7 @@ import unittest
 from ..crawler import process
 from ..crawler.models import Book
 from ..settings import BASE_FOLDER
+from ..utils.crawler import extract_id_from_book_url
 
 
 class TestProcess(unittest.TestCase):
@@ -329,4 +330,18 @@ class TestProcess(unittest.TestCase):
         self.assertEqual(
             process.extract_book_rating(self.book2_article_tag),
             "Two"
+        )
+
+class TestUtils(unittest.TestCase):
+
+    def test__extract_id_from_book_url_1(self):
+        self.assertEqual(
+            extract_id_from_book_url("https://books.toscrape.com/catalogue/soumission_998/index.html"),
+            998
+        )
+
+    def test__extract_id_from_book_url_2(self):
+        self.assertEqual(
+            extract_id_from_book_url("https://books.toscrape.com/catalogue/starving-hearts-triangular-trade-trilogy-1_990/index.html"),
+            990
         )
