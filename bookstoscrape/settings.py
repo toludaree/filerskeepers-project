@@ -48,13 +48,12 @@ MONGODB_CRAWLER_STATE_COLLECTION = os.getenv("MONGODB_CRAWLER_STATE_COLLECTION")
 CHANGE_DETECTION_FIELDS = {
     "_id": 0,
     "bts_id": 1,
-    "price_excluding_tax": 1,
-    "price_including_tax": 1,
+    "price": 1,
+    "tax": 1,
     "stock_count": 1,
     "review_count": 1,
     "rating": 1,
     "crawl_metadata.etag": 1,
-    "crawl_metadata.source_url": 1
 }
 JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY")
 JWT_ALGORITHM = os.getenv("JWT_ALGORITHM", "HS256")

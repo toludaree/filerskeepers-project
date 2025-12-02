@@ -55,10 +55,7 @@ async def bts_crawler(
         task = asyncio.create_task(manager.worker(f"w{i+1}"))
         manager.workers.append(task)
 
-    worker_results = await asyncio.gather(*manager.workers, return_exceptions=True)
-    for wid, result in enumerate(worker_results):
-        if isinstance(result, Exception):
-            manager.logger.info(f"[manager] ❌ Worker w{wid} ended with exception: {repr(result)}")
+    await asyncio.gather(*manager.workers, return_exceptions=True)
 
     await manager.crawler_state_collection.drop()
     if manager.crawler_state:

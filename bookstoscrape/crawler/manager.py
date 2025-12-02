@@ -44,11 +44,6 @@ class Manager:
         else:
             self.snapshot_folder = ss.BASE_FOLDER / "snapshots" / "crawler"
         self.snapshot_folder.mkdir(parents=True, exist_ok=True)
-    
-    # Put in scheduler job code
-    async def get_current_books(self):
-        async for book in self.book_collection.find({}, ss.CHANGE_DETECTION_FIELDS):
-            self.stored_books[book["bts_id"]] = book
 
     async def worker(self, wid: int):
         while not self.shutdown_event.is_set():
@@ -192,8 +187,10 @@ class Manager:
             )
             self.logger.info(f"[manager] Pushed to storage: {session.sid}")
         else:
+            # replace_one still seems better than update_one in this case because
+            # the $set and $setOnInsert fields are not fixed.
             update_record = await self.book_collection.replace_one(
-                filter={"crawl_metadata.source_url": session.resource_url},
+                filter={"bts_id": session.resource_id},
                 replacement=document,
                 upsert=True
             )
@@ -204,7 +201,7 @@ class Manager:
             else:
                 self.logger.info(f"[manager] Book updated: {session.sid}")
                 event = "update"
-                changes = self.get_update_changes(book.model_dump(mode="json"))
+                changes = self._get_update_changes(book.model_dump(mode="json"))
             await self.changelog_collection.insert_one({
                 "bts_id": session.sid,
                 "event": event,
@@ -212,9 +209,9 @@ class Manager:
                 "changes": changes
             })
 
-    def get_update_changes(self, book: dict):
+    def _get_update_changes(self, book: dict):
         changes = {}
-        old_version: dict = self.current_books[book["bts_id"]]
+        old_version: dict = self.stored_books[book["bts_id"]]
 
         for k in old_version.keys():
             if k in ("bts_id", "crawl_metadata"):

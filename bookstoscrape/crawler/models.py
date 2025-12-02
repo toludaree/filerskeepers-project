@@ -5,7 +5,7 @@ from typing import Literal, Optional
 
 @dataclass
 class Session:
-    sid: str
+    sid: str  # session id
     resource_id: int
     resource_type: Literal["page", "book"]
     resource_url: str

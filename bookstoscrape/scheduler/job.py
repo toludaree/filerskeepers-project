@@ -1,32 +1,36 @@
 import asyncio
-import logging
+from dataclasses import asdict
 from typing import Literal
 
-from ..settings import BASE_URL
-from ..utils.manager import Manager
-from ..utils.models import PageSession
+from .. import settings as ss
+from ..crawler.manager import Manager
+from ..crawler.models import Session
+from ..utils.common import setup_logging
 
-
-logging.basicConfig(level=logging.INFO)
 
 async def bts_scheduler(
-    worker_count: int = 5,
-    max_retry_count: int = 3,
     env: Literal["dev", "prod"] = "dev"
 ):
-    logger = logging.getLogger(__name__)
-    manager = Manager(env=env, logger=logger, crawler=False, max_retry_count=max_retry_count)
-    await manager.get_current_books()
-    await manager.queue.put(PageSession(
-        sid=1,
-        page_url=f"{BASE_URL}/page-1.html",
-        first_page=True
-    ))
+    logger = setup_logging("scheduler")
+    manager = Manager(env, logger, is_scheduler=True)
+    
+    # Retrieve stored books from collection
+    async for book in manager.book_collection.find({}, ss.CHANGE_DETECTION_FIELDS):
+        manager.stored_books[book["bts_id"]] = book
 
-    for i in range(worker_count):
+    first_page_session = Session(
+        sid="p1",
+        resource_id=1,
+        resource_type="page",
+        resource_url=f"{ss.BASE_URL}/page-1.html"
+    )
+    await manager.queue.put(first_page_session)
+    manager.crawler_state[first_page_session.sid] = asdict(first_page_session)
+
+    for i in range(ss.WORKER_COUNT):
         task = asyncio.create_task(manager.worker(f"w{i+1}"))
         manager.workers.append(task)
-    
-    await manager.queue.join()
-    await manager.mongodb_client.close()
-    await manager.cancel_workers()
+
+    await asyncio.gather(*manager.workers, return_exceptions=True)
+
+    await manager.close_db_client()
