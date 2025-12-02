@@ -4,3 +4,4 @@
 - Consider notifying user if category is not in the list of known categories
 - Change bookstoscrape_scraper to bts_scraper
 - I don't think it is wise to give etag a null value if retry_count maxes and I want to store what I have gotten.
+- Possible email on processing errors
