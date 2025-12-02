@@ -3,9 +3,9 @@ from bs4 import BeautifulSoup, Tag
 from typing import Literal, Optional
 from urllib.parse import urljoin
 
+from ..settings import BOOK_RATING_MAPPER
 from .exceptions import ProcessingError
 from .models import Book
-from ...settings import BOOK_RATING_MAPPER
 
 
 def process_page(page: bytes, page_url: str) -> tuple[int, list[str]]:

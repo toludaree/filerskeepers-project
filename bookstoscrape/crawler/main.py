@@ -5,8 +5,8 @@ from pymongo import IndexModel
 from typing import Literal
 
 from ..settings import BASE_URL
-from ..utils.crawler.manager import Manager
-from ..utils.crawler.models import Session
+from .manager import Manager
+from .models import Session
 
 
 logging.basicConfig(level=logging.INFO)

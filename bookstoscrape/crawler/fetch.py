@@ -5,7 +5,7 @@ from typing import Optional
 
 from .models import Book
 from .process import process_page, process_book
-from ...settings import BROWSER_HEADERS
+from ..settings import BROWSER_HEADERS
 
 
 async def fetch_page(client: AsyncClient, page_url: str) -> tuple[int, list[str]]:

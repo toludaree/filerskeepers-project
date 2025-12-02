@@ -8,8 +8,8 @@ from pathlib import Path
 from pymongo import AsyncMongoClient
 from typing import Literal, Optional
 
-from ... import settings as ss
-from .common import extract_id_from_book_url
+from .. import settings as ss
+from ..utils.crawler import extract_id_from_book_url
 from .exceptions import ProcessingError
 from .fetch import fetch_page, fetch_book
 from .models import Book, Session

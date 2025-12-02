@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
 import unittest
 
-from ..utils.crawler import process
-from ..utils.crawler.models import Book
+from ..crawler import process
+from ..crawler.models import Book
 
 
 class TestProcess(unittest.TestCase):
