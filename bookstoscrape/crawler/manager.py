@@ -4,7 +4,6 @@ from dataclasses import asdict
 from datetime import datetime, timezone
 from httpx import AsyncClient, HTTPError
 from logging import Logger
-from pathlib import Path
 from pymongo import AsyncMongoClient
 from typing import Literal, Optional
 

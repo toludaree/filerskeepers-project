@@ -1,7 +1,6 @@
 import asyncio
 import json
 from dataclasses import asdict
-from datetime import datetime
 from typing import Literal
 
 from .. import settings as ss
@@ -44,6 +43,7 @@ async def bts_scheduler(
 
     await asyncio.gather(*manager.workers, return_exceptions=True)
 
+    # Store daily report
     with open(reports_path / f"{manager.current_date.replace("-", "")}.json", "w") as f:
         json.dump(manager.daily_change_report, f)
 
