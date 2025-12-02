@@ -14,6 +14,9 @@ async def bts_scheduler(
 ):
     logger = setup_logging("scheduler")
     manager = Manager(env, logger, is_scheduler=True)
+
+    manager.logger.info(f"[manager] BEGIN RUN")
+    manager.logger.info(f"[manager] Run parameters: env={env}")
     
     # Retrieve stored books from collection
     async for book in manager.book_collection.find({}, ss.CHANGE_DETECTION_FIELDS):
@@ -48,3 +51,5 @@ async def bts_scheduler(
         json.dump(manager.daily_change_report, f)
 
     await manager.close_db_client()
+
+    manager.logger.info("[manager] END RUN")

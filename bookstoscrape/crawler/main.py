@@ -16,6 +16,9 @@ async def bts_crawler(
 ):
     logger = setup_logging(run_type="crawler")
     manager = Manager(env, logger)
+
+    manager.logger.info("[manager] BEGIN RUN")
+    manager.logger.info(f"[manager] Run parameters: env={env}, restart={restart}")
     
     if restart:
         await manager.book_collection.drop()
@@ -61,6 +64,8 @@ async def bts_crawler(
     if manager.crawler_state:
         await manager.crawler_state_collection.insert_many(manager.crawler_state.values())
     await manager.close_db_client()
+
+    manager.logger.info("[manager] END RUN")
 
 def cli():
     parser = build_cli_parser()
