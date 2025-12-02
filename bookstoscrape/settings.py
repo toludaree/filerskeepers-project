@@ -55,7 +55,6 @@ CHANGE_DETECTION_FIELDS = {
     "rating": 1,
     "crawl_metadata.etag": 1,
 }
-GENERATE_DAILY_REPORT = True
 EMAIL_SENDER = os.getenv("EMAIL_SENDER")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 EMAIL_SMTP_SERVER = os.getenv("EMAIL_SMTP_SERVER")

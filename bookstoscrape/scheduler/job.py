@@ -20,18 +20,14 @@ async def bts_scheduler(
     async for book in manager.book_collection.find({}, ss.CHANGE_DETECTION_FIELDS):
         manager.stored_books[book["bts_id"]] = book
 
-    current_date = datetime.now().strftime("%Y-%m-%d")
-    manager.logger.info(f"Current date type: {type(current_date)}")
-    if ss.GENERATE_DAILY_REPORT:
-        manager.daily_change_report = {
-            "report_date": current_date,
-            "summary": {
-                "added": 0,
-                "updated": 0,
-                "total": 0
-            },
-            "changelog": []
-        }
+    # Initialize daily report
+    reports_path = ss.BASE_FOLDER / "reports"
+    reports_path.mkdir(exist_ok=True)
+    manager.daily_change_report = {
+        "report_date": manager.current_date,
+        "summary": {"added": 0, "updated": 0, "total": 0},
+        "changelog": []
+    }
 
     first_page_session = Session(
         sid="p1",
@@ -48,10 +44,7 @@ async def bts_scheduler(
 
     await asyncio.gather(*manager.workers, return_exceptions=True)
 
-    if ss.GENERATE_DAILY_REPORT:
-        report_path = ss.BASE_FOLDER / "reports"
-        report_path.mkdir(exist_ok=True)
-        with open(report_path / f"{current_date.replace("-", "")}.json", "w") as f:
-            json.dump(manager.daily_change_report, f)
+    with open(reports_path / f"{manager.current_date.replace("-", "")}.json", "w") as f:
+        json.dump(manager.daily_change_report, f)
 
     await manager.close_db_client()

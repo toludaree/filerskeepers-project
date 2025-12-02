@@ -37,14 +37,16 @@ class Manager:
         self.changelog_collection = db[ss.MONGODB_CHANGELOG_COLLECTION]
         self.crawler_state_collection = db[ss.MONGODB_CRAWLER_STATE_COLLECTION]
 
+        self.current_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
         self.crawler_state = {}  # Save to database if run ends prematurely
-        self.stored_books = {}  # Books already in the db from past crawler runs; used in scheduler runs
+        
         if self.is_scheduler:
-            current_date = datetime.now().strftime("%Y%m%d")
-            self.snapshot_folder = ss.BASE_FOLDER / "snapshots" / "scheduler" / current_date
+            self.snapshot_folder = ss.BASE_FOLDER / "snapshots" / "scheduler" / self.current_date.replace("-", "")
         else:
             self.snapshot_folder = ss.BASE_FOLDER / "snapshots" / "crawler"
         self.snapshot_folder.mkdir(parents=True, exist_ok=True)
+        
+        self.stored_books = {}  # Books already in the db from past crawler runs; used in scheduler runs
         self.daily_change_report = None  # Used in scheduler runs
 
     async def worker(self, wid: int):
@@ -170,7 +172,7 @@ class Manager:
 
     async def _push_to_storage(self, session: Session, etag: Optional[str], book: Optional[Book]):
         if self.is_scheduler and (not book):  # Book hasn't been updated
-            self.logger.info(f"[manager] Unchanged: {session.sid}")
+            self.logger.info(f"[manager] Unchanged: {session.resource_id}")
             return
         
         document = book.model_dump(mode="json") if book else {"bts_id": session.resource_id}
@@ -182,34 +184,32 @@ class Manager:
             "etag": etag
         }
 
+        # replace_one works for both normal crawler and scheduler runs.
+        # In a normal crawler run, we want to prevent duplicate key error on bts_id
+        # when failed crawls, stored in the book collection, are retried through restart=False.
+        # For scheduler runs, update_one is not ideal since the $set and $setOnInsert fields
+        # are not fixed.
+        result = await self.book_collection.replace_one(
+            filter={"bts_id": document["bts_id"]},
+            replacement=document,
+            upsert=True
+        )
+
         if not self.is_scheduler:
-            # Use replace_one instead of insert_one to avoid possible duplicate key error on bts_id.
-            # The error can occur because while a crawl that fails is stored in the book collection,
-            # it is not removed from the crawler state. It will be tried again if the user runs the
-            # crawler with restart=False.
-            await self.book_collection.replace_one(
-                filter={"bts_id": document["bts_id"]},
-                replacement=document,
-                upsert=True
-            )
-            self.logger.info(f"[manager] Pushed to storage: {session.sid}")
+            self.logger.info(f"[manager] Pushed to storage: {session.resource_id}")
         else:
-            # replace_one still seems better than update_one in this case because
-            # the $set and $setOnInsert fields are not fixed.
-            update_record = await self.book_collection.replace_one(
-                filter={"bts_id": session.resource_id},
-                replacement=document,
-                upsert=True
-            )
-            if update_record.did_upsert:
-                self.logger.info(f"[manager] Book added: {session.sid}")
+            if result.did_upsert:
+                self.logger.info(f"[manager] Book added: {session.resource_id}")
                 event = "add"
+                self.daily_change_report["summary"]["added"] += 1
                 changes = {}
             else:
-                self.logger.info(f"[manager] Book updated: {session.sid}")
+                self.logger.info(f"[manager] Book updated: {session.resource_id}")
                 event = "update"
+                self.daily_change_report["summary"]["updated"] += 1
                 changes = self._get_update_changes(book.model_dump(mode="json"))
-            
+            self.daily_change_report["summary"]["total"] += 1
+
             changelog_doc = {
                 "bts_id": session.resource_id,
                 "event": event,
@@ -217,20 +217,15 @@ class Manager:
                 "changes": changes
             }
             await self.changelog_collection.insert_one(dict(changelog_doc))
-            if ss.GENERATE_DAILY_REPORT:
-                self.daily_change_report["summary"]["total"] += 1
-                if event == "add":
-                    self.daily_change_report["summary"]["added"] += 1
-                else:
-                    self.daily_change_report["summary"]["updated"] += 1
-                changelog_doc["timestamp"] = changelog_doc["timestamp"].strftime("%Y-%m-%d %H:%M:%S")
-                self.daily_change_report["changelog"].append(changelog_doc)
+
+            changelog_doc["timestamp"] = changelog_doc["timestamp"].strftime("%Y-%m-%d %H:%M:%S")
+            self.daily_change_report["changelog"].append(changelog_doc)
                 
             try:
                 await asyncio.to_thread(send_alert_email, event, session.resource_id)
-                self.logger.info(f"[manager] Alert email sent for {event} event: {session.sid}")
+                self.logger.info(f"[manager] Alert email sent for {event} event: {session.resource_id}")
             except Exception as exc:
-                self.logger.warning(f"[manager] Failed to send alert email for {session.sid}: {repr(exc)}")
+                self.logger.warning(f"[manager] Failed to send alert email for {session.resource_id}: {repr(exc)}")
 
     def _get_update_changes(self, book: dict):
         changes = {}
