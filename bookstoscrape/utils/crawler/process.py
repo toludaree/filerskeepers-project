@@ -5,7 +5,7 @@ from urllib.parse import urljoin
 
 from .exceptions import ProcessingError
 from .models import Book
-from ..settings import BOOK_RATING_MAPPER
+from ...settings import BOOK_RATING_MAPPER
 
 
 def process_page(page: bytes, page_url: str) -> tuple[int, list[str]]:
