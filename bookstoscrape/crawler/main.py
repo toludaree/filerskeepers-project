@@ -5,6 +5,7 @@ from typing import Literal
 
 from ..settings import BASE_URL, WORKER_COUNT
 from ..utils.common import setup_logging
+from ..utils.crawler import build_cli_parser
 from .manager import Manager
 from .models import Session
 
@@ -63,3 +64,12 @@ async def bts_crawler(
     if manager.crawler_state:
         await manager.crawler_state_collection.insert_many(manager.crawler_state.values())
     await manager.close_db_client()
+
+def cli():
+    parser = build_cli_parser()
+    args = parser.parse_args()
+    asyncio.run(bts_crawler(env=args.env, restart=args.restart))
+
+
+if __name__ == "__main__":
+    cli()
