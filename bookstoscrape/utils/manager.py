@@ -131,10 +131,12 @@ class Manager:
                                 self.logger.info(f"[{worker_log_id}] Saving with failed status...")
                                 await self._push_to_storage(session, None, None)
                         await self.track_run_status(False)
-                        continue
 
-                    except ProcessingError as exc:
+                    except ProcessingError as exc:  # No retry on processing errors
                         self.logger.exception(f"[{worker_log_id}] ❌ {repr(exc)}")
+                        if (session.resource_type == "book") and (not self.is_scheduler):
+                            self.logger.info(f"[{worker_log_id}] Saving with failed status...")
+                            await self._push_to_storage(session, None, None)
                         await self.track_run_status(False)
 
             except Exception as exc:
