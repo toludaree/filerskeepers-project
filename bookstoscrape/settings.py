@@ -5,9 +5,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# crawler, scheduler
 BASE_URL = "https://books.toscrape.com/catalogue"
 PROXY = None
-REQUEST_TIMEOUT = 5
+REQUEST_TIMEOUT_SECONDS = 5
+QUEUE_WAIT_TIMEOUT_SECONDS = 5
 BROWSER_HEADERS = {
     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
     "accept-encoding": "gzip, deflate, br, zstd",
@@ -32,13 +34,13 @@ BOOK_RATING_MAPPER = {
     "Four": 4,
     "Five": 5
 }
+SNAPSHOT_FOLDER_PATH = "bookstoscrape/snapshots"
 MONGODB_CONNECTION_URI = os.getenv("MONGODB_CONNECTION_URI")
 MONGODB_DB = os.getenv("MONGODB_DB")
 MONGODB_BOOK_COLLECTION = os.getenv("MONGODB_BOOK_COLLECTION")
 MONGODB_CHANGELOG_COLLECTION = os.getenv("MONGODB_CHANGELOG_COLLECTION")
-
-ASYNC_MONGODB_DB = AsyncMongoClient(MONGODB_CONNECTION_URI, timeoutMs=5000)[MONGODB_DB]
-
+MONGODB_CRAWLER_STATE_COLLECTION = os.getenv("MONGODB_CRAWLER_STATE_COLLECTION")
+# ASYNC_MONGODB_DB = AsyncMongoClient(MONGODB_CONNECTION_URI, timeoutMs=5000)[MONGODB_DB]
 CHANGE_DETECTION_FIELDS = {
     "_id": 0,
     "bts_id": 1,
