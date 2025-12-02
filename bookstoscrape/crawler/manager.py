@@ -63,7 +63,7 @@ class Manager:
                     )
                 except asyncio.TimeoutError:
                     if not self.shutdown_event.is_set():
-                        self.logger.info(f"[manager] No new queue entry for {ss.QUEUE_WAIT_TIMEOUT_SECONDS} seconds.")
+                        self.logger.info(f"[manager] No new queue entry for {ss.QUEUE_WAIT_TIMEOUT_SECONDS} seconds...")
                         self.logger.info("[manager] Shutting down workers...")
                         self.shutdown_event.set()
                     continue
@@ -103,6 +103,8 @@ class Manager:
                                 )
                                 await self.queue.put(book_session)
                                 self.crawler_state[book_session.sid] = asdict(book_session)
+                            
+                            self.logger.info(f"{worker_log_id} Processed page successfully")
                         else:
                             if self.is_scheduler:  # Retrieve last etag for the book
                                 stored_book = self.stored_books.get(session.resource_id)
@@ -120,11 +122,11 @@ class Manager:
                         await self.track_run_status(True)
 
                     except HTTPError as exc:
-                        self.logger.warning(f"[{worker_log_id}] ❌ {repr(exc)}")
+                        self.logger.warning(f"[{worker_log_id}] Error: {repr(exc)}")
                         if session.retry_count < self.max_retry_count:
                             session.retry_count += 1
                             await self.queue.put(session)
-                            self.logger.info(f"[{worker_log_id}] 🤞 Queued for retry")
+                            self.logger.info(f"[{worker_log_id}] Queued for retry")
                         else:
                             self.logger.warning(f"[{worker_log_id}] Retry limit reached")
                             if (session.resource_type == "book") and (not self.is_scheduler):
@@ -133,14 +135,14 @@ class Manager:
                         await self.track_run_status(False)
 
                     except ProcessingError as exc:  # No retry on processing errors
-                        self.logger.exception(f"[{worker_log_id}] ❌ {repr(exc)}")
+                        self.logger.exception(f"[{worker_log_id}] Error: {repr(exc)}")
                         if (session.resource_type == "book") and (not self.is_scheduler):
                             self.logger.info(f"[{worker_log_id}] Saving with failed status...")
                             await self._push_to_storage(session, None, None)
                         await self.track_run_status(False)
 
             except Exception as exc:
-                self.logger.exception(f"[{wid}] ❌ {repr(exc)}")
+                self.logger.exception(f"[{wid}] Error: {repr(exc)}")
                 await self.track_run_status(False)
             finally:
                 if session:
@@ -191,7 +193,7 @@ class Manager:
                 replacement=document,
                 upsert=True
             )
-            self.logger.info(f"[manager] ✔ Pushed to storage: {session.sid}")
+            self.logger.info(f"[manager] Pushed to storage: {session.sid}")
         else:
             update_record = await self.book_collection.replace_one(
                 filter={"crawl_metadata.source_url": session.resource_url},

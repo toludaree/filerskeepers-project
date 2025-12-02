@@ -1,15 +1,13 @@
 import asyncio
-import logging
 from dataclasses import asdict
 from pymongo import IndexModel
 from typing import Literal
 
 from ..settings import BASE_URL
+from ..utils.common import setup_logging
 from .manager import Manager
 from .models import Session
 
-
-logging.basicConfig(level=logging.INFO)
 
 async def bts_crawler(
     worker_count: int = 5,
@@ -18,7 +16,7 @@ async def bts_crawler(
     env: Literal["dev", "prod"] ="dev",
     restart: bool = True
 ):
-    logger = logging.getLogger(__name__)
+    logger = setup_logging(run_type="crawler")
     manager = Manager(env, logger, max_retry_count, max_consecutive_failures)
     
     if restart:

@@ -10,3 +10,4 @@ playground/
 storage_dev/
 .env
 snapshots/
+logs/
