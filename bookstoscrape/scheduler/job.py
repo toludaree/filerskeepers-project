@@ -4,8 +4,7 @@ from dataclasses import asdict
 from typing import Literal
 
 from .. import settings as ss
-from ..crawler.manager import Manager
-from ..crawler.models import Session
+from ..crawler.manager import Manager, Session
 from ..utils.common import setup_logger, cleanup_logger
 
 
