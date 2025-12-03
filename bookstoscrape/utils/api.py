@@ -17,18 +17,19 @@ from ..settings import (
     JWT_ALGORITHM, JWT_SECRET_KEY, MONGODB_CONNECTION_URI, MONGODB_DB,
     MONGODB_USERS_COLLECTION, MONGODB_API_KEYS_COLLECTION,
 )
-from .common import setup_logger, cleanup_logger
+from .common import setup_logger
 
 
 logger = setup_logger("api", add_file_handler=False, use_uvicorn_format=True)
-pl_ctx = CryptContext(schemes=["bcrypt"], deprecated="auto")
-oauth2 = OAuth2PasswordBearer(tokenUrl="/login")
 
 def rate_limit_func(request: Request):
     return request.headers.get("x-api-key")
 
 auth_limiter = Limiter(key_func=get_remote_address)
 api_limiter = Limiter(key_func=rate_limit_func)
+
+pl_ctx = CryptContext(schemes=["bcrypt"], deprecated="auto")  # passlib context
+oauth2 = OAuth2PasswordBearer(tokenUrl="/login")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -54,14 +55,13 @@ async def lifespan(app: FastAPI):
         if app.mongodb_client:
             await app.mongodb_client.close()
             logger.info("Database disconnected")
-        cleanup_logger("api")
 
 async def get_db(request: Request):
-    """Database dependency for endpoints"""
+    """Database dependency for endpoints."""
     return request.app.db
 
 def create_access_token(user_id: str, expires_mins: int = 15) -> str:
-    """Create access token for auth-based endpoints"""
+    """Create access token for auth-based endpoints."""
     current_time = time.time()
     
     payload = {
@@ -76,6 +76,7 @@ async def get_current_user(
     db: AsyncDatabase = Depends(get_db),
     token: str = Depends(oauth2)
 ):
+    """Dependency for auth endpoints."""
     try:
         payload = jwt.decode(token, key=JWT_SECRET_KEY, algorithms=[JWT_ALGORITHM])
         user_id = payload.get("sub")
@@ -98,6 +99,7 @@ async def require_api_key(
     db: AsyncDatabase = Depends(get_db),
     x_api_key: str = Header(...)
 ):
+    """Dependency for book endpoints."""
     key_collection = db[MONGODB_API_KEYS_COLLECTION]
 
     api_key = await key_collection.find_one(
