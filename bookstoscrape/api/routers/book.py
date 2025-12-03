@@ -110,11 +110,15 @@ async def get_book(
 async def get_changes(
     request: Request,
     events: Annotated[list[ChangelogEvent], Query()] = [],
-    start_date: Annotated[Optional[date], Query()] = None,
-    end_date: Annotated[Optional[date], Query()] = None,
+    start_date: Annotated[Optional[date], Query(example="2025-12-03")] = None,
+    end_date: Annotated[Optional[date], Query(example="2025-12-03")] = None,
     user_id: ObjectId = Depends(require_api_key),
     db: AsyncDatabase = Depends(get_db)
 ):
+    """
+    Get changes from the changelog collection
+        - Filter by events, start_date, and end_date
+    """
     try:
         changelog_collection = db[MONGODB_CHANGELOG_COLLECTION]
 

@@ -13,6 +13,7 @@ async def bts_crawler(
     env: Literal["dev", "prod"] ="dev",
     restart: bool = True
 ):
+    """BooksToScrape Crawler"""
     logger = setup_logger("crawler")
     manager = Manager(env, logger)
 

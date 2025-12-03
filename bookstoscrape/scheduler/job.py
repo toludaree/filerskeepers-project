@@ -11,6 +11,7 @@ from ..utils.common import setup_logger, cleanup_logger
 async def bts_scheduler(
     env: Literal["dev", "prod"] = "dev"
 ):
+    """BooksToScrape Scheduler Job"""
     logger = setup_logger("scheduler")
     manager = Manager(env, logger, is_scheduler=True)
 

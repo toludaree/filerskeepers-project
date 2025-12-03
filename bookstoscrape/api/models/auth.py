@@ -5,11 +5,11 @@ class UserData(BaseModel):
     email: EmailStr
     password: str
 
-class SignUpResponseSchema(BaseModel):
+class SignUp(BaseModel):
     message: str
 
-class LoginResponseSchema(BaseModel):
+class Login(BaseModel):
     access_token: str
 
-class GenerateApiKeyResponseSchema(BaseModel):
+class GenerateApiKey(BaseModel):
     key: str

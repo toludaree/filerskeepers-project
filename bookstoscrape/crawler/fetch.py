@@ -9,6 +9,10 @@ from ..settings import BROWSER_HEADERS
 
 
 async def fetch_page(client: AsyncClient, page_url: str) -> tuple[int, list[str]]:
+    """
+    Fetch a BooksToScrape page and return the book count
+    and book URLs on the page.
+    """
     page = await client.get(page_url, headers=BROWSER_HEADERS)
     page.raise_for_status()
     
@@ -21,7 +25,13 @@ async def fetch_book(
     client: AsyncClient,
     book_id: int, book_url: str,
     last_etag: Optional[str], snapshot_folder: Path
-) -> tuple[str, Book]:
+) -> tuple[str, Optional[Book]]:
+    """
+    Fetch a book page and return the etag and the processed Book model or None
+    if book page hasn't been modified.
+
+    Store the HTML snapshot in the process.
+    """
     headers = BROWSER_HEADERS | {"if-none-match": last_etag or ""}
     book_page = await client.get(book_url, headers=headers)
 

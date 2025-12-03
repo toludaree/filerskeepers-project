@@ -10,17 +10,14 @@ from ...utils.api import (
     auth_limiter, create_access_token, create_api_key, get_current_user,
     get_db, logger, pl_ctx
 )
-from ..models.auth import (
-    GenerateApiKeyResponseSchema, LoginResponseSchema, SignUpResponseSchema,
-    UserData,
-)
+from ..models.auth import GenerateApiKey, Login, SignUp, UserData
 
 
 router = APIRouter()
 
 @router.post(
     "/signup",
-    tags=["auth"], response_model=SignUpResponseSchema
+    tags=["auth"], response_model=SignUp
 )
 @auth_limiter.limit(AUTH_RATE_LIMIT)
 async def signup(
@@ -50,7 +47,7 @@ async def signup(
     
 @router.post(
     "/login",
-    tags=["auth"], response_model=LoginResponseSchema
+    tags=["auth"], response_model=Login
 )
 @auth_limiter.limit(AUTH_RATE_LIMIT)
 async def login(
@@ -77,7 +74,7 @@ async def login(
     
 @router.post(
     "/generate-api-key",
-    tags=["auth"], response_model=GenerateApiKeyResponseSchema
+    tags=["auth"], response_model=GenerateApiKey
 )
 @auth_limiter.limit(AUTH_RATE_LIMIT)
 async def generate_api_key(

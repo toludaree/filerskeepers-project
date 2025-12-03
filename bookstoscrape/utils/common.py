@@ -9,7 +9,10 @@ from enum import IntEnum
 from pydantic import BaseModel, HttpUrl
 from typing import Literal, Optional
 
-from .. import settings as ss
+from ..settings import (
+    ADMIN_EMAIL, BASE_FOLDER, EMAIL_PASSWORD, EMAIL_SENDER, EMAIL_SMTP_PORT,
+    EMAIL_SMTP_SERVER,
+)
 
 
 class Book(BaseModel):
@@ -75,7 +78,7 @@ def setup_logger(
     logger.addHandler(stdout_handler)
 
     if add_file_handler:
-        log_folder = ss.BASE_FOLDER / "logs"
+        log_folder = BASE_FOLDER / "logs"
         log_folder.mkdir(exist_ok=True)
         time_now = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
         log_file = log_folder / f"{name}_{time_now}.log"
@@ -95,12 +98,12 @@ def cleanup_logger(name: Literal["crawler", "scheduler"]):
 
 def send_email(subject: str, body: str):
     msg = MIMEMultipart()
-    msg["From"] = f"BooksToScrape <{ss.EMAIL_SENDER}>"
-    msg["To"] = ss.ADMIN_EMAIL
+    msg["From"] = f"BooksToScrape <{EMAIL_SENDER}>"
+    msg["To"] = ADMIN_EMAIL
     msg["Subject"] = subject
     msg.attach(MIMEText(body, "plain"))
 
-    with smtplib.SMTP(ss.EMAIL_SMTP_SERVER, ss.EMAIL_SMTP_PORT) as server:
+    with smtplib.SMTP(EMAIL_SMTP_SERVER, EMAIL_SMTP_PORT) as server:
         server.starttls()
-        server.login(ss.EMAIL_SENDER, ss.EMAIL_PASSWORD)
+        server.login(EMAIL_SENDER, EMAIL_PASSWORD)
         server.send_message(msg)
