@@ -56,6 +56,7 @@ CHANGE_DETECTION_FIELDS = {
     "bts_id": 1,
     "price": 1,
     "tax": 1,
+    "in_stock": 1,
     "stock_count": 1,
     "review_count": 1,
     "rating": 1,
