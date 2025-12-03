@@ -1,12 +1,17 @@
 from bson import ObjectId
+from datetime import date, datetime, timezone
 from fastapi import APIRouter, Depends, HTTPException, Request, Query
 from pymongo.asynchronous.database import AsyncDatabase
 from typing import Annotated, Optional
 
-from ...settings import API_RATE_LIMIT, MONGODB_BOOK_COLLECTION
+from ...settings import (
+    API_RATE_LIMIT, MONGODB_BOOK_COLLECTION, MONGODB_CHANGELOG_COLLECTION,
+)
 from ...utils.api import api_limiter, get_db, logger, require_api_key
 from ...utils.common import Book, Category, Rating
-from ..models.book import BooksOverview, SortBy, SortOrder
+from ..models.book import (
+    BooksOverview, Changelog, ChangelogEvent, SortBy, SortOrder,
+)
 
 
 router = APIRouter()
@@ -41,7 +46,7 @@ async def get_books(
         filters = {}
         if categories:
             filters["category"] = {"$in": categories}
-        if any((min_price, max_price)):
+        if min_price or max_price:
             filters["price"] = ({"$gte": min_price} if min_price else {}) | \
                                ({"$lte": max_price} if max_price else {})
         if ratings:
@@ -93,6 +98,49 @@ async def get_book(
         return book
     except HTTPException:
         raise
+    except Exception as exc:
+        logger.error(f"Unexpected error: {repr(exc)}")
+        raise HTTPException(500, detail=str(exc))
+    
+@router.get(
+    "/changes",
+    tags=["book"], response_model=Changelog
+)
+@api_limiter.limit(API_RATE_LIMIT)
+async def get_changes(
+    request: Request,
+    events: Annotated[list[ChangelogEvent], Query()] = [],
+    start_date: Annotated[Optional[date], Query()] = None,
+    end_date: Annotated[Optional[date], Query()] = None,
+    user_id: ObjectId = Depends(require_api_key),
+    db: AsyncDatabase = Depends(get_db)
+):
+    try:
+        changelog_collection = db[MONGODB_CHANGELOG_COLLECTION]
+
+        filters = {}
+        if events:
+            filters["event"] = {"$in": events}
+        if start_date or end_date:
+            filters["timestamp"] = {}
+            if start_date:
+                start_datetime = datetime.combine(start_date, datetime.min.time())
+                start_datetime = start_datetime.replace(tzinfo=timezone.utc)
+                filters["timestamp"]["$gte"] = start_datetime
+            if end_date:
+                end_datetime = datetime.combine(end_date, datetime.max.time())
+                end_datetime = end_datetime.replace(tzinfo=timezone.utc)
+                filters["timestamp"]["$lte"] = end_datetime
+
+        changelog = await changelog_collection.find(
+            filter=filters,
+            projection={"_id": 0},
+            sort=[("timestamp", -1), ("bts_id", 1)]
+        ).to_list()
+        for log in changelog:
+            log["timestamp"] = log["timestamp"].strftime("%Y-%m-%d %H:%M:%S")
+
+        return {"changes": changelog}
     except Exception as exc:
         logger.error(f"Unexpected error: {repr(exc)}")
         raise HTTPException(500, detail=str(exc))

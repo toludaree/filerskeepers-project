@@ -18,3 +18,14 @@ class BookOverview(BaseModel):
 
 SortBy = Literal["rating", "price", "review_count"]
 SortOrder = Literal["asc", "desc"]
+
+class Changelog(BaseModel):
+    changes: list[Change]
+
+class Change(BaseModel):
+    bts_id: int
+    event: ChangelogEvent
+    timestamp: str
+    changes: dict
+    
+ChangelogEvent = Literal["add", "update"]
