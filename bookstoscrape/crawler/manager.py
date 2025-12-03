@@ -1,6 +1,6 @@
 import asyncio
 import math
-from dataclasses import asdict
+from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
 from httpx import AsyncClient, HTTPError
 from logging import Logger
@@ -8,12 +8,20 @@ from pymongo import AsyncMongoClient
 from typing import Literal, Optional
 
 from .. import settings as ss
+from ..utils.common import Book
 from ..utils.crawler import extract_id_from_book_url
 from ..utils.scheduler import send_alert_email
 from .exceptions import ProcessingError
 from .fetch import fetch_page, fetch_book
-from .models import Book, Session
 
+
+@dataclass
+class Session:
+    sid: str  # session id
+    resource_id: int
+    resource_type: Literal["page", "book"]
+    resource_url: str
+    retry_count: int = 0
 
 class Manager:
     def __init__(

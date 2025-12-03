@@ -3,7 +3,7 @@ from httpx import AsyncClient
 from pathlib import Path
 from typing import Optional
 
-from .models import Book
+from ..utils.common import Book
 from .process import process_page, process_book
 from ..settings import BROWSER_HEADERS
 

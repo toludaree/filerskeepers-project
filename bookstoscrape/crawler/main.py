@@ -6,8 +6,7 @@ from typing import Literal
 from ..settings import BASE_URL, WORKER_COUNT
 from ..utils.common import setup_logger, cleanup_logger
 from ..utils.crawler import build_cli_parser
-from .manager import Manager
-from .models import Session
+from .manager import Session, Manager
 
 
 async def bts_crawler(

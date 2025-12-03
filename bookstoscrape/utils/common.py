@@ -1,43 +1,88 @@
+from __future__ import annotations
 import logging
 import smtplib
 import time
 from datetime import datetime, timezone
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from typing import Literal
+from enum import IntEnum
+from pydantic import BaseModel, HttpUrl
+from typing import Literal, Optional
 
 from .. import settings as ss
 
-def setup_logger(name: Literal["crawler", "scheduler"]):
-    log_folder = ss.BASE_FOLDER / "logs"
-    log_folder.mkdir(exist_ok=True)
 
+class Book(BaseModel):
+    bts_id: int
+    name: str
+    description: Optional[str]
+    url: HttpUrl
+    category: Category
+    upc: str
+    price: float
+    tax: float
+    in_stock: bool
+    stock_count: int
+    review_count: int
+    cover_image_url: HttpUrl
+    rating: Rating
+
+class Rating(IntEnum):
+    ONE = 1
+    TWO = 2
+    THREE = 3
+    FOUR = 4
+    FIVE = 5
+
+Category = Literal[
+    "Travel", "Mystery", "Historical Fiction", "Sequential Art", "Classics",
+    "Philosophy", "Romance", "Women's Fiction", "Fiction", "Childrens",
+    "Religion", "Nonfiction", "Music", "Default", "Science Fiction",
+    "Sports and Games", "Add a comment", "Fantasy", "New Adult",
+    "Young Adult", "Science", "Poetry", "Paranormal", "Art", "Psychology",
+    "Autobiography", "Parenting", "Adult Fiction", "Humor", "Horror",
+    "History", "Food and Drink", "Christian Fiction", "Business", "Biography",
+    "Thriller", "Contemporary", "Spirituality", "Academic", "Self Help",
+    "Historical", "Christian", "Suspense", "Short Stories", "Novels",
+    "Health", "Politics", "Cultural", "Erotica", "Crime",
+]
+
+def setup_logger(
+    name: Literal["crawler", "scheduler", "api"],
+    add_file_handler: bool = True,
+    use_uvicorn_format: bool = False
+):
     logger = logging.getLogger(name)
     logger.setLevel(logging.INFO)
 
     logger.handlers.clear()
 
-    # Stdout handler
+    # Formatter
+    if use_uvicorn_format:
+        formatter = logging.Formatter(
+            fmt="%(levelname)s      %(message)s"
+        )
+    else:
+        formatter = logging.Formatter(
+            fmt="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+            datefmt="%Y-%m-%d %H:%M:%S"
+        )
+        formatter.converter = time.gmtime
+
     stdout_handler = logging.StreamHandler()
     stdout_handler.setLevel(logging.INFO)
-
-    # File handler
-    time_now = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
-    log_file = log_folder / f"{name}_{time_now}.log"
-    file_handler = logging.FileHandler(log_file)
-    file_handler.setLevel(logging.INFO)
-
-    # Formatter
-    formatter = logging.Formatter(
-        fmt="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-        datefmt="%Y-%m-%d %H:%M:%S"
-    )
-    formatter.converter = time.gmtime
     stdout_handler.setFormatter(formatter)
-    file_handler.setFormatter(formatter)
-
     logger.addHandler(stdout_handler)
-    logger.addHandler(file_handler)
+
+    if add_file_handler:
+        log_folder = ss.BASE_FOLDER / "logs"
+        log_folder.mkdir(exist_ok=True)
+        time_now = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
+        log_file = log_folder / f"{name}_{time_now}.log"
+        file_handler = logging.FileHandler(log_file)
+        file_handler.setLevel(logging.INFO)
+        file_handler.setFormatter(formatter)
+        logger.addHandler(file_handler)
 
     return logger
 
