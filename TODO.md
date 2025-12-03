@@ -1,7 +1,1 @@
-- Research the usage of the LastModified and Etag header for detecting changes in site structure
-- Consider taking out beautiful soup tag names into settings.py
-- Think again of whether conditionally processing total book count makes sense
-- Consider notifying user if category is not in the list of known categories
-- Change bookstoscrape_scraper to bts_scraper
-- I don't think it is wise to give etag a null value if retry_count maxes and I want to store what I have gotten.
-- Possible email on processing errors
+- Add index to changelog also (event and timestamp)
