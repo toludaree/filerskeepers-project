@@ -1,14 +1,31 @@
 import os
 from pathlib import Path
-from pymongo import AsyncMongoClient
 from dotenv import load_dotenv
 
 
 load_dotenv()
 
+BASE_FOLDER = Path("bookstoscrape")
+
+# database
+MONGODB_CONNECTION_URI = os.getenv("MONGODB_CONNECTION_URI", "mongodb://localhost:27017/")
+MONGODB_DB = os.getenv("MONGODB_DB", "bookstoscrape")
+MONGODB_BOOK_COLLECTION = os.getenv("MONGODB_BOOK_COLLECTION", "books")
+MONGODB_CHANGELOG_COLLECTION = os.getenv("MONGODB_CHANGELOG_COLLECTION", "changelog")
+MONGODB_CRAWLER_STATE_COLLECTION = os.getenv("MONGODB_CRAWLER_STATE_COLLECTION", "crawler_state")
+MONGODB_SCHEDULED_JOBS_COLLECTION = os.getenv("MONGODB_SCHEDULED_JOBS_COLLECTION", "scheduled_jobs")
+MONGODB_USERS_COLLECTION = os.getenv("MONGODB_USERS_COLLECTION", "users")
+MONGODB_API_KEYS_COLLECTION = os.getenv("MONGODB_API_KEYS_COLLECTION", "api_keys")
+
+# email
+EMAIL_SENDER = os.getenv("EMAIL_SENDER")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+EMAIL_SMTP_SERVER = os.getenv("EMAIL_SMTP_SERVER", "smtp.gmail.com")
+EMAIL_SMTP_PORT = os.getenv("EMAIL_SMTP_PORT", "587")
+ADMIN_EMAIL = os.getenv("ADMIN_EMAIL")
+
 # crawler
 BASE_URL = "https://books.toscrape.com/catalogue"
-BASE_FOLDER = Path("bookstoscrape")
 PROXY = None
 REQUEST_TIMEOUT_SECONDS = 5
 QUEUE_WAIT_TIMEOUT_SECONDS = 5
@@ -32,20 +49,8 @@ BROWSER_HEADERS = {
     "upgrade-insecure-requests": "1",
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
 }
-BOOK_RATING_MAPPER = {
-    "One": 1,
-    "Two": 2,
-    "Three": 3,
-    "Four": 4,
-    "Five": 5
-}
-MONGODB_CONNECTION_URI = os.getenv("MONGODB_CONNECTION_URI")
-MONGODB_DB = os.getenv("MONGODB_DB")
-MONGODB_BOOK_COLLECTION = os.getenv("MONGODB_BOOK_COLLECTION")
-MONGODB_CHANGELOG_COLLECTION = os.getenv("MONGODB_CHANGELOG_COLLECTION")
-MONGODB_CRAWLER_STATE_COLLECTION = os.getenv("MONGODB_CRAWLER_STATE_COLLECTION")
-MONGODB_SCHEDULED_JOBS_COLLECTION = os.getenv("MONGODB_SCHEDULED_JOBS_COLLECTION")
-# ASYNC_MONGODB_DB = AsyncMongoClient(MONGODB_CONNECTION_URI, timeoutMs=5000)[MONGODB_DB]
+
+# scheduler
 CHANGE_DETECTION_FIELDS = {
     "_id": 0,
     "bts_id": 1,
@@ -57,14 +62,9 @@ CHANGE_DETECTION_FIELDS = {
     "crawl_metadata.etag": 1,
 }
 MISFIRE_GRACE_TIME = 5 * 60 * 60  # 5 hours
-EMAIL_SENDER = os.getenv("EMAIL_SENDER")
-EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
-EMAIL_SMTP_SERVER = os.getenv("EMAIL_SMTP_SERVER")
-EMAIL_SMTP_PORT = os.getenv("EMAIL_SMTP_PORT")
-ADMIN_EMAIL = os.getenv("ADMIN_EMAIL")
+
+# api
 JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY")
 JWT_ALGORITHM = os.getenv("JWT_ALGORITHM", "HS256")
 AUTH_RATE_LIMIT = "5/minute"
 API_RATE_LIMIT = "100/minute"
-MONGODB_USERS_COLLECTION = os.getenv("MONGODB_USERS_COLLECTION")
-MONGODB_API_KEYS_COLLECTION = os.getenv("MONGODB_API_KEYS_COLLECTION")

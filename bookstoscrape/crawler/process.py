@@ -3,10 +3,17 @@ from bs4 import BeautifulSoup, Tag
 from typing import Literal, Optional
 from urllib.parse import urljoin
 
-from ..settings import BOOK_RATING_MAPPER
 from .exceptions import ProcessingError
 from ..utils.common import Book
 
+
+BOOK_RATING_MAPPER = {
+    "One": 1,
+    "Two": 2,
+    "Three": 3,
+    "Four": 4,
+    "Five": 5
+}
 
 def process_page(page: bytes, page_url: str) -> tuple[int, list[str]]:
     """
