@@ -9,7 +9,7 @@ from typing import Literal, Optional
 
 from .. import settings as ss
 from ..utils.common import Book
-from ..utils.crawler import extract_id_from_book_url
+from ..utils.crawler import extract_id_from_book_url, send_error_email
 from ..utils.scheduler import send_alert_email
 from .exceptions import ProcessingError
 from .fetch import fetch_page, fetch_book
@@ -146,6 +146,8 @@ class Manager:
                                     session.resource_id, session.resource_url,
                                     None, None
                                 )
+                            await asyncio.to_thread(send_error_email, session.sid, "HTTP")
+                            self.logger.info(f"[manager] Error email sent: {session.sid}")
                         await self.track_run_status(False)
 
                     except ProcessingError as exc:  # No retry on processing errors
@@ -156,10 +158,14 @@ class Manager:
                                 session.resource_id, session.resource_url,
                                 None, None
                             )
+                        await asyncio.to_thread(send_error_email, session.sid, "Processing")
+                        self.logger.info(f"[manager] Error email sent: {session.sid}")
                         await self.track_run_status(False)
 
             except Exception as exc:
                 self.logger.exception(f"[{wid}] Error: {repr(exc)}")
+                await asyncio.to_thread(send_error_email, session.sid, "Unknown")
+                self.logger.info(f"[manager] Error email sent: {session.sid}")
                 await self.track_run_status(False)
             finally:
                 if session:

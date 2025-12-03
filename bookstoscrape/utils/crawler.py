@@ -1,5 +1,8 @@
 import re
 from argparse import ArgumentParser
+from typing import Literal
+
+from ..utils.common import send_email
 
 
 def extract_id_from_book_url(url: str):
@@ -28,3 +31,12 @@ def build_cli_parser() -> ArgumentParser:
     )
     parser.set_defaults(restart=True)
     return parser
+
+def send_error_email(
+    session_id: int,
+    error_type: Literal["HTTP", "Processing", "Unknown"]
+):
+    """Send email notification for processing errors"""
+    subject = f"[Crawler Alert] {error_type} Error"
+    body = f"An error occured while processing {session_id}. Check logs for full details."
+    send_email(subject, body)
