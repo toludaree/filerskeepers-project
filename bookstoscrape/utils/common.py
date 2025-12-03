@@ -36,7 +36,7 @@ class Rating(IntEnum):
 
 Category = Literal[
     "Travel", "Mystery", "Historical Fiction", "Sequential Art", "Classics",
-    "Philosophy", "Romance", "Women's Fiction", "Fiction", "Childrens",
+    "Philosophy", "Romance", "Womens Fiction", "Fiction", "Childrens",
     "Religion", "Nonfiction", "Music", "Default", "Science Fiction",
     "Sports and Games", "Add a comment", "Fantasy", "New Adult",
     "Young Adult", "Science", "Poetry", "Paranormal", "Art", "Psychology",
