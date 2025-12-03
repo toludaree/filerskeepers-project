@@ -2,8 +2,8 @@ from bs4 import BeautifulSoup
 import unittest
 
 from ..crawler import process
-from ..crawler.models import Book
 from ..settings import BASE_FOLDER
+from ..utils.common import Book
 from ..utils.crawler import extract_id_from_book_url
 
 
