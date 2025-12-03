@@ -1,0 +1,2129 @@
+2025-12-02 21:35:05 - crawler - INFO - [manager] BEGIN RUN
+2025-12-02 21:35:05 - crawler - INFO - [manager] Run parameters: env=prod, restart=True
+2025-12-02 21:35:05 - crawler - INFO - [manager] Dropped book and changelog collections
+2025-12-02 21:35:05 - crawler - INFO - [manager] Indexes created: ['bts_id_1', 'category_1_price_1_rating_1_review_count_1', 'category_1_rating_1_price_1_review_count_1', 'price_1_rating_1_review_count_1', 'rating_1_price_1_review_count_1']
+2025-12-02 21:35:05 - crawler - INFO - [w1][page][p1] Start
+2025-12-02 21:35:08 - crawler - INFO - [w1][page][p1] Processed page successfully
+2025-12-02 21:35:08 - crawler - INFO - [w2][page][p2] Start
+2025-12-02 21:35:08 - crawler - INFO - [w3][page][p3] Start
+2025-12-02 21:35:09 - crawler - INFO - [w4][page][p4] Start
+2025-12-02 21:35:09 - crawler - INFO - [w5][page][p5] Start
+2025-12-02 21:35:10 - crawler - INFO - [w1][page][p6] Start
+2025-12-02 21:35:12 - crawler - INFO - [w1][page][p6] Processed page successfully
+2025-12-02 21:35:12 - crawler - INFO - [w1][page][p7] Start
+2025-12-02 21:35:12 - crawler - INFO - [w2][page][p2] Processed page successfully
+2025-12-02 21:35:12 - crawler - INFO - [w4][page][p4] Processed page successfully
+2025-12-02 21:35:12 - crawler - INFO - [w2][page][p8] Start
+2025-12-02 21:35:13 - crawler - INFO - [w4][page][p9] Start
+2025-12-02 21:35:14 - crawler - INFO - [w3][page][p3] Processed page successfully
+2025-12-02 21:35:14 - crawler - INFO - [w5][page][p5] Processed page successfully
+2025-12-02 21:35:14 - crawler - INFO - [w3][page][p10] Start
+2025-12-02 21:35:14 - crawler - INFO - [w5][page][p11] Start
+2025-12-02 21:35:16 - crawler - INFO - [w1][page][p7] Processed page successfully
+2025-12-02 21:35:16 - crawler - INFO - [w1][page][p12] Start
+2025-12-02 21:35:16 - crawler - INFO - [w2][page][p8] Processed page successfully
+2025-12-02 21:35:16 - crawler - INFO - [w5][page][p11] Processed page successfully
+2025-12-02 21:35:16 - crawler - INFO - [w4][page][p9] Processed page successfully
+2025-12-02 21:35:16 - crawler - INFO - [w3][page][p10] Processed page successfully
+2025-12-02 21:35:16 - crawler - INFO - [w2][page][p13] Start
+2025-12-02 21:35:17 - crawler - INFO - [w5][page][p14] Start
+2025-12-02 21:35:18 - crawler - INFO - [w4][page][p15] Start
+2025-12-02 21:35:18 - crawler - INFO - [w3][page][p16] Start
+2025-12-02 21:35:20 - crawler - INFO - [w1][page][p12] Processed page successfully
+2025-12-02 21:35:20 - crawler - INFO - [w1][page][p17] Start
+2025-12-02 21:35:20 - crawler - INFO - [w2][page][p13] Processed page successfully
+2025-12-02 21:35:20 - crawler - INFO - [w3][page][p16] Processed page successfully
+2025-12-02 21:35:20 - crawler - INFO - [w4][page][p15] Processed page successfully
+2025-12-02 21:35:20 - crawler - INFO - [w2][page][p18] Start
+2025-12-02 21:35:21 - crawler - INFO - [w3][page][p19] Start
+2025-12-02 21:35:21 - crawler - INFO - [w4][page][p20] Start
+2025-12-02 21:35:22 - crawler - INFO - [w5][page][p14] Processed page successfully
+2025-12-02 21:35:22 - crawler - INFO - [w5][page][p21] Start
+2025-12-02 21:35:23 - crawler - INFO - [w1][page][p17] Processed page successfully
+2025-12-02 21:35:23 - crawler - INFO - [w1][page][p22] Start
+2025-12-02 21:35:24 - crawler - INFO - [w2][page][p18] Processed page successfully
+2025-12-02 21:35:24 - crawler - INFO - [w2][page][p23] Start
+2025-12-02 21:35:25 - crawler - INFO - [w5][page][p21] Processed page successfully
+2025-12-02 21:35:25 - crawler - INFO - [w4][page][p20] Processed page successfully
+2025-12-02 21:35:25 - crawler - INFO - [w3][page][p19] Processed page successfully
+2025-12-02 21:35:25 - crawler - INFO - [w5][page][p24] Start
+2025-12-02 21:35:25 - crawler - INFO - [w4][page][p25] Start
+2025-12-02 21:35:26 - crawler - INFO - [w3][page][p26] Start
+2025-12-02 21:35:27 - crawler - INFO - [w1][page][p22] Processed page successfully
+2025-12-02 21:35:27 - crawler - INFO - [w1][page][p27] Start
+2025-12-02 21:35:28 - crawler - INFO - [w4][page][p25] Processed page successfully
+2025-12-02 21:35:28 - crawler - INFO - [w2][page][p23] Processed page successfully
+2025-12-02 21:35:28 - crawler - INFO - [w3][page][p26] Processed page successfully
+2025-12-02 21:35:28 - crawler - INFO - [w5][page][p24] Processed page successfully
+2025-12-02 21:35:28 - crawler - INFO - [w4][page][p28] Start
+2025-12-02 21:35:28 - crawler - INFO - [w2][page][p29] Start
+2025-12-02 21:35:29 - crawler - INFO - [w3][page][p30] Start
+2025-12-02 21:35:30 - crawler - INFO - [w5][page][p31] Start
+2025-12-02 21:35:31 - crawler - INFO - [w1][page][p27] Processed page successfully
+2025-12-02 21:35:31 - crawler - INFO - [w1][page][p32] Start
+2025-12-02 21:35:32 - crawler - INFO - [w5][page][p31] Processed page successfully
+2025-12-02 21:35:32 - crawler - INFO - [w3][page][p30] Processed page successfully
+2025-12-02 21:35:32 - crawler - INFO - [w2][page][p29] Processed page successfully
+2025-12-02 21:35:32 - crawler - INFO - [w5][page][p33] Start
+2025-12-02 21:35:32 - crawler - INFO - [w3][page][p34] Start
+2025-12-02 21:35:33 - crawler - INFO - [w2][page][p35] Start
+2025-12-02 21:35:33 - crawler - INFO - [w4][page][p28] Processed page successfully
+2025-12-02 21:35:33 - crawler - INFO - [w4][page][p36] Start
+2025-12-02 21:35:35 - crawler - INFO - [w1][page][p32] Processed page successfully
+2025-12-02 21:35:35 - crawler - INFO - [w1][page][p37] Start
+2025-12-02 21:35:35 - crawler - INFO - [w3][page][p34] Processed page successfully
+2025-12-02 21:35:35 - crawler - INFO - [w3][page][p38] Start
+2025-12-02 21:35:36 - crawler - INFO - [w5][page][p33] Processed page successfully
+2025-12-02 21:35:36 - crawler - INFO - [w2][page][p35] Processed page successfully
+2025-12-02 21:35:36 - crawler - INFO - [w4][page][p36] Processed page successfully
+2025-12-02 21:35:36 - crawler - INFO - [w5][page][p39] Start
+2025-12-02 21:35:36 - crawler - INFO - [w2][page][p40] Start
+2025-12-02 21:35:37 - crawler - INFO - [w4][page][p41] Start
+2025-12-02 21:35:38 - crawler - INFO - [w1][page][p37] Processed page successfully
+2025-12-02 21:35:38 - crawler - INFO - [w1][page][p42] Start
+2025-12-02 21:35:39 - crawler - INFO - [w2][page][p40] Processed page successfully
+2025-12-02 21:35:39 - crawler - INFO - [w5][page][p39] Processed page successfully
+2025-12-02 21:35:39 - crawler - INFO - [w3][page][p38] Processed page successfully
+2025-12-02 21:35:39 - crawler - INFO - [w2][page][p43] Start
+2025-12-02 21:35:40 - crawler - INFO - [w5][page][p44] Start
+2025-12-02 21:35:40 - crawler - INFO - [w3][page][p45] Start
+2025-12-02 21:35:41 - crawler - INFO - [w4][page][p41] Processed page successfully
+2025-12-02 21:35:41 - crawler - INFO - [w4][page][p46] Start
+2025-12-02 21:35:42 - crawler - INFO - [w1][page][p42] Processed page successfully
+2025-12-02 21:35:42 - crawler - INFO - [w1][page][p47] Start
+2025-12-02 21:35:43 - crawler - INFO - [w5][page][p44] Processed page successfully
+2025-12-02 21:35:43 - crawler - INFO - [w2][page][p43] Processed page successfully
+2025-12-02 21:35:43 - crawler - INFO - [w3][page][p45] Processed page successfully
+2025-12-02 21:35:43 - crawler - INFO - [w5][page][p48] Start
+2025-12-02 21:35:44 - crawler - INFO - [w2][page][p49] Start
+2025-12-02 21:35:44 - crawler - INFO - [w3][page][p50] Start
+2025-12-02 21:35:45 - crawler - INFO - [w4][page][p46] Processed page successfully
+2025-12-02 21:35:45 - crawler - INFO - [w4][book][b1000] Start
+2025-12-02 21:35:46 - crawler - INFO - [w1][page][p47] Processed page successfully
+2025-12-02 21:35:46 - crawler - INFO - [w1][book][b999] Start
+2025-12-02 21:35:47 - crawler - INFO - [manager] Pushed to storage: 1000
+2025-12-02 21:35:47 - crawler - INFO - [w4][book][b998] Start
+2025-12-02 21:35:47 - crawler - INFO - [w3][page][p50] Processed page successfully
+2025-12-02 21:35:47 - crawler - INFO - [w2][page][p49] Processed page successfully
+2025-12-02 21:35:47 - crawler - INFO - [w5][page][p48] Processed page successfully
+2025-12-02 21:35:47 - crawler - INFO - [w3][book][b997] Start
+2025-12-02 21:35:48 - crawler - INFO - [w2][book][b996] Start
+2025-12-02 21:35:48 - crawler - INFO - [w5][book][b995] Start
+2025-12-02 21:35:50 - crawler - INFO - [manager] Pushed to storage: 999
+2025-12-02 21:35:50 - crawler - INFO - [w1][book][b994] Start
+2025-12-02 21:35:50 - crawler - INFO - [manager] Pushed to storage: 998
+2025-12-02 21:35:50 - crawler - INFO - [w4][book][b993] Start
+2025-12-02 21:35:51 - crawler - INFO - [manager] Pushed to storage: 996
+2025-12-02 21:35:51 - crawler - INFO - [w2][book][b992] Start
+2025-12-02 21:35:51 - crawler - INFO - [manager] Pushed to storage: 997
+2025-12-02 21:35:51 - crawler - INFO - [w3][book][b991] Start
+2025-12-02 21:35:52 - crawler - INFO - [manager] Pushed to storage: 995
+2025-12-02 21:35:52 - crawler - INFO - [w5][book][b990] Start
+2025-12-02 21:35:53 - crawler - INFO - [manager] Pushed to storage: 994
+2025-12-02 21:35:53 - crawler - INFO - [w1][book][b989] Start
+2025-12-02 21:35:54 - crawler - INFO - [manager] Pushed to storage: 993
+2025-12-02 21:35:54 - crawler - INFO - [w4][book][b988] Start
+2025-12-02 21:35:54 - crawler - INFO - [manager] Pushed to storage: 992
+2025-12-02 21:35:54 - crawler - INFO - [w2][book][b987] Start
+2025-12-02 21:35:55 - crawler - INFO - [manager] Pushed to storage: 991
+2025-12-02 21:35:55 - crawler - INFO - [w3][book][b986] Start
+2025-12-02 21:35:55 - crawler - INFO - [manager] Pushed to storage: 990
+2025-12-02 21:35:55 - crawler - INFO - [w5][book][b985] Start
+2025-12-02 21:35:56 - crawler - INFO - [manager] Pushed to storage: 989
+2025-12-02 21:35:56 - crawler - INFO - [w1][book][b984] Start
+2025-12-02 21:35:57 - crawler - INFO - [manager] Pushed to storage: 988
+2025-12-02 21:35:57 - crawler - INFO - [w4][book][b983] Start
+2025-12-02 21:35:57 - crawler - INFO - [manager] Pushed to storage: 987
+2025-12-02 21:35:57 - crawler - INFO - [w2][book][b982] Start
+2025-12-02 21:35:58 - crawler - INFO - [manager] Pushed to storage: 986
+2025-12-02 21:35:58 - crawler - INFO - [w3][book][b981] Start
+2025-12-02 21:35:59 - crawler - INFO - [manager] Pushed to storage: 985
+2025-12-02 21:35:59 - crawler - INFO - [w5][book][b900] Start
+2025-12-02 21:35:59 - crawler - INFO - [manager] Pushed to storage: 984
+2025-12-02 21:35:59 - crawler - INFO - [w1][book][b899] Start
+2025-12-02 21:36:00 - crawler - INFO - [manager] Pushed to storage: 983
+2025-12-02 21:36:00 - crawler - INFO - [w4][book][b898] Start
+2025-12-02 21:36:00 - crawler - INFO - [manager] Pushed to storage: 982
+2025-12-02 21:36:00 - crawler - INFO - [w2][book][b897] Start
+2025-12-02 21:36:01 - crawler - INFO - [manager] Pushed to storage: 981
+2025-12-02 21:36:01 - crawler - INFO - [w3][book][b896] Start
+2025-12-02 21:36:02 - crawler - INFO - [manager] Pushed to storage: 900
+2025-12-02 21:36:02 - crawler - INFO - [w5][book][b895] Start
+2025-12-02 21:36:02 - crawler - INFO - [manager] Pushed to storage: 899
+2025-12-02 21:36:02 - crawler - INFO - [w1][book][b894] Start
+2025-12-02 21:36:03 - crawler - INFO - [manager] Pushed to storage: 898
+2025-12-02 21:36:03 - crawler - INFO - [w4][book][b893] Start
+2025-12-02 21:36:03 - crawler - INFO - [manager] Pushed to storage: 897
+2025-12-02 21:36:03 - crawler - INFO - [w2][book][b892] Start
+2025-12-02 21:36:04 - crawler - INFO - [manager] Pushed to storage: 896
+2025-12-02 21:36:04 - crawler - INFO - [w3][book][b891] Start
+2025-12-02 21:36:05 - crawler - INFO - [manager] Pushed to storage: 895
+2025-12-02 21:36:05 - crawler - INFO - [w5][book][b890] Start
+2025-12-02 21:36:05 - crawler - INFO - [manager] Pushed to storage: 894
+2025-12-02 21:36:05 - crawler - INFO - [w1][book][b889] Start
+2025-12-02 21:36:06 - crawler - INFO - [manager] Pushed to storage: 893
+2025-12-02 21:36:06 - crawler - INFO - [w4][book][b888] Start
+2025-12-02 21:36:06 - crawler - INFO - [manager] Pushed to storage: 892
+2025-12-02 21:36:06 - crawler - INFO - [w2][book][b887] Start
+2025-12-02 21:36:07 - crawler - INFO - [manager] Pushed to storage: 891
+2025-12-02 21:36:07 - crawler - INFO - [w3][book][b886] Start
+2025-12-02 21:36:08 - crawler - INFO - [manager] Pushed to storage: 890
+2025-12-02 21:36:08 - crawler - INFO - [w5][book][b885] Start
+2025-12-02 21:36:08 - crawler - INFO - [manager] Pushed to storage: 889
+2025-12-02 21:36:08 - crawler - INFO - [w1][book][b884] Start
+2025-12-02 21:36:09 - crawler - INFO - [manager] Pushed to storage: 888
+2025-12-02 21:36:09 - crawler - INFO - [w4][book][b883] Start
+2025-12-02 21:36:09 - crawler - INFO - [manager] Pushed to storage: 887
+2025-12-02 21:36:09 - crawler - INFO - [w2][book][b882] Start
+2025-12-02 21:36:10 - crawler - INFO - [manager] Pushed to storage: 886
+2025-12-02 21:36:10 - crawler - INFO - [w3][book][b881] Start
+2025-12-02 21:36:11 - crawler - INFO - [manager] Pushed to storage: 885
+2025-12-02 21:36:11 - crawler - INFO - [w5][book][b980] Start
+2025-12-02 21:36:11 - crawler - INFO - [manager] Pushed to storage: 884
+2025-12-02 21:36:11 - crawler - INFO - [w1][book][b979] Start
+2025-12-02 21:36:12 - crawler - INFO - [manager] Pushed to storage: 883
+2025-12-02 21:36:12 - crawler - INFO - [w4][book][b978] Start
+2025-12-02 21:36:12 - crawler - INFO - [manager] Pushed to storage: 882
+2025-12-02 21:36:12 - crawler - INFO - [w2][book][b977] Start
+2025-12-02 21:36:13 - crawler - INFO - [manager] Pushed to storage: 881
+2025-12-02 21:36:13 - crawler - INFO - [w3][book][b976] Start
+2025-12-02 21:36:14 - crawler - INFO - [manager] Pushed to storage: 980
+2025-12-02 21:36:14 - crawler - INFO - [w5][book][b975] Start
+2025-12-02 21:36:14 - crawler - INFO - [manager] Pushed to storage: 979
+2025-12-02 21:36:14 - crawler - INFO - [w1][book][b974] Start
+2025-12-02 21:36:15 - crawler - INFO - [manager] Pushed to storage: 978
+2025-12-02 21:36:15 - crawler - INFO - [w4][book][b973] Start
+2025-12-02 21:36:15 - crawler - INFO - [manager] Pushed to storage: 977
+2025-12-02 21:36:15 - crawler - INFO - [w2][book][b972] Start
+2025-12-02 21:36:16 - crawler - INFO - [manager] Pushed to storage: 976
+2025-12-02 21:36:16 - crawler - INFO - [w3][book][b971] Start
+2025-12-02 21:36:17 - crawler - INFO - [manager] Pushed to storage: 975
+2025-12-02 21:36:17 - crawler - INFO - [w5][book][b970] Start
+2025-12-02 21:36:17 - crawler - INFO - [manager] Pushed to storage: 974
+2025-12-02 21:36:17 - crawler - INFO - [w1][book][b969] Start
+2025-12-02 21:36:18 - crawler - INFO - [manager] Pushed to storage: 973
+2025-12-02 21:36:18 - crawler - INFO - [w4][book][b968] Start
+2025-12-02 21:36:18 - crawler - INFO - [manager] Pushed to storage: 972
+2025-12-02 21:36:18 - crawler - INFO - [w2][book][b967] Start
+2025-12-02 21:36:19 - crawler - INFO - [manager] Pushed to storage: 971
+2025-12-02 21:36:19 - crawler - INFO - [w3][book][b966] Start
+2025-12-02 21:36:20 - crawler - INFO - [manager] Pushed to storage: 970
+2025-12-02 21:36:20 - crawler - INFO - [w5][book][b965] Start
+2025-12-02 21:36:20 - crawler - INFO - [manager] Pushed to storage: 969
+2025-12-02 21:36:20 - crawler - INFO - [w1][book][b964] Start
+2025-12-02 21:36:21 - crawler - INFO - [manager] Pushed to storage: 968
+2025-12-02 21:36:21 - crawler - INFO - [w4][book][b963] Start
+2025-12-02 21:36:21 - crawler - INFO - [manager] Pushed to storage: 967
+2025-12-02 21:36:21 - crawler - INFO - [w2][book][b962] Start
+2025-12-02 21:36:22 - crawler - INFO - [manager] Pushed to storage: 966
+2025-12-02 21:36:22 - crawler - INFO - [w3][book][b961] Start
+2025-12-02 21:36:23 - crawler - INFO - [manager] Pushed to storage: 965
+2025-12-02 21:36:23 - crawler - INFO - [w5][book][b940] Start
+2025-12-02 21:36:23 - crawler - INFO - [manager] Pushed to storage: 964
+2025-12-02 21:36:23 - crawler - INFO - [w1][book][b939] Start
+2025-12-02 21:36:24 - crawler - INFO - [manager] Pushed to storage: 963
+2025-12-02 21:36:24 - crawler - INFO - [w4][book][b938] Start
+2025-12-02 21:36:24 - crawler - INFO - [manager] Pushed to storage: 962
+2025-12-02 21:36:24 - crawler - INFO - [w2][book][b937] Start
+2025-12-02 21:36:25 - crawler - INFO - [manager] Pushed to storage: 961
+2025-12-02 21:36:25 - crawler - INFO - [w3][book][b936] Start
+2025-12-02 21:36:26 - crawler - INFO - [manager] Pushed to storage: 940
+2025-12-02 21:36:26 - crawler - INFO - [w5][book][b935] Start
+2025-12-02 21:36:26 - crawler - INFO - [manager] Pushed to storage: 939
+2025-12-02 21:36:26 - crawler - INFO - [w1][book][b934] Start
+2025-12-02 21:36:27 - crawler - INFO - [manager] Pushed to storage: 938
+2025-12-02 21:36:27 - crawler - INFO - [w4][book][b933] Start
+2025-12-02 21:36:27 - crawler - INFO - [manager] Pushed to storage: 937
+2025-12-02 21:36:27 - crawler - INFO - [w2][book][b932] Start
+2025-12-02 21:36:28 - crawler - INFO - [manager] Pushed to storage: 936
+2025-12-02 21:36:28 - crawler - INFO - [w3][book][b931] Start
+2025-12-02 21:36:28 - crawler - INFO - [manager] Pushed to storage: 935
+2025-12-02 21:36:28 - crawler - INFO - [w5][book][b930] Start
+2025-12-02 21:36:29 - crawler - INFO - [manager] Pushed to storage: 934
+2025-12-02 21:36:29 - crawler - INFO - [w1][book][b929] Start
+2025-12-02 21:36:30 - crawler - INFO - [manager] Pushed to storage: 933
+2025-12-02 21:36:30 - crawler - INFO - [w4][book][b928] Start
+2025-12-02 21:36:30 - crawler - INFO - [manager] Pushed to storage: 932
+2025-12-02 21:36:30 - crawler - INFO - [w2][book][b927] Start
+2025-12-02 21:36:31 - crawler - INFO - [manager] Pushed to storage: 931
+2025-12-02 21:36:31 - crawler - INFO - [w3][book][b926] Start
+2025-12-02 21:36:31 - crawler - INFO - [manager] Pushed to storage: 930
+2025-12-02 21:36:31 - crawler - INFO - [w5][book][b925] Start
+2025-12-02 21:36:32 - crawler - INFO - [manager] Pushed to storage: 929
+2025-12-02 21:36:32 - crawler - INFO - [w1][book][b924] Start
+2025-12-02 21:36:33 - crawler - INFO - [manager] Pushed to storage: 928
+2025-12-02 21:36:33 - crawler - INFO - [w4][book][b923] Start
+2025-12-02 21:36:33 - crawler - INFO - [manager] Pushed to storage: 927
+2025-12-02 21:36:33 - crawler - INFO - [w2][book][b922] Start
+2025-12-02 21:36:34 - crawler - INFO - [manager] Pushed to storage: 926
+2025-12-02 21:36:34 - crawler - INFO - [w3][book][b921] Start
+2025-12-02 21:36:34 - crawler - INFO - [manager] Pushed to storage: 925
+2025-12-02 21:36:34 - crawler - INFO - [w5][book][b960] Start
+2025-12-02 21:36:35 - crawler - INFO - [manager] Pushed to storage: 924
+2025-12-02 21:36:35 - crawler - INFO - [w1][book][b959] Start
+2025-12-02 21:36:36 - crawler - INFO - [manager] Pushed to storage: 923
+2025-12-02 21:36:36 - crawler - INFO - [w4][book][b958] Start
+2025-12-02 21:36:36 - crawler - INFO - [manager] Pushed to storage: 922
+2025-12-02 21:36:36 - crawler - INFO - [w2][book][b957] Start
+2025-12-02 21:36:37 - crawler - INFO - [manager] Pushed to storage: 921
+2025-12-02 21:36:37 - crawler - INFO - [w3][book][b956] Start
+2025-12-02 21:36:38 - crawler - INFO - [manager] Pushed to storage: 960
+2025-12-02 21:36:38 - crawler - INFO - [w5][book][b955] Start
+2025-12-02 21:36:38 - crawler - INFO - [manager] Pushed to storage: 959
+2025-12-02 21:36:38 - crawler - INFO - [w1][book][b954] Start
+2025-12-02 21:36:39 - crawler - INFO - [manager] Pushed to storage: 958
+2025-12-02 21:36:39 - crawler - INFO - [w4][book][b953] Start
+2025-12-02 21:36:39 - crawler - INFO - [manager] Pushed to storage: 957
+2025-12-02 21:36:39 - crawler - INFO - [w2][book][b952] Start
+2025-12-02 21:36:40 - crawler - INFO - [manager] Pushed to storage: 956
+2025-12-02 21:36:40 - crawler - INFO - [w3][book][b951] Start
+2025-12-02 21:36:40 - crawler - INFO - [manager] Pushed to storage: 955
+2025-12-02 21:36:40 - crawler - INFO - [w5][book][b950] Start
+2025-12-02 21:36:41 - crawler - INFO - [manager] Pushed to storage: 954
+2025-12-02 21:36:41 - crawler - INFO - [w1][book][b949] Start
+2025-12-02 21:36:42 - crawler - INFO - [manager] Pushed to storage: 953
+2025-12-02 21:36:42 - crawler - INFO - [w4][book][b948] Start
+2025-12-02 21:36:42 - crawler - INFO - [manager] Pushed to storage: 952
+2025-12-02 21:36:42 - crawler - INFO - [w2][book][b947] Start
+2025-12-02 21:36:43 - crawler - INFO - [manager] Pushed to storage: 951
+2025-12-02 21:36:43 - crawler - INFO - [w3][book][b946] Start
+2025-12-02 21:36:43 - crawler - INFO - [manager] Pushed to storage: 950
+2025-12-02 21:36:43 - crawler - INFO - [w5][book][b945] Start
+2025-12-02 21:36:44 - crawler - INFO - [manager] Pushed to storage: 949
+2025-12-02 21:36:44 - crawler - INFO - [w1][book][b944] Start
+2025-12-02 21:36:45 - crawler - INFO - [manager] Pushed to storage: 948
+2025-12-02 21:36:45 - crawler - INFO - [w4][book][b943] Start
+2025-12-02 21:36:45 - crawler - INFO - [manager] Pushed to storage: 947
+2025-12-02 21:36:45 - crawler - INFO - [w2][book][b942] Start
+2025-12-02 21:36:46 - crawler - INFO - [manager] Pushed to storage: 946
+2025-12-02 21:36:46 - crawler - INFO - [w3][book][b941] Start
+2025-12-02 21:36:47 - crawler - INFO - [manager] Pushed to storage: 945
+2025-12-02 21:36:47 - crawler - INFO - [w5][book][b920] Start
+2025-12-02 21:36:47 - crawler - INFO - [manager] Pushed to storage: 944
+2025-12-02 21:36:47 - crawler - INFO - [w1][book][b919] Start
+2025-12-02 21:36:48 - crawler - INFO - [manager] Pushed to storage: 943
+2025-12-02 21:36:48 - crawler - INFO - [w4][book][b918] Start
+2025-12-02 21:36:48 - crawler - INFO - [manager] Pushed to storage: 942
+2025-12-02 21:36:48 - crawler - INFO - [w2][book][b917] Start
+2025-12-02 21:36:49 - crawler - INFO - [manager] Pushed to storage: 941
+2025-12-02 21:36:49 - crawler - INFO - [w3][book][b916] Start
+2025-12-02 21:36:49 - crawler - INFO - [manager] Pushed to storage: 920
+2025-12-02 21:36:49 - crawler - INFO - [w5][book][b915] Start
+2025-12-02 21:36:50 - crawler - INFO - [manager] Pushed to storage: 919
+2025-12-02 21:36:50 - crawler - INFO - [w1][book][b914] Start
+2025-12-02 21:36:51 - crawler - INFO - [manager] Pushed to storage: 918
+2025-12-02 21:36:51 - crawler - INFO - [w4][book][b913] Start
+2025-12-02 21:36:51 - crawler - INFO - [manager] Pushed to storage: 916
+2025-12-02 21:36:51 - crawler - INFO - [w3][book][b912] Start
+2025-12-02 21:36:52 - crawler - INFO - [manager] Pushed to storage: 917
+2025-12-02 21:36:52 - crawler - INFO - [w2][book][b911] Start
+2025-12-02 21:36:53 - crawler - INFO - [manager] Pushed to storage: 915
+2025-12-02 21:36:53 - crawler - INFO - [w5][book][b910] Start
+2025-12-02 21:36:53 - crawler - INFO - [manager] Pushed to storage: 914
+2025-12-02 21:36:53 - crawler - INFO - [w1][book][b909] Start
+2025-12-02 21:36:54 - crawler - INFO - [manager] Pushed to storage: 913
+2025-12-02 21:36:54 - crawler - INFO - [w4][book][b908] Start
+2025-12-02 21:36:54 - crawler - INFO - [manager] Pushed to storage: 912
+2025-12-02 21:36:54 - crawler - INFO - [w3][book][b907] Start
+2025-12-02 21:36:55 - crawler - INFO - [manager] Pushed to storage: 911
+2025-12-02 21:36:55 - crawler - INFO - [w2][book][b906] Start
+2025-12-02 21:36:56 - crawler - INFO - [manager] Pushed to storage: 910
+2025-12-02 21:36:56 - crawler - INFO - [w5][book][b905] Start
+2025-12-02 21:36:56 - crawler - INFO - [manager] Pushed to storage: 909
+2025-12-02 21:36:56 - crawler - INFO - [w1][book][b904] Start
+2025-12-02 21:36:57 - crawler - INFO - [manager] Pushed to storage: 908
+2025-12-02 21:36:57 - crawler - INFO - [w4][book][b903] Start
+2025-12-02 21:36:58 - crawler - INFO - [manager] Pushed to storage: 907
+2025-12-02 21:36:58 - crawler - INFO - [w3][book][b902] Start
+2025-12-02 21:36:58 - crawler - INFO - [manager] Pushed to storage: 905
+2025-12-02 21:36:58 - crawler - INFO - [w5][book][b901] Start
+2025-12-02 21:36:59 - crawler - INFO - [manager] Pushed to storage: 906
+2025-12-02 21:36:59 - crawler - INFO - [w2][book][b880] Start
+2025-12-02 21:36:59 - crawler - INFO - [manager] Pushed to storage: 904
+2025-12-02 21:37:00 - crawler - INFO - [w1][book][b879] Start
+2025-12-02 21:37:00 - crawler - INFO - [manager] Pushed to storage: 903
+2025-12-02 21:37:00 - crawler - INFO - [w4][book][b878] Start
+2025-12-02 21:37:01 - crawler - INFO - [manager] Pushed to storage: 902
+2025-12-02 21:37:01 - crawler - INFO - [w3][book][b877] Start
+2025-12-02 21:37:02 - crawler - INFO - [manager] Pushed to storage: 901
+2025-12-02 21:37:02 - crawler - INFO - [w5][book][b876] Start
+2025-12-02 21:37:02 - crawler - INFO - [manager] Pushed to storage: 880
+2025-12-02 21:37:02 - crawler - INFO - [w2][book][b875] Start
+2025-12-02 21:37:03 - crawler - INFO - [manager] Pushed to storage: 879
+2025-12-02 21:37:03 - crawler - INFO - [w1][book][b874] Start
+2025-12-02 21:37:04 - crawler - INFO - [manager] Pushed to storage: 878
+2025-12-02 21:37:04 - crawler - INFO - [w4][book][b873] Start
+2025-12-02 21:37:04 - crawler - INFO - [manager] Pushed to storage: 877
+2025-12-02 21:37:04 - crawler - INFO - [w3][book][b872] Start
+2025-12-02 21:37:05 - crawler - INFO - [manager] Pushed to storage: 875
+2025-12-02 21:37:05 - crawler - INFO - [manager] Pushed to storage: 876
+2025-12-02 21:37:05 - crawler - INFO - [w2][book][b871] Start
+2025-12-02 21:37:06 - crawler - INFO - [w5][book][b870] Start
+2025-12-02 21:37:06 - crawler - INFO - [manager] Pushed to storage: 874
+2025-12-02 21:37:06 - crawler - INFO - [w1][book][b869] Start
+2025-12-02 21:37:07 - crawler - INFO - [manager] Pushed to storage: 873
+2025-12-02 21:37:07 - crawler - INFO - [w4][book][b868] Start
+2025-12-02 21:37:08 - crawler - INFO - [manager] Pushed to storage: 872
+2025-12-02 21:37:08 - crawler - INFO - [w3][book][b867] Start
+2025-12-02 21:37:08 - crawler - INFO - [manager] Pushed to storage: 870
+2025-12-02 21:37:08 - crawler - INFO - [w5][book][b866] Start
+2025-12-02 21:37:09 - crawler - INFO - [manager] Pushed to storage: 871
+2025-12-02 21:37:09 - crawler - INFO - [w2][book][b865] Start
+2025-12-02 21:37:09 - crawler - INFO - [manager] Pushed to storage: 869
+2025-12-02 21:37:09 - crawler - INFO - [w1][book][b864] Start
+2025-12-02 21:37:10 - crawler - INFO - [manager] Pushed to storage: 868
+2025-12-02 21:37:10 - crawler - INFO - [w4][book][b863] Start
+2025-12-02 21:37:11 - crawler - INFO - [manager] Pushed to storage: 867
+2025-12-02 21:37:11 - crawler - INFO - [w3][book][b862] Start
+2025-12-02 21:37:11 - crawler - INFO - [manager] Pushed to storage: 866
+2025-12-02 21:37:11 - crawler - INFO - [w5][book][b861] Start
+2025-12-02 21:37:12 - crawler - INFO - [manager] Pushed to storage: 865
+2025-12-02 21:37:12 - crawler - INFO - [w2][book][b860] Start
+2025-12-02 21:37:12 - crawler - INFO - [manager] Pushed to storage: 864
+2025-12-02 21:37:12 - crawler - INFO - [w1][book][b859] Start
+2025-12-02 21:37:13 - crawler - INFO - [manager] Pushed to storage: 863
+2025-12-02 21:37:13 - crawler - INFO - [w4][book][b858] Start
+2025-12-02 21:37:14 - crawler - INFO - [manager] Pushed to storage: 862
+2025-12-02 21:37:14 - crawler - INFO - [w3][book][b857] Start
+2025-12-02 21:37:14 - crawler - INFO - [manager] Pushed to storage: 861
+2025-12-02 21:37:14 - crawler - INFO - [w5][book][b856] Start
+2025-12-02 21:37:15 - crawler - INFO - [manager] Pushed to storage: 860
+2025-12-02 21:37:15 - crawler - INFO - [w2][book][b855] Start
+2025-12-02 21:37:15 - crawler - INFO - [manager] Pushed to storage: 859
+2025-12-02 21:37:15 - crawler - INFO - [w1][book][b854] Start
+2025-12-02 21:37:16 - crawler - INFO - [manager] Pushed to storage: 858
+2025-12-02 21:37:16 - crawler - INFO - [w4][book][b853] Start
+2025-12-02 21:37:17 - crawler - INFO - [manager] Pushed to storage: 857
+2025-12-02 21:37:17 - crawler - INFO - [w3][book][b852] Start
+2025-12-02 21:37:17 - crawler - INFO - [manager] Pushed to storage: 856
+2025-12-02 21:37:17 - crawler - INFO - [w5][book][b851] Start
+2025-12-02 21:37:18 - crawler - INFO - [manager] Pushed to storage: 855
+2025-12-02 21:37:18 - crawler - INFO - [w2][book][b850] Start
+2025-12-02 21:37:18 - crawler - INFO - [manager] Pushed to storage: 854
+2025-12-02 21:37:18 - crawler - INFO - [w1][book][b849] Start
+2025-12-02 21:37:19 - crawler - INFO - [manager] Pushed to storage: 853
+2025-12-02 21:37:19 - crawler - INFO - [w4][book][b848] Start
+2025-12-02 21:37:20 - crawler - INFO - [manager] Pushed to storage: 852
+2025-12-02 21:37:20 - crawler - INFO - [w3][book][b847] Start
+2025-12-02 21:37:20 - crawler - INFO - [manager] Pushed to storage: 851
+2025-12-02 21:37:20 - crawler - INFO - [w5][book][b846] Start
+2025-12-02 21:37:21 - crawler - INFO - [manager] Pushed to storage: 850
+2025-12-02 21:37:21 - crawler - INFO - [w2][book][b845] Start
+2025-12-02 21:37:21 - crawler - INFO - [manager] Pushed to storage: 849
+2025-12-02 21:37:21 - crawler - INFO - [w1][book][b844] Start
+2025-12-02 21:37:22 - crawler - INFO - [manager] Pushed to storage: 848
+2025-12-02 21:37:22 - crawler - INFO - [w4][book][b843] Start
+2025-12-02 21:37:23 - crawler - INFO - [manager] Pushed to storage: 847
+2025-12-02 21:37:23 - crawler - INFO - [w3][book][b842] Start
+2025-12-02 21:37:23 - crawler - INFO - [manager] Pushed to storage: 846
+2025-12-02 21:37:23 - crawler - INFO - [w5][book][b841] Start
+2025-12-02 21:37:24 - crawler - INFO - [manager] Pushed to storage: 845
+2025-12-02 21:37:24 - crawler - INFO - [w2][book][b800] Start
+2025-12-02 21:37:24 - crawler - INFO - [manager] Pushed to storage: 844
+2025-12-02 21:37:24 - crawler - INFO - [w1][book][b799] Start
+2025-12-02 21:37:25 - crawler - INFO - [manager] Pushed to storage: 843
+2025-12-02 21:37:25 - crawler - INFO - [w4][book][b798] Start
+2025-12-02 21:37:26 - crawler - INFO - [manager] Pushed to storage: 842
+2025-12-02 21:37:26 - crawler - INFO - [w3][book][b797] Start
+2025-12-02 21:37:26 - crawler - INFO - [manager] Pushed to storage: 841
+2025-12-02 21:37:26 - crawler - INFO - [w5][book][b796] Start
+2025-12-02 21:37:27 - crawler - INFO - [manager] Pushed to storage: 800
+2025-12-02 21:37:27 - crawler - INFO - [w2][book][b795] Start
+2025-12-02 21:37:28 - crawler - INFO - [manager] Pushed to storage: 799
+2025-12-02 21:37:28 - crawler - INFO - [w1][book][b794] Start
+2025-12-02 21:37:29 - crawler - INFO - [manager] Pushed to storage: 798
+2025-12-02 21:37:29 - crawler - INFO - [w4][book][b793] Start
+2025-12-02 21:37:29 - crawler - INFO - [manager] Pushed to storage: 797
+2025-12-02 21:37:29 - crawler - INFO - [w3][book][b792] Start
+2025-12-02 21:37:30 - crawler - INFO - [manager] Pushed to storage: 796
+2025-12-02 21:37:30 - crawler - INFO - [w5][book][b791] Start
+2025-12-02 21:37:31 - crawler - INFO - [manager] Pushed to storage: 795
+2025-12-02 21:37:31 - crawler - INFO - [w2][book][b790] Start
+2025-12-02 21:37:31 - crawler - INFO - [manager] Pushed to storage: 794
+2025-12-02 21:37:31 - crawler - INFO - [w1][book][b789] Start
+2025-12-02 21:37:32 - crawler - INFO - [manager] Pushed to storage: 793
+2025-12-02 21:37:32 - crawler - INFO - [w4][book][b788] Start
+2025-12-02 21:37:33 - crawler - INFO - [manager] Pushed to storage: 792
+2025-12-02 21:37:33 - crawler - INFO - [w3][book][b787] Start
+2025-12-02 21:37:34 - crawler - INFO - [manager] Pushed to storage: 791
+2025-12-02 21:37:34 - crawler - INFO - [w5][book][b786] Start
+2025-12-02 21:37:34 - crawler - INFO - [manager] Pushed to storage: 790
+2025-12-02 21:37:34 - crawler - INFO - [w2][book][b785] Start
+2025-12-02 21:37:35 - crawler - INFO - [manager] Pushed to storage: 789
+2025-12-02 21:37:35 - crawler - INFO - [w1][book][b784] Start
+2025-12-02 21:37:36 - crawler - INFO - [manager] Pushed to storage: 788
+2025-12-02 21:37:36 - crawler - INFO - [w4][book][b783] Start
+2025-12-02 21:37:38 - crawler - INFO - [manager] Pushed to storage: 787
+2025-12-02 21:37:38 - crawler - INFO - [w3][book][b782] Start
+2025-12-02 21:37:39 - crawler - INFO - [manager] Pushed to storage: 786
+2025-12-02 21:37:39 - crawler - INFO - [w5][book][b781] Start
+2025-12-02 21:37:40 - crawler - INFO - [manager] Pushed to storage: 785
+2025-12-02 21:37:40 - crawler - INFO - [w2][book][b840] Start
+2025-12-02 21:37:41 - crawler - INFO - [manager] Pushed to storage: 784
+2025-12-02 21:37:41 - crawler - INFO - [w1][book][b839] Start
+2025-12-02 21:37:42 - crawler - INFO - [manager] Pushed to storage: 783
+2025-12-02 21:37:42 - crawler - INFO - [w4][book][b838] Start
+2025-12-02 21:37:43 - crawler - INFO - [manager] Pushed to storage: 782
+2025-12-02 21:37:43 - crawler - INFO - [w3][book][b837] Start
+2025-12-02 21:37:44 - crawler - INFO - [manager] Pushed to storage: 781
+2025-12-02 21:37:44 - crawler - INFO - [w5][book][b836] Start
+2025-12-02 21:37:46 - crawler - INFO - [manager] Pushed to storage: 840
+2025-12-02 21:37:46 - crawler - INFO - [w2][book][b835] Start
+2025-12-02 21:37:46 - crawler - INFO - [manager] Pushed to storage: 839
+2025-12-02 21:37:46 - crawler - INFO - [w1][book][b834] Start
+2025-12-02 21:37:47 - crawler - INFO - [manager] Pushed to storage: 838
+2025-12-02 21:37:47 - crawler - INFO - [w4][book][b833] Start
+2025-12-02 21:37:48 - crawler - INFO - [manager] Pushed to storage: 837
+2025-12-02 21:37:48 - crawler - INFO - [w3][book][b832] Start
+2025-12-02 21:37:49 - crawler - INFO - [manager] Pushed to storage: 836
+2025-12-02 21:37:49 - crawler - INFO - [w5][book][b831] Start
+2025-12-02 21:37:49 - crawler - INFO - [manager] Pushed to storage: 835
+2025-12-02 21:37:49 - crawler - INFO - [w2][book][b830] Start
+2025-12-02 21:37:50 - crawler - INFO - [manager] Pushed to storage: 834
+2025-12-02 21:37:50 - crawler - INFO - [w1][book][b829] Start
+2025-12-02 21:37:51 - crawler - INFO - [manager] Pushed to storage: 833
+2025-12-02 21:37:51 - crawler - INFO - [w4][book][b828] Start
+2025-12-02 21:37:52 - crawler - INFO - [manager] Pushed to storage: 832
+2025-12-02 21:37:52 - crawler - INFO - [w3][book][b827] Start
+2025-12-02 21:37:53 - crawler - INFO - [manager] Pushed to storage: 830
+2025-12-02 21:37:53 - crawler - INFO - [w2][book][b826] Start
+2025-12-02 21:37:54 - crawler - INFO - [manager] Pushed to storage: 831
+2025-12-02 21:37:54 - crawler - INFO - [w5][book][b825] Start
+2025-12-02 21:37:55 - crawler - INFO - [manager] Pushed to storage: 829
+2025-12-02 21:37:55 - crawler - INFO - [w1][book][b824] Start
+2025-12-02 21:37:56 - crawler - INFO - [manager] Pushed to storage: 828
+2025-12-02 21:37:56 - crawler - INFO - [w4][book][b823] Start
+2025-12-02 21:37:59 - crawler - INFO - [manager] Pushed to storage: 827
+2025-12-02 21:37:59 - crawler - INFO - [w3][book][b822] Start
+2025-12-02 21:38:00 - crawler - INFO - [manager] Pushed to storage: 826
+2025-12-02 21:38:00 - crawler - INFO - [w2][book][b821] Start
+2025-12-02 21:38:02 - crawler - INFO - [manager] Pushed to storage: 825
+2025-12-02 21:38:02 - crawler - INFO - [w5][book][b820] Start
+2025-12-02 21:38:02 - crawler - INFO - [manager] Pushed to storage: 822
+2025-12-02 21:38:02 - crawler - INFO - [w3][book][b819] Start
+2025-12-02 21:38:03 - crawler - INFO - [manager] Pushed to storage: 824
+2025-12-02 21:38:03 - crawler - INFO - [w1][book][b818] Start
+2025-12-02 21:38:05 - crawler - INFO - [manager] Pushed to storage: 823
+2025-12-02 21:38:05 - crawler - INFO - [w4][book][b817] Start
+2025-12-02 21:38:06 - crawler - INFO - [manager] Pushed to storage: 821
+2025-12-02 21:38:06 - crawler - INFO - [w2][book][b816] Start
+2025-12-02 21:38:07 - crawler - INFO - [manager] Pushed to storage: 819
+2025-12-02 21:38:07 - crawler - INFO - [w3][book][b815] Start
+2025-12-02 21:38:09 - crawler - INFO - [manager] Pushed to storage: 818
+2025-12-02 21:38:09 - crawler - INFO - [w1][book][b814] Start
+2025-12-02 21:38:10 - crawler - WARNING - [w5][book][b820] Error: ConnectTimeout('')
+2025-12-02 21:38:10 - crawler - INFO - [w5][book][b820] Queued for retry
+2025-12-02 21:38:10 - crawler - INFO - [w5][book][b813] Start
+2025-12-02 21:38:11 - crawler - INFO - [manager] Pushed to storage: 817
+2025-12-02 21:38:11 - crawler - INFO - [w4][book][b812] Start
+2025-12-02 21:38:13 - crawler - INFO - [manager] Pushed to storage: 816
+2025-12-02 21:38:13 - crawler - INFO - [w2][book][b811] Start
+2025-12-02 21:38:14 - crawler - INFO - [manager] Pushed to storage: 815
+2025-12-02 21:38:14 - crawler - INFO - [w3][book][b810] Start
+2025-12-02 21:38:15 - crawler - INFO - [manager] Pushed to storage: 814
+2025-12-02 21:38:15 - crawler - INFO - [w1][book][b809] Start
+2025-12-02 21:38:16 - crawler - INFO - [manager] Pushed to storage: 812
+2025-12-02 21:38:16 - crawler - INFO - [w4][book][b808] Start
+2025-12-02 21:38:16 - crawler - INFO - [manager] Pushed to storage: 813
+2025-12-02 21:38:16 - crawler - INFO - [w5][book][b807] Start
+2025-12-02 21:38:17 - crawler - INFO - [manager] Pushed to storage: 811
+2025-12-02 21:38:17 - crawler - INFO - [w2][book][b806] Start
+2025-12-02 21:38:18 - crawler - INFO - [manager] Pushed to storage: 810
+2025-12-02 21:38:18 - crawler - INFO - [w3][book][b805] Start
+2025-12-02 21:38:18 - crawler - INFO - [manager] Pushed to storage: 809
+2025-12-02 21:38:18 - crawler - INFO - [w1][book][b804] Start
+2025-12-02 21:38:19 - crawler - INFO - [manager] Pushed to storage: 808
+2025-12-02 21:38:19 - crawler - INFO - [w4][book][b803] Start
+2025-12-02 21:38:20 - crawler - INFO - [manager] Pushed to storage: 807
+2025-12-02 21:38:20 - crawler - INFO - [w5][book][b802] Start
+2025-12-02 21:38:20 - crawler - INFO - [manager] Pushed to storage: 806
+2025-12-02 21:38:20 - crawler - INFO - [w2][book][b801] Start
+2025-12-02 21:38:21 - crawler - INFO - [manager] Pushed to storage: 805
+2025-12-02 21:38:21 - crawler - INFO - [w3][book][b780] Start
+2025-12-02 21:38:22 - crawler - INFO - [manager] Pushed to storage: 804
+2025-12-02 21:38:22 - crawler - INFO - [w1][book][b779] Start
+2025-12-02 21:38:22 - crawler - INFO - [manager] Pushed to storage: 803
+2025-12-02 21:38:22 - crawler - INFO - [w4][book][b778] Start
+2025-12-02 21:38:23 - crawler - INFO - [manager] Pushed to storage: 802
+2025-12-02 21:38:23 - crawler - INFO - [w5][book][b777] Start
+2025-12-02 21:38:24 - crawler - INFO - [manager] Pushed to storage: 801
+2025-12-02 21:38:24 - crawler - INFO - [w2][book][b776] Start
+2025-12-02 21:38:24 - crawler - INFO - [manager] Pushed to storage: 780
+2025-12-02 21:38:24 - crawler - INFO - [w3][book][b775] Start
+2025-12-02 21:38:25 - crawler - INFO - [manager] Pushed to storage: 779
+2025-12-02 21:38:25 - crawler - INFO - [w1][book][b774] Start
+2025-12-02 21:38:26 - crawler - INFO - [manager] Pushed to storage: 778
+2025-12-02 21:38:26 - crawler - INFO - [w4][book][b773] Start
+2025-12-02 21:38:26 - crawler - INFO - [manager] Pushed to storage: 777
+2025-12-02 21:38:26 - crawler - INFO - [w5][book][b772] Start
+2025-12-02 21:38:27 - crawler - INFO - [manager] Pushed to storage: 776
+2025-12-02 21:38:27 - crawler - INFO - [w2][book][b771] Start
+2025-12-02 21:38:27 - crawler - INFO - [manager] Pushed to storage: 775
+2025-12-02 21:38:27 - crawler - INFO - [w3][book][b770] Start
+2025-12-02 21:38:28 - crawler - INFO - [manager] Pushed to storage: 774
+2025-12-02 21:38:28 - crawler - INFO - [w1][book][b769] Start
+2025-12-02 21:38:29 - crawler - INFO - [manager] Pushed to storage: 773
+2025-12-02 21:38:29 - crawler - INFO - [w4][book][b768] Start
+2025-12-02 21:38:29 - crawler - INFO - [manager] Pushed to storage: 772
+2025-12-02 21:38:29 - crawler - INFO - [w5][book][b767] Start
+2025-12-02 21:38:30 - crawler - INFO - [manager] Pushed to storage: 771
+2025-12-02 21:38:30 - crawler - INFO - [w2][book][b766] Start
+2025-12-02 21:38:31 - crawler - INFO - [manager] Pushed to storage: 770
+2025-12-02 21:38:31 - crawler - INFO - [w3][book][b765] Start
+2025-12-02 21:38:31 - crawler - INFO - [manager] Pushed to storage: 769
+2025-12-02 21:38:31 - crawler - INFO - [w1][book][b764] Start
+2025-12-02 21:38:32 - crawler - INFO - [manager] Pushed to storage: 768
+2025-12-02 21:38:32 - crawler - INFO - [w4][book][b763] Start
+2025-12-02 21:38:33 - crawler - INFO - [manager] Pushed to storage: 767
+2025-12-02 21:38:33 - crawler - INFO - [w5][book][b762] Start
+2025-12-02 21:38:33 - crawler - INFO - [manager] Pushed to storage: 766
+2025-12-02 21:38:33 - crawler - INFO - [w2][book][b761] Start
+2025-12-02 21:38:34 - crawler - INFO - [manager] Pushed to storage: 765
+2025-12-02 21:38:34 - crawler - INFO - [w3][book][b760] Start
+2025-12-02 21:38:35 - crawler - INFO - [manager] Pushed to storage: 764
+2025-12-02 21:38:35 - crawler - INFO - [w1][book][b759] Start
+2025-12-02 21:38:36 - crawler - INFO - [manager] Pushed to storage: 763
+2025-12-02 21:38:36 - crawler - INFO - [w4][book][b758] Start
+2025-12-02 21:38:37 - crawler - INFO - [manager] Pushed to storage: 762
+2025-12-02 21:38:37 - crawler - INFO - [w5][book][b757] Start
+2025-12-02 21:38:38 - crawler - INFO - [manager] Pushed to storage: 761
+2025-12-02 21:38:38 - crawler - INFO - [w2][book][b756] Start
+2025-12-02 21:38:38 - crawler - INFO - [manager] Pushed to storage: 760
+2025-12-02 21:38:38 - crawler - INFO - [w3][book][b755] Start
+2025-12-02 21:38:39 - crawler - INFO - [manager] Pushed to storage: 759
+2025-12-02 21:38:39 - crawler - INFO - [w1][book][b754] Start
+2025-12-02 21:38:40 - crawler - INFO - [manager] Pushed to storage: 758
+2025-12-02 21:38:40 - crawler - INFO - [w4][book][b753] Start
+2025-12-02 21:38:40 - crawler - INFO - [manager] Pushed to storage: 757
+2025-12-02 21:38:40 - crawler - INFO - [w5][book][b752] Start
+2025-12-02 21:38:41 - crawler - INFO - [manager] Pushed to storage: 756
+2025-12-02 21:38:41 - crawler - INFO - [w2][book][b751] Start
+2025-12-02 21:38:41 - crawler - INFO - [manager] Pushed to storage: 755
+2025-12-02 21:38:41 - crawler - INFO - [w3][book][b750] Start
+2025-12-02 21:38:42 - crawler - INFO - [manager] Pushed to storage: 754
+2025-12-02 21:38:42 - crawler - INFO - [w1][book][b749] Start
+2025-12-02 21:38:43 - crawler - INFO - [manager] Pushed to storage: 753
+2025-12-02 21:38:43 - crawler - INFO - [w4][book][b748] Start
+2025-12-02 21:38:43 - crawler - INFO - [manager] Pushed to storage: 752
+2025-12-02 21:38:43 - crawler - INFO - [w5][book][b747] Start
+2025-12-02 21:38:44 - crawler - INFO - [manager] Pushed to storage: 751
+2025-12-02 21:38:44 - crawler - INFO - [w2][book][b746] Start
+2025-12-02 21:38:45 - crawler - INFO - [manager] Pushed to storage: 750
+2025-12-02 21:38:45 - crawler - INFO - [w3][book][b745] Start
+2025-12-02 21:38:45 - crawler - INFO - [manager] Pushed to storage: 749
+2025-12-02 21:38:45 - crawler - INFO - [w1][book][b744] Start
+2025-12-02 21:38:46 - crawler - INFO - [manager] Pushed to storage: 748
+2025-12-02 21:38:46 - crawler - INFO - [w4][book][b743] Start
+2025-12-02 21:38:47 - crawler - INFO - [manager] Pushed to storage: 747
+2025-12-02 21:38:47 - crawler - INFO - [w5][book][b742] Start
+2025-12-02 21:38:47 - crawler - INFO - [manager] Pushed to storage: 746
+2025-12-02 21:38:47 - crawler - INFO - [w2][book][b741] Start
+2025-12-02 21:38:48 - crawler - INFO - [manager] Pushed to storage: 745
+2025-12-02 21:38:48 - crawler - INFO - [w3][book][b700] Start
+2025-12-02 21:38:48 - crawler - INFO - [manager] Pushed to storage: 744
+2025-12-02 21:38:48 - crawler - INFO - [w1][book][b699] Start
+2025-12-02 21:38:49 - crawler - INFO - [manager] Pushed to storage: 743
+2025-12-02 21:38:49 - crawler - INFO - [w4][book][b698] Start
+2025-12-02 21:38:50 - crawler - INFO - [manager] Pushed to storage: 742
+2025-12-02 21:38:50 - crawler - INFO - [w5][book][b697] Start
+2025-12-02 21:38:50 - crawler - INFO - [manager] Pushed to storage: 741
+2025-12-02 21:38:50 - crawler - INFO - [w2][book][b696] Start
+2025-12-02 21:38:51 - crawler - INFO - [manager] Pushed to storage: 700
+2025-12-02 21:38:51 - crawler - INFO - [w3][book][b695] Start
+2025-12-02 21:38:52 - crawler - INFO - [manager] Pushed to storage: 699
+2025-12-02 21:38:52 - crawler - INFO - [w1][book][b694] Start
+2025-12-02 21:38:53 - crawler - INFO - [manager] Pushed to storage: 698
+2025-12-02 21:38:53 - crawler - INFO - [w4][book][b693] Start
+2025-12-02 21:38:54 - crawler - INFO - [manager] Pushed to storage: 696
+2025-12-02 21:38:54 - crawler - INFO - [w2][book][b692] Start
+2025-12-02 21:38:54 - crawler - INFO - [manager] Pushed to storage: 697
+2025-12-02 21:38:54 - crawler - INFO - [w5][book][b691] Start
+2025-12-02 21:38:55 - crawler - INFO - [manager] Pushed to storage: 695
+2025-12-02 21:38:55 - crawler - INFO - [w3][book][b690] Start
+2025-12-02 21:38:56 - crawler - INFO - [manager] Pushed to storage: 694
+2025-12-02 21:38:56 - crawler - INFO - [w1][book][b689] Start
+2025-12-02 21:38:57 - crawler - INFO - [manager] Pushed to storage: 693
+2025-12-02 21:38:57 - crawler - INFO - [w4][book][b688] Start
+2025-12-02 21:38:58 - crawler - INFO - [manager] Pushed to storage: 692
+2025-12-02 21:38:58 - crawler - INFO - [w2][book][b687] Start
+2025-12-02 21:39:00 - crawler - INFO - [manager] Pushed to storage: 691
+2025-12-02 21:39:00 - crawler - INFO - [w5][book][b686] Start
+2025-12-02 21:39:01 - crawler - INFO - [manager] Pushed to storage: 690
+2025-12-02 21:39:01 - crawler - INFO - [w3][book][b685] Start
+2025-12-02 21:39:03 - crawler - INFO - [manager] Pushed to storage: 689
+2025-12-02 21:39:03 - crawler - INFO - [w1][book][b684] Start
+2025-12-02 21:39:05 - crawler - INFO - [manager] Pushed to storage: 688
+2025-12-02 21:39:05 - crawler - INFO - [w4][book][b683] Start
+2025-12-02 21:39:06 - crawler - INFO - [manager] Pushed to storage: 687
+2025-12-02 21:39:06 - crawler - INFO - [w2][book][b682] Start
+2025-12-02 21:39:07 - crawler - INFO - [manager] Pushed to storage: 686
+2025-12-02 21:39:07 - crawler - INFO - [w5][book][b681] Start
+2025-12-02 21:39:08 - crawler - INFO - [manager] Pushed to storage: 685
+2025-12-02 21:39:08 - crawler - INFO - [w3][book][b720] Start
+2025-12-02 21:39:09 - crawler - INFO - [manager] Pushed to storage: 684
+2025-12-02 21:39:09 - crawler - INFO - [w1][book][b719] Start
+2025-12-02 21:39:10 - crawler - INFO - [manager] Pushed to storage: 683
+2025-12-02 21:39:10 - crawler - INFO - [w4][book][b718] Start
+2025-12-02 21:39:11 - crawler - INFO - [manager] Pushed to storage: 682
+2025-12-02 21:39:11 - crawler - INFO - [w2][book][b717] Start
+2025-12-02 21:39:11 - crawler - INFO - [manager] Pushed to storage: 681
+2025-12-02 21:39:11 - crawler - INFO - [w5][book][b716] Start
+2025-12-02 21:39:12 - crawler - INFO - [manager] Pushed to storage: 720
+2025-12-02 21:39:12 - crawler - INFO - [w3][book][b715] Start
+2025-12-02 21:39:13 - crawler - INFO - [manager] Pushed to storage: 719
+2025-12-02 21:39:13 - crawler - INFO - [w1][book][b714] Start
+2025-12-02 21:39:13 - crawler - INFO - [manager] Pushed to storage: 717
+2025-12-02 21:39:13 - crawler - INFO - [w2][book][b713] Start
+2025-12-02 21:39:14 - crawler - INFO - [manager] Pushed to storage: 718
+2025-12-02 21:39:14 - crawler - INFO - [w4][book][b712] Start
+2025-12-02 21:39:15 - crawler - INFO - [manager] Pushed to storage: 716
+2025-12-02 21:39:15 - crawler - INFO - [w5][book][b711] Start
+2025-12-02 21:39:15 - crawler - INFO - [manager] Pushed to storage: 715
+2025-12-02 21:39:15 - crawler - INFO - [w3][book][b710] Start
+2025-12-02 21:39:16 - crawler - INFO - [manager] Pushed to storage: 714
+2025-12-02 21:39:16 - crawler - INFO - [w1][book][b709] Start
+2025-12-02 21:39:16 - crawler - INFO - [manager] Pushed to storage: 712
+2025-12-02 21:39:16 - crawler - INFO - [w4][book][b708] Start
+2025-12-02 21:39:17 - crawler - INFO - [manager] Pushed to storage: 711
+2025-12-02 21:39:17 - crawler - INFO - [w5][book][b707] Start
+2025-12-02 21:39:18 - crawler - INFO - [manager] Pushed to storage: 713
+2025-12-02 21:39:18 - crawler - INFO - [w2][book][b706] Start
+2025-12-02 21:39:18 - crawler - INFO - [manager] Pushed to storage: 710
+2025-12-02 21:39:18 - crawler - INFO - [w3][book][b705] Start
+2025-12-02 21:39:19 - crawler - INFO - [manager] Pushed to storage: 709
+2025-12-02 21:39:19 - crawler - INFO - [w1][book][b704] Start
+2025-12-02 21:39:19 - crawler - INFO - [manager] Pushed to storage: 708
+2025-12-02 21:39:19 - crawler - INFO - [w4][book][b703] Start
+2025-12-02 21:39:20 - crawler - INFO - [manager] Pushed to storage: 707
+2025-12-02 21:39:20 - crawler - INFO - [w5][book][b702] Start
+2025-12-02 21:39:21 - crawler - INFO - [manager] Pushed to storage: 706
+2025-12-02 21:39:21 - crawler - INFO - [w2][book][b701] Start
+2025-12-02 21:39:21 - crawler - INFO - [manager] Pushed to storage: 705
+2025-12-02 21:39:21 - crawler - INFO - [w3][book][b740] Start
+2025-12-02 21:39:22 - crawler - INFO - [manager] Pushed to storage: 704
+2025-12-02 21:39:22 - crawler - INFO - [w1][book][b739] Start
+2025-12-02 21:39:23 - crawler - INFO - [manager] Pushed to storage: 703
+2025-12-02 21:39:23 - crawler - INFO - [w4][book][b738] Start
+2025-12-02 21:39:23 - crawler - INFO - [manager] Pushed to storage: 702
+2025-12-02 21:39:23 - crawler - INFO - [w5][book][b737] Start
+2025-12-02 21:39:24 - crawler - INFO - [manager] Pushed to storage: 701
+2025-12-02 21:39:24 - crawler - INFO - [w2][book][b736] Start
+2025-12-02 21:39:25 - crawler - INFO - [manager] Pushed to storage: 740
+2025-12-02 21:39:25 - crawler - INFO - [w3][book][b735] Start
+2025-12-02 21:39:25 - crawler - INFO - [manager] Pushed to storage: 739
+2025-12-02 21:39:25 - crawler - INFO - [w1][book][b734] Start
+2025-12-02 21:39:26 - crawler - INFO - [manager] Pushed to storage: 737
+2025-12-02 21:39:26 - crawler - INFO - [w5][book][b733] Start
+2025-12-02 21:39:26 - crawler - INFO - [manager] Pushed to storage: 738
+2025-12-02 21:39:26 - crawler - INFO - [w4][book][b732] Start
+2025-12-02 21:39:27 - crawler - INFO - [manager] Pushed to storage: 736
+2025-12-02 21:39:27 - crawler - INFO - [w2][book][b731] Start
+2025-12-02 21:39:28 - crawler - INFO - [manager] Pushed to storage: 735
+2025-12-02 21:39:28 - crawler - INFO - [w3][book][b730] Start
+2025-12-02 21:39:29 - crawler - INFO - [manager] Pushed to storage: 734
+2025-12-02 21:39:29 - crawler - INFO - [w1][book][b729] Start
+2025-12-02 21:39:30 - crawler - INFO - [manager] Pushed to storage: 731
+2025-12-02 21:39:30 - crawler - INFO - [w2][book][b728] Start
+2025-12-02 21:39:31 - crawler - INFO - [manager] Pushed to storage: 732
+2025-12-02 21:39:31 - crawler - INFO - [w4][book][b727] Start
+2025-12-02 21:39:31 - crawler - INFO - [manager] Pushed to storage: 730
+2025-12-02 21:39:31 - crawler - INFO - [w3][book][b726] Start
+2025-12-02 21:39:32 - crawler - INFO - [manager] Pushed to storage: 729
+2025-12-02 21:39:32 - crawler - INFO - [w1][book][b725] Start
+2025-12-02 21:39:34 - crawler - INFO - [manager] Pushed to storage: 733
+2025-12-02 21:39:34 - crawler - INFO - [w5][book][b724] Start
+2025-12-02 21:39:34 - crawler - INFO - [manager] Pushed to storage: 727
+2025-12-02 21:39:34 - crawler - INFO - [w4][book][b723] Start
+2025-12-02 21:39:35 - crawler - INFO - [manager] Pushed to storage: 728
+2025-12-02 21:39:35 - crawler - INFO - [w2][book][b722] Start
+2025-12-02 21:39:35 - crawler - INFO - [manager] Pushed to storage: 726
+2025-12-02 21:39:35 - crawler - INFO - [w3][book][b721] Start
+2025-12-02 21:39:36 - crawler - INFO - [manager] Pushed to storage: 725
+2025-12-02 21:39:36 - crawler - INFO - [w1][book][b680] Start
+2025-12-02 21:39:37 - crawler - INFO - [manager] Pushed to storage: 724
+2025-12-02 21:39:37 - crawler - INFO - [w5][book][b679] Start
+2025-12-02 21:39:37 - crawler - INFO - [manager] Pushed to storage: 723
+2025-12-02 21:39:37 - crawler - INFO - [w4][book][b678] Start
+2025-12-02 21:39:38 - crawler - INFO - [manager] Pushed to storage: 722
+2025-12-02 21:39:38 - crawler - INFO - [w2][book][b677] Start
+2025-12-02 21:39:38 - crawler - INFO - [manager] Pushed to storage: 721
+2025-12-02 21:39:38 - crawler - INFO - [w3][book][b676] Start
+2025-12-02 21:39:39 - crawler - INFO - [manager] Pushed to storage: 680
+2025-12-02 21:39:39 - crawler - INFO - [w1][book][b675] Start
+2025-12-02 21:39:40 - crawler - INFO - [manager] Pushed to storage: 678
+2025-12-02 21:39:40 - crawler - INFO - [w4][book][b674] Start
+2025-12-02 21:39:40 - crawler - INFO - [manager] Pushed to storage: 679
+2025-12-02 21:39:40 - crawler - INFO - [w5][book][b673] Start
+2025-12-02 21:39:41 - crawler - INFO - [manager] Pushed to storage: 677
+2025-12-02 21:39:41 - crawler - INFO - [w2][book][b672] Start
+2025-12-02 21:39:42 - crawler - INFO - [manager] Pushed to storage: 676
+2025-12-02 21:39:42 - crawler - INFO - [w3][book][b671] Start
+2025-12-02 21:39:42 - crawler - INFO - [manager] Pushed to storage: 675
+2025-12-02 21:39:42 - crawler - INFO - [w1][book][b670] Start
+2025-12-02 21:39:43 - crawler - INFO - [manager] Pushed to storage: 673
+2025-12-02 21:39:43 - crawler - INFO - [w5][book][b669] Start
+2025-12-02 21:39:43 - crawler - INFO - [manager] Pushed to storage: 674
+2025-12-02 21:39:43 - crawler - INFO - [w4][book][b668] Start
+2025-12-02 21:39:44 - crawler - INFO - [manager] Pushed to storage: 672
+2025-12-02 21:39:44 - crawler - INFO - [w2][book][b667] Start
+2025-12-02 21:39:45 - crawler - INFO - [manager] Pushed to storage: 671
+2025-12-02 21:39:45 - crawler - INFO - [w3][book][b666] Start
+2025-12-02 21:39:45 - crawler - INFO - [manager] Pushed to storage: 669
+2025-12-02 21:39:45 - crawler - INFO - [w5][book][b665] Start
+2025-12-02 21:39:46 - crawler - INFO - [manager] Pushed to storage: 670
+2025-12-02 21:39:46 - crawler - INFO - [w1][book][b664] Start
+2025-12-02 21:39:47 - crawler - INFO - [manager] Pushed to storage: 668
+2025-12-02 21:39:47 - crawler - INFO - [w4][book][b663] Start
+2025-12-02 21:39:47 - crawler - INFO - [manager] Pushed to storage: 667
+2025-12-02 21:39:47 - crawler - INFO - [w2][book][b662] Start
+2025-12-02 21:39:48 - crawler - INFO - [manager] Pushed to storage: 666
+2025-12-02 21:39:48 - crawler - INFO - [w3][book][b661] Start
+2025-12-02 21:39:49 - crawler - INFO - [manager] Pushed to storage: 664
+2025-12-02 21:39:49 - crawler - INFO - [manager] Pushed to storage: 665
+2025-12-02 21:39:49 - crawler - INFO - [w1][book][b660] Start
+2025-12-02 21:39:49 - crawler - INFO - [w5][book][b659] Start
+2025-12-02 21:39:50 - crawler - INFO - [manager] Pushed to storage: 663
+2025-12-02 21:39:50 - crawler - INFO - [w4][book][b658] Start
+2025-12-02 21:39:51 - crawler - INFO - [manager] Pushed to storage: 662
+2025-12-02 21:39:51 - crawler - INFO - [w2][book][b657] Start
+2025-12-02 21:39:51 - crawler - INFO - [manager] Pushed to storage: 661
+2025-12-02 21:39:51 - crawler - INFO - [w3][book][b656] Start
+2025-12-02 21:39:52 - crawler - INFO - [manager] Pushed to storage: 659
+2025-12-02 21:39:52 - crawler - INFO - [w5][book][b655] Start
+2025-12-02 21:39:52 - crawler - INFO - [manager] Pushed to storage: 660
+2025-12-02 21:39:52 - crawler - INFO - [w1][book][b654] Start
+2025-12-02 21:39:53 - crawler - INFO - [manager] Pushed to storage: 658
+2025-12-02 21:39:53 - crawler - INFO - [w4][book][b653] Start
+2025-12-02 21:39:54 - crawler - INFO - [manager] Pushed to storage: 657
+2025-12-02 21:39:54 - crawler - INFO - [w2][book][b652] Start
+2025-12-02 21:39:54 - crawler - INFO - [manager] Pushed to storage: 655
+2025-12-02 21:39:54 - crawler - INFO - [w5][book][b651] Start
+2025-12-02 21:39:55 - crawler - INFO - [manager] Pushed to storage: 654
+2025-12-02 21:39:55 - crawler - INFO - [w1][book][b650] Start
+2025-12-02 21:39:56 - crawler - INFO - [manager] Pushed to storage: 653
+2025-12-02 21:39:56 - crawler - INFO - [w4][book][b649] Start
+2025-12-02 21:39:56 - crawler - INFO - [manager] Pushed to storage: 652
+2025-12-02 21:39:56 - crawler - INFO - [w2][book][b648] Start
+2025-12-02 21:39:57 - crawler - INFO - [manager] Pushed to storage: 651
+2025-12-02 21:39:57 - crawler - INFO - [w5][book][b647] Start
+2025-12-02 21:39:58 - crawler - INFO - [manager] Pushed to storage: 656
+2025-12-02 21:39:58 - crawler - INFO - [w3][book][b646] Start
+2025-12-02 21:39:59 - crawler - INFO - [manager] Pushed to storage: 650
+2025-12-02 21:39:59 - crawler - INFO - [w1][book][b645] Start
+2025-12-02 21:40:00 - crawler - INFO - [manager] Pushed to storage: 649
+2025-12-02 21:40:00 - crawler - INFO - [w4][book][b644] Start
+2025-12-02 21:40:00 - crawler - INFO - [manager] Pushed to storage: 648
+2025-12-02 21:40:00 - crawler - INFO - [w2][book][b643] Start
+2025-12-02 21:40:01 - crawler - INFO - [manager] Pushed to storage: 647
+2025-12-02 21:40:01 - crawler - INFO - [manager] Pushed to storage: 646
+2025-12-02 21:40:01 - crawler - INFO - [w5][book][b642] Start
+2025-12-02 21:40:02 - crawler - INFO - [w3][book][b641] Start
+2025-12-02 21:40:03 - crawler - INFO - [manager] Pushed to storage: 645
+2025-12-02 21:40:03 - crawler - INFO - [w1][book][b600] Start
+2025-12-02 21:40:04 - crawler - INFO - [manager] Pushed to storage: 644
+2025-12-02 21:40:04 - crawler - INFO - [w4][book][b599] Start
+2025-12-02 21:40:05 - crawler - INFO - [manager] Pushed to storage: 643
+2025-12-02 21:40:05 - crawler - INFO - [w2][book][b598] Start
+2025-12-02 21:40:07 - crawler - INFO - [manager] Pushed to storage: 641
+2025-12-02 21:40:07 - crawler - INFO - [w3][book][b597] Start
+2025-12-02 21:40:08 - crawler - INFO - [manager] Pushed to storage: 642
+2025-12-02 21:40:08 - crawler - INFO - [w5][book][b596] Start
+2025-12-02 21:40:09 - crawler - INFO - [manager] Pushed to storage: 600
+2025-12-02 21:40:09 - crawler - INFO - [w1][book][b595] Start
+2025-12-02 21:40:09 - crawler - INFO - [manager] Pushed to storage: 599
+2025-12-02 21:40:09 - crawler - INFO - [w4][book][b594] Start
+2025-12-02 21:40:10 - crawler - INFO - [manager] Pushed to storage: 598
+2025-12-02 21:40:10 - crawler - INFO - [w2][book][b593] Start
+2025-12-02 21:40:12 - crawler - INFO - [manager] Pushed to storage: 597
+2025-12-02 21:40:12 - crawler - INFO - [w3][book][b592] Start
+2025-12-02 21:40:13 - crawler - INFO - [manager] Pushed to storage: 596
+2025-12-02 21:40:13 - crawler - INFO - [w5][book][b591] Start
+2025-12-02 21:40:14 - crawler - INFO - [manager] Pushed to storage: 595
+2025-12-02 21:40:14 - crawler - INFO - [w1][book][b590] Start
+2025-12-02 21:40:15 - crawler - INFO - [manager] Pushed to storage: 594
+2025-12-02 21:40:15 - crawler - INFO - [w4][book][b589] Start
+2025-12-02 21:40:16 - crawler - INFO - [manager] Pushed to storage: 593
+2025-12-02 21:40:16 - crawler - INFO - [w2][book][b588] Start
+2025-12-02 21:40:17 - crawler - INFO - [manager] Pushed to storage: 592
+2025-12-02 21:40:17 - crawler - INFO - [w3][book][b587] Start
+2025-12-02 21:40:18 - crawler - INFO - [manager] Pushed to storage: 591
+2025-12-02 21:40:18 - crawler - INFO - [w5][book][b586] Start
+2025-12-02 21:40:19 - crawler - INFO - [manager] Pushed to storage: 590
+2025-12-02 21:40:19 - crawler - INFO - [w1][book][b585] Start
+2025-12-02 21:40:19 - crawler - INFO - [manager] Pushed to storage: 589
+2025-12-02 21:40:19 - crawler - INFO - [w4][book][b584] Start
+2025-12-02 21:40:20 - crawler - INFO - [manager] Pushed to storage: 588
+2025-12-02 21:40:20 - crawler - INFO - [w2][book][b583] Start
+2025-12-02 21:40:21 - crawler - INFO - [manager] Pushed to storage: 587
+2025-12-02 21:40:21 - crawler - INFO - [w3][book][b582] Start
+2025-12-02 21:40:22 - crawler - INFO - [manager] Pushed to storage: 586
+2025-12-02 21:40:22 - crawler - INFO - [w5][book][b581] Start
+2025-12-02 21:40:23 - crawler - INFO - [manager] Pushed to storage: 585
+2025-12-02 21:40:23 - crawler - INFO - [w1][book][b620] Start
+2025-12-02 21:40:23 - crawler - INFO - [manager] Pushed to storage: 584
+2025-12-02 21:40:23 - crawler - INFO - [w4][book][b619] Start
+2025-12-02 21:40:24 - crawler - INFO - [manager] Pushed to storage: 583
+2025-12-02 21:40:24 - crawler - INFO - [w2][book][b618] Start
+2025-12-02 21:40:25 - crawler - INFO - [manager] Pushed to storage: 582
+2025-12-02 21:40:25 - crawler - INFO - [w3][book][b617] Start
+2025-12-02 21:40:26 - crawler - INFO - [manager] Pushed to storage: 581
+2025-12-02 21:40:26 - crawler - INFO - [w5][book][b616] Start
+2025-12-02 21:40:27 - crawler - INFO - [manager] Pushed to storage: 620
+2025-12-02 21:40:27 - crawler - INFO - [w1][book][b615] Start
+2025-12-02 21:40:28 - crawler - INFO - [manager] Pushed to storage: 619
+2025-12-02 21:40:28 - crawler - INFO - [w4][book][b614] Start
+2025-12-02 21:40:29 - crawler - INFO - [manager] Pushed to storage: 618
+2025-12-02 21:40:29 - crawler - INFO - [w2][book][b613] Start
+2025-12-02 21:40:29 - crawler - INFO - [manager] Pushed to storage: 617
+2025-12-02 21:40:29 - crawler - INFO - [w3][book][b612] Start
+2025-12-02 21:40:30 - crawler - INFO - [manager] Pushed to storage: 615
+2025-12-02 21:40:30 - crawler - INFO - [w1][book][b611] Start
+2025-12-02 21:40:31 - crawler - INFO - [manager] Pushed to storage: 614
+2025-12-02 21:40:31 - crawler - INFO - [w4][book][b610] Start
+2025-12-02 21:40:32 - crawler - INFO - [manager] Pushed to storage: 616
+2025-12-02 21:40:32 - crawler - INFO - [w5][book][b609] Start
+2025-12-02 21:40:32 - crawler - INFO - [manager] Pushed to storage: 613
+2025-12-02 21:40:32 - crawler - INFO - [w2][book][b608] Start
+2025-12-02 21:40:33 - crawler - INFO - [manager] Pushed to storage: 612
+2025-12-02 21:40:33 - crawler - INFO - [w3][book][b607] Start
+2025-12-02 21:40:34 - crawler - INFO - [manager] Pushed to storage: 611
+2025-12-02 21:40:34 - crawler - INFO - [w1][book][b606] Start
+2025-12-02 21:40:36 - crawler - INFO - [manager] Pushed to storage: 610
+2025-12-02 21:40:36 - crawler - INFO - [w4][book][b605] Start
+2025-12-02 21:40:37 - crawler - INFO - [manager] Pushed to storage: 609
+2025-12-02 21:40:37 - crawler - INFO - [w5][book][b604] Start
+2025-12-02 21:40:38 - crawler - INFO - [manager] Pushed to storage: 608
+2025-12-02 21:40:38 - crawler - INFO - [w2][book][b603] Start
+2025-12-02 21:40:39 - crawler - INFO - [manager] Pushed to storage: 607
+2025-12-02 21:40:39 - crawler - INFO - [w3][book][b602] Start
+2025-12-02 21:40:40 - crawler - INFO - [manager] Pushed to storage: 606
+2025-12-02 21:40:40 - crawler - INFO - [w1][book][b601] Start
+2025-12-02 21:40:41 - crawler - INFO - [manager] Pushed to storage: 605
+2025-12-02 21:40:41 - crawler - INFO - [w4][book][b640] Start
+2025-12-02 21:40:41 - crawler - INFO - [manager] Pushed to storage: 603
+2025-12-02 21:40:41 - crawler - INFO - [w2][book][b639] Start
+2025-12-02 21:40:42 - crawler - INFO - [manager] Pushed to storage: 604
+2025-12-02 21:40:42 - crawler - INFO - [w5][book][b638] Start
+2025-12-02 21:40:43 - crawler - INFO - [manager] Pushed to storage: 602
+2025-12-02 21:40:43 - crawler - INFO - [w3][book][b637] Start
+2025-12-02 21:40:43 - crawler - INFO - [manager] Pushed to storage: 601
+2025-12-02 21:40:43 - crawler - INFO - [w1][book][b636] Start
+2025-12-02 21:40:44 - crawler - INFO - [manager] Pushed to storage: 640
+2025-12-02 21:40:44 - crawler - INFO - [w4][book][b635] Start
+2025-12-02 21:40:44 - crawler - INFO - [manager] Pushed to storage: 638
+2025-12-02 21:40:44 - crawler - INFO - [w5][book][b634] Start
+2025-12-02 21:40:45 - crawler - INFO - [manager] Pushed to storage: 637
+2025-12-02 21:40:45 - crawler - INFO - [w3][book][b633] Start
+2025-12-02 21:40:46 - crawler - INFO - [manager] Pushed to storage: 636
+2025-12-02 21:40:46 - crawler - INFO - [w1][book][b632] Start
+2025-12-02 21:40:46 - crawler - INFO - [manager] Pushed to storage: 639
+2025-12-02 21:40:46 - crawler - INFO - [w2][book][b631] Start
+2025-12-02 21:40:47 - crawler - INFO - [manager] Pushed to storage: 635
+2025-12-02 21:40:47 - crawler - INFO - [w4][book][b630] Start
+2025-12-02 21:40:47 - crawler - INFO - [manager] Pushed to storage: 634
+2025-12-02 21:40:47 - crawler - INFO - [w5][book][b629] Start
+2025-12-02 21:40:48 - crawler - INFO - [manager] Pushed to storage: 633
+2025-12-02 21:40:48 - crawler - INFO - [w3][book][b628] Start
+2025-12-02 21:40:49 - crawler - INFO - [manager] Pushed to storage: 632
+2025-12-02 21:40:49 - crawler - INFO - [w1][book][b627] Start
+2025-12-02 21:40:49 - crawler - INFO - [manager] Pushed to storage: 631
+2025-12-02 21:40:49 - crawler - INFO - [w2][book][b626] Start
+2025-12-02 21:40:50 - crawler - INFO - [manager] Pushed to storage: 630
+2025-12-02 21:40:50 - crawler - INFO - [w4][book][b625] Start
+2025-12-02 21:40:50 - crawler - INFO - [manager] Pushed to storage: 629
+2025-12-02 21:40:50 - crawler - INFO - [w5][book][b624] Start
+2025-12-02 21:40:51 - crawler - INFO - [manager] Pushed to storage: 628
+2025-12-02 21:40:51 - crawler - INFO - [w3][book][b623] Start
+2025-12-02 21:40:52 - crawler - INFO - [manager] Pushed to storage: 627
+2025-12-02 21:40:52 - crawler - INFO - [w1][book][b622] Start
+2025-12-02 21:40:52 - crawler - INFO - [manager] Pushed to storage: 626
+2025-12-02 21:40:52 - crawler - INFO - [w2][book][b621] Start
+2025-12-02 21:40:53 - crawler - INFO - [manager] Pushed to storage: 625
+2025-12-02 21:40:53 - crawler - INFO - [w4][book][b580] Start
+2025-12-02 21:40:54 - crawler - INFO - [manager] Pushed to storage: 624
+2025-12-02 21:40:54 - crawler - INFO - [w5][book][b579] Start
+2025-12-02 21:40:55 - crawler - INFO - [manager] Pushed to storage: 623
+2025-12-02 21:40:55 - crawler - INFO - [w3][book][b578] Start
+2025-12-02 21:40:56 - crawler - INFO - [manager] Pushed to storage: 622
+2025-12-02 21:40:56 - crawler - INFO - [w1][book][b577] Start
+2025-12-02 21:40:56 - crawler - INFO - [manager] Pushed to storage: 621
+2025-12-02 21:40:56 - crawler - INFO - [w2][book][b576] Start
+2025-12-02 21:40:57 - crawler - INFO - [manager] Pushed to storage: 580
+2025-12-02 21:40:57 - crawler - INFO - [w4][book][b575] Start
+2025-12-02 21:40:58 - crawler - INFO - [manager] Pushed to storage: 579
+2025-12-02 21:40:58 - crawler - INFO - [w5][book][b574] Start
+2025-12-02 21:40:59 - crawler - INFO - [manager] Pushed to storage: 578
+2025-12-02 21:40:59 - crawler - INFO - [w3][book][b573] Start
+2025-12-02 21:41:00 - crawler - INFO - [manager] Pushed to storage: 577
+2025-12-02 21:41:00 - crawler - INFO - [w1][book][b572] Start
+2025-12-02 21:41:01 - crawler - INFO - [manager] Pushed to storage: 576
+2025-12-02 21:41:01 - crawler - INFO - [w2][book][b571] Start
+2025-12-02 21:41:01 - crawler - INFO - [manager] Pushed to storage: 575
+2025-12-02 21:41:01 - crawler - INFO - [w4][book][b570] Start
+2025-12-02 21:41:02 - crawler - INFO - [manager] Pushed to storage: 574
+2025-12-02 21:41:02 - crawler - INFO - [w5][book][b569] Start
+2025-12-02 21:41:03 - crawler - INFO - [manager] Pushed to storage: 573
+2025-12-02 21:41:03 - crawler - INFO - [w3][book][b568] Start
+2025-12-02 21:41:03 - crawler - INFO - [manager] Pushed to storage: 572
+2025-12-02 21:41:03 - crawler - INFO - [w1][book][b567] Start
+2025-12-02 21:41:04 - crawler - INFO - [manager] Pushed to storage: 571
+2025-12-02 21:41:04 - crawler - INFO - [w2][book][b566] Start
+2025-12-02 21:41:05 - crawler - INFO - [manager] Pushed to storage: 570
+2025-12-02 21:41:05 - crawler - INFO - [w4][book][b565] Start
+2025-12-02 21:41:05 - crawler - INFO - [manager] Pushed to storage: 569
+2025-12-02 21:41:05 - crawler - INFO - [w5][book][b564] Start
+2025-12-02 21:41:06 - crawler - INFO - [manager] Pushed to storage: 568
+2025-12-02 21:41:06 - crawler - INFO - [w3][book][b563] Start
+2025-12-02 21:41:07 - crawler - INFO - [manager] Pushed to storage: 567
+2025-12-02 21:41:07 - crawler - INFO - [w1][book][b562] Start
+2025-12-02 21:41:07 - crawler - INFO - [manager] Pushed to storage: 566
+2025-12-02 21:41:07 - crawler - INFO - [w2][book][b561] Start
+2025-12-02 21:41:08 - crawler - INFO - [manager] Pushed to storage: 565
+2025-12-02 21:41:08 - crawler - INFO - [w4][book][b520] Start
+2025-12-02 21:41:08 - crawler - INFO - [manager] Pushed to storage: 564
+2025-12-02 21:41:08 - crawler - INFO - [w5][book][b519] Start
+2025-12-02 21:41:09 - crawler - INFO - [manager] Pushed to storage: 563
+2025-12-02 21:41:09 - crawler - INFO - [w3][book][b518] Start
+2025-12-02 21:41:10 - crawler - INFO - [manager] Pushed to storage: 562
+2025-12-02 21:41:10 - crawler - INFO - [w1][book][b517] Start
+2025-12-02 21:41:10 - crawler - INFO - [manager] Pushed to storage: 561
+2025-12-02 21:41:10 - crawler - INFO - [w2][book][b516] Start
+2025-12-02 21:41:11 - crawler - INFO - [manager] Pushed to storage: 520
+2025-12-02 21:41:11 - crawler - INFO - [w4][book][b515] Start
+2025-12-02 21:41:11 - crawler - INFO - [manager] Pushed to storage: 519
+2025-12-02 21:41:11 - crawler - INFO - [w5][book][b514] Start
+2025-12-02 21:41:12 - crawler - INFO - [manager] Pushed to storage: 518
+2025-12-02 21:41:12 - crawler - INFO - [w3][book][b513] Start
+2025-12-02 21:41:13 - crawler - INFO - [manager] Pushed to storage: 517
+2025-12-02 21:41:13 - crawler - INFO - [w1][book][b512] Start
+2025-12-02 21:41:13 - crawler - INFO - [manager] Pushed to storage: 516
+2025-12-02 21:41:13 - crawler - INFO - [w2][book][b511] Start
+2025-12-02 21:41:14 - crawler - INFO - [manager] Pushed to storage: 515
+2025-12-02 21:41:14 - crawler - INFO - [w4][book][b510] Start
+2025-12-02 21:41:15 - crawler - INFO - [manager] Pushed to storage: 514
+2025-12-02 21:41:15 - crawler - INFO - [w5][book][b509] Start
+2025-12-02 21:41:15 - crawler - INFO - [manager] Pushed to storage: 513
+2025-12-02 21:41:15 - crawler - INFO - [w3][book][b508] Start
+2025-12-02 21:41:16 - crawler - INFO - [manager] Pushed to storage: 512
+2025-12-02 21:41:16 - crawler - INFO - [w1][book][b507] Start
+2025-12-02 21:41:16 - crawler - INFO - [manager] Pushed to storage: 511
+2025-12-02 21:41:16 - crawler - INFO - [w2][book][b506] Start
+2025-12-02 21:41:17 - crawler - INFO - [manager] Pushed to storage: 510
+2025-12-02 21:41:17 - crawler - INFO - [w4][book][b505] Start
+2025-12-02 21:41:18 - crawler - INFO - [manager] Pushed to storage: 509
+2025-12-02 21:41:18 - crawler - INFO - [w5][book][b504] Start
+2025-12-02 21:41:18 - crawler - INFO - [manager] Pushed to storage: 508
+2025-12-02 21:41:18 - crawler - INFO - [w3][book][b503] Start
+2025-12-02 21:41:19 - crawler - INFO - [manager] Pushed to storage: 507
+2025-12-02 21:41:19 - crawler - INFO - [w1][book][b502] Start
+2025-12-02 21:41:19 - crawler - INFO - [manager] Pushed to storage: 506
+2025-12-02 21:41:19 - crawler - INFO - [w2][book][b501] Start
+2025-12-02 21:41:20 - crawler - INFO - [manager] Pushed to storage: 505
+2025-12-02 21:41:20 - crawler - INFO - [w4][book][b560] Start
+2025-12-02 21:41:21 - crawler - INFO - [manager] Pushed to storage: 504
+2025-12-02 21:41:21 - crawler - INFO - [w5][book][b559] Start
+2025-12-02 21:41:21 - crawler - INFO - [manager] Pushed to storage: 503
+2025-12-02 21:41:21 - crawler - INFO - [w3][book][b558] Start
+2025-12-02 21:41:22 - crawler - INFO - [manager] Pushed to storage: 502
+2025-12-02 21:41:22 - crawler - INFO - [w1][book][b557] Start
+2025-12-02 21:41:23 - crawler - INFO - [manager] Pushed to storage: 501
+2025-12-02 21:41:23 - crawler - INFO - [w2][book][b556] Start
+2025-12-02 21:41:24 - crawler - INFO - [manager] Pushed to storage: 560
+2025-12-02 21:41:24 - crawler - INFO - [w4][book][b555] Start
+2025-12-02 21:41:25 - crawler - INFO - [manager] Pushed to storage: 559
+2025-12-02 21:41:25 - crawler - INFO - [w5][book][b554] Start
+2025-12-02 21:41:25 - crawler - INFO - [manager] Pushed to storage: 558
+2025-12-02 21:41:25 - crawler - INFO - [w3][book][b553] Start
+2025-12-02 21:41:26 - crawler - INFO - [manager] Pushed to storage: 557
+2025-12-02 21:41:26 - crawler - INFO - [w1][book][b552] Start
+2025-12-02 21:41:27 - crawler - INFO - [manager] Pushed to storage: 555
+2025-12-02 21:41:27 - crawler - INFO - [w4][book][b551] Start
+2025-12-02 21:41:27 - crawler - INFO - [manager] Pushed to storage: 554
+2025-12-02 21:41:27 - crawler - INFO - [w5][book][b550] Start
+2025-12-02 21:41:28 - crawler - INFO - [manager] Pushed to storage: 556
+2025-12-02 21:41:28 - crawler - INFO - [manager] Pushed to storage: 553
+2025-12-02 21:41:28 - crawler - INFO - [w2][book][b549] Start
+2025-12-02 21:41:29 - crawler - INFO - [w3][book][b548] Start
+2025-12-02 21:41:30 - crawler - INFO - [manager] Pushed to storage: 552
+2025-12-02 21:41:30 - crawler - INFO - [w1][book][b547] Start
+2025-12-02 21:41:30 - crawler - INFO - [manager] Pushed to storage: 551
+2025-12-02 21:41:30 - crawler - INFO - [w4][book][b546] Start
+2025-12-02 21:41:31 - crawler - INFO - [manager] Pushed to storage: 550
+2025-12-02 21:41:31 - crawler - INFO - [w5][book][b545] Start
+2025-12-02 21:41:32 - crawler - INFO - [manager] Pushed to storage: 549
+2025-12-02 21:41:32 - crawler - INFO - [w2][book][b544] Start
+2025-12-02 21:41:32 - crawler - INFO - [manager] Pushed to storage: 548
+2025-12-02 21:41:32 - crawler - INFO - [w3][book][b543] Start
+2025-12-02 21:41:33 - crawler - INFO - [manager] Pushed to storage: 545
+2025-12-02 21:41:33 - crawler - INFO - [w5][book][b542] Start
+2025-12-02 21:41:34 - crawler - INFO - [manager] Pushed to storage: 547
+2025-12-02 21:41:34 - crawler - INFO - [manager] Pushed to storage: 546
+2025-12-02 21:41:34 - crawler - INFO - [w1][book][b541] Start
+2025-12-02 21:41:35 - crawler - INFO - [w4][book][b500] Start
+2025-12-02 21:41:35 - crawler - INFO - [manager] Pushed to storage: 544
+2025-12-02 21:41:35 - crawler - INFO - [w2][book][b499] Start
+2025-12-02 21:41:36 - crawler - INFO - [manager] Pushed to storage: 542
+2025-12-02 21:41:36 - crawler - INFO - [w5][book][b498] Start
+2025-12-02 21:41:37 - crawler - INFO - [manager] Pushed to storage: 500
+2025-12-02 21:41:37 - crawler - INFO - [w4][book][b497] Start
+2025-12-02 21:41:38 - crawler - INFO - [manager] Pushed to storage: 499
+2025-12-02 21:41:38 - crawler - INFO - [w2][book][b496] Start
+2025-12-02 21:41:39 - crawler - INFO - [manager] Pushed to storage: 541
+2025-12-02 21:41:39 - crawler - INFO - [w1][book][b495] Start
+2025-12-02 21:41:39 - crawler - INFO - [manager] Pushed to storage: 543
+2025-12-02 21:41:39 - crawler - INFO - [w3][book][b494] Start
+2025-12-02 21:41:40 - crawler - INFO - [manager] Pushed to storage: 498
+2025-12-02 21:41:40 - crawler - INFO - [w5][book][b493] Start
+2025-12-02 21:41:41 - crawler - INFO - [manager] Pushed to storage: 497
+2025-12-02 21:41:41 - crawler - INFO - [w4][book][b492] Start
+2025-12-02 21:41:41 - crawler - INFO - [manager] Pushed to storage: 496
+2025-12-02 21:41:41 - crawler - INFO - [w2][book][b491] Start
+2025-12-02 21:41:42 - crawler - INFO - [manager] Pushed to storage: 495
+2025-12-02 21:41:42 - crawler - INFO - [w1][book][b490] Start
+2025-12-02 21:41:43 - crawler - INFO - [manager] Pushed to storage: 494
+2025-12-02 21:41:43 - crawler - INFO - [w3][book][b489] Start
+2025-12-02 21:41:43 - crawler - INFO - [manager] Pushed to storage: 493
+2025-12-02 21:41:43 - crawler - INFO - [w5][book][b488] Start
+2025-12-02 21:41:44 - crawler - INFO - [manager] Pushed to storage: 492
+2025-12-02 21:41:44 - crawler - INFO - [w4][book][b487] Start
+2025-12-02 21:41:45 - crawler - INFO - [manager] Pushed to storage: 491
+2025-12-02 21:41:45 - crawler - INFO - [w2][book][b486] Start
+2025-12-02 21:41:45 - crawler - INFO - [manager] Pushed to storage: 490
+2025-12-02 21:41:45 - crawler - INFO - [manager] Pushed to storage: 489
+2025-12-02 21:41:45 - crawler - INFO - [w1][book][b485] Start
+2025-12-02 21:41:46 - crawler - INFO - [w3][book][b484] Start
+2025-12-02 21:41:47 - crawler - INFO - [manager] Pushed to storage: 487
+2025-12-02 21:41:47 - crawler - INFO - [w4][book][b483] Start
+2025-12-02 21:41:48 - crawler - INFO - [manager] Pushed to storage: 488
+2025-12-02 21:41:48 - crawler - INFO - [w5][book][b482] Start
+2025-12-02 21:41:48 - crawler - INFO - [manager] Pushed to storage: 486
+2025-12-02 21:41:48 - crawler - INFO - [w2][book][b481] Start
+2025-12-02 21:41:49 - crawler - INFO - [manager] Pushed to storage: 484
+2025-12-02 21:41:49 - crawler - INFO - [w3][book][b540] Start
+2025-12-02 21:41:50 - crawler - INFO - [manager] Pushed to storage: 485
+2025-12-02 21:41:50 - crawler - INFO - [w1][book][b539] Start
+2025-12-02 21:41:50 - crawler - INFO - [manager] Pushed to storage: 483
+2025-12-02 21:41:50 - crawler - INFO - [w4][book][b538] Start
+2025-12-02 21:41:51 - crawler - INFO - [manager] Pushed to storage: 482
+2025-12-02 21:41:51 - crawler - INFO - [w5][book][b537] Start
+2025-12-02 21:41:52 - crawler - INFO - [manager] Pushed to storage: 481
+2025-12-02 21:41:52 - crawler - INFO - [w2][book][b536] Start
+2025-12-02 21:41:52 - crawler - INFO - [manager] Pushed to storage: 540
+2025-12-02 21:41:52 - crawler - INFO - [w3][book][b535] Start
+2025-12-02 21:41:53 - crawler - INFO - [manager] Pushed to storage: 539
+2025-12-02 21:41:53 - crawler - INFO - [w1][book][b534] Start
+2025-12-02 21:41:54 - crawler - INFO - [manager] Pushed to storage: 538
+2025-12-02 21:41:54 - crawler - INFO - [w4][book][b533] Start
+2025-12-02 21:41:54 - crawler - INFO - [manager] Pushed to storage: 537
+2025-12-02 21:41:54 - crawler - INFO - [w5][book][b532] Start
+2025-12-02 21:41:55 - crawler - INFO - [manager] Pushed to storage: 536
+2025-12-02 21:41:55 - crawler - INFO - [w2][book][b531] Start
+2025-12-02 21:41:55 - crawler - INFO - [manager] Pushed to storage: 535
+2025-12-02 21:41:55 - crawler - INFO - [w3][book][b530] Start
+2025-12-02 21:41:56 - crawler - INFO - [manager] Pushed to storage: 534
+2025-12-02 21:41:56 - crawler - INFO - [w1][book][b529] Start
+2025-12-02 21:41:57 - crawler - INFO - [manager] Pushed to storage: 533
+2025-12-02 21:41:57 - crawler - INFO - [w4][book][b528] Start
+2025-12-02 21:41:57 - crawler - INFO - [manager] Pushed to storage: 531
+2025-12-02 21:41:57 - crawler - INFO - [w2][book][b527] Start
+2025-12-02 21:41:58 - crawler - INFO - [manager] Pushed to storage: 532
+2025-12-02 21:41:58 - crawler - INFO - [w5][book][b526] Start
+2025-12-02 21:41:59 - crawler - INFO - [manager] Pushed to storage: 530
+2025-12-02 21:41:59 - crawler - INFO - [w3][book][b525] Start
+2025-12-02 21:41:59 - crawler - INFO - [manager] Pushed to storage: 529
+2025-12-02 21:41:59 - crawler - INFO - [w1][book][b524] Start
+2025-12-02 21:42:00 - crawler - INFO - [manager] Pushed to storage: 528
+2025-12-02 21:42:00 - crawler - INFO - [w4][book][b523] Start
+2025-12-02 21:42:00 - crawler - INFO - [manager] Pushed to storage: 527
+2025-12-02 21:42:00 - crawler - INFO - [w2][book][b522] Start
+2025-12-02 21:42:01 - crawler - INFO - [manager] Pushed to storage: 526
+2025-12-02 21:42:01 - crawler - INFO - [w5][book][b521] Start
+2025-12-02 21:42:02 - crawler - INFO - [manager] Pushed to storage: 525
+2025-12-02 21:42:02 - crawler - INFO - [w3][book][b480] Start
+2025-12-02 21:42:02 - crawler - INFO - [manager] Pushed to storage: 524
+2025-12-02 21:42:02 - crawler - INFO - [w1][book][b479] Start
+2025-12-02 21:42:03 - crawler - INFO - [manager] Pushed to storage: 523
+2025-12-02 21:42:03 - crawler - INFO - [w4][book][b478] Start
+2025-12-02 21:42:04 - crawler - INFO - [manager] Pushed to storage: 522
+2025-12-02 21:42:04 - crawler - INFO - [w2][book][b477] Start
+2025-12-02 21:42:04 - crawler - INFO - [manager] Pushed to storage: 521
+2025-12-02 21:42:04 - crawler - INFO - [w5][book][b476] Start
+2025-12-02 21:42:05 - crawler - INFO - [manager] Pushed to storage: 480
+2025-12-02 21:42:05 - crawler - INFO - [w3][book][b475] Start
+2025-12-02 21:42:05 - crawler - INFO - [manager] Pushed to storage: 479
+2025-12-02 21:42:05 - crawler - INFO - [w1][book][b474] Start
+2025-12-02 21:42:06 - crawler - INFO - [manager] Pushed to storage: 478
+2025-12-02 21:42:06 - crawler - INFO - [w4][book][b473] Start
+2025-12-02 21:42:07 - crawler - INFO - [manager] Pushed to storage: 477
+2025-12-02 21:42:07 - crawler - INFO - [w2][book][b472] Start
+2025-12-02 21:42:07 - crawler - INFO - [manager] Pushed to storage: 476
+2025-12-02 21:42:07 - crawler - INFO - [w5][book][b471] Start
+2025-12-02 21:42:08 - crawler - INFO - [manager] Pushed to storage: 474
+2025-12-02 21:42:08 - crawler - INFO - [w1][book][b470] Start
+2025-12-02 21:42:08 - crawler - INFO - [manager] Pushed to storage: 473
+2025-12-02 21:42:08 - crawler - INFO - [w4][book][b469] Start
+2025-12-02 21:42:09 - crawler - INFO - [manager] Pushed to storage: 472
+2025-12-02 21:42:09 - crawler - INFO - [w2][book][b468] Start
+2025-12-02 21:42:10 - crawler - INFO - [manager] Pushed to storage: 475
+2025-12-02 21:42:10 - crawler - INFO - [w3][book][b467] Start
+2025-12-02 21:42:10 - crawler - INFO - [manager] Pushed to storage: 471
+2025-12-02 21:42:10 - crawler - INFO - [w5][book][b466] Start
+2025-12-02 21:42:11 - crawler - INFO - [manager] Pushed to storage: 470
+2025-12-02 21:42:11 - crawler - INFO - [w1][book][b465] Start
+2025-12-02 21:42:12 - crawler - INFO - [manager] Pushed to storage: 469
+2025-12-02 21:42:12 - crawler - INFO - [w4][book][b464] Start
+2025-12-02 21:42:12 - crawler - INFO - [manager] Pushed to storage: 468
+2025-12-02 21:42:12 - crawler - INFO - [w2][book][b463] Start
+2025-12-02 21:42:13 - crawler - INFO - [manager] Pushed to storage: 466
+2025-12-02 21:42:13 - crawler - INFO - [w5][book][b462] Start
+2025-12-02 21:42:14 - crawler - INFO - [manager] Pushed to storage: 467
+2025-12-02 21:42:14 - crawler - INFO - [w3][book][b461] Start
+2025-12-02 21:42:14 - crawler - INFO - [manager] Pushed to storage: 464
+2025-12-02 21:42:14 - crawler - INFO - [w4][book][b400] Start
+2025-12-02 21:42:15 - crawler - INFO - [manager] Pushed to storage: 465
+2025-12-02 21:42:15 - crawler - INFO - [w1][book][b399] Start
+2025-12-02 21:42:15 - crawler - INFO - [manager] Pushed to storage: 463
+2025-12-02 21:42:15 - crawler - INFO - [w2][book][b398] Start
+2025-12-02 21:42:16 - crawler - INFO - [manager] Pushed to storage: 462
+2025-12-02 21:42:16 - crawler - INFO - [w5][book][b397] Start
+2025-12-02 21:42:17 - crawler - INFO - [manager] Pushed to storage: 461
+2025-12-02 21:42:17 - crawler - INFO - [w3][book][b396] Start
+2025-12-02 21:42:17 - crawler - INFO - [manager] Pushed to storage: 399
+2025-12-02 21:42:17 - crawler - INFO - [w1][book][b395] Start
+2025-12-02 21:42:18 - crawler - INFO - [manager] Pushed to storage: 400
+2025-12-02 21:42:18 - crawler - INFO - [w4][book][b394] Start
+2025-12-02 21:42:19 - crawler - INFO - [manager] Pushed to storage: 398
+2025-12-02 21:42:19 - crawler - INFO - [w2][book][b393] Start
+2025-12-02 21:42:19 - crawler - INFO - [manager] Pushed to storage: 397
+2025-12-02 21:42:19 - crawler - INFO - [w5][book][b392] Start
+2025-12-02 21:42:20 - crawler - INFO - [manager] Pushed to storage: 396
+2025-12-02 21:42:20 - crawler - INFO - [w3][book][b391] Start
+2025-12-02 21:42:20 - crawler - INFO - [manager] Pushed to storage: 395
+2025-12-02 21:42:20 - crawler - INFO - [w1][book][b390] Start
+2025-12-02 21:42:21 - crawler - INFO - [manager] Pushed to storage: 394
+2025-12-02 21:42:21 - crawler - INFO - [w4][book][b389] Start
+2025-12-02 21:42:22 - crawler - INFO - [manager] Pushed to storage: 393
+2025-12-02 21:42:22 - crawler - INFO - [w2][book][b388] Start
+2025-12-02 21:42:22 - crawler - INFO - [manager] Pushed to storage: 392
+2025-12-02 21:42:22 - crawler - INFO - [w5][book][b387] Start
+2025-12-02 21:42:23 - crawler - INFO - [manager] Pushed to storage: 391
+2025-12-02 21:42:23 - crawler - INFO - [w3][book][b386] Start
+2025-12-02 21:42:23 - crawler - INFO - [manager] Pushed to storage: 390
+2025-12-02 21:42:23 - crawler - INFO - [w1][book][b385] Start
+2025-12-02 21:42:24 - crawler - INFO - [manager] Pushed to storage: 389
+2025-12-02 21:42:24 - crawler - INFO - [w4][book][b384] Start
+2025-12-02 21:42:25 - crawler - INFO - [manager] Pushed to storage: 388
+2025-12-02 21:42:25 - crawler - INFO - [w2][book][b383] Start
+2025-12-02 21:42:25 - crawler - INFO - [manager] Pushed to storage: 387
+2025-12-02 21:42:25 - crawler - INFO - [w5][book][b382] Start
+2025-12-02 21:42:26 - crawler - INFO - [manager] Pushed to storage: 386
+2025-12-02 21:42:26 - crawler - INFO - [w3][book][b381] Start
+2025-12-02 21:42:27 - crawler - INFO - [manager] Pushed to storage: 385
+2025-12-02 21:42:27 - crawler - INFO - [w1][book][b420] Start
+2025-12-02 21:42:27 - crawler - INFO - [manager] Pushed to storage: 384
+2025-12-02 21:42:27 - crawler - INFO - [w4][book][b419] Start
+2025-12-02 21:42:28 - crawler - INFO - [manager] Pushed to storage: 383
+2025-12-02 21:42:28 - crawler - INFO - [w2][book][b418] Start
+2025-12-02 21:42:28 - crawler - INFO - [manager] Pushed to storage: 382
+2025-12-02 21:42:28 - crawler - INFO - [w5][book][b417] Start
+2025-12-02 21:42:29 - crawler - INFO - [manager] Pushed to storage: 381
+2025-12-02 21:42:29 - crawler - INFO - [w3][book][b416] Start
+2025-12-02 21:42:30 - crawler - INFO - [manager] Pushed to storage: 420
+2025-12-02 21:42:30 - crawler - INFO - [w1][book][b415] Start
+2025-12-02 21:42:30 - crawler - INFO - [manager] Pushed to storage: 419
+2025-12-02 21:42:30 - crawler - INFO - [w4][book][b414] Start
+2025-12-02 21:42:31 - crawler - INFO - [manager] Pushed to storage: 418
+2025-12-02 21:42:31 - crawler - INFO - [w2][book][b413] Start
+2025-12-02 21:42:32 - crawler - INFO - [manager] Pushed to storage: 416
+2025-12-02 21:42:32 - crawler - INFO - [w3][book][b412] Start
+2025-12-02 21:42:32 - crawler - INFO - [manager] Pushed to storage: 417
+2025-12-02 21:42:32 - crawler - INFO - [w5][book][b411] Start
+2025-12-02 21:42:33 - crawler - INFO - [manager] Pushed to storage: 415
+2025-12-02 21:42:33 - crawler - INFO - [w1][book][b410] Start
+2025-12-02 21:42:34 - crawler - INFO - [manager] Pushed to storage: 414
+2025-12-02 21:42:34 - crawler - INFO - [w4][book][b409] Start
+2025-12-02 21:42:34 - crawler - INFO - [manager] Pushed to storage: 413
+2025-12-02 21:42:34 - crawler - INFO - [w2][book][b408] Start
+2025-12-02 21:42:36 - crawler - INFO - [manager] Pushed to storage: 412
+2025-12-02 21:42:36 - crawler - INFO - [manager] Pushed to storage: 411
+2025-12-02 21:42:36 - crawler - INFO - [w3][book][b407] Start
+2025-12-02 21:42:36 - crawler - INFO - [w5][book][b406] Start
+2025-12-02 21:42:37 - crawler - INFO - [manager] Pushed to storage: 410
+2025-12-02 21:42:37 - crawler - INFO - [w1][book][b405] Start
+2025-12-02 21:42:38 - crawler - INFO - [manager] Pushed to storage: 409
+2025-12-02 21:42:38 - crawler - INFO - [w4][book][b404] Start
+2025-12-02 21:42:39 - crawler - INFO - [manager] Pushed to storage: 408
+2025-12-02 21:42:39 - crawler - INFO - [w2][book][b403] Start
+2025-12-02 21:42:40 - crawler - INFO - [manager] Pushed to storage: 406
+2025-12-02 21:42:40 - crawler - INFO - [w5][book][b402] Start
+2025-12-02 21:42:41 - crawler - INFO - [manager] Pushed to storage: 407
+2025-12-02 21:42:41 - crawler - INFO - [w3][book][b401] Start
+2025-12-02 21:42:42 - crawler - INFO - [manager] Pushed to storage: 405
+2025-12-02 21:42:42 - crawler - INFO - [w1][book][b440] Start
+2025-12-02 21:42:42 - crawler - INFO - [manager] Pushed to storage: 404
+2025-12-02 21:42:42 - crawler - INFO - [w4][book][b439] Start
+2025-12-02 21:42:43 - crawler - INFO - [manager] Pushed to storage: 403
+2025-12-02 21:42:43 - crawler - INFO - [w2][book][b438] Start
+2025-12-02 21:42:44 - crawler - INFO - [manager] Pushed to storage: 402
+2025-12-02 21:42:44 - crawler - INFO - [w5][book][b437] Start
+2025-12-02 21:42:45 - crawler - INFO - [manager] Pushed to storage: 440
+2025-12-02 21:42:45 - crawler - INFO - [w1][book][b436] Start
+2025-12-02 21:42:45 - crawler - INFO - [manager] Pushed to storage: 401
+2025-12-02 21:42:45 - crawler - INFO - [w3][book][b435] Start
+2025-12-02 21:42:46 - crawler - INFO - [manager] Pushed to storage: 439
+2025-12-02 21:42:46 - crawler - INFO - [w4][book][b434] Start
+2025-12-02 21:42:47 - crawler - INFO - [manager] Pushed to storage: 438
+2025-12-02 21:42:47 - crawler - INFO - [w2][book][b433] Start
+2025-12-02 21:42:48 - crawler - INFO - [manager] Pushed to storage: 437
+2025-12-02 21:42:48 - crawler - INFO - [w5][book][b432] Start
+2025-12-02 21:42:48 - crawler - INFO - [manager] Pushed to storage: 436
+2025-12-02 21:42:48 - crawler - INFO - [w1][book][b431] Start
+2025-12-02 21:42:49 - crawler - INFO - [manager] Pushed to storage: 435
+2025-12-02 21:42:49 - crawler - INFO - [w3][book][b430] Start
+2025-12-02 21:42:50 - crawler - INFO - [manager] Pushed to storage: 433
+2025-12-02 21:42:50 - crawler - INFO - [w2][book][b429] Start
+2025-12-02 21:42:51 - crawler - INFO - [manager] Pushed to storage: 434
+2025-12-02 21:42:51 - crawler - INFO - [w4][book][b428] Start
+2025-12-02 21:42:52 - crawler - INFO - [manager] Pushed to storage: 432
+2025-12-02 21:42:52 - crawler - INFO - [w5][book][b427] Start
+2025-12-02 21:42:52 - crawler - INFO - [manager] Pushed to storage: 431
+2025-12-02 21:42:52 - crawler - INFO - [w1][book][b426] Start
+2025-12-02 21:42:53 - crawler - INFO - [manager] Pushed to storage: 429
+2025-12-02 21:42:53 - crawler - INFO - [w2][book][b425] Start
+2025-12-02 21:42:54 - crawler - INFO - [manager] Pushed to storage: 428
+2025-12-02 21:42:54 - crawler - INFO - [w4][book][b424] Start
+2025-12-02 21:42:54 - crawler - INFO - [manager] Pushed to storage: 430
+2025-12-02 21:42:54 - crawler - INFO - [w3][book][b423] Start
+2025-12-02 21:42:55 - crawler - INFO - [manager] Pushed to storage: 427
+2025-12-02 21:42:55 - crawler - INFO - [w5][book][b422] Start
+2025-12-02 21:42:56 - crawler - INFO - [manager] Pushed to storage: 426
+2025-12-02 21:42:56 - crawler - INFO - [w1][book][b421] Start
+2025-12-02 21:42:57 - crawler - INFO - [manager] Pushed to storage: 425
+2025-12-02 21:42:57 - crawler - INFO - [w2][book][b460] Start
+2025-12-02 21:42:58 - crawler - INFO - [manager] Pushed to storage: 424
+2025-12-02 21:42:58 - crawler - INFO - [w4][book][b459] Start
+2025-12-02 21:42:58 - crawler - INFO - [manager] Pushed to storage: 423
+2025-12-02 21:42:58 - crawler - INFO - [w3][book][b458] Start
+2025-12-02 21:42:59 - crawler - INFO - [manager] Pushed to storage: 422
+2025-12-02 21:42:59 - crawler - INFO - [w5][book][b457] Start
+2025-12-02 21:43:00 - crawler - INFO - [manager] Pushed to storage: 421
+2025-12-02 21:43:00 - crawler - INFO - [w1][book][b456] Start
+2025-12-02 21:43:01 - crawler - INFO - [manager] Pushed to storage: 460
+2025-12-02 21:43:01 - crawler - INFO - [w2][book][b455] Start
+2025-12-02 21:43:01 - crawler - INFO - [manager] Pushed to storage: 458
+2025-12-02 21:43:01 - crawler - INFO - [w3][book][b454] Start
+2025-12-02 21:43:02 - crawler - INFO - [manager] Pushed to storage: 457
+2025-12-02 21:43:02 - crawler - INFO - [manager] Pushed to storage: 459
+2025-12-02 21:43:02 - crawler - INFO - [w5][book][b453] Start
+2025-12-02 21:43:03 - crawler - INFO - [w4][book][b452] Start
+2025-12-02 21:43:03 - crawler - INFO - [manager] Pushed to storage: 456
+2025-12-02 21:43:03 - crawler - INFO - [w1][book][b451] Start
+2025-12-02 21:43:04 - crawler - INFO - [manager] Pushed to storage: 455
+2025-12-02 21:43:04 - crawler - INFO - [w2][book][b450] Start
+2025-12-02 21:43:05 - crawler - INFO - [manager] Pushed to storage: 454
+2025-12-02 21:43:05 - crawler - INFO - [w3][book][b449] Start
+2025-12-02 21:43:06 - crawler - INFO - [manager] Pushed to storage: 452
+2025-12-02 21:43:06 - crawler - INFO - [w4][book][b448] Start
+2025-12-02 21:43:06 - crawler - INFO - [manager] Pushed to storage: 453
+2025-12-02 21:43:06 - crawler - INFO - [w5][book][b447] Start
+2025-12-02 21:43:07 - crawler - INFO - [manager] Pushed to storage: 450
+2025-12-02 21:43:07 - crawler - INFO - [w2][book][b446] Start
+2025-12-02 21:43:08 - crawler - INFO - [manager] Pushed to storage: 451
+2025-12-02 21:43:08 - crawler - INFO - [w1][book][b445] Start
+2025-12-02 21:43:08 - crawler - INFO - [manager] Pushed to storage: 448
+2025-12-02 21:43:08 - crawler - INFO - [w4][book][b444] Start
+2025-12-02 21:43:09 - crawler - INFO - [manager] Pushed to storage: 449
+2025-12-02 21:43:09 - crawler - INFO - [w3][book][b443] Start
+2025-12-02 21:43:10 - crawler - INFO - [manager] Pushed to storage: 446
+2025-12-02 21:43:10 - crawler - INFO - [w2][book][b442] Start
+2025-12-02 21:43:10 - crawler - INFO - [manager] Pushed to storage: 447
+2025-12-02 21:43:10 - crawler - INFO - [w5][book][b441] Start
+2025-12-02 21:43:11 - crawler - INFO - [manager] Pushed to storage: 445
+2025-12-02 21:43:11 - crawler - INFO - [w1][book][b380] Start
+2025-12-02 21:43:12 - crawler - INFO - [manager] Pushed to storage: 444
+2025-12-02 21:43:12 - crawler - INFO - [w4][book][b379] Start
+2025-12-02 21:43:12 - crawler - INFO - [manager] Pushed to storage: 443
+2025-12-02 21:43:12 - crawler - INFO - [w3][book][b378] Start
+2025-12-02 21:43:13 - crawler - INFO - [manager] Pushed to storage: 442
+2025-12-02 21:43:13 - crawler - INFO - [w2][book][b377] Start
+2025-12-02 21:43:14 - crawler - INFO - [manager] Pushed to storage: 441
+2025-12-02 21:43:14 - crawler - INFO - [w5][book][b376] Start
+2025-12-02 21:43:14 - crawler - INFO - [manager] Pushed to storage: 380
+2025-12-02 21:43:14 - crawler - INFO - [w1][book][b375] Start
+2025-12-02 21:43:15 - crawler - INFO - [manager] Pushed to storage: 379
+2025-12-02 21:43:15 - crawler - INFO - [w4][book][b374] Start
+2025-12-02 21:43:15 - crawler - INFO - [manager] Pushed to storage: 377
+2025-12-02 21:43:15 - crawler - INFO - [w2][book][b373] Start
+2025-12-02 21:43:16 - crawler - INFO - [manager] Pushed to storage: 378
+2025-12-02 21:43:16 - crawler - INFO - [w3][book][b372] Start
+2025-12-02 21:43:17 - crawler - INFO - [manager] Pushed to storage: 376
+2025-12-02 21:43:17 - crawler - INFO - [w5][book][b371] Start
+2025-12-02 21:43:17 - crawler - INFO - [manager] Pushed to storage: 375
+2025-12-02 21:43:17 - crawler - INFO - [w1][book][b370] Start
+2025-12-02 21:43:18 - crawler - INFO - [manager] Pushed to storage: 372
+2025-12-02 21:43:18 - crawler - INFO - [w3][book][b369] Start
+2025-12-02 21:43:19 - crawler - INFO - [manager] Pushed to storage: 373
+2025-12-02 21:43:19 - crawler - INFO - [w2][book][b368] Start
+2025-12-02 21:43:20 - crawler - INFO - [manager] Pushed to storage: 374
+2025-12-02 21:43:20 - crawler - INFO - [manager] Pushed to storage: 371
+2025-12-02 21:43:20 - crawler - INFO - [w4][book][b367] Start
+2025-12-02 21:43:20 - crawler - INFO - [w5][book][b366] Start
+2025-12-02 21:43:21 - crawler - INFO - [manager] Pushed to storage: 370
+2025-12-02 21:43:21 - crawler - INFO - [w1][book][b365] Start
+2025-12-02 21:43:21 - crawler - INFO - [manager] Pushed to storage: 369
+2025-12-02 21:43:21 - crawler - INFO - [w3][book][b364] Start
+2025-12-02 21:43:22 - crawler - INFO - [manager] Pushed to storage: 368
+2025-12-02 21:43:22 - crawler - INFO - [w2][book][b363] Start
+2025-12-02 21:43:23 - crawler - INFO - [manager] Pushed to storage: 366
+2025-12-02 21:43:23 - crawler - INFO - [w5][book][b362] Start
+2025-12-02 21:43:23 - crawler - INFO - [manager] Pushed to storage: 367
+2025-12-02 21:43:23 - crawler - INFO - [w4][book][b361] Start
+2025-12-02 21:43:24 - crawler - INFO - [manager] Pushed to storage: 364
+2025-12-02 21:43:24 - crawler - INFO - [w3][book][b340] Start
+2025-12-02 21:43:25 - crawler - INFO - [manager] Pushed to storage: 363
+2025-12-02 21:43:25 - crawler - INFO - [w2][book][b339] Start
+2025-12-02 21:43:25 - crawler - INFO - [manager] Pushed to storage: 362
+2025-12-02 21:43:25 - crawler - INFO - [manager] Pushed to storage: 365
+2025-12-02 21:43:25 - crawler - INFO - [w5][book][b338] Start
+2025-12-02 21:43:26 - crawler - INFO - [w1][book][b337] Start
+2025-12-02 21:43:26 - crawler - INFO - [manager] Pushed to storage: 361
+2025-12-02 21:43:26 - crawler - INFO - [w4][book][b336] Start
+2025-12-02 21:43:27 - crawler - INFO - [manager] Pushed to storage: 340
+2025-12-02 21:43:27 - crawler - INFO - [w3][book][b335] Start
+2025-12-02 21:43:28 - crawler - INFO - [manager] Pushed to storage: 339
+2025-12-02 21:43:28 - crawler - INFO - [w2][book][b334] Start
+2025-12-02 21:43:29 - crawler - INFO - [manager] Pushed to storage: 337
+2025-12-02 21:43:29 - crawler - INFO - [w1][book][b333] Start
+2025-12-02 21:43:29 - crawler - INFO - [manager] Pushed to storage: 338
+2025-12-02 21:43:29 - crawler - INFO - [w5][book][b332] Start
+2025-12-02 21:43:30 - crawler - INFO - [manager] Pushed to storage: 336
+2025-12-02 21:43:30 - crawler - INFO - [w4][book][b331] Start
+2025-12-02 21:43:31 - crawler - INFO - [manager] Pushed to storage: 335
+2025-12-02 21:43:31 - crawler - INFO - [w3][book][b330] Start
+2025-12-02 21:43:31 - crawler - INFO - [manager] Pushed to storage: 334
+2025-12-02 21:43:31 - crawler - INFO - [w2][book][b329] Start
+2025-12-02 21:43:32 - crawler - INFO - [manager] Pushed to storage: 333
+2025-12-02 21:43:32 - crawler - INFO - [w1][book][b328] Start
+2025-12-02 21:43:32 - crawler - INFO - [manager] Pushed to storage: 332
+2025-12-02 21:43:32 - crawler - INFO - [w5][book][b327] Start
+2025-12-02 21:43:33 - crawler - INFO - [manager] Pushed to storage: 330
+2025-12-02 21:43:33 - crawler - INFO - [w3][book][b326] Start
+2025-12-02 21:43:34 - crawler - INFO - [manager] Pushed to storage: 331
+2025-12-02 21:43:34 - crawler - INFO - [w4][book][b325] Start
+2025-12-02 21:43:34 - crawler - INFO - [manager] Pushed to storage: 329
+2025-12-02 21:43:34 - crawler - INFO - [w2][book][b324] Start
+2025-12-02 21:43:35 - crawler - INFO - [manager] Pushed to storage: 328
+2025-12-02 21:43:35 - crawler - INFO - [w1][book][b323] Start
+2025-12-02 21:43:36 - crawler - INFO - [manager] Pushed to storage: 327
+2025-12-02 21:43:36 - crawler - INFO - [w5][book][b322] Start
+2025-12-02 21:43:36 - crawler - INFO - [manager] Pushed to storage: 326
+2025-12-02 21:43:36 - crawler - INFO - [w3][book][b321] Start
+2025-12-02 21:43:37 - crawler - INFO - [manager] Pushed to storage: 325
+2025-12-02 21:43:37 - crawler - INFO - [w4][book][b360] Start
+2025-12-02 21:43:38 - crawler - INFO - [manager] Pushed to storage: 324
+2025-12-02 21:43:38 - crawler - INFO - [w2][book][b359] Start
+2025-12-02 21:43:38 - crawler - INFO - [manager] Pushed to storage: 323
+2025-12-02 21:43:38 - crawler - INFO - [w1][book][b358] Start
+2025-12-02 21:43:39 - crawler - INFO - [manager] Pushed to storage: 322
+2025-12-02 21:43:39 - crawler - INFO - [w5][book][b357] Start
+2025-12-02 21:43:39 - crawler - INFO - [manager] Pushed to storage: 321
+2025-12-02 21:43:39 - crawler - INFO - [w3][book][b356] Start
+2025-12-02 21:43:40 - crawler - INFO - [manager] Pushed to storage: 360
+2025-12-02 21:43:40 - crawler - INFO - [w4][book][b355] Start
+2025-12-02 21:43:41 - crawler - INFO - [manager] Pushed to storage: 359
+2025-12-02 21:43:41 - crawler - INFO - [w2][book][b354] Start
+2025-12-02 21:43:41 - crawler - INFO - [manager] Pushed to storage: 358
+2025-12-02 21:43:41 - crawler - INFO - [w1][book][b353] Start
+2025-12-02 21:43:42 - crawler - INFO - [manager] Pushed to storage: 356
+2025-12-02 21:43:42 - crawler - INFO - [w3][book][b352] Start
+2025-12-02 21:43:43 - crawler - INFO - [manager] Pushed to storage: 357
+2025-12-02 21:43:43 - crawler - INFO - [w5][book][b351] Start
+2025-12-02 21:43:43 - crawler - INFO - [manager] Pushed to storage: 355
+2025-12-02 21:43:43 - crawler - INFO - [w4][book][b350] Start
+2025-12-02 21:43:44 - crawler - INFO - [manager] Pushed to storage: 354
+2025-12-02 21:43:44 - crawler - INFO - [w2][book][b349] Start
+2025-12-02 21:43:45 - crawler - INFO - [manager] Pushed to storage: 353
+2025-12-02 21:43:45 - crawler - INFO - [w1][book][b348] Start
+2025-12-02 21:43:45 - crawler - INFO - [manager] Pushed to storage: 352
+2025-12-02 21:43:45 - crawler - INFO - [w3][book][b347] Start
+2025-12-02 21:43:46 - crawler - INFO - [manager] Pushed to storage: 351
+2025-12-02 21:43:46 - crawler - INFO - [w5][book][b346] Start
+2025-12-02 21:43:47 - crawler - INFO - [manager] Pushed to storage: 350
+2025-12-02 21:43:47 - crawler - INFO - [w4][book][b345] Start
+2025-12-02 21:43:47 - crawler - INFO - [manager] Pushed to storage: 349
+2025-12-02 21:43:47 - crawler - INFO - [w2][book][b344] Start
+2025-12-02 21:43:48 - crawler - INFO - [manager] Pushed to storage: 348
+2025-12-02 21:43:48 - crawler - INFO - [w1][book][b343] Start
+2025-12-02 21:43:49 - crawler - INFO - [manager] Pushed to storage: 347
+2025-12-02 21:43:49 - crawler - INFO - [w3][book][b342] Start
+2025-12-02 21:43:49 - crawler - INFO - [manager] Pushed to storage: 346
+2025-12-02 21:43:49 - crawler - INFO - [w5][book][b341] Start
+2025-12-02 21:43:50 - crawler - INFO - [manager] Pushed to storage: 345
+2025-12-02 21:43:50 - crawler - INFO - [w4][book][b320] Start
+2025-12-02 21:43:51 - crawler - INFO - [manager] Pushed to storage: 344
+2025-12-02 21:43:51 - crawler - INFO - [w2][book][b319] Start
+2025-12-02 21:43:51 - crawler - INFO - [manager] Pushed to storage: 343
+2025-12-02 21:43:51 - crawler - INFO - [w1][book][b318] Start
+2025-12-02 21:43:52 - crawler - INFO - [manager] Pushed to storage: 342
+2025-12-02 21:43:52 - crawler - INFO - [w3][book][b317] Start
+2025-12-02 21:43:52 - crawler - INFO - [manager] Pushed to storage: 341
+2025-12-02 21:43:52 - crawler - INFO - [w5][book][b316] Start
+2025-12-02 21:43:53 - crawler - INFO - [manager] Pushed to storage: 319
+2025-12-02 21:43:53 - crawler - INFO - [w2][book][b315] Start
+2025-12-02 21:43:54 - crawler - INFO - [manager] Pushed to storage: 318
+2025-12-02 21:43:54 - crawler - INFO - [w1][book][b314] Start
+2025-12-02 21:43:54 - crawler - INFO - [manager] Pushed to storage: 317
+2025-12-02 21:43:54 - crawler - INFO - [w3][book][b313] Start
+2025-12-02 21:43:55 - crawler - INFO - [manager] Pushed to storage: 316
+2025-12-02 21:43:55 - crawler - INFO - [w5][book][b312] Start
+2025-12-02 21:43:56 - crawler - INFO - [manager] Pushed to storage: 315
+2025-12-02 21:43:56 - crawler - INFO - [w2][book][b311] Start
+2025-12-02 21:43:56 - crawler - INFO - [manager] Pushed to storage: 314
+2025-12-02 21:43:56 - crawler - INFO - [w1][book][b310] Start
+2025-12-02 21:43:57 - crawler - INFO - [manager] Pushed to storage: 313
+2025-12-02 21:43:57 - crawler - INFO - [w3][book][b309] Start
+2025-12-02 21:43:58 - crawler - INFO - [manager] Pushed to storage: 312
+2025-12-02 21:43:58 - crawler - INFO - [w5][book][b308] Start
+2025-12-02 21:43:58 - crawler - WARNING - [w4][book][b320] Error: ReadTimeout('')
+2025-12-02 21:43:58 - crawler - INFO - [w4][book][b320] Queued for retry
+2025-12-02 21:43:58 - crawler - INFO - [w4][book][b307] Start
+2025-12-02 21:43:59 - crawler - INFO - [manager] Pushed to storage: 311
+2025-12-02 21:43:59 - crawler - INFO - [w2][book][b306] Start
+2025-12-02 21:43:59 - crawler - INFO - [manager] Pushed to storage: 310
+2025-12-02 21:43:59 - crawler - INFO - [w1][book][b305] Start
+2025-12-02 21:44:00 - crawler - INFO - [manager] Pushed to storage: 309
+2025-12-02 21:44:00 - crawler - INFO - [w3][book][b304] Start
+2025-12-02 21:44:01 - crawler - INFO - [manager] Pushed to storage: 308
+2025-12-02 21:44:01 - crawler - INFO - [w5][book][b303] Start
+2025-12-02 21:44:01 - crawler - INFO - [manager] Pushed to storage: 307
+2025-12-02 21:44:01 - crawler - INFO - [w4][book][b302] Start
+2025-12-02 21:44:02 - crawler - INFO - [manager] Pushed to storage: 305
+2025-12-02 21:44:02 - crawler - INFO - [w1][book][b301] Start
+2025-12-02 21:44:03 - crawler - INFO - [manager] Pushed to storage: 304
+2025-12-02 21:44:03 - crawler - INFO - [w3][book][b300] Start
+2025-12-02 21:44:03 - crawler - INFO - [manager] Pushed to storage: 306
+2025-12-02 21:44:03 - crawler - INFO - [w2][book][b299] Start
+2025-12-02 21:44:04 - crawler - INFO - [manager] Pushed to storage: 303
+2025-12-02 21:44:04 - crawler - INFO - [w5][book][b298] Start
+2025-12-02 21:44:05 - crawler - INFO - [manager] Pushed to storage: 301
+2025-12-02 21:44:05 - crawler - INFO - [w1][book][b297] Start
+2025-12-02 21:44:05 - crawler - INFO - [manager] Pushed to storage: 302
+2025-12-02 21:44:05 - crawler - INFO - [w4][book][b296] Start
+2025-12-02 21:44:06 - crawler - INFO - [manager] Pushed to storage: 300
+2025-12-02 21:44:06 - crawler - INFO - [w3][book][b295] Start
+2025-12-02 21:44:07 - crawler - INFO - [manager] Pushed to storage: 299
+2025-12-02 21:44:07 - crawler - INFO - [w2][book][b294] Start
+2025-12-02 21:44:07 - crawler - INFO - [manager] Pushed to storage: 298
+2025-12-02 21:44:07 - crawler - INFO - [w5][book][b293] Start
+2025-12-02 21:44:08 - crawler - INFO - [manager] Pushed to storage: 297
+2025-12-02 21:44:08 - crawler - INFO - [w1][book][b292] Start
+2025-12-02 21:44:08 - crawler - INFO - [manager] Pushed to storage: 296
+2025-12-02 21:44:08 - crawler - INFO - [w4][book][b291] Start
+2025-12-02 21:44:09 - crawler - INFO - [manager] Pushed to storage: 295
+2025-12-02 21:44:09 - crawler - INFO - [w3][book][b290] Start
+2025-12-02 21:44:10 - crawler - INFO - [manager] Pushed to storage: 294
+2025-12-02 21:44:10 - crawler - INFO - [w2][book][b289] Start
+2025-12-02 21:44:11 - crawler - INFO - [manager] Pushed to storage: 293
+2025-12-02 21:44:11 - crawler - INFO - [w5][book][b288] Start
+2025-12-02 21:44:12 - crawler - INFO - [manager] Pushed to storage: 292
+2025-12-02 21:44:12 - crawler - INFO - [w1][book][b287] Start
+2025-12-02 21:44:13 - crawler - INFO - [manager] Pushed to storage: 291
+2025-12-02 21:44:13 - crawler - INFO - [w4][book][b286] Start
+2025-12-02 21:44:13 - crawler - INFO - [manager] Pushed to storage: 290
+2025-12-02 21:44:13 - crawler - INFO - [w3][book][b285] Start
+2025-12-02 21:44:14 - crawler - INFO - [manager] Pushed to storage: 289
+2025-12-02 21:44:14 - crawler - INFO - [w2][book][b284] Start
+2025-12-02 21:44:15 - crawler - INFO - [manager] Pushed to storage: 288
+2025-12-02 21:44:15 - crawler - INFO - [w5][book][b283] Start
+2025-12-02 21:44:16 - crawler - INFO - [manager] Pushed to storage: 287
+2025-12-02 21:44:16 - crawler - INFO - [w1][book][b282] Start
+2025-12-02 21:44:17 - crawler - INFO - [manager] Pushed to storage: 286
+2025-12-02 21:44:17 - crawler - INFO - [w4][book][b281] Start
+2025-12-02 21:44:18 - crawler - INFO - [manager] Pushed to storage: 285
+2025-12-02 21:44:18 - crawler - INFO - [w3][book][b280] Start
+2025-12-02 21:44:18 - crawler - INFO - [manager] Pushed to storage: 284
+2025-12-02 21:44:18 - crawler - INFO - [w2][book][b279] Start
+2025-12-02 21:44:19 - crawler - INFO - [manager] Pushed to storage: 283
+2025-12-02 21:44:19 - crawler - INFO - [w5][book][b278] Start
+2025-12-02 21:44:20 - crawler - INFO - [manager] Pushed to storage: 282
+2025-12-02 21:44:20 - crawler - INFO - [w1][book][b277] Start
+2025-12-02 21:44:20 - crawler - INFO - [manager] Pushed to storage: 281
+2025-12-02 21:44:20 - crawler - INFO - [w4][book][b276] Start
+2025-12-02 21:44:21 - crawler - INFO - [manager] Pushed to storage: 280
+2025-12-02 21:44:21 - crawler - INFO - [w3][book][b275] Start
+2025-12-02 21:44:22 - crawler - INFO - [manager] Pushed to storage: 279
+2025-12-02 21:44:22 - crawler - INFO - [w2][book][b274] Start
+2025-12-02 21:44:23 - crawler - INFO - [manager] Pushed to storage: 278
+2025-12-02 21:44:23 - crawler - INFO - [w5][book][b273] Start
+2025-12-02 21:44:23 - crawler - INFO - [manager] Pushed to storage: 277
+2025-12-02 21:44:23 - crawler - INFO - [w1][book][b272] Start
+2025-12-02 21:44:24 - crawler - INFO - [manager] Pushed to storage: 276
+2025-12-02 21:44:24 - crawler - INFO - [w4][book][b271] Start
+2025-12-02 21:44:25 - crawler - INFO - [manager] Pushed to storage: 275
+2025-12-02 21:44:25 - crawler - INFO - [w3][book][b270] Start
+2025-12-02 21:44:26 - crawler - INFO - [manager] Pushed to storage: 274
+2025-12-02 21:44:26 - crawler - INFO - [w2][book][b269] Start
+2025-12-02 21:44:27 - crawler - INFO - [manager] Pushed to storage: 273
+2025-12-02 21:44:27 - crawler - INFO - [w5][book][b268] Start
+2025-12-02 21:44:27 - crawler - INFO - [manager] Pushed to storage: 272
+2025-12-02 21:44:27 - crawler - INFO - [w1][book][b267] Start
+2025-12-02 21:44:28 - crawler - INFO - [manager] Pushed to storage: 271
+2025-12-02 21:44:28 - crawler - INFO - [w4][book][b266] Start
+2025-12-02 21:44:29 - crawler - INFO - [manager] Pushed to storage: 270
+2025-12-02 21:44:29 - crawler - INFO - [w3][book][b265] Start
+2025-12-02 21:44:29 - crawler - INFO - [manager] Pushed to storage: 269
+2025-12-02 21:44:29 - crawler - INFO - [w2][book][b264] Start
+2025-12-02 21:44:30 - crawler - INFO - [manager] Pushed to storage: 268
+2025-12-02 21:44:30 - crawler - INFO - [w5][book][b263] Start
+2025-12-02 21:44:31 - crawler - INFO - [manager] Pushed to storage: 267
+2025-12-02 21:44:31 - crawler - INFO - [w1][book][b262] Start
+2025-12-02 21:44:32 - crawler - INFO - [manager] Pushed to storage: 265
+2025-12-02 21:44:32 - crawler - INFO - [w3][book][b261] Start
+2025-12-02 21:44:33 - crawler - INFO - [manager] Pushed to storage: 264
+2025-12-02 21:44:33 - crawler - INFO - [w2][book][b220] Start
+2025-12-02 21:44:34 - crawler - INFO - [manager] Pushed to storage: 263
+2025-12-02 21:44:34 - crawler - INFO - [w5][book][b219] Start
+2025-12-02 21:44:34 - crawler - INFO - [manager] Pushed to storage: 266
+2025-12-02 21:44:34 - crawler - INFO - [w4][book][b218] Start
+2025-12-02 21:44:35 - crawler - INFO - [manager] Pushed to storage: 262
+2025-12-02 21:44:35 - crawler - INFO - [w1][book][b217] Start
+2025-12-02 21:44:36 - crawler - INFO - [manager] Pushed to storage: 220
+2025-12-02 21:44:36 - crawler - INFO - [w2][book][b216] Start
+2025-12-02 21:44:37 - crawler - INFO - [manager] Pushed to storage: 261
+2025-12-02 21:44:37 - crawler - INFO - [manager] Pushed to storage: 217
+2025-12-02 21:44:37 - crawler - INFO - [manager] Pushed to storage: 218
+2025-12-02 21:44:37 - crawler - INFO - [w3][book][b215] Start
+2025-12-02 21:44:38 - crawler - INFO - [w1][book][b214] Start
+2025-12-02 21:44:39 - crawler - INFO - [w4][book][b213] Start
+2025-12-02 21:44:39 - crawler - INFO - [manager] Pushed to storage: 219
+2025-12-02 21:44:39 - crawler - INFO - [w5][book][b212] Start
+2025-12-02 21:44:40 - crawler - INFO - [manager] Pushed to storage: 216
+2025-12-02 21:44:40 - crawler - INFO - [w2][book][b211] Start
+2025-12-02 21:44:41 - crawler - INFO - [manager] Pushed to storage: 214
+2025-12-02 21:44:41 - crawler - INFO - [w1][book][b210] Start
+2025-12-02 21:44:41 - crawler - INFO - [manager] Pushed to storage: 213
+2025-12-02 21:44:41 - crawler - INFO - [w4][book][b209] Start
+2025-12-02 21:44:42 - crawler - INFO - [manager] Pushed to storage: 215
+2025-12-02 21:44:42 - crawler - INFO - [w3][book][b208] Start
+2025-12-02 21:44:43 - crawler - INFO - [manager] Pushed to storage: 212
+2025-12-02 21:44:43 - crawler - INFO - [w5][book][b207] Start
+2025-12-02 21:44:44 - crawler - INFO - [manager] Pushed to storage: 211
+2025-12-02 21:44:44 - crawler - INFO - [w2][book][b206] Start
+2025-12-02 21:44:44 - crawler - INFO - [manager] Pushed to storage: 210
+2025-12-02 21:44:44 - crawler - INFO - [w1][book][b205] Start
+2025-12-02 21:44:45 - crawler - INFO - [manager] Pushed to storage: 208
+2025-12-02 21:44:45 - crawler - INFO - [w3][book][b204] Start
+2025-12-02 21:44:46 - crawler - INFO - [manager] Pushed to storage: 209
+2025-12-02 21:44:46 - crawler - INFO - [w4][book][b203] Start
+2025-12-02 21:44:47 - crawler - INFO - [manager] Pushed to storage: 207
+2025-12-02 21:44:47 - crawler - INFO - [w5][book][b202] Start
+2025-12-02 21:44:47 - crawler - INFO - [manager] Pushed to storage: 206
+2025-12-02 21:44:47 - crawler - INFO - [w2][book][b201] Start
+2025-12-02 21:44:48 - crawler - INFO - [manager] Pushed to storage: 204
+2025-12-02 21:44:48 - crawler - INFO - [w3][book][b240] Start
+2025-12-02 21:44:49 - crawler - INFO - [manager] Pushed to storage: 203
+2025-12-02 21:44:49 - crawler - INFO - [w4][book][b239] Start
+2025-12-02 21:44:50 - crawler - INFO - [manager] Pushed to storage: 202
+2025-12-02 21:44:50 - crawler - INFO - [w5][book][b238] Start
+2025-12-02 21:44:50 - crawler - INFO - [manager] Pushed to storage: 201
+2025-12-02 21:44:50 - crawler - INFO - [w2][book][b237] Start
+2025-12-02 21:44:51 - crawler - INFO - [manager] Pushed to storage: 240
+2025-12-02 21:44:51 - crawler - INFO - [w3][book][b236] Start
+2025-12-02 21:44:52 - crawler - INFO - [manager] Pushed to storage: 205
+2025-12-02 21:44:52 - crawler - INFO - [w1][book][b235] Start
+2025-12-02 21:44:52 - crawler - INFO - [manager] Pushed to storage: 239
+2025-12-02 21:44:52 - crawler - INFO - [w4][book][b234] Start
+2025-12-02 21:44:53 - crawler - INFO - [manager] Pushed to storage: 238
+2025-12-02 21:44:53 - crawler - INFO - [w5][book][b233] Start
+2025-12-02 21:44:54 - crawler - INFO - [manager] Pushed to storage: 237
+2025-12-02 21:44:54 - crawler - INFO - [w2][book][b232] Start
+2025-12-02 21:44:54 - crawler - INFO - [manager] Pushed to storage: 236
+2025-12-02 21:44:54 - crawler - INFO - [w3][book][b231] Start
+2025-12-02 21:44:55 - crawler - INFO - [manager] Pushed to storage: 235
+2025-12-02 21:44:55 - crawler - INFO - [w1][book][b230] Start
+2025-12-02 21:44:56 - crawler - INFO - [manager] Pushed to storage: 234
+2025-12-02 21:44:56 - crawler - INFO - [w4][book][b229] Start
+2025-12-02 21:44:56 - crawler - INFO - [manager] Pushed to storage: 233
+2025-12-02 21:44:56 - crawler - INFO - [w5][book][b228] Start
+2025-12-02 21:44:57 - crawler - INFO - [manager] Pushed to storage: 232
+2025-12-02 21:44:57 - crawler - INFO - [w2][book][b227] Start
+2025-12-02 21:44:58 - crawler - INFO - [manager] Pushed to storage: 231
+2025-12-02 21:44:58 - crawler - INFO - [w3][book][b226] Start
+2025-12-02 21:44:59 - crawler - INFO - [manager] Pushed to storage: 229
+2025-12-02 21:44:59 - crawler - INFO - [w4][book][b225] Start
+2025-12-02 21:44:59 - crawler - INFO - [manager] Pushed to storage: 230
+2025-12-02 21:44:59 - crawler - INFO - [w1][book][b224] Start
+2025-12-02 21:45:00 - crawler - INFO - [manager] Pushed to storage: 228
+2025-12-02 21:45:00 - crawler - INFO - [w5][book][b223] Start
+2025-12-02 21:45:00 - crawler - INFO - [manager] Pushed to storage: 227
+2025-12-02 21:45:00 - crawler - INFO - [w2][book][b222] Start
+2025-12-02 21:45:01 - crawler - INFO - [manager] Pushed to storage: 226
+2025-12-02 21:45:01 - crawler - INFO - [w3][book][b221] Start
+2025-12-02 21:45:02 - crawler - INFO - [manager] Pushed to storage: 224
+2025-12-02 21:45:02 - crawler - INFO - [w1][book][b260] Start
+2025-12-02 21:45:02 - crawler - INFO - [manager] Pushed to storage: 225
+2025-12-02 21:45:02 - crawler - INFO - [w4][book][b259] Start
+2025-12-02 21:45:03 - crawler - INFO - [manager] Pushed to storage: 223
+2025-12-02 21:45:03 - crawler - INFO - [w5][book][b258] Start
+2025-12-02 21:45:04 - crawler - INFO - [manager] Pushed to storage: 222
+2025-12-02 21:45:04 - crawler - INFO - [w2][book][b257] Start
+2025-12-02 21:45:04 - crawler - INFO - [manager] Pushed to storage: 260
+2025-12-02 21:45:04 - crawler - INFO - [w1][book][b256] Start
+2025-12-02 21:45:05 - crawler - INFO - [manager] Pushed to storage: 259
+2025-12-02 21:45:05 - crawler - INFO - [manager] Pushed to storage: 221
+2025-12-02 21:45:05 - crawler - INFO - [w4][book][b255] Start
+2025-12-02 21:45:06 - crawler - INFO - [w3][book][b254] Start
+2025-12-02 21:45:06 - crawler - INFO - [manager] Pushed to storage: 257
+2025-12-02 21:45:06 - crawler - INFO - [w2][book][b253] Start
+2025-12-02 21:45:07 - crawler - INFO - [manager] Pushed to storage: 256
+2025-12-02 21:45:07 - crawler - INFO - [manager] Pushed to storage: 258
+2025-12-02 21:45:07 - crawler - INFO - [w1][book][b252] Start
+2025-12-02 21:45:08 - crawler - INFO - [w5][book][b251] Start
+2025-12-02 21:45:08 - crawler - INFO - [manager] Pushed to storage: 254
+2025-12-02 21:45:08 - crawler - INFO - [w3][book][b250] Start
+2025-12-02 21:45:09 - crawler - INFO - [manager] Pushed to storage: 255
+2025-12-02 21:45:09 - crawler - INFO - [w4][book][b249] Start
+2025-12-02 21:45:10 - crawler - INFO - [manager] Pushed to storage: 253
+2025-12-02 21:45:10 - crawler - INFO - [w2][book][b248] Start
+2025-12-02 21:45:10 - crawler - INFO - [manager] Pushed to storage: 251
+2025-12-02 21:45:10 - crawler - INFO - [w5][book][b247] Start
+2025-12-02 21:45:11 - crawler - INFO - [manager] Pushed to storage: 252
+2025-12-02 21:45:11 - crawler - INFO - [w1][book][b246] Start
+2025-12-02 21:45:12 - crawler - INFO - [manager] Pushed to storage: 250
+2025-12-02 21:45:12 - crawler - INFO - [w3][book][b245] Start
+2025-12-02 21:45:12 - crawler - INFO - [manager] Pushed to storage: 249
+2025-12-02 21:45:12 - crawler - INFO - [w4][book][b244] Start
+2025-12-02 21:45:13 - crawler - INFO - [manager] Pushed to storage: 248
+2025-12-02 21:45:13 - crawler - INFO - [w2][book][b243] Start
+2025-12-02 21:45:14 - crawler - INFO - [manager] Pushed to storage: 247
+2025-12-02 21:45:14 - crawler - INFO - [w5][book][b242] Start
+2025-12-02 21:45:14 - crawler - INFO - [manager] Pushed to storage: 246
+2025-12-02 21:45:14 - crawler - INFO - [w1][book][b241] Start
+2025-12-02 21:45:15 - crawler - INFO - [manager] Pushed to storage: 245
+2025-12-02 21:45:15 - crawler - INFO - [w3][book][b200] Start
+2025-12-02 21:45:16 - crawler - INFO - [manager] Pushed to storage: 244
+2025-12-02 21:45:16 - crawler - INFO - [w4][book][b199] Start
+2025-12-02 21:45:17 - crawler - INFO - [manager] Pushed to storage: 243
+2025-12-02 21:45:17 - crawler - INFO - [w2][book][b198] Start
+2025-12-02 21:45:18 - crawler - INFO - [manager] Pushed to storage: 242
+2025-12-02 21:45:18 - crawler - INFO - [w5][book][b197] Start
+2025-12-02 21:45:18 - crawler - INFO - [manager] Pushed to storage: 241
+2025-12-02 21:45:18 - crawler - INFO - [w1][book][b196] Start
+2025-12-02 21:45:19 - crawler - INFO - [manager] Pushed to storage: 200
+2025-12-02 21:45:19 - crawler - INFO - [w3][book][b195] Start
+2025-12-02 21:45:20 - crawler - INFO - [manager] Pushed to storage: 199
+2025-12-02 21:45:20 - crawler - INFO - [w4][book][b194] Start
+2025-12-02 21:45:20 - crawler - INFO - [manager] Pushed to storage: 198
+2025-12-02 21:45:20 - crawler - INFO - [w2][book][b193] Start
+2025-12-02 21:45:21 - crawler - INFO - [manager] Pushed to storage: 197
+2025-12-02 21:45:21 - crawler - INFO - [w5][book][b192] Start
+2025-12-02 21:45:22 - crawler - INFO - [manager] Pushed to storage: 196
+2025-12-02 21:45:22 - crawler - INFO - [w1][book][b191] Start
+2025-12-02 21:45:22 - crawler - INFO - [manager] Pushed to storage: 195
+2025-12-02 21:45:22 - crawler - INFO - [w3][book][b190] Start
+2025-12-02 21:45:23 - crawler - INFO - [manager] Pushed to storage: 194
+2025-12-02 21:45:23 - crawler - INFO - [w4][book][b189] Start
+2025-12-02 21:45:23 - crawler - INFO - [manager] Pushed to storage: 193
+2025-12-02 21:45:23 - crawler - INFO - [w2][book][b188] Start
+2025-12-02 21:45:24 - crawler - INFO - [manager] Pushed to storage: 192
+2025-12-02 21:45:24 - crawler - INFO - [w5][book][b187] Start
+2025-12-02 21:45:25 - crawler - INFO - [manager] Pushed to storage: 191
+2025-12-02 21:45:25 - crawler - INFO - [w1][book][b186] Start
+2025-12-02 21:45:26 - crawler - INFO - [manager] Pushed to storage: 190
+2025-12-02 21:45:26 - crawler - INFO - [w3][book][b185] Start
+2025-12-02 21:45:26 - crawler - INFO - [manager] Pushed to storage: 189
+2025-12-02 21:45:26 - crawler - INFO - [w4][book][b184] Start
+2025-12-02 21:45:27 - crawler - INFO - [manager] Pushed to storage: 187
+2025-12-02 21:45:27 - crawler - INFO - [w5][book][b183] Start
+2025-12-02 21:45:28 - crawler - INFO - [manager] Pushed to storage: 188
+2025-12-02 21:45:28 - crawler - INFO - [w2][book][b182] Start
+2025-12-02 21:45:29 - crawler - INFO - [manager] Pushed to storage: 186
+2025-12-02 21:45:29 - crawler - INFO - [w1][book][b181] Start
+2025-12-02 21:45:30 - crawler - INFO - [manager] Pushed to storage: 185
+2025-12-02 21:45:30 - crawler - INFO - [w3][book][b180] Start
+2025-12-02 21:45:31 - crawler - INFO - [manager] Pushed to storage: 183
+2025-12-02 21:45:31 - crawler - INFO - [manager] Pushed to storage: 184
+2025-12-02 21:45:31 - crawler - INFO - [w5][book][b179] Start
+2025-12-02 21:45:31 - crawler - INFO - [w4][book][b178] Start
+2025-12-02 21:45:32 - crawler - INFO - [manager] Pushed to storage: 182
+2025-12-02 21:45:32 - crawler - INFO - [w2][book][b177] Start
+2025-12-02 21:45:32 - crawler - INFO - [manager] Pushed to storage: 181
+2025-12-02 21:45:32 - crawler - INFO - [w1][book][b176] Start
+2025-12-02 21:45:33 - crawler - INFO - [manager] Pushed to storage: 180
+2025-12-02 21:45:33 - crawler - INFO - [w3][book][b175] Start
+2025-12-02 21:45:34 - crawler - INFO - [manager] Pushed to storage: 178
+2025-12-02 21:45:34 - crawler - INFO - [w4][book][b174] Start
+2025-12-02 21:45:34 - crawler - INFO - [manager] Pushed to storage: 179
+2025-12-02 21:45:34 - crawler - INFO - [w5][book][b173] Start
+2025-12-02 21:45:35 - crawler - INFO - [manager] Pushed to storage: 177
+2025-12-02 21:45:35 - crawler - INFO - [w2][book][b172] Start
+2025-12-02 21:45:36 - crawler - INFO - [manager] Pushed to storage: 176
+2025-12-02 21:45:36 - crawler - INFO - [w1][book][b171] Start
+2025-12-02 21:45:36 - crawler - INFO - [manager] Pushed to storage: 175
+2025-12-02 21:45:36 - crawler - INFO - [w3][book][b170] Start
+2025-12-02 21:45:37 - crawler - INFO - [manager] Pushed to storage: 174
+2025-12-02 21:45:37 - crawler - INFO - [w4][book][b169] Start
+2025-12-02 21:45:38 - crawler - INFO - [manager] Pushed to storage: 173
+2025-12-02 21:45:38 - crawler - INFO - [w5][book][b168] Start
+2025-12-02 21:45:38 - crawler - INFO - [manager] Pushed to storage: 172
+2025-12-02 21:45:38 - crawler - INFO - [w2][book][b167] Start
+2025-12-02 21:45:39 - crawler - INFO - [manager] Pushed to storage: 171
+2025-12-02 21:45:39 - crawler - INFO - [w1][book][b166] Start
+2025-12-02 21:45:40 - crawler - INFO - [manager] Pushed to storage: 170
+2025-12-02 21:45:40 - crawler - INFO - [w3][book][b165] Start
+2025-12-02 21:45:40 - crawler - INFO - [manager] Pushed to storage: 169
+2025-12-02 21:45:40 - crawler - INFO - [w4][book][b164] Start
+2025-12-02 21:45:41 - crawler - INFO - [manager] Pushed to storage: 168
+2025-12-02 21:45:41 - crawler - INFO - [w5][book][b163] Start
+2025-12-02 21:45:42 - crawler - INFO - [manager] Pushed to storage: 167
+2025-12-02 21:45:42 - crawler - INFO - [w2][book][b162] Start
+2025-12-02 21:45:42 - crawler - INFO - [manager] Pushed to storage: 166
+2025-12-02 21:45:42 - crawler - INFO - [w1][book][b161] Start
+2025-12-02 21:45:43 - crawler - INFO - [manager] Pushed to storage: 165
+2025-12-02 21:45:43 - crawler - INFO - [w3][book][b140] Start
+2025-12-02 21:45:44 - crawler - INFO - [manager] Pushed to storage: 164
+2025-12-02 21:45:44 - crawler - INFO - [w4][book][b139] Start
+2025-12-02 21:45:45 - crawler - INFO - [manager] Pushed to storage: 163
+2025-12-02 21:45:45 - crawler - INFO - [w5][book][b138] Start
+2025-12-02 21:45:45 - crawler - INFO - [manager] Pushed to storage: 162
+2025-12-02 21:45:45 - crawler - INFO - [w2][book][b137] Start
+2025-12-02 21:45:47 - crawler - INFO - [manager] Pushed to storage: 161
+2025-12-02 21:45:47 - crawler - INFO - [w1][book][b136] Start
+2025-12-02 21:45:47 - crawler - INFO - [manager] Pushed to storage: 140
+2025-12-02 21:45:47 - crawler - INFO - [w3][book][b135] Start
+2025-12-02 21:45:48 - crawler - INFO - [manager] Pushed to storage: 139
+2025-12-02 21:45:48 - crawler - INFO - [w4][book][b134] Start
+2025-12-02 21:45:49 - crawler - INFO - [manager] Pushed to storage: 138
+2025-12-02 21:45:49 - crawler - INFO - [w5][book][b133] Start
+2025-12-02 21:45:50 - crawler - INFO - [manager] Pushed to storage: 137
+2025-12-02 21:45:50 - crawler - INFO - [w2][book][b132] Start
+2025-12-02 21:45:51 - crawler - INFO - [manager] Pushed to storage: 135
+2025-12-02 21:45:51 - crawler - INFO - [w3][book][b131] Start
+2025-12-02 21:45:51 - crawler - INFO - [manager] Pushed to storage: 136
+2025-12-02 21:45:51 - crawler - INFO - [w1][book][b130] Start
+2025-12-02 21:45:53 - crawler - INFO - [manager] Pushed to storage: 133
+2025-12-02 21:45:53 - crawler - INFO - [w5][book][b129] Start
+2025-12-02 21:45:53 - crawler - INFO - [manager] Pushed to storage: 134
+2025-12-02 21:45:53 - crawler - INFO - [w4][book][b128] Start
+2025-12-02 21:45:54 - crawler - INFO - [manager] Pushed to storage: 132
+2025-12-02 21:45:54 - crawler - INFO - [w2][book][b127] Start
+2025-12-02 21:45:55 - crawler - INFO - [manager] Pushed to storage: 131
+2025-12-02 21:45:55 - crawler - INFO - [w3][book][b126] Start
+2025-12-02 21:45:55 - crawler - INFO - [manager] Pushed to storage: 129
+2025-12-02 21:45:55 - crawler - INFO - [w5][book][b125] Start
+2025-12-02 21:45:57 - crawler - INFO - [manager] Pushed to storage: 128
+2025-12-02 21:45:57 - crawler - INFO - [manager] Pushed to storage: 130
+2025-12-02 21:45:57 - crawler - INFO - [w4][book][b124] Start
+2025-12-02 21:45:57 - crawler - INFO - [w1][book][b123] Start
+2025-12-02 21:45:58 - crawler - INFO - [manager] Pushed to storage: 127
+2025-12-02 21:45:58 - crawler - INFO - [w2][book][b122] Start
+2025-12-02 21:45:59 - crawler - INFO - [manager] Pushed to storage: 126
+2025-12-02 21:45:59 - crawler - INFO - [w3][book][b121] Start
+2025-12-02 21:46:00 - crawler - INFO - [manager] Pushed to storage: 125
+2025-12-02 21:46:00 - crawler - INFO - [w5][book][b160] Start
+2025-12-02 21:46:01 - crawler - INFO - [manager] Pushed to storage: 123
+2025-12-02 21:46:01 - crawler - INFO - [manager] Pushed to storage: 124
+2025-12-02 21:46:01 - crawler - INFO - [w1][book][b159] Start
+2025-12-02 21:46:01 - crawler - INFO - [w4][book][b158] Start
+2025-12-02 21:46:03 - crawler - INFO - [manager] Pushed to storage: 122
+2025-12-02 21:46:03 - crawler - INFO - [w2][book][b157] Start
+2025-12-02 21:46:03 - crawler - INFO - [manager] Pushed to storage: 121
+2025-12-02 21:46:03 - crawler - INFO - [w3][book][b156] Start
+2025-12-02 21:46:04 - crawler - INFO - [manager] Pushed to storage: 160
+2025-12-02 21:46:04 - crawler - INFO - [w5][book][b155] Start
+2025-12-02 21:46:05 - crawler - INFO - [manager] Pushed to storage: 159
+2025-12-02 21:46:05 - crawler - INFO - [w1][book][b154] Start
+2025-12-02 21:46:06 - crawler - INFO - [manager] Pushed to storage: 158
+2025-12-02 21:46:06 - crawler - INFO - [w4][book][b153] Start
+2025-12-02 21:46:07 - crawler - INFO - [manager] Pushed to storage: 157
+2025-12-02 21:46:07 - crawler - INFO - [w2][book][b152] Start
+2025-12-02 21:46:07 - crawler - INFO - [manager] Pushed to storage: 156
+2025-12-02 21:46:07 - crawler - INFO - [w3][book][b151] Start
+2025-12-02 21:46:08 - crawler - INFO - [manager] Pushed to storage: 155
+2025-12-02 21:46:08 - crawler - INFO - [w5][book][b150] Start
+2025-12-02 21:46:09 - crawler - INFO - [manager] Pushed to storage: 154
+2025-12-02 21:46:09 - crawler - INFO - [w1][book][b149] Start
+2025-12-02 21:46:10 - crawler - INFO - [manager] Pushed to storage: 153
+2025-12-02 21:46:10 - crawler - INFO - [w4][book][b148] Start
+2025-12-02 21:46:10 - crawler - INFO - [manager] Pushed to storage: 152
+2025-12-02 21:46:10 - crawler - INFO - [w2][book][b147] Start
+2025-12-02 21:46:11 - crawler - INFO - [manager] Pushed to storage: 151
+2025-12-02 21:46:11 - crawler - INFO - [w3][book][b146] Start
+2025-12-02 21:46:12 - crawler - INFO - [manager] Pushed to storage: 150
+2025-12-02 21:46:12 - crawler - INFO - [w5][book][b145] Start
+2025-12-02 21:46:12 - crawler - INFO - [manager] Pushed to storage: 149
+2025-12-02 21:46:12 - crawler - INFO - [w1][book][b144] Start
+2025-12-02 21:46:13 - crawler - INFO - [manager] Pushed to storage: 148
+2025-12-02 21:46:13 - crawler - INFO - [w4][book][b143] Start
+2025-12-02 21:46:14 - crawler - INFO - [manager] Pushed to storage: 147
+2025-12-02 21:46:14 - crawler - INFO - [w2][book][b142] Start
+2025-12-02 21:46:14 - crawler - INFO - [manager] Pushed to storage: 146
+2025-12-02 21:46:14 - crawler - INFO - [w3][book][b141] Start
+2025-12-02 21:46:15 - crawler - INFO - [manager] Pushed to storage: 145
+2025-12-02 21:46:15 - crawler - INFO - [w5][book][b120] Start
+2025-12-02 21:46:16 - crawler - INFO - [manager] Pushed to storage: 144
+2025-12-02 21:46:16 - crawler - INFO - [w1][book][b119] Start
+2025-12-02 21:46:16 - crawler - INFO - [manager] Pushed to storage: 143
+2025-12-02 21:46:16 - crawler - INFO - [w4][book][b118] Start
+2025-12-02 21:46:17 - crawler - INFO - [manager] Pushed to storage: 142
+2025-12-02 21:46:17 - crawler - INFO - [w2][book][b117] Start
+2025-12-02 21:46:18 - crawler - INFO - [manager] Pushed to storage: 141
+2025-12-02 21:46:18 - crawler - INFO - [w3][book][b116] Start
+2025-12-02 21:46:18 - crawler - INFO - [manager] Pushed to storage: 120
+2025-12-02 21:46:18 - crawler - INFO - [w5][book][b115] Start
+2025-12-02 21:46:19 - crawler - INFO - [manager] Pushed to storage: 119
+2025-12-02 21:46:19 - crawler - INFO - [w1][book][b114] Start
+2025-12-02 21:46:20 - crawler - INFO - [manager] Pushed to storage: 118
+2025-12-02 21:46:20 - crawler - INFO - [w4][book][b113] Start
+2025-12-02 21:46:20 - crawler - INFO - [manager] Pushed to storage: 117
+2025-12-02 21:46:20 - crawler - INFO - [w2][book][b112] Start
+2025-12-02 21:46:21 - crawler - INFO - [manager] Pushed to storage: 116
+2025-12-02 21:46:21 - crawler - INFO - [w3][book][b111] Start
+2025-12-02 21:46:22 - crawler - INFO - [manager] Pushed to storage: 115
+2025-12-02 21:46:22 - crawler - INFO - [w5][book][b110] Start
+2025-12-02 21:46:23 - crawler - INFO - [manager] Pushed to storage: 114
+2025-12-02 21:46:23 - crawler - INFO - [w1][book][b109] Start
+2025-12-02 21:46:24 - crawler - INFO - [manager] Pushed to storage: 113
+2025-12-02 21:46:24 - crawler - INFO - [w4][book][b108] Start
+2025-12-02 21:46:24 - crawler - INFO - [manager] Pushed to storage: 112
+2025-12-02 21:46:24 - crawler - INFO - [w2][book][b107] Start
+2025-12-02 21:46:25 - crawler - INFO - [manager] Pushed to storage: 111
+2025-12-02 21:46:25 - crawler - INFO - [w3][book][b106] Start
+2025-12-02 21:46:26 - crawler - INFO - [manager] Pushed to storage: 110
+2025-12-02 21:46:26 - crawler - INFO - [w5][book][b105] Start
+2025-12-02 21:46:26 - crawler - INFO - [manager] Pushed to storage: 109
+2025-12-02 21:46:26 - crawler - INFO - [w1][book][b104] Start
+2025-12-02 21:46:27 - crawler - INFO - [manager] Pushed to storage: 108
+2025-12-02 21:46:27 - crawler - INFO - [w4][book][b103] Start
+2025-12-02 21:46:28 - crawler - INFO - [manager] Pushed to storage: 107
+2025-12-02 21:46:28 - crawler - INFO - [w2][book][b102] Start
+2025-12-02 21:46:28 - crawler - INFO - [manager] Pushed to storage: 106
+2025-12-02 21:46:28 - crawler - INFO - [w3][book][b101] Start
+2025-12-02 21:46:29 - crawler - INFO - [manager] Pushed to storage: 105
+2025-12-02 21:46:29 - crawler - INFO - [w5][book][b100] Start
+2025-12-02 21:46:30 - crawler - INFO - [manager] Pushed to storage: 104
+2025-12-02 21:46:30 - crawler - INFO - [w1][book][b99] Start
+2025-12-02 21:46:31 - crawler - INFO - [manager] Pushed to storage: 102
+2025-12-02 21:46:31 - crawler - INFO - [w2][book][b98] Start
+2025-12-02 21:46:32 - crawler - INFO - [manager] Pushed to storage: 103
+2025-12-02 21:46:32 - crawler - INFO - [w4][book][b97] Start
+2025-12-02 21:46:33 - crawler - INFO - [manager] Pushed to storage: 101
+2025-12-02 21:46:33 - crawler - INFO - [w3][book][b96] Start
+2025-12-02 21:46:33 - crawler - INFO - [manager] Pushed to storage: 100
+2025-12-02 21:46:33 - crawler - INFO - [w5][book][b95] Start
+2025-12-02 21:46:34 - crawler - INFO - [manager] Pushed to storage: 98
+2025-12-02 21:46:34 - crawler - INFO - [w2][book][b94] Start
+2025-12-02 21:46:35 - crawler - INFO - [manager] Pushed to storage: 97
+2025-12-02 21:46:35 - crawler - INFO - [w4][book][b93] Start
+2025-12-02 21:46:36 - crawler - INFO - [manager] Pushed to storage: 99
+2025-12-02 21:46:36 - crawler - INFO - [w1][book][b92] Start
+2025-12-02 21:46:37 - crawler - INFO - [manager] Pushed to storage: 96
+2025-12-02 21:46:37 - crawler - INFO - [w3][book][b91] Start
+2025-12-02 21:46:38 - crawler - INFO - [manager] Pushed to storage: 95
+2025-12-02 21:46:38 - crawler - INFO - [w5][book][b90] Start
+2025-12-02 21:46:38 - crawler - INFO - [manager] Pushed to storage: 94
+2025-12-02 21:46:38 - crawler - INFO - [w2][book][b89] Start
+2025-12-02 21:46:39 - crawler - INFO - [manager] Pushed to storage: 93
+2025-12-02 21:46:39 - crawler - INFO - [w4][book][b88] Start
+2025-12-02 21:46:40 - crawler - INFO - [manager] Pushed to storage: 92
+2025-12-02 21:46:40 - crawler - INFO - [manager] Pushed to storage: 91
+2025-12-02 21:46:40 - crawler - INFO - [w1][book][b87] Start
+2025-12-02 21:46:40 - crawler - INFO - [w3][book][b86] Start
+2025-12-02 21:46:41 - crawler - INFO - [manager] Pushed to storage: 90
+2025-12-02 21:46:41 - crawler - INFO - [w5][book][b85] Start
+2025-12-02 21:46:42 - crawler - INFO - [manager] Pushed to storage: 89
+2025-12-02 21:46:42 - crawler - INFO - [w2][book][b84] Start
+2025-12-02 21:46:42 - crawler - INFO - [manager] Pushed to storage: 88
+2025-12-02 21:46:42 - crawler - INFO - [w4][book][b83] Start
+2025-12-02 21:46:43 - crawler - INFO - [manager] Pushed to storage: 86
+2025-12-02 21:46:43 - crawler - INFO - [manager] Pushed to storage: 87
+2025-12-02 21:46:43 - crawler - INFO - [w3][book][b82] Start
+2025-12-02 21:46:44 - crawler - INFO - [w1][book][b81] Start
+2025-12-02 21:46:45 - crawler - INFO - [manager] Pushed to storage: 85
+2025-12-02 21:46:45 - crawler - INFO - [w5][book][b80] Start
+2025-12-02 21:46:45 - crawler - INFO - [manager] Pushed to storage: 84
+2025-12-02 21:46:45 - crawler - INFO - [w2][book][b79] Start
+2025-12-02 21:46:46 - crawler - INFO - [manager] Pushed to storage: 83
+2025-12-02 21:46:46 - crawler - INFO - [w4][book][b78] Start
+2025-12-02 21:46:47 - crawler - INFO - [manager] Pushed to storage: 81
+2025-12-02 21:46:47 - crawler - INFO - [w1][book][b77] Start
+2025-12-02 21:46:48 - crawler - INFO - [manager] Pushed to storage: 82
+2025-12-02 21:46:48 - crawler - INFO - [w3][book][b76] Start
+2025-12-02 21:46:49 - crawler - INFO - [manager] Pushed to storage: 80
+2025-12-02 21:46:49 - crawler - INFO - [w5][book][b75] Start
+2025-12-02 21:46:50 - crawler - INFO - [manager] Pushed to storage: 79
+2025-12-02 21:46:50 - crawler - INFO - [w2][book][b74] Start
+2025-12-02 21:46:50 - crawler - INFO - [manager] Pushed to storage: 78
+2025-12-02 21:46:50 - crawler - INFO - [w4][book][b73] Start
+2025-12-02 21:46:51 - crawler - INFO - [manager] Pushed to storage: 77
+2025-12-02 21:46:51 - crawler - INFO - [w1][book][b72] Start
+2025-12-02 21:46:52 - crawler - INFO - [manager] Pushed to storage: 75
+2025-12-02 21:46:52 - crawler - INFO - [w5][book][b71] Start
+2025-12-02 21:46:53 - crawler - INFO - [manager] Pushed to storage: 76
+2025-12-02 21:46:53 - crawler - INFO - [w3][book][b70] Start
+2025-12-02 21:46:54 - crawler - INFO - [manager] Pushed to storage: 74
+2025-12-02 21:46:54 - crawler - INFO - [w2][book][b69] Start
+2025-12-02 21:46:55 - crawler - INFO - [manager] Pushed to storage: 73
+2025-12-02 21:46:55 - crawler - INFO - [w4][book][b68] Start
+2025-12-02 21:46:55 - crawler - INFO - [manager] Pushed to storage: 72
+2025-12-02 21:46:55 - crawler - INFO - [w1][book][b67] Start
+2025-12-02 21:46:56 - crawler - INFO - [manager] Pushed to storage: 71
+2025-12-02 21:46:56 - crawler - INFO - [w5][book][b66] Start
+2025-12-02 21:46:57 - crawler - INFO - [manager] Pushed to storage: 70
+2025-12-02 21:46:57 - crawler - INFO - [w3][book][b65] Start
+2025-12-02 21:46:58 - crawler - INFO - [manager] Pushed to storage: 69
+2025-12-02 21:46:58 - crawler - INFO - [w2][book][b64] Start
+2025-12-02 21:46:59 - crawler - INFO - [manager] Pushed to storage: 68
+2025-12-02 21:46:59 - crawler - INFO - [w4][book][b63] Start
+2025-12-02 21:47:00 - crawler - INFO - [manager] Pushed to storage: 67
+2025-12-02 21:47:00 - crawler - INFO - [w1][book][b62] Start
+2025-12-02 21:47:01 - crawler - INFO - [manager] Pushed to storage: 66
+2025-12-02 21:47:01 - crawler - INFO - [w5][book][b61] Start
+2025-12-02 21:47:01 - crawler - INFO - [manager] Pushed to storage: 65
+2025-12-02 21:47:01 - crawler - INFO - [w3][book][b20] Start
+2025-12-02 21:47:02 - crawler - INFO - [manager] Pushed to storage: 64
+2025-12-02 21:47:02 - crawler - INFO - [w2][book][b19] Start
+2025-12-02 21:47:02 - crawler - INFO - [manager] Pushed to storage: 63
+2025-12-02 21:47:02 - crawler - INFO - [w4][book][b18] Start
+2025-12-02 21:47:03 - crawler - INFO - [manager] Pushed to storage: 62
+2025-12-02 21:47:03 - crawler - INFO - [w1][book][b17] Start
+2025-12-02 21:47:04 - crawler - INFO - [manager] Pushed to storage: 61
+2025-12-02 21:47:04 - crawler - INFO - [w5][book][b16] Start
+2025-12-02 21:47:05 - crawler - INFO - [manager] Pushed to storage: 20
+2025-12-02 21:47:05 - crawler - INFO - [w3][book][b15] Start
+2025-12-02 21:47:06 - crawler - INFO - [manager] Pushed to storage: 19
+2025-12-02 21:47:06 - crawler - INFO - [w2][book][b14] Start
+2025-12-02 21:47:08 - crawler - INFO - [manager] Pushed to storage: 18
+2025-12-02 21:47:08 - crawler - INFO - [w4][book][b13] Start
+2025-12-02 21:47:09 - crawler - INFO - [manager] Pushed to storage: 17
+2025-12-02 21:47:09 - crawler - INFO - [w1][book][b12] Start
+2025-12-02 21:47:10 - crawler - INFO - [manager] Pushed to storage: 16
+2025-12-02 21:47:10 - crawler - INFO - [w5][book][b11] Start
+2025-12-02 21:47:11 - crawler - INFO - [manager] Pushed to storage: 15
+2025-12-02 21:47:11 - crawler - INFO - [w3][book][b10] Start
+2025-12-02 21:47:11 - crawler - INFO - [manager] Pushed to storage: 14
+2025-12-02 21:47:11 - crawler - INFO - [w2][book][b9] Start
+2025-12-02 21:47:12 - crawler - INFO - [manager] Pushed to storage: 13
+2025-12-02 21:47:12 - crawler - INFO - [w4][book][b8] Start
+2025-12-02 21:47:13 - crawler - INFO - [manager] Pushed to storage: 12
+2025-12-02 21:47:13 - crawler - INFO - [w1][book][b7] Start
+2025-12-02 21:47:14 - crawler - INFO - [manager] Pushed to storage: 10
+2025-12-02 21:47:14 - crawler - INFO - [w3][book][b6] Start
+2025-12-02 21:47:15 - crawler - INFO - [manager] Pushed to storage: 11
+2025-12-02 21:47:15 - crawler - INFO - [w5][book][b5] Start
+2025-12-02 21:47:16 - crawler - INFO - [manager] Pushed to storage: 9
+2025-12-02 21:47:16 - crawler - INFO - [w2][book][b4] Start
+2025-12-02 21:47:17 - crawler - INFO - [manager] Pushed to storage: 8
+2025-12-02 21:47:17 - crawler - INFO - [w4][book][b3] Start
+2025-12-02 21:47:18 - crawler - INFO - [manager] Pushed to storage: 6
+2025-12-02 21:47:18 - crawler - INFO - [w3][book][b2] Start
+2025-12-02 21:47:18 - crawler - INFO - [manager] Pushed to storage: 4
+2025-12-02 21:47:18 - crawler - INFO - [manager] Pushed to storage: 5
+2025-12-02 21:47:18 - crawler - INFO - [w2][book][b1] Start
+2025-12-02 21:47:19 - crawler - INFO - [w5][book][b40] Start
+2025-12-02 21:47:20 - crawler - INFO - [manager] Pushed to storage: 3
+2025-12-02 21:47:20 - crawler - INFO - [w4][book][b39] Start
+2025-12-02 21:47:21 - crawler - WARNING - [w1][book][b7] Error: ReadTimeout('')
+2025-12-02 21:47:21 - crawler - INFO - [w1][book][b7] Queued for retry
+2025-12-02 21:47:21 - crawler - INFO - [w1][book][b38] Start
+2025-12-02 21:47:22 - crawler - INFO - [manager] Pushed to storage: 40
+2025-12-02 21:47:22 - crawler - INFO - [w5][book][b37] Start
+2025-12-02 21:47:23 - crawler - INFO - [manager] Pushed to storage: 1
+2025-12-02 21:47:23 - crawler - INFO - [w2][book][b36] Start
+2025-12-02 21:47:24 - crawler - INFO - [manager] Pushed to storage: 2
+2025-12-02 21:47:24 - crawler - INFO - [w3][book][b35] Start
+2025-12-02 21:47:25 - crawler - INFO - [manager] Pushed to storage: 38
+2025-12-02 21:47:25 - crawler - INFO - [w1][book][b34] Start
+2025-12-02 21:47:26 - crawler - INFO - [manager] Pushed to storage: 39
+2025-12-02 21:47:26 - crawler - INFO - [w4][book][b33] Start
+2025-12-02 21:47:27 - crawler - INFO - [manager] Pushed to storage: 37
+2025-12-02 21:47:27 - crawler - INFO - [w5][book][b32] Start
+2025-12-02 21:47:27 - crawler - INFO - [manager] Pushed to storage: 35
+2025-12-02 21:47:27 - crawler - INFO - [w3][book][b31] Start
+2025-12-02 21:47:29 - crawler - INFO - [manager] Pushed to storage: 36
+2025-12-02 21:47:29 - crawler - INFO - [w2][book][b30] Start
+2025-12-02 21:47:29 - crawler - INFO - [manager] Pushed to storage: 34
+2025-12-02 21:47:29 - crawler - INFO - [w1][book][b29] Start
+2025-12-02 21:47:30 - crawler - INFO - [manager] Pushed to storage: 33
+2025-12-02 21:47:30 - crawler - INFO - [w4][book][b28] Start
+2025-12-02 21:47:31 - crawler - INFO - [manager] Pushed to storage: 32
+2025-12-02 21:47:31 - crawler - INFO - [w5][book][b27] Start
+2025-12-02 21:47:32 - crawler - INFO - [manager] Pushed to storage: 31
+2025-12-02 21:47:32 - crawler - INFO - [w3][book][b26] Start
+2025-12-02 21:47:33 - crawler - INFO - [manager] Pushed to storage: 30
+2025-12-02 21:47:33 - crawler - INFO - [w2][book][b25] Start
+2025-12-02 21:47:34 - crawler - INFO - [manager] Pushed to storage: 29
+2025-12-02 21:47:34 - crawler - INFO - [w1][book][b24] Start
+2025-12-02 21:47:35 - crawler - INFO - [manager] Pushed to storage: 28
+2025-12-02 21:47:35 - crawler - INFO - [w4][book][b23] Start
+2025-12-02 21:47:36 - crawler - INFO - [manager] Pushed to storage: 27
+2025-12-02 21:47:36 - crawler - INFO - [w5][book][b22] Start
+2025-12-02 21:47:37 - crawler - INFO - [manager] Pushed to storage: 26
+2025-12-02 21:47:37 - crawler - INFO - [w3][book][b21] Start
+2025-12-02 21:47:38 - crawler - INFO - [manager] Pushed to storage: 24
+2025-12-02 21:47:38 - crawler - INFO - [w1][book][b60] Start
+2025-12-02 21:47:40 - crawler - INFO - [manager] Pushed to storage: 23
+2025-12-02 21:47:40 - crawler - INFO - [w4][book][b59] Start
+2025-12-02 21:47:40 - crawler - INFO - [manager] Pushed to storage: 22
+2025-12-02 21:47:40 - crawler - INFO - [w5][book][b58] Start
+2025-12-02 21:47:41 - crawler - INFO - [manager] Pushed to storage: 21
+2025-12-02 21:47:41 - crawler - INFO - [w3][book][b57] Start
+2025-12-02 21:47:43 - crawler - INFO - [manager] Pushed to storage: 25
+2025-12-02 21:47:43 - crawler - INFO - [w2][book][b56] Start
+2025-12-02 21:47:46 - crawler - WARNING - [w1][book][b60] Error: ConnectTimeout('')
+2025-12-02 21:47:46 - crawler - INFO - [w1][book][b60] Queued for retry
+2025-12-02 21:47:46 - crawler - INFO - [w1][book][b55] Start
+2025-12-02 21:47:48 - crawler - INFO - [manager] Pushed to storage: 57
+2025-12-02 21:47:48 - crawler - INFO - [w3][book][b54] Start
+2025-12-02 21:47:49 - crawler - INFO - [manager] Pushed to storage: 56
+2025-12-02 21:47:49 - crawler - INFO - [w2][book][b53] Start
+2025-12-02 21:47:50 - crawler - INFO - [manager] Pushed to storage: 59
+2025-12-02 21:47:50 - crawler - INFO - [w4][book][b52] Start
+2025-12-02 21:47:51 - crawler - INFO - [manager] Pushed to storage: 58
+2025-12-02 21:47:51 - crawler - INFO - [w5][book][b51] Start
+2025-12-02 21:47:53 - crawler - INFO - [manager] Pushed to storage: 54
+2025-12-02 21:47:53 - crawler - INFO - [w3][book][b50] Start
+2025-12-02 21:47:53 - crawler - INFO - [manager] Pushed to storage: 55
+2025-12-02 21:47:53 - crawler - INFO - [w1][book][b49] Start
+2025-12-02 21:47:54 - crawler - INFO - [manager] Pushed to storage: 52
+2025-12-02 21:47:54 - crawler - INFO - [w4][book][b48] Start
+2025-12-02 21:47:55 - crawler - INFO - [manager] Pushed to storage: 51
+2025-12-02 21:47:55 - crawler - INFO - [w5][book][b47] Start
+2025-12-02 21:47:56 - crawler - WARNING - [w2][book][b53] Error: ConnectTimeout('')
+2025-12-02 21:47:56 - crawler - INFO - [w2][book][b53] Queued for retry
+2025-12-02 21:47:56 - crawler - INFO - [w2][book][b46] Start
+2025-12-02 21:47:57 - crawler - INFO - [manager] Pushed to storage: 50
+2025-12-02 21:47:57 - crawler - INFO - [w3][book][b45] Start
+2025-12-02 21:47:58 - crawler - INFO - [manager] Pushed to storage: 49
+2025-12-02 21:47:58 - crawler - INFO - [w1][book][b44] Start
+2025-12-02 21:47:59 - crawler - INFO - [manager] Pushed to storage: 48
+2025-12-02 21:47:59 - crawler - INFO - [w4][book][b43] Start
+2025-12-02 21:48:00 - crawler - INFO - [manager] Pushed to storage: 46
+2025-12-02 21:48:00 - crawler - INFO - [w2][book][b42] Start
+2025-12-02 21:48:01 - crawler - INFO - [manager] Pushed to storage: 45
+2025-12-02 21:48:01 - crawler - INFO - [w3][book][b41] Start
+2025-12-02 21:48:02 - crawler - INFO - [manager] Pushed to storage: 44
+2025-12-02 21:48:02 - crawler - INFO - [w1][book][b820] Retry 1
+2025-12-02 21:48:03 - crawler - WARNING - [w5][book][b47] Error: ConnectTimeout('')
+2025-12-02 21:48:03 - crawler - INFO - [w5][book][b47] Queued for retry
+2025-12-02 21:48:03 - crawler - INFO - [w5][book][b320] Retry 1
+2025-12-02 21:48:04 - crawler - INFO - [manager] Pushed to storage: 43
+2025-12-02 21:48:04 - crawler - INFO - [w4][book][b7] Retry 1
+2025-12-02 21:48:05 - crawler - INFO - [manager] Pushed to storage: 42
+2025-12-02 21:48:05 - crawler - INFO - [w2][book][b60] Retry 1
+2025-12-02 21:48:05 - crawler - INFO - [manager] Pushed to storage: 41
+2025-12-02 21:48:05 - crawler - INFO - [w3][book][b53] Retry 1
+2025-12-02 21:48:06 - crawler - INFO - [manager] Pushed to storage: 820
+2025-12-02 21:48:06 - crawler - INFO - [w1][book][b47] Retry 1
+2025-12-02 21:48:07 - crawler - INFO - [manager] Pushed to storage: 7
+2025-12-02 21:48:07 - crawler - INFO - [manager] Pushed to storage: 320
+2025-12-02 21:48:07 - crawler - INFO - [manager] Pushed to storage: 60
+2025-12-02 21:48:07 - crawler - INFO - [manager] Pushed to storage: 53
+2025-12-02 21:48:07 - crawler - INFO - [manager] Pushed to storage: 47
+2025-12-02 21:48:12 - crawler - INFO - [manager] No new queue entry for 5 seconds...
+2025-12-02 21:48:12 - crawler - INFO - [manager] Shutting down workers...
+2025-12-02 21:48:12 - crawler - INFO - [manager] Worker w4 stopped
+2025-12-02 21:48:12 - crawler - INFO - [manager] Worker w5 stopped
+2025-12-02 21:48:12 - crawler - INFO - [manager] Worker w2 stopped
+2025-12-02 21:48:12 - crawler - INFO - [manager] Worker w3 stopped
+2025-12-02 21:48:13 - crawler - INFO - [manager] Worker w1 stopped

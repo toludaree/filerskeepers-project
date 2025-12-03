@@ -1,0 +1,2132 @@
+2025-12-03 12:15:47 - scheduler - INFO - [manager] BEGIN RUN
+2025-12-03 12:15:47 - scheduler - INFO - [manager] Run parameters: env=prod
+2025-12-03 12:15:47 - scheduler - INFO - [w1][page][p1] Start
+2025-12-03 12:15:50 - scheduler - INFO - [w1][page][p1] Processed page successfully
+2025-12-03 12:15:50 - scheduler - INFO - [w2][page][p2] Start
+2025-12-03 12:15:50 - scheduler - INFO - [w3][page][p3] Start
+2025-12-03 12:15:51 - scheduler - INFO - [w4][page][p4] Start
+2025-12-03 12:15:51 - scheduler - INFO - [w5][page][p5] Start
+2025-12-03 12:15:52 - scheduler - INFO - [w1][page][p6] Start
+2025-12-03 12:15:54 - scheduler - INFO - [w4][page][p4] Processed page successfully
+2025-12-03 12:15:54 - scheduler - INFO - [w5][page][p5] Processed page successfully
+2025-12-03 12:15:54 - scheduler - INFO - [w2][page][p2] Processed page successfully
+2025-12-03 12:15:54 - scheduler - INFO - [w1][page][p6] Processed page successfully
+2025-12-03 12:15:54 - scheduler - INFO - [w4][page][p7] Start
+2025-12-03 12:15:55 - scheduler - INFO - [w5][page][p8] Start
+2025-12-03 12:15:55 - scheduler - INFO - [w2][page][p9] Start
+2025-12-03 12:15:56 - scheduler - INFO - [w1][page][p10] Start
+2025-12-03 12:15:56 - scheduler - INFO - [w3][page][p3] Processed page successfully
+2025-12-03 12:15:56 - scheduler - INFO - [w3][page][p11] Start
+2025-12-03 12:15:58 - scheduler - INFO - [w2][page][p9] Processed page successfully
+2025-12-03 12:15:58 - scheduler - INFO - [w2][page][p12] Start
+2025-12-03 12:15:59 - scheduler - INFO - [w3][page][p11] Processed page successfully
+2025-12-03 12:15:59 - scheduler - INFO - [w3][page][p13] Start
+2025-12-03 12:15:59 - scheduler - INFO - [w5][page][p8] Processed page successfully
+2025-12-03 12:15:59 - scheduler - INFO - [w4][page][p7] Processed page successfully
+2025-12-03 12:15:59 - scheduler - INFO - [w5][page][p14] Start
+2025-12-03 12:16:00 - scheduler - INFO - [w4][page][p15] Start
+2025-12-03 12:16:01 - scheduler - INFO - [w1][page][p10] Processed page successfully
+2025-12-03 12:16:01 - scheduler - INFO - [w1][page][p16] Start
+2025-12-03 12:16:02 - scheduler - INFO - [w2][page][p12] Processed page successfully
+2025-12-03 12:16:02 - scheduler - INFO - [w2][page][p17] Start
+2025-12-03 12:16:02 - scheduler - INFO - [w3][page][p13] Processed page successfully
+2025-12-03 12:16:02 - scheduler - INFO - [w3][page][p18] Start
+2025-12-03 12:16:03 - scheduler - INFO - [w5][page][p14] Processed page successfully
+2025-12-03 12:16:03 - scheduler - INFO - [w4][page][p15] Processed page successfully
+2025-12-03 12:16:03 - scheduler - INFO - [w5][page][p19] Start
+2025-12-03 12:16:04 - scheduler - INFO - [w4][page][p20] Start
+2025-12-03 12:16:04 - scheduler - INFO - [w1][page][p16] Processed page successfully
+2025-12-03 12:16:04 - scheduler - INFO - [w1][page][p21] Start
+2025-12-03 12:16:05 - scheduler - INFO - [w2][page][p17] Processed page successfully
+2025-12-03 12:16:05 - scheduler - INFO - [w2][page][p22] Start
+2025-12-03 12:16:06 - scheduler - INFO - [w3][page][p18] Processed page successfully
+2025-12-03 12:16:06 - scheduler - INFO - [w3][page][p23] Start
+2025-12-03 12:16:07 - scheduler - INFO - [w5][page][p19] Processed page successfully
+2025-12-03 12:16:07 - scheduler - INFO - [w4][page][p20] Processed page successfully
+2025-12-03 12:16:07 - scheduler - INFO - [w5][page][p24] Start
+2025-12-03 12:16:07 - scheduler - INFO - [w4][page][p25] Start
+2025-12-03 12:16:08 - scheduler - INFO - [w1][page][p21] Processed page successfully
+2025-12-03 12:16:08 - scheduler - INFO - [w1][page][p26] Start
+2025-12-03 12:16:09 - scheduler - INFO - [w2][page][p22] Processed page successfully
+2025-12-03 12:16:09 - scheduler - INFO - [w2][page][p27] Start
+2025-12-03 12:16:10 - scheduler - INFO - [w3][page][p23] Processed page successfully
+2025-12-03 12:16:10 - scheduler - INFO - [w3][page][p28] Start
+2025-12-03 12:16:11 - scheduler - INFO - [w5][page][p24] Processed page successfully
+2025-12-03 12:16:11 - scheduler - INFO - [w5][page][p29] Start
+2025-12-03 12:16:11 - scheduler - INFO - [w4][page][p25] Processed page successfully
+2025-12-03 12:16:11 - scheduler - INFO - [w4][page][p30] Start
+2025-12-03 12:16:12 - scheduler - INFO - [w1][page][p26] Processed page successfully
+2025-12-03 12:16:12 - scheduler - INFO - [w1][page][p31] Start
+2025-12-03 12:16:13 - scheduler - INFO - [w2][page][p27] Processed page successfully
+2025-12-03 12:16:13 - scheduler - INFO - [w2][page][p32] Start
+2025-12-03 12:16:13 - scheduler - INFO - [w3][page][p28] Processed page successfully
+2025-12-03 12:16:13 - scheduler - INFO - [w3][page][p33] Start
+2025-12-03 12:16:14 - scheduler - INFO - [w5][page][p29] Processed page successfully
+2025-12-03 12:16:14 - scheduler - INFO - [w5][page][p34] Start
+2025-12-03 12:16:15 - scheduler - INFO - [w1][page][p31] Processed page successfully
+2025-12-03 12:16:15 - scheduler - INFO - [w4][page][p30] Processed page successfully
+2025-12-03 12:16:15 - scheduler - INFO - [w1][page][p35] Start
+2025-12-03 12:16:15 - scheduler - INFO - [w4][page][p36] Start
+2025-12-03 12:16:16 - scheduler - INFO - [w2][page][p32] Processed page successfully
+2025-12-03 12:16:16 - scheduler - INFO - [w2][page][p37] Start
+2025-12-03 12:16:17 - scheduler - INFO - [w3][page][p33] Processed page successfully
+2025-12-03 12:16:17 - scheduler - INFO - [w3][page][p38] Start
+2025-12-03 12:16:18 - scheduler - INFO - [w5][page][p34] Processed page successfully
+2025-12-03 12:16:18 - scheduler - INFO - [w5][page][p39] Start
+2025-12-03 12:16:19 - scheduler - INFO - [w4][page][p36] Processed page successfully
+2025-12-03 12:16:19 - scheduler - INFO - [w4][page][p40] Start
+2025-12-03 12:16:20 - scheduler - INFO - [w2][page][p37] Processed page successfully
+2025-12-03 12:16:20 - scheduler - INFO - [w1][page][p35] Processed page successfully
+2025-12-03 12:16:20 - scheduler - INFO - [w2][page][p41] Start
+2025-12-03 12:16:20 - scheduler - INFO - [w1][page][p42] Start
+2025-12-03 12:16:21 - scheduler - INFO - [w3][page][p38] Processed page successfully
+2025-12-03 12:16:21 - scheduler - INFO - [w3][page][p43] Start
+2025-12-03 12:16:22 - scheduler - INFO - [w5][page][p39] Processed page successfully
+2025-12-03 12:16:22 - scheduler - INFO - [w5][page][p44] Start
+2025-12-03 12:16:22 - scheduler - INFO - [w4][page][p40] Processed page successfully
+2025-12-03 12:16:22 - scheduler - INFO - [w4][page][p45] Start
+2025-12-03 12:16:23 - scheduler - INFO - [w2][page][p41] Processed page successfully
+2025-12-03 12:16:23 - scheduler - INFO - [w2][page][p46] Start
+2025-12-03 12:16:24 - scheduler - INFO - [w1][page][p42] Processed page successfully
+2025-12-03 12:16:24 - scheduler - INFO - [w3][page][p43] Processed page successfully
+2025-12-03 12:16:24 - scheduler - INFO - [w1][page][p47] Start
+2025-12-03 12:16:24 - scheduler - INFO - [w3][page][p48] Start
+2025-12-03 12:16:25 - scheduler - INFO - [w5][page][p44] Processed page successfully
+2025-12-03 12:16:25 - scheduler - INFO - [w5][page][p49] Start
+2025-12-03 12:16:25 - scheduler - INFO - [w4][page][p45] Processed page successfully
+2025-12-03 12:16:25 - scheduler - INFO - [w4][page][p50] Start
+2025-12-03 12:16:26 - scheduler - INFO - [w2][page][p46] Processed page successfully
+2025-12-03 12:16:26 - scheduler - INFO - [w2][book][b1000] Start
+2025-12-03 12:16:27 - scheduler - INFO - [w1][page][p47] Processed page successfully
+2025-12-03 12:16:27 - scheduler - INFO - [w3][page][p48] Processed page successfully
+2025-12-03 12:16:27 - scheduler - INFO - [w1][book][b999] Start
+2025-12-03 12:16:27 - scheduler - INFO - [w3][book][b998] Start
+2025-12-03 12:16:28 - scheduler - INFO - [w5][page][p49] Processed page successfully
+2025-12-03 12:16:28 - scheduler - INFO - [w5][book][b997] Start
+2025-12-03 12:16:29 - scheduler - INFO - [w4][page][p50] Processed page successfully
+2025-12-03 12:16:29 - scheduler - INFO - [w4][book][b996] Start
+2025-12-03 12:16:30 - scheduler - INFO - [manager] Unchanged: 1000
+2025-12-03 12:16:30 - scheduler - INFO - [w2][book][b995] Start
+2025-12-03 12:16:31 - scheduler - INFO - [manager] Unchanged: 999
+2025-12-03 12:16:31 - scheduler - INFO - [manager] Unchanged: 998
+2025-12-03 12:16:31 - scheduler - INFO - [w1][book][b994] Start
+2025-12-03 12:16:31 - scheduler - INFO - [w3][book][b993] Start
+2025-12-03 12:16:33 - scheduler - INFO - [manager] Unchanged: 997
+2025-12-03 12:16:33 - scheduler - INFO - [manager] Unchanged: 996
+2025-12-03 12:16:33 - scheduler - INFO - [manager] Unchanged: 995
+2025-12-03 12:16:33 - scheduler - INFO - [w5][book][b992] Start
+2025-12-03 12:16:33 - scheduler - INFO - [w4][book][b991] Start
+2025-12-03 12:16:34 - scheduler - INFO - [w2][book][b990] Start
+2025-12-03 12:16:35 - scheduler - INFO - [manager] Unchanged: 993
+2025-12-03 12:16:35 - scheduler - INFO - [manager] Unchanged: 994
+2025-12-03 12:16:35 - scheduler - INFO - [w3][book][b989] Start
+2025-12-03 12:16:36 - scheduler - INFO - [w1][book][b988] Start
+2025-12-03 12:16:36 - scheduler - INFO - [manager] Unchanged: 992
+2025-12-03 12:16:36 - scheduler - INFO - [manager] Unchanged: 991
+2025-12-03 12:16:36 - scheduler - INFO - [w5][book][b987] Start
+2025-12-03 12:16:37 - scheduler - INFO - [w4][book][b986] Start
+2025-12-03 12:16:38 - scheduler - INFO - [manager] Book added: 990
+2025-12-03 12:16:39 - scheduler - INFO - [manager] Unchanged: 989
+2025-12-03 12:16:39 - scheduler - INFO - [manager] Unchanged: 988
+2025-12-03 12:16:39 - scheduler - INFO - [w3][book][b985] Start
+2025-12-03 12:16:39 - scheduler - INFO - [w1][book][b984] Start
+2025-12-03 12:16:40 - scheduler - INFO - [manager] Unchanged: 987
+2025-12-03 12:16:40 - scheduler - INFO - [w5][book][b983] Start
+2025-12-03 12:16:41 - scheduler - INFO - [manager] Unchanged: 986
+2025-12-03 12:16:41 - scheduler - INFO - [w4][book][b982] Start
+2025-12-03 12:16:42 - scheduler - INFO - [manager] Unchanged: 985
+2025-12-03 12:16:42 - scheduler - INFO - [w3][book][b981] Start
+2025-12-03 12:16:42 - scheduler - INFO - [manager] Unchanged: 984
+2025-12-03 12:16:42 - scheduler - INFO - [w1][book][b940] Start
+2025-12-03 12:16:43 - scheduler - INFO - [manager] Alert email sent for add event: 990
+2025-12-03 12:16:43 - scheduler - INFO - [w2][book][b939] Start
+2025-12-03 12:16:44 - scheduler - INFO - [manager] Unchanged: 982
+2025-12-03 12:16:44 - scheduler - INFO - [manager] Unchanged: 983
+2025-12-03 12:16:44 - scheduler - INFO - [w4][book][b938] Start
+2025-12-03 12:16:44 - scheduler - INFO - [w5][book][b937] Start
+2025-12-03 12:16:46 - scheduler - INFO - [manager] Unchanged: 981
+2025-12-03 12:16:46 - scheduler - INFO - [w3][book][b936] Start
+2025-12-03 12:16:46 - scheduler - INFO - [manager] Unchanged: 940
+2025-12-03 12:16:46 - scheduler - INFO - [w1][book][b935] Start
+2025-12-03 12:16:47 - scheduler - INFO - [manager] Unchanged: 937
+2025-12-03 12:16:47 - scheduler - INFO - [w5][book][b934] Start
+2025-12-03 12:16:48 - scheduler - INFO - [manager] Unchanged: 939
+2025-12-03 12:16:48 - scheduler - INFO - [w2][book][b933] Start
+2025-12-03 12:16:48 - scheduler - INFO - [manager] Unchanged: 938
+2025-12-03 12:16:48 - scheduler - INFO - [w4][book][b932] Start
+2025-12-03 12:16:49 - scheduler - INFO - [manager] Unchanged: 935
+2025-12-03 12:16:49 - scheduler - INFO - [w1][book][b931] Start
+2025-12-03 12:16:50 - scheduler - INFO - [manager] Unchanged: 936
+2025-12-03 12:16:50 - scheduler - INFO - [w3][book][b930] Start
+2025-12-03 12:16:51 - scheduler - INFO - [manager] Unchanged: 934
+2025-12-03 12:16:51 - scheduler - INFO - [w5][book][b929] Start
+2025-12-03 12:16:51 - scheduler - INFO - [manager] Unchanged: 932
+2025-12-03 12:16:51 - scheduler - INFO - [w4][book][b928] Start
+2025-12-03 12:16:52 - scheduler - INFO - [manager] Unchanged: 930
+2025-12-03 12:16:52 - scheduler - INFO - [manager] Unchanged: 931
+2025-12-03 12:16:52 - scheduler - INFO - [w3][book][b927] Start
+2025-12-03 12:16:53 - scheduler - INFO - [w1][book][b926] Start
+2025-12-03 12:16:53 - scheduler - INFO - [manager] Unchanged: 933
+2025-12-03 12:16:53 - scheduler - INFO - [w2][book][b925] Start
+2025-12-03 12:16:54 - scheduler - INFO - [manager] Unchanged: 929
+2025-12-03 12:16:54 - scheduler - INFO - [w5][book][b924] Start
+2025-12-03 12:16:55 - scheduler - INFO - [manager] Unchanged: 928
+2025-12-03 12:16:55 - scheduler - INFO - [w4][book][b923] Start
+2025-12-03 12:16:56 - scheduler - INFO - [manager] Unchanged: 924
+2025-12-03 12:16:56 - scheduler - INFO - [w5][book][b922] Start
+2025-12-03 12:16:56 - scheduler - INFO - [manager] Unchanged: 925
+2025-12-03 12:16:56 - scheduler - INFO - [manager] Unchanged: 927
+2025-12-03 12:16:56 - scheduler - INFO - [manager] Unchanged: 926
+2025-12-03 12:16:56 - scheduler - INFO - [w2][book][b921] Start
+2025-12-03 12:16:57 - scheduler - INFO - [w3][book][b920] Start
+2025-12-03 12:16:58 - scheduler - INFO - [w1][book][b919] Start
+2025-12-03 12:16:58 - scheduler - INFO - [manager] Unchanged: 923
+2025-12-03 12:16:58 - scheduler - INFO - [w4][book][b918] Start
+2025-12-03 12:16:59 - scheduler - INFO - [manager] Unchanged: 922
+2025-12-03 12:16:59 - scheduler - INFO - [manager] Unchanged: 919
+2025-12-03 12:16:59 - scheduler - INFO - [w5][book][b917] Start
+2025-12-03 12:17:00 - scheduler - INFO - [w1][book][b916] Start
+2025-12-03 12:17:01 - scheduler - INFO - [manager] Unchanged: 920
+2025-12-03 12:17:01 - scheduler - INFO - [manager] Unchanged: 921
+2025-12-03 12:17:01 - scheduler - INFO - [w3][book][b915] Start
+2025-12-03 12:17:01 - scheduler - INFO - [w2][book][b914] Start
+2025-12-03 12:17:02 - scheduler - INFO - [manager] Unchanged: 918
+2025-12-03 12:17:02 - scheduler - INFO - [manager] Unchanged: 917
+2025-12-03 12:17:02 - scheduler - INFO - [w4][book][b913] Start
+2025-12-03 12:17:03 - scheduler - INFO - [w5][book][b912] Start
+2025-12-03 12:17:03 - scheduler - INFO - [manager] Unchanged: 916
+2025-12-03 12:17:03 - scheduler - INFO - [w1][book][b911] Start
+2025-12-03 12:17:04 - scheduler - INFO - [manager] Unchanged: 915
+2025-12-03 12:17:04 - scheduler - INFO - [w3][book][b910] Start
+2025-12-03 12:17:05 - scheduler - INFO - [manager] Unchanged: 914
+2025-12-03 12:17:05 - scheduler - INFO - [w2][book][b909] Start
+2025-12-03 12:17:06 - scheduler - INFO - [manager] Unchanged: 911
+2025-12-03 12:17:06 - scheduler - INFO - [w1][book][b908] Start
+2025-12-03 12:17:06 - scheduler - INFO - [manager] Unchanged: 910
+2025-12-03 12:17:06 - scheduler - INFO - [manager] Unchanged: 912
+2025-12-03 12:17:06 - scheduler - INFO - [w3][book][b907] Start
+2025-12-03 12:17:07 - scheduler - INFO - [w5][book][b906] Start
+2025-12-03 12:17:08 - scheduler - INFO - [manager] Unchanged: 913
+2025-12-03 12:17:08 - scheduler - INFO - [w4][book][b905] Start
+2025-12-03 12:17:08 - scheduler - INFO - [manager] Unchanged: 908
+2025-12-03 12:17:08 - scheduler - INFO - [w1][book][b904] Start
+2025-12-03 12:17:09 - scheduler - INFO - [manager] Unchanged: 909
+2025-12-03 12:17:09 - scheduler - INFO - [w2][book][b903] Start
+2025-12-03 12:17:10 - scheduler - INFO - [manager] Unchanged: 905
+2025-12-03 12:17:10 - scheduler - INFO - [w4][book][b902] Start
+2025-12-03 12:17:11 - scheduler - INFO - [manager] Unchanged: 907
+2025-12-03 12:17:11 - scheduler - INFO - [w3][book][b901] Start
+2025-12-03 12:17:11 - scheduler - INFO - [manager] Unchanged: 906
+2025-12-03 12:17:11 - scheduler - INFO - [w5][book][b980] Start
+2025-12-03 12:17:12 - scheduler - INFO - [manager] Unchanged: 904
+2025-12-03 12:17:12 - scheduler - INFO - [w1][book][b979] Start
+2025-12-03 12:17:13 - scheduler - INFO - [manager] Unchanged: 903
+2025-12-03 12:17:13 - scheduler - INFO - [w2][book][b978] Start
+2025-12-03 12:17:14 - scheduler - INFO - [manager] Unchanged: 902
+2025-12-03 12:17:14 - scheduler - INFO - [w4][book][b977] Start
+2025-12-03 12:17:15 - scheduler - INFO - [manager] Unchanged: 980
+2025-12-03 12:17:15 - scheduler - INFO - [manager] Unchanged: 901
+2025-12-03 12:17:15 - scheduler - INFO - [w5][book][b976] Start
+2025-12-03 12:17:15 - scheduler - INFO - [w3][book][b975] Start
+2025-12-03 12:17:17 - scheduler - INFO - [manager] Unchanged: 979
+2025-12-03 12:17:17 - scheduler - INFO - [w1][book][b974] Start
+2025-12-03 12:17:18 - scheduler - INFO - [manager] Unchanged: 978
+2025-12-03 12:17:18 - scheduler - INFO - [w2][book][b973] Start
+2025-12-03 12:17:19 - scheduler - INFO - [manager] Unchanged: 977
+2025-12-03 12:17:19 - scheduler - INFO - [w4][book][b972] Start
+2025-12-03 12:17:20 - scheduler - INFO - [manager] Unchanged: 975
+2025-12-03 12:17:20 - scheduler - INFO - [manager] Unchanged: 976
+2025-12-03 12:17:20 - scheduler - INFO - [w3][book][b971] Start
+2025-12-03 12:17:20 - scheduler - INFO - [w5][book][b970] Start
+2025-12-03 12:17:21 - scheduler - INFO - [manager] Unchanged: 974
+2025-12-03 12:17:21 - scheduler - INFO - [w1][book][b969] Start
+2025-12-03 12:17:22 - scheduler - INFO - [manager] Unchanged: 973
+2025-12-03 12:17:22 - scheduler - INFO - [w2][book][b968] Start
+2025-12-03 12:17:23 - scheduler - INFO - [manager] Unchanged: 971
+2025-12-03 12:17:23 - scheduler - INFO - [manager] Unchanged: 972
+2025-12-03 12:17:23 - scheduler - INFO - [w3][book][b967] Start
+2025-12-03 12:17:24 - scheduler - INFO - [w4][book][b966] Start
+2025-12-03 12:17:24 - scheduler - INFO - [manager] Unchanged: 970
+2025-12-03 12:17:24 - scheduler - INFO - [w5][book][b965] Start
+2025-12-03 12:17:25 - scheduler - INFO - [manager] Unchanged: 969
+2025-12-03 12:17:25 - scheduler - INFO - [w1][book][b964] Start
+2025-12-03 12:17:26 - scheduler - INFO - [manager] Unchanged: 968
+2025-12-03 12:17:26 - scheduler - INFO - [w2][book][b963] Start
+2025-12-03 12:17:27 - scheduler - INFO - [manager] Unchanged: 967
+2025-12-03 12:17:27 - scheduler - INFO - [manager] Unchanged: 966
+2025-12-03 12:17:27 - scheduler - INFO - [w3][book][b962] Start
+2025-12-03 12:17:27 - scheduler - INFO - [w4][book][b961] Start
+2025-12-03 12:17:29 - scheduler - INFO - [manager] Unchanged: 965
+2025-12-03 12:17:29 - scheduler - INFO - [manager] Unchanged: 963
+2025-12-03 12:17:29 - scheduler - INFO - [w5][book][b900] Start
+2025-12-03 12:17:29 - scheduler - INFO - [w2][book][b899] Start
+2025-12-03 12:17:30 - scheduler - INFO - [manager] Unchanged: 964
+2025-12-03 12:17:30 - scheduler - INFO - [w1][book][b898] Start
+2025-12-03 12:17:31 - scheduler - INFO - [manager] Unchanged: 962
+2025-12-03 12:17:31 - scheduler - INFO - [manager] Unchanged: 961
+2025-12-03 12:17:31 - scheduler - INFO - [w3][book][b897] Start
+2025-12-03 12:17:32 - scheduler - INFO - [w4][book][b896] Start
+2025-12-03 12:17:32 - scheduler - INFO - [manager] Unchanged: 899
+2025-12-03 12:17:32 - scheduler - INFO - [w2][book][b895] Start
+2025-12-03 12:17:33 - scheduler - INFO - [manager] Unchanged: 900
+2025-12-03 12:17:33 - scheduler - INFO - [w5][book][b894] Start
+2025-12-03 12:17:34 - scheduler - INFO - [manager] Unchanged: 898
+2025-12-03 12:17:34 - scheduler - INFO - [manager] Unchanged: 896
+2025-12-03 12:17:34 - scheduler - INFO - [w1][book][b893] Start
+2025-12-03 12:17:35 - scheduler - INFO - [w4][book][b892] Start
+2025-12-03 12:17:35 - scheduler - INFO - [manager] Unchanged: 897
+2025-12-03 12:17:35 - scheduler - INFO - [w3][book][b891] Start
+2025-12-03 12:17:36 - scheduler - INFO - [manager] Unchanged: 895
+2025-12-03 12:17:36 - scheduler - INFO - [w2][book][b890] Start
+2025-12-03 12:17:37 - scheduler - INFO - [manager] Unchanged: 894
+2025-12-03 12:17:37 - scheduler - INFO - [w5][book][b889] Start
+2025-12-03 12:17:38 - scheduler - INFO - [manager] Unchanged: 891
+2025-12-03 12:17:38 - scheduler - INFO - [w3][book][b888] Start
+2025-12-03 12:17:38 - scheduler - INFO - [manager] Unchanged: 893
+2025-12-03 12:17:38 - scheduler - INFO - [manager] Unchanged: 890
+2025-12-03 12:17:38 - scheduler - INFO - [w1][book][b887] Start
+2025-12-03 12:17:39 - scheduler - INFO - [w2][book][b886] Start
+2025-12-03 12:17:40 - scheduler - INFO - [manager] Unchanged: 892
+2025-12-03 12:17:40 - scheduler - INFO - [w4][book][b885] Start
+2025-12-03 12:17:40 - scheduler - INFO - [manager] Unchanged: 889
+2025-12-03 12:17:40 - scheduler - INFO - [w5][book][b884] Start
+2025-12-03 12:17:42 - scheduler - INFO - [manager] Unchanged: 888
+2025-12-03 12:17:42 - scheduler - INFO - [w3][book][b883] Start
+2025-12-03 12:17:43 - scheduler - INFO - [manager] Unchanged: 886
+2025-12-03 12:17:43 - scheduler - INFO - [w2][book][b882] Start
+2025-12-03 12:17:44 - scheduler - INFO - [manager] Unchanged: 885
+2025-12-03 12:17:44 - scheduler - INFO - [w4][book][b881] Start
+2025-12-03 12:17:45 - scheduler - INFO - [manager] Book updated: 887
+2025-12-03 12:17:45 - scheduler - INFO - [manager] Unchanged: 884
+2025-12-03 12:17:45 - scheduler - INFO - [w5][book][b960] Start
+2025-12-03 12:17:46 - scheduler - INFO - [manager] Unchanged: 882
+2025-12-03 12:17:46 - scheduler - INFO - [w2][book][b959] Start
+2025-12-03 12:17:46 - scheduler - INFO - [manager] Unchanged: 881
+2025-12-03 12:17:46 - scheduler - INFO - [w4][book][b958] Start
+2025-12-03 12:17:47 - scheduler - INFO - [manager] Unchanged: 883
+2025-12-03 12:17:47 - scheduler - INFO - [w3][book][b957] Start
+2025-12-03 12:17:48 - scheduler - INFO - [manager] Alert email sent for update event: 887
+2025-12-03 12:17:48 - scheduler - INFO - [w1][book][b956] Start
+2025-12-03 12:17:48 - scheduler - INFO - [manager] Unchanged: 960
+2025-12-03 12:17:48 - scheduler - INFO - [w5][book][b955] Start
+2025-12-03 12:17:49 - scheduler - INFO - [manager] Unchanged: 959
+2025-12-03 12:17:49 - scheduler - INFO - [w2][book][b954] Start
+2025-12-03 12:17:50 - scheduler - INFO - [manager] Unchanged: 958
+2025-12-03 12:17:50 - scheduler - INFO - [w4][book][b953] Start
+2025-12-03 12:17:51 - scheduler - INFO - [manager] Unchanged: 956
+2025-12-03 12:17:51 - scheduler - INFO - [manager] Unchanged: 955
+2025-12-03 12:17:51 - scheduler - INFO - [manager] Unchanged: 957
+2025-12-03 12:17:51 - scheduler - INFO - [w1][book][b952] Start
+2025-12-03 12:17:52 - scheduler - INFO - [w5][book][b951] Start
+2025-12-03 12:17:53 - scheduler - INFO - [w3][book][b950] Start
+2025-12-03 12:17:54 - scheduler - INFO - [manager] Unchanged: 954
+2025-12-03 12:17:54 - scheduler - INFO - [w2][book][b949] Start
+2025-12-03 12:17:54 - scheduler - INFO - [manager] Unchanged: 953
+2025-12-03 12:17:54 - scheduler - INFO - [w4][book][b948] Start
+2025-12-03 12:17:56 - scheduler - INFO - [manager] Unchanged: 952
+2025-12-03 12:17:56 - scheduler - INFO - [w1][book][b947] Start
+2025-12-03 12:17:57 - scheduler - INFO - [manager] Unchanged: 951
+2025-12-03 12:17:57 - scheduler - INFO - [manager] Unchanged: 950
+2025-12-03 12:17:57 - scheduler - INFO - [w5][book][b946] Start
+2025-12-03 12:17:57 - scheduler - INFO - [w3][book][b945] Start
+2025-12-03 12:17:59 - scheduler - INFO - [manager] Unchanged: 949
+2025-12-03 12:17:59 - scheduler - INFO - [w2][book][b944] Start
+2025-12-03 12:17:59 - scheduler - INFO - [manager] Unchanged: 948
+2025-12-03 12:17:59 - scheduler - INFO - [w4][book][b943] Start
+2025-12-03 12:18:00 - scheduler - INFO - [manager] Unchanged: 946
+2025-12-03 12:18:00 - scheduler - INFO - [w5][book][b942] Start
+2025-12-03 12:18:01 - scheduler - INFO - [manager] Unchanged: 947
+2025-12-03 12:18:01 - scheduler - INFO - [manager] Unchanged: 945
+2025-12-03 12:18:01 - scheduler - INFO - [manager] Unchanged: 944
+2025-12-03 12:18:01 - scheduler - INFO - [w1][book][b941] Start
+2025-12-03 12:18:02 - scheduler - INFO - [w3][book][b840] Start
+2025-12-03 12:18:02 - scheduler - INFO - [w2][book][b839] Start
+2025-12-03 12:18:03 - scheduler - INFO - [manager] Unchanged: 943
+2025-12-03 12:18:03 - scheduler - INFO - [w4][book][b838] Start
+2025-12-03 12:18:04 - scheduler - INFO - [manager] Unchanged: 942
+2025-12-03 12:18:04 - scheduler - INFO - [w5][book][b837] Start
+2025-12-03 12:18:05 - scheduler - INFO - [manager] Unchanged: 839
+2025-12-03 12:18:05 - scheduler - INFO - [manager] Unchanged: 840
+2025-12-03 12:18:05 - scheduler - INFO - [manager] Unchanged: 941
+2025-12-03 12:18:05 - scheduler - INFO - [manager] Unchanged: 838
+2025-12-03 12:18:05 - scheduler - INFO - [w2][book][b836] Start
+2025-12-03 12:18:05 - scheduler - INFO - [w3][book][b835] Start
+2025-12-03 12:18:06 - scheduler - INFO - [w1][book][b834] Start
+2025-12-03 12:18:06 - scheduler - INFO - [w4][book][b833] Start
+2025-12-03 12:18:07 - scheduler - INFO - [manager] Unchanged: 837
+2025-12-03 12:18:07 - scheduler - INFO - [w5][book][b832] Start
+2025-12-03 12:18:08 - scheduler - INFO - [manager] Unchanged: 836
+2025-12-03 12:18:08 - scheduler - INFO - [manager] Unchanged: 834
+2025-12-03 12:18:08 - scheduler - INFO - [w2][book][b831] Start
+2025-12-03 12:18:09 - scheduler - INFO - [w1][book][b830] Start
+2025-12-03 12:18:09 - scheduler - INFO - [manager] Unchanged: 833
+2025-12-03 12:18:09 - scheduler - INFO - [manager] Unchanged: 835
+2025-12-03 12:18:09 - scheduler - INFO - [w4][book][b829] Start
+2025-12-03 12:18:10 - scheduler - INFO - [w3][book][b828] Start
+2025-12-03 12:18:11 - scheduler - INFO - [manager] Unchanged: 830
+2025-12-03 12:18:11 - scheduler - INFO - [w1][book][b827] Start
+2025-12-03 12:18:12 - scheduler - INFO - [manager] Unchanged: 832
+2025-12-03 12:18:12 - scheduler - INFO - [w5][book][b826] Start
+2025-12-03 12:18:12 - scheduler - INFO - [manager] Unchanged: 831
+2025-12-03 12:18:12 - scheduler - INFO - [w2][book][b825] Start
+2025-12-03 12:18:13 - scheduler - INFO - [manager] Unchanged: 828
+2025-12-03 12:18:13 - scheduler - INFO - [manager] Unchanged: 829
+2025-12-03 12:18:13 - scheduler - INFO - [w3][book][b824] Start
+2025-12-03 12:18:13 - scheduler - INFO - [w4][book][b823] Start
+2025-12-03 12:18:14 - scheduler - INFO - [manager] Unchanged: 827
+2025-12-03 12:18:14 - scheduler - INFO - [w1][book][b822] Start
+2025-12-03 12:18:15 - scheduler - INFO - [manager] Unchanged: 826
+2025-12-03 12:18:15 - scheduler - INFO - [w5][book][b821] Start
+2025-12-03 12:18:16 - scheduler - INFO - [manager] Unchanged: 825
+2025-12-03 12:18:16 - scheduler - INFO - [w2][book][b800] Start
+2025-12-03 12:18:16 - scheduler - INFO - [manager] Unchanged: 823
+2025-12-03 12:18:16 - scheduler - INFO - [manager] Unchanged: 824
+2025-12-03 12:18:16 - scheduler - INFO - [w4][book][b799] Start
+2025-12-03 12:18:17 - scheduler - INFO - [w3][book][b798] Start
+2025-12-03 12:18:18 - scheduler - INFO - [manager] Unchanged: 822
+2025-12-03 12:18:18 - scheduler - INFO - [w1][book][b797] Start
+2025-12-03 12:18:18 - scheduler - INFO - [manager] Unchanged: 821
+2025-12-03 12:18:18 - scheduler - INFO - [w5][book][b796] Start
+2025-12-03 12:18:19 - scheduler - INFO - [manager] Unchanged: 800
+2025-12-03 12:18:19 - scheduler - INFO - [w2][book][b795] Start
+2025-12-03 12:18:20 - scheduler - INFO - [manager] Unchanged: 798
+2025-12-03 12:18:20 - scheduler - INFO - [manager] Unchanged: 799
+2025-12-03 12:18:20 - scheduler - INFO - [w3][book][b794] Start
+2025-12-03 12:18:20 - scheduler - INFO - [w4][book][b793] Start
+2025-12-03 12:18:21 - scheduler - INFO - [manager] Unchanged: 797
+2025-12-03 12:18:21 - scheduler - INFO - [w1][book][b792] Start
+2025-12-03 12:18:22 - scheduler - INFO - [manager] Unchanged: 796
+2025-12-03 12:18:22 - scheduler - INFO - [w5][book][b791] Start
+2025-12-03 12:18:22 - scheduler - INFO - [manager] Unchanged: 795
+2025-12-03 12:18:22 - scheduler - INFO - [w2][book][b790] Start
+2025-12-03 12:18:23 - scheduler - INFO - [manager] Unchanged: 794
+2025-12-03 12:18:23 - scheduler - INFO - [w3][book][b789] Start
+2025-12-03 12:18:24 - scheduler - INFO - [manager] Unchanged: 793
+2025-12-03 12:18:24 - scheduler - INFO - [w4][book][b788] Start
+2025-12-03 12:18:25 - scheduler - INFO - [manager] Unchanged: 792
+2025-12-03 12:18:25 - scheduler - INFO - [w1][book][b787] Start
+2025-12-03 12:18:25 - scheduler - INFO - [manager] Unchanged: 791
+2025-12-03 12:18:25 - scheduler - INFO - [w5][book][b786] Start
+2025-12-03 12:18:26 - scheduler - INFO - [manager] Unchanged: 790
+2025-12-03 12:18:26 - scheduler - INFO - [w2][book][b785] Start
+2025-12-03 12:18:26 - scheduler - INFO - [manager] Unchanged: 788
+2025-12-03 12:18:26 - scheduler - INFO - [manager] Unchanged: 789
+2025-12-03 12:18:26 - scheduler - INFO - [w4][book][b784] Start
+2025-12-03 12:18:27 - scheduler - INFO - [w3][book][b783] Start
+2025-12-03 12:18:28 - scheduler - INFO - [manager] Unchanged: 787
+2025-12-03 12:18:28 - scheduler - INFO - [w1][book][b782] Start
+2025-12-03 12:18:29 - scheduler - INFO - [manager] Unchanged: 786
+2025-12-03 12:18:29 - scheduler - INFO - [w5][book][b781] Start
+2025-12-03 12:18:30 - scheduler - INFO - [manager] Unchanged: 783
+2025-12-03 12:18:30 - scheduler - INFO - [manager] Unchanged: 782
+2025-12-03 12:18:30 - scheduler - INFO - [manager] Unchanged: 784
+2025-12-03 12:18:30 - scheduler - INFO - [w3][book][b860] Start
+2025-12-03 12:18:30 - scheduler - INFO - [manager] Unchanged: 785
+2025-12-03 12:18:30 - scheduler - INFO - [w1][book][b859] Start
+2025-12-03 12:18:31 - scheduler - INFO - [w4][book][b858] Start
+2025-12-03 12:18:31 - scheduler - INFO - [w2][book][b857] Start
+2025-12-03 12:18:32 - scheduler - INFO - [manager] Unchanged: 781
+2025-12-03 12:18:32 - scheduler - INFO - [w5][book][b856] Start
+2025-12-03 12:18:33 - scheduler - INFO - [manager] Unchanged: 859
+2025-12-03 12:18:33 - scheduler - INFO - [manager] Unchanged: 858
+2025-12-03 12:18:33 - scheduler - INFO - [manager] Unchanged: 860
+2025-12-03 12:18:33 - scheduler - INFO - [w1][book][b855] Start
+2025-12-03 12:18:34 - scheduler - INFO - [w4][book][b854] Start
+2025-12-03 12:18:35 - scheduler - INFO - [w3][book][b853] Start
+2025-12-03 12:18:35 - scheduler - INFO - [manager] Unchanged: 857
+2025-12-03 12:18:35 - scheduler - INFO - [w2][book][b852] Start
+2025-12-03 12:18:36 - scheduler - INFO - [manager] Unchanged: 856
+2025-12-03 12:18:36 - scheduler - INFO - [w5][book][b851] Start
+2025-12-03 12:18:37 - scheduler - INFO - [manager] Unchanged: 852
+2025-12-03 12:18:37 - scheduler - INFO - [manager] Unchanged: 854
+2025-12-03 12:18:37 - scheduler - INFO - [w2][book][b850] Start
+2025-12-03 12:18:37 - scheduler - INFO - [w4][book][b849] Start
+2025-12-03 12:18:38 - scheduler - INFO - [manager] Unchanged: 855
+2025-12-03 12:18:38 - scheduler - INFO - [manager] Unchanged: 853
+2025-12-03 12:18:38 - scheduler - INFO - [w1][book][b848] Start
+2025-12-03 12:18:39 - scheduler - INFO - [w3][book][b847] Start
+2025-12-03 12:18:39 - scheduler - INFO - [manager] Unchanged: 851
+2025-12-03 12:18:39 - scheduler - INFO - [w5][book][b846] Start
+2025-12-03 12:18:40 - scheduler - INFO - [manager] Unchanged: 849
+2025-12-03 12:18:40 - scheduler - INFO - [manager] Unchanged: 850
+2025-12-03 12:18:40 - scheduler - INFO - [w4][book][b845] Start
+2025-12-03 12:18:41 - scheduler - INFO - [w2][book][b844] Start
+2025-12-03 12:18:41 - scheduler - INFO - [manager] Unchanged: 847
+2025-12-03 12:18:41 - scheduler - INFO - [w3][book][b843] Start
+2025-12-03 12:18:42 - scheduler - INFO - [manager] Unchanged: 846
+2025-12-03 12:18:42 - scheduler - INFO - [w5][book][b842] Start
+2025-12-03 12:18:43 - scheduler - INFO - [manager] Unchanged: 848
+2025-12-03 12:18:43 - scheduler - INFO - [w1][book][b841] Start
+2025-12-03 12:18:44 - scheduler - INFO - [manager] Unchanged: 844
+2025-12-03 12:18:44 - scheduler - INFO - [w2][book][b880] Start
+2025-12-03 12:18:44 - scheduler - INFO - [manager] Unchanged: 845
+2025-12-03 12:18:44 - scheduler - INFO - [w4][book][b879] Start
+2025-12-03 12:18:45 - scheduler - INFO - [manager] Unchanged: 843
+2025-12-03 12:18:45 - scheduler - INFO - [w3][book][b878] Start
+2025-12-03 12:18:47 - scheduler - INFO - [manager] Unchanged: 842
+2025-12-03 12:18:47 - scheduler - INFO - [w5][book][b877] Start
+2025-12-03 12:18:48 - scheduler - INFO - [manager] Unchanged: 841
+2025-12-03 12:18:48 - scheduler - INFO - [w1][book][b876] Start
+2025-12-03 12:18:49 - scheduler - INFO - [manager] Unchanged: 880
+2025-12-03 12:18:49 - scheduler - INFO - [w2][book][b875] Start
+2025-12-03 12:18:50 - scheduler - INFO - [manager] Unchanged: 879
+2025-12-03 12:18:50 - scheduler - INFO - [w4][book][b874] Start
+2025-12-03 12:18:51 - scheduler - INFO - [manager] Unchanged: 878
+2025-12-03 12:18:51 - scheduler - INFO - [manager] Unchanged: 877
+2025-12-03 12:18:51 - scheduler - INFO - [w3][book][b873] Start
+2025-12-03 12:18:51 - scheduler - INFO - [w5][book][b872] Start
+2025-12-03 12:18:52 - scheduler - INFO - [manager] Unchanged: 876
+2025-12-03 12:18:52 - scheduler - INFO - [w1][book][b871] Start
+2025-12-03 12:18:53 - scheduler - INFO - [manager] Unchanged: 874
+2025-12-03 12:18:53 - scheduler - INFO - [manager] Unchanged: 875
+2025-12-03 12:18:53 - scheduler - INFO - [w4][book][b870] Start
+2025-12-03 12:18:55 - scheduler - INFO - [w2][book][b869] Start
+2025-12-03 12:18:57 - scheduler - INFO - [manager] Unchanged: 873
+2025-12-03 12:18:57 - scheduler - INFO - [w3][book][b868] Start
+2025-12-03 12:18:58 - scheduler - INFO - [manager] Unchanged: 872
+2025-12-03 12:18:58 - scheduler - INFO - [w5][book][b867] Start
+2025-12-03 12:18:59 - scheduler - INFO - [manager] Unchanged: 871
+2025-12-03 12:18:59 - scheduler - INFO - [w1][book][b866] Start
+2025-12-03 12:19:00 - scheduler - INFO - [manager] Unchanged: 869
+2025-12-03 12:19:00 - scheduler - INFO - [manager] Unchanged: 870
+2025-12-03 12:19:00 - scheduler - INFO - [w2][book][b865] Start
+2025-12-03 12:19:01 - scheduler - INFO - [w4][book][b864] Start
+2025-12-03 12:19:02 - scheduler - INFO - [manager] Unchanged: 868
+2025-12-03 12:19:02 - scheduler - INFO - [w3][book][b863] Start
+2025-12-03 12:19:03 - scheduler - INFO - [manager] Unchanged: 867
+2025-12-03 12:19:03 - scheduler - INFO - [w5][book][b862] Start
+2025-12-03 12:19:04 - scheduler - INFO - [manager] Unchanged: 865
+2025-12-03 12:19:04 - scheduler - INFO - [w2][book][b861] Start
+2025-12-03 12:19:05 - scheduler - INFO - [manager] Unchanged: 863
+2025-12-03 12:19:05 - scheduler - INFO - [manager] Unchanged: 866
+2025-12-03 12:19:05 - scheduler - INFO - [w3][book][b820] Start
+2025-12-03 12:19:06 - scheduler - INFO - [w1][book][b819] Start
+2025-12-03 12:19:07 - scheduler - INFO - [manager] Unchanged: 864
+2025-12-03 12:19:07 - scheduler - INFO - [w4][book][b818] Start
+2025-12-03 12:19:08 - scheduler - INFO - [manager] Unchanged: 862
+2025-12-03 12:19:08 - scheduler - INFO - [w5][book][b817] Start
+2025-12-03 12:19:08 - scheduler - INFO - [manager] Unchanged: 820
+2025-12-03 12:19:08 - scheduler - INFO - [w3][book][b816] Start
+2025-12-03 12:19:09 - scheduler - INFO - [manager] Unchanged: 819
+2025-12-03 12:19:09 - scheduler - INFO - [w1][book][b815] Start
+2025-12-03 12:19:10 - scheduler - INFO - [manager] Unchanged: 861
+2025-12-03 12:19:10 - scheduler - INFO - [w2][book][b814] Start
+2025-12-03 12:19:10 - scheduler - INFO - [manager] Unchanged: 818
+2025-12-03 12:19:10 - scheduler - INFO - [w4][book][b813] Start
+2025-12-03 12:19:11 - scheduler - INFO - [manager] Unchanged: 817
+2025-12-03 12:19:11 - scheduler - INFO - [w5][book][b812] Start
+2025-12-03 12:19:12 - scheduler - INFO - [manager] Unchanged: 814
+2025-12-03 12:19:12 - scheduler - INFO - [manager] Unchanged: 816
+2025-12-03 12:19:12 - scheduler - INFO - [w2][book][b811] Start
+2025-12-03 12:19:13 - scheduler - INFO - [manager] Unchanged: 815
+2025-12-03 12:19:13 - scheduler - INFO - [w3][book][b810] Start
+2025-12-03 12:19:14 - scheduler - INFO - [w1][book][b809] Start
+2025-12-03 12:19:14 - scheduler - INFO - [manager] Unchanged: 812
+2025-12-03 12:19:14 - scheduler - INFO - [manager] Unchanged: 813
+2025-12-03 12:19:14 - scheduler - INFO - [w5][book][b808] Start
+2025-12-03 12:19:15 - scheduler - INFO - [w4][book][b807] Start
+2025-12-03 12:19:16 - scheduler - INFO - [manager] Unchanged: 811
+2025-12-03 12:19:16 - scheduler - INFO - [w2][book][b806] Start
+2025-12-03 12:19:17 - scheduler - INFO - [manager] Unchanged: 810
+2025-12-03 12:19:17 - scheduler - INFO - [w3][book][b805] Start
+2025-12-03 12:19:17 - scheduler - INFO - [manager] Unchanged: 809
+2025-12-03 12:19:17 - scheduler - INFO - [manager] Unchanged: 808
+2025-12-03 12:19:17 - scheduler - INFO - [manager] Unchanged: 807
+2025-12-03 12:19:17 - scheduler - INFO - [w1][book][b804] Start
+2025-12-03 12:19:18 - scheduler - INFO - [w5][book][b803] Start
+2025-12-03 12:19:19 - scheduler - INFO - [w4][book][b802] Start
+2025-12-03 12:19:20 - scheduler - INFO - [manager] Unchanged: 806
+2025-12-03 12:19:20 - scheduler - INFO - [w2][book][b801] Start
+2025-12-03 12:19:21 - scheduler - INFO - [manager] Unchanged: 803
+2025-12-03 12:19:21 - scheduler - INFO - [w5][book][b780] Start
+2025-12-03 12:19:22 - scheduler - INFO - [manager] Unchanged: 804
+2025-12-03 12:19:22 - scheduler - INFO - [manager] Unchanged: 802
+2025-12-03 12:19:22 - scheduler - INFO - [manager] Unchanged: 805
+2025-12-03 12:19:22 - scheduler - INFO - [w1][book][b779] Start
+2025-12-03 12:19:22 - scheduler - INFO - [w4][book][b778] Start
+2025-12-03 12:19:23 - scheduler - INFO - [w3][book][b777] Start
+2025-12-03 12:19:25 - scheduler - INFO - [manager] Unchanged: 780
+2025-12-03 12:19:25 - scheduler - INFO - [w5][book][b776] Start
+2025-12-03 12:19:26 - scheduler - INFO - [manager] Unchanged: 801
+2025-12-03 12:19:26 - scheduler - INFO - [w2][book][b775] Start
+2025-12-03 12:19:26 - scheduler - INFO - [manager] Unchanged: 778
+2025-12-03 12:19:26 - scheduler - INFO - [manager] Unchanged: 779
+2025-12-03 12:19:26 - scheduler - INFO - [manager] Unchanged: 777
+2025-12-03 12:19:27 - scheduler - INFO - [w4][book][b774] Start
+2025-12-03 12:19:27 - scheduler - INFO - [w1][book][b773] Start
+2025-12-03 12:19:28 - scheduler - INFO - [w3][book][b772] Start
+2025-12-03 12:19:29 - scheduler - INFO - [manager] Unchanged: 776
+2025-12-03 12:19:29 - scheduler - INFO - [w5][book][b771] Start
+2025-12-03 12:19:30 - scheduler - INFO - [manager] Unchanged: 775
+2025-12-03 12:19:30 - scheduler - INFO - [manager] Unchanged: 773
+2025-12-03 12:19:30 - scheduler - INFO - [manager] Unchanged: 774
+2025-12-03 12:19:30 - scheduler - INFO - [manager] Unchanged: 772
+2025-12-03 12:19:30 - scheduler - INFO - [w2][book][b770] Start
+2025-12-03 12:19:31 - scheduler - INFO - [w1][book][b769] Start
+2025-12-03 12:19:31 - scheduler - INFO - [w4][book][b768] Start
+2025-12-03 12:19:32 - scheduler - INFO - [w3][book][b767] Start
+2025-12-03 12:19:33 - scheduler - INFO - [manager] Unchanged: 771
+2025-12-03 12:19:33 - scheduler - INFO - [w5][book][b766] Start
+2025-12-03 12:19:34 - scheduler - INFO - [manager] Unchanged: 767
+2025-12-03 12:19:34 - scheduler - INFO - [manager] Unchanged: 768
+2025-12-03 12:19:34 - scheduler - INFO - [w3][book][b765] Start
+2025-12-03 12:19:34 - scheduler - INFO - [w4][book][b764] Start
+2025-12-03 12:19:35 - scheduler - INFO - [manager] Unchanged: 769
+2025-12-03 12:19:35 - scheduler - INFO - [w1][book][b763] Start
+2025-12-03 12:19:35 - scheduler - INFO - [manager] Unchanged: 770
+2025-12-03 12:19:35 - scheduler - INFO - [w2][book][b762] Start
+2025-12-03 12:19:36 - scheduler - INFO - [manager] Unchanged: 766
+2025-12-03 12:19:36 - scheduler - INFO - [w5][book][b761] Start
+2025-12-03 12:19:37 - scheduler - INFO - [manager] Unchanged: 765
+2025-12-03 12:19:37 - scheduler - INFO - [w3][book][b760] Start
+2025-12-03 12:19:38 - scheduler - INFO - [manager] Unchanged: 764
+2025-12-03 12:19:38 - scheduler - INFO - [w4][book][b759] Start
+2025-12-03 12:19:39 - scheduler - INFO - [manager] Unchanged: 763
+2025-12-03 12:19:39 - scheduler - INFO - [w1][book][b758] Start
+2025-12-03 12:19:39 - scheduler - INFO - [manager] Unchanged: 762
+2025-12-03 12:19:39 - scheduler - INFO - [w2][book][b757] Start
+2025-12-03 12:19:40 - scheduler - INFO - [manager] Unchanged: 761
+2025-12-03 12:19:40 - scheduler - INFO - [w5][book][b756] Start
+2025-12-03 12:19:41 - scheduler - INFO - [manager] Unchanged: 760
+2025-12-03 12:19:41 - scheduler - INFO - [w3][book][b755] Start
+2025-12-03 12:19:42 - scheduler - INFO - [manager] Unchanged: 759
+2025-12-03 12:19:42 - scheduler - INFO - [manager] Unchanged: 758
+2025-12-03 12:19:42 - scheduler - INFO - [w4][book][b754] Start
+2025-12-03 12:19:42 - scheduler - INFO - [w1][book][b753] Start
+2025-12-03 12:19:43 - scheduler - INFO - [manager] Unchanged: 757
+2025-12-03 12:19:43 - scheduler - INFO - [w2][book][b752] Start
+2025-12-03 12:19:44 - scheduler - INFO - [manager] Unchanged: 756
+2025-12-03 12:19:44 - scheduler - INFO - [w5][book][b751] Start
+2025-12-03 12:19:45 - scheduler - INFO - [manager] Unchanged: 755
+2025-12-03 12:19:45 - scheduler - INFO - [w3][book][b750] Start
+2025-12-03 12:19:46 - scheduler - INFO - [manager] Unchanged: 753
+2025-12-03 12:19:46 - scheduler - INFO - [w1][book][b749] Start
+2025-12-03 12:19:47 - scheduler - INFO - [manager] Unchanged: 752
+2025-12-03 12:19:47 - scheduler - INFO - [w2][book][b748] Start
+2025-12-03 12:19:47 - scheduler - INFO - [manager] Unchanged: 754
+2025-12-03 12:19:47 - scheduler - INFO - [w4][book][b747] Start
+2025-12-03 12:19:48 - scheduler - INFO - [manager] Unchanged: 751
+2025-12-03 12:19:48 - scheduler - INFO - [w5][book][b746] Start
+2025-12-03 12:19:48 - scheduler - INFO - [manager] Unchanged: 749
+2025-12-03 12:19:48 - scheduler - INFO - [manager] Unchanged: 750
+2025-12-03 12:19:48 - scheduler - INFO - [w1][book][b745] Start
+2025-12-03 12:19:49 - scheduler - INFO - [w3][book][b744] Start
+2025-12-03 12:19:50 - scheduler - INFO - [manager] Unchanged: 746
+2025-12-03 12:19:50 - scheduler - INFO - [w5][book][b743] Start
+2025-12-03 12:19:51 - scheduler - INFO - [manager] Unchanged: 747
+2025-12-03 12:19:51 - scheduler - INFO - [manager] Unchanged: 748
+2025-12-03 12:19:51 - scheduler - INFO - [manager] Unchanged: 744
+2025-12-03 12:19:51 - scheduler - INFO - [w4][book][b742] Start
+2025-12-03 12:19:51 - scheduler - INFO - [w2][book][b741] Start
+2025-12-03 12:19:52 - scheduler - INFO - [w3][book][b740] Start
+2025-12-03 12:19:52 - scheduler - INFO - [manager] Unchanged: 745
+2025-12-03 12:19:52 - scheduler - INFO - [w1][book][b739] Start
+2025-12-03 12:19:54 - scheduler - INFO - [manager] Unchanged: 743
+2025-12-03 12:19:54 - scheduler - INFO - [w5][book][b738] Start
+2025-12-03 12:19:54 - scheduler - INFO - [manager] Unchanged: 741
+2025-12-03 12:19:54 - scheduler - INFO - [manager] Unchanged: 739
+2025-12-03 12:19:54 - scheduler - INFO - [manager] Unchanged: 740
+2025-12-03 12:19:54 - scheduler - INFO - [w2][book][b737] Start
+2025-12-03 12:19:55 - scheduler - INFO - [w1][book][b736] Start
+2025-12-03 12:19:56 - scheduler - INFO - [w3][book][b735] Start
+2025-12-03 12:19:56 - scheduler - INFO - [manager] Unchanged: 742
+2025-12-03 12:19:56 - scheduler - INFO - [w4][book][b734] Start
+2025-12-03 12:19:57 - scheduler - INFO - [manager] Unchanged: 738
+2025-12-03 12:19:57 - scheduler - INFO - [w5][book][b733] Start
+2025-12-03 12:19:58 - scheduler - INFO - [manager] Unchanged: 736
+2025-12-03 12:19:58 - scheduler - INFO - [w1][book][b732] Start
+2025-12-03 12:19:58 - scheduler - INFO - [manager] Unchanged: 735
+2025-12-03 12:19:58 - scheduler - INFO - [w3][book][b731] Start
+2025-12-03 12:19:59 - scheduler - INFO - [manager] Unchanged: 737
+2025-12-03 12:19:59 - scheduler - INFO - [w2][book][b730] Start
+2025-12-03 12:20:00 - scheduler - INFO - [manager] Unchanged: 734
+2025-12-03 12:20:00 - scheduler - INFO - [w4][book][b729] Start
+2025-12-03 12:20:00 - scheduler - INFO - [manager] Unchanged: 733
+2025-12-03 12:20:00 - scheduler - INFO - [w5][book][b728] Start
+2025-12-03 12:20:01 - scheduler - INFO - [manager] Unchanged: 732
+2025-12-03 12:20:01 - scheduler - INFO - [w1][book][b727] Start
+2025-12-03 12:20:02 - scheduler - INFO - [manager] Unchanged: 730
+2025-12-03 12:20:02 - scheduler - INFO - [manager] Unchanged: 731
+2025-12-03 12:20:02 - scheduler - INFO - [w2][book][b726] Start
+2025-12-03 12:20:03 - scheduler - INFO - [w3][book][b725] Start
+2025-12-03 12:20:03 - scheduler - INFO - [manager] Unchanged: 728
+2025-12-03 12:20:03 - scheduler - INFO - [w5][book][b724] Start
+2025-12-03 12:20:04 - scheduler - INFO - [manager] Unchanged: 729
+2025-12-03 12:20:04 - scheduler - INFO - [w4][book][b723] Start
+2025-12-03 12:20:05 - scheduler - INFO - [manager] Unchanged: 726
+2025-12-03 12:20:05 - scheduler - INFO - [manager] Unchanged: 725
+2025-12-03 12:20:05 - scheduler - INFO - [manager] Unchanged: 727
+2025-12-03 12:20:05 - scheduler - INFO - [w2][book][b722] Start
+2025-12-03 12:20:06 - scheduler - INFO - [w3][book][b721] Start
+2025-12-03 12:20:07 - scheduler - INFO - [w1][book][b720] Start
+2025-12-03 12:20:08 - scheduler - INFO - [manager] Unchanged: 723
+2025-12-03 12:20:08 - scheduler - INFO - [w4][book][b719] Start
+2025-12-03 12:20:09 - scheduler - INFO - [manager] Unchanged: 724
+2025-12-03 12:20:09 - scheduler - INFO - [w5][book][b718] Start
+2025-12-03 12:20:10 - scheduler - INFO - [manager] Unchanged: 722
+2025-12-03 12:20:10 - scheduler - INFO - [manager] Unchanged: 720
+2025-12-03 12:20:10 - scheduler - INFO - [manager] Unchanged: 721
+2025-12-03 12:20:10 - scheduler - INFO - [w2][book][b717] Start
+2025-12-03 12:20:11 - scheduler - INFO - [w1][book][b716] Start
+2025-12-03 12:20:12 - scheduler - INFO - [w3][book][b715] Start
+2025-12-03 12:20:13 - scheduler - INFO - [manager] Unchanged: 719
+2025-12-03 12:20:13 - scheduler - INFO - [w4][book][b714] Start
+2025-12-03 12:20:14 - scheduler - INFO - [manager] Unchanged: 718
+2025-12-03 12:20:14 - scheduler - INFO - [w5][book][b713] Start
+2025-12-03 12:20:15 - scheduler - INFO - [manager] Unchanged: 716
+2025-12-03 12:20:15 - scheduler - INFO - [manager] Unchanged: 717
+2025-12-03 12:20:15 - scheduler - INFO - [manager] Unchanged: 715
+2025-12-03 12:20:15 - scheduler - INFO - [w1][book][b712] Start
+2025-12-03 12:20:16 - scheduler - INFO - [w2][book][b711] Start
+2025-12-03 12:20:17 - scheduler - INFO - [w3][book][b710] Start
+2025-12-03 12:20:18 - scheduler - INFO - [manager] Unchanged: 714
+2025-12-03 12:20:18 - scheduler - INFO - [w4][book][b709] Start
+2025-12-03 12:20:19 - scheduler - INFO - [manager] Unchanged: 713
+2025-12-03 12:20:19 - scheduler - INFO - [w5][book][b708] Start
+2025-12-03 12:20:20 - scheduler - INFO - [manager] Unchanged: 711
+2025-12-03 12:20:20 - scheduler - INFO - [manager] Unchanged: 709
+2025-12-03 12:20:20 - scheduler - INFO - [w2][book][b707] Start
+2025-12-03 12:20:21 - scheduler - INFO - [manager] Unchanged: 710
+2025-12-03 12:20:21 - scheduler - INFO - [manager] Unchanged: 712
+2025-12-03 12:20:21 - scheduler - INFO - [w4][book][b706] Start
+2025-12-03 12:20:22 - scheduler - INFO - [w3][book][b705] Start
+2025-12-03 12:20:22 - scheduler - INFO - [w1][book][b704] Start
+2025-12-03 12:20:24 - scheduler - INFO - [manager] Unchanged: 708
+2025-12-03 12:20:24 - scheduler - INFO - [w5][book][b703] Start
+2025-12-03 12:20:25 - scheduler - INFO - [manager] Unchanged: 705
+2025-12-03 12:20:25 - scheduler - INFO - [w3][book][b702] Start
+2025-12-03 12:20:26 - scheduler - INFO - [manager] Unchanged: 706
+2025-12-03 12:20:26 - scheduler - INFO - [manager] Unchanged: 707
+2025-12-03 12:20:26 - scheduler - INFO - [manager] Unchanged: 704
+2025-12-03 12:20:26 - scheduler - INFO - [w4][book][b701] Start
+2025-12-03 12:20:27 - scheduler - INFO - [w2][book][b700] Start
+2025-12-03 12:20:28 - scheduler - INFO - [w1][book][b699] Start
+2025-12-03 12:20:29 - scheduler - INFO - [manager] Unchanged: 702
+2025-12-03 12:20:29 - scheduler - INFO - [w3][book][b698] Start
+2025-12-03 12:20:30 - scheduler - INFO - [manager] Unchanged: 701
+2025-12-03 12:20:30 - scheduler - INFO - [manager] Unchanged: 699
+2025-12-03 12:20:30 - scheduler - INFO - [w4][book][b697] Start
+2025-12-03 12:20:31 - scheduler - INFO - [w1][book][b696] Start
+2025-12-03 12:20:32 - scheduler - INFO - [manager] Unchanged: 700
+2025-12-03 12:20:32 - scheduler - INFO - [w2][book][b695] Start
+2025-12-03 12:20:33 - scheduler - INFO - [manager] Unchanged: 703
+2025-12-03 12:20:33 - scheduler - INFO - [w5][book][b694] Start
+2025-12-03 12:20:34 - scheduler - INFO - [manager] Unchanged: 698
+2025-12-03 12:20:34 - scheduler - INFO - [w3][book][b693] Start
+2025-12-03 12:20:35 - scheduler - INFO - [manager] Unchanged: 696
+2025-12-03 12:20:35 - scheduler - INFO - [manager] Unchanged: 697
+2025-12-03 12:20:35 - scheduler - INFO - [w1][book][b692] Start
+2025-12-03 12:20:35 - scheduler - INFO - [w4][book][b691] Start
+2025-12-03 12:20:36 - scheduler - INFO - [manager] Unchanged: 695
+2025-12-03 12:20:36 - scheduler - INFO - [w2][book][b690] Start
+2025-12-03 12:20:37 - scheduler - INFO - [manager] Unchanged: 694
+2025-12-03 12:20:37 - scheduler - INFO - [w5][book][b689] Start
+2025-12-03 12:20:38 - scheduler - INFO - [manager] Unchanged: 692
+2025-12-03 12:20:38 - scheduler - INFO - [manager] Unchanged: 693
+2025-12-03 12:20:38 - scheduler - INFO - [manager] Unchanged: 691
+2025-12-03 12:20:38 - scheduler - INFO - [w1][book][b688] Start
+2025-12-03 12:20:39 - scheduler - INFO - [w3][book][b687] Start
+2025-12-03 12:20:40 - scheduler - INFO - [w4][book][b686] Start
+2025-12-03 12:20:43 - scheduler - INFO - [manager] Unchanged: 690
+2025-12-03 12:20:43 - scheduler - INFO - [w2][book][b685] Start
+2025-12-03 12:20:49 - scheduler - WARNING - [w3][book][b687] Error: ConnectTimeout('')
+2025-12-03 12:20:49 - scheduler - INFO - [w3][book][b687] Queued for retry
+2025-12-03 12:20:49 - scheduler - INFO - [w3][book][b684] Start
+2025-12-03 12:20:50 - scheduler - WARNING - [w1][book][b688] Error: ConnectTimeout('')
+2025-12-03 12:20:50 - scheduler - INFO - [w1][book][b688] Queued for retry
+2025-12-03 12:20:50 - scheduler - INFO - [w1][book][b683] Start
+2025-12-03 12:20:50 - scheduler - WARNING - [w4][book][b686] Error: ConnectTimeout('')
+2025-12-03 12:20:50 - scheduler - INFO - [w4][book][b686] Queued for retry
+2025-12-03 12:20:50 - scheduler - INFO - [w4][book][b682] Start
+2025-12-03 12:20:51 - scheduler - WARNING - [w2][book][b685] Error: ConnectTimeout('')
+2025-12-03 12:20:51 - scheduler - INFO - [w2][book][b685] Queued for retry
+2025-12-03 12:20:51 - scheduler - INFO - [w2][book][b681] Start
+2025-12-03 12:20:52 - scheduler - WARNING - [w5][book][b689] Error: ReadTimeout('')
+2025-12-03 12:20:52 - scheduler - INFO - [w5][book][b689] Queued for retry
+2025-12-03 12:20:52 - scheduler - INFO - [w5][book][b680] Start
+2025-12-03 12:20:55 - scheduler - INFO - [manager] Unchanged: 683
+2025-12-03 12:20:55 - scheduler - INFO - [w1][book][b679] Start
+2025-12-03 12:20:55 - scheduler - INFO - [manager] Unchanged: 684
+2025-12-03 12:20:55 - scheduler - INFO - [manager] Unchanged: 682
+2025-12-03 12:20:55 - scheduler - INFO - [w3][book][b678] Start
+2025-12-03 12:20:56 - scheduler - INFO - [manager] Unchanged: 681
+2025-12-03 12:20:56 - scheduler - INFO - [manager] Unchanged: 680
+2025-12-03 12:20:56 - scheduler - INFO - [w4][book][b677] Start
+2025-12-03 12:20:57 - scheduler - INFO - [w2][book][b676] Start
+2025-12-03 12:20:58 - scheduler - INFO - [w5][book][b675] Start
+2025-12-03 12:20:59 - scheduler - INFO - [manager] Unchanged: 679
+2025-12-03 12:20:59 - scheduler - INFO - [manager] Unchanged: 677
+2025-12-03 12:20:59 - scheduler - INFO - [w1][book][b674] Start
+2025-12-03 12:21:00 - scheduler - INFO - [w4][book][b673] Start
+2025-12-03 12:21:00 - scheduler - INFO - [manager] Unchanged: 678
+2025-12-03 12:21:00 - scheduler - INFO - [w3][book][b672] Start
+2025-12-03 12:21:01 - scheduler - INFO - [manager] Unchanged: 675
+2025-12-03 12:21:01 - scheduler - INFO - [manager] Unchanged: 676
+2025-12-03 12:21:01 - scheduler - INFO - [w5][book][b671] Start
+2025-12-03 12:21:02 - scheduler - INFO - [w2][book][b670] Start
+2025-12-03 12:21:03 - scheduler - INFO - [manager] Unchanged: 673
+2025-12-03 12:21:03 - scheduler - INFO - [w4][book][b669] Start
+2025-12-03 12:21:03 - scheduler - INFO - [manager] Unchanged: 674
+2025-12-03 12:21:03 - scheduler - INFO - [w1][book][b668] Start
+2025-12-03 12:21:04 - scheduler - INFO - [manager] Unchanged: 671
+2025-12-03 12:21:04 - scheduler - INFO - [manager] Unchanged: 672
+2025-12-03 12:21:04 - scheduler - INFO - [w5][book][b667] Start
+2025-12-03 12:21:05 - scheduler - INFO - [manager] Unchanged: 670
+2025-12-03 12:21:05 - scheduler - INFO - [w3][book][b666] Start
+2025-12-03 12:21:05 - scheduler - INFO - [w2][book][b665] Start
+2025-12-03 12:21:06 - scheduler - INFO - [manager] Unchanged: 668
+2025-12-03 12:21:06 - scheduler - INFO - [w1][book][b664] Start
+2025-12-03 12:21:07 - scheduler - INFO - [manager] Unchanged: 669
+2025-12-03 12:21:07 - scheduler - INFO - [manager] Unchanged: 666
+2025-12-03 12:21:07 - scheduler - INFO - [manager] Unchanged: 667
+2025-12-03 12:21:07 - scheduler - INFO - [w4][book][b663] Start
+2025-12-03 12:21:08 - scheduler - INFO - [w3][book][b662] Start
+2025-12-03 12:21:08 - scheduler - INFO - [w5][book][b661] Start
+2025-12-03 12:21:09 - scheduler - INFO - [manager] Unchanged: 665
+2025-12-03 12:21:09 - scheduler - INFO - [w2][book][b660] Start
+2025-12-03 12:21:10 - scheduler - INFO - [manager] Unchanged: 664
+2025-12-03 12:21:10 - scheduler - INFO - [w1][book][b659] Start
+2025-12-03 12:21:11 - scheduler - INFO - [manager] Unchanged: 663
+2025-12-03 12:21:11 - scheduler - INFO - [manager] Unchanged: 662
+2025-12-03 12:21:11 - scheduler - INFO - [manager] Unchanged: 661
+2025-12-03 12:21:11 - scheduler - INFO - [w4][book][b658] Start
+2025-12-03 12:21:12 - scheduler - INFO - [w3][book][b657] Start
+2025-12-03 12:21:12 - scheduler - INFO - [w5][book][b656] Start
+2025-12-03 12:21:13 - scheduler - INFO - [manager] Unchanged: 660
+2025-12-03 12:21:13 - scheduler - INFO - [w2][book][b655] Start
+2025-12-03 12:21:14 - scheduler - INFO - [manager] Unchanged: 659
+2025-12-03 12:21:14 - scheduler - INFO - [w1][book][b654] Start
+2025-12-03 12:21:15 - scheduler - INFO - [manager] Unchanged: 657
+2025-12-03 12:21:15 - scheduler - INFO - [manager] Unchanged: 658
+2025-12-03 12:21:15 - scheduler - INFO - [manager] Unchanged: 656
+2025-12-03 12:21:15 - scheduler - INFO - [w3][book][b653] Start
+2025-12-03 12:21:16 - scheduler - INFO - [w4][book][b652] Start
+2025-12-03 12:21:16 - scheduler - INFO - [w5][book][b651] Start
+2025-12-03 12:21:17 - scheduler - INFO - [manager] Unchanged: 655
+2025-12-03 12:21:17 - scheduler - INFO - [w2][book][b650] Start
+2025-12-03 12:21:18 - scheduler - INFO - [manager] Unchanged: 654
+2025-12-03 12:21:18 - scheduler - INFO - [w1][book][b649] Start
+2025-12-03 12:21:19 - scheduler - INFO - [manager] Unchanged: 653
+2025-12-03 12:21:19 - scheduler - INFO - [w3][book][b648] Start
+2025-12-03 12:21:19 - scheduler - INFO - [manager] Unchanged: 651
+2025-12-03 12:21:19 - scheduler - INFO - [manager] Unchanged: 652
+2025-12-03 12:21:19 - scheduler - INFO - [w5][book][b647] Start
+2025-12-03 12:21:20 - scheduler - INFO - [w4][book][b646] Start
+2025-12-03 12:21:21 - scheduler - INFO - [manager] Unchanged: 650
+2025-12-03 12:21:21 - scheduler - INFO - [w2][book][b645] Start
+2025-12-03 12:21:21 - scheduler - INFO - [manager] Unchanged: 649
+2025-12-03 12:21:21 - scheduler - INFO - [w1][book][b644] Start
+2025-12-03 12:21:22 - scheduler - INFO - [manager] Unchanged: 646
+2025-12-03 12:21:22 - scheduler - INFO - [manager] Unchanged: 647
+2025-12-03 12:21:22 - scheduler - INFO - [manager] Unchanged: 648
+2025-12-03 12:21:22 - scheduler - INFO - [w4][book][b643] Start
+2025-12-03 12:21:23 - scheduler - INFO - [w5][book][b642] Start
+2025-12-03 12:21:23 - scheduler - INFO - [w3][book][b641] Start
+2025-12-03 12:21:24 - scheduler - INFO - [manager] Unchanged: 645
+2025-12-03 12:21:24 - scheduler - INFO - [w2][book][b640] Start
+2025-12-03 12:21:25 - scheduler - INFO - [manager] Unchanged: 644
+2025-12-03 12:21:25 - scheduler - INFO - [w1][book][b639] Start
+2025-12-03 12:21:25 - scheduler - INFO - [manager] Unchanged: 641
+2025-12-03 12:21:26 - scheduler - INFO - [w3][book][b638] Start
+2025-12-03 12:21:26 - scheduler - INFO - [manager] Unchanged: 643
+2025-12-03 12:21:26 - scheduler - INFO - [w4][book][b637] Start
+2025-12-03 12:21:27 - scheduler - INFO - [manager] Unchanged: 642
+2025-12-03 12:21:27 - scheduler - INFO - [w5][book][b636] Start
+2025-12-03 12:21:27 - scheduler - INFO - [manager] Unchanged: 640
+2025-12-03 12:21:27 - scheduler - INFO - [w2][book][b635] Start
+2025-12-03 12:21:28 - scheduler - INFO - [manager] Unchanged: 639
+2025-12-03 12:21:28 - scheduler - INFO - [w1][book][b634] Start
+2025-12-03 12:21:29 - scheduler - INFO - [manager] Unchanged: 638
+2025-12-03 12:21:29 - scheduler - INFO - [w3][book][b633] Start
+2025-12-03 12:21:30 - scheduler - INFO - [manager] Unchanged: 637
+2025-12-03 12:21:30 - scheduler - INFO - [w4][book][b632] Start
+2025-12-03 12:21:30 - scheduler - INFO - [manager] Unchanged: 636
+2025-12-03 12:21:30 - scheduler - INFO - [w5][book][b631] Start
+2025-12-03 12:21:31 - scheduler - INFO - [manager] Unchanged: 635
+2025-12-03 12:21:31 - scheduler - INFO - [w2][book][b630] Start
+2025-12-03 12:21:32 - scheduler - INFO - [manager] Unchanged: 632
+2025-12-03 12:21:32 - scheduler - INFO - [w4][book][b629] Start
+2025-12-03 12:21:33 - scheduler - INFO - [manager] Unchanged: 633
+2025-12-03 12:21:33 - scheduler - INFO - [manager] Unchanged: 634
+2025-12-03 12:21:33 - scheduler - INFO - [w3][book][b628] Start
+2025-12-03 12:21:33 - scheduler - INFO - [w1][book][b627] Start
+2025-12-03 12:21:34 - scheduler - INFO - [manager] Unchanged: 631
+2025-12-03 12:21:34 - scheduler - INFO - [w5][book][b626] Start
+2025-12-03 12:21:34 - scheduler - INFO - [manager] Unchanged: 630
+2025-12-03 12:21:34 - scheduler - INFO - [w2][book][b625] Start
+2025-12-03 12:21:35 - scheduler - INFO - [manager] Unchanged: 629
+2025-12-03 12:21:35 - scheduler - INFO - [w4][book][b624] Start
+2025-12-03 12:21:36 - scheduler - INFO - [manager] Unchanged: 628
+2025-12-03 12:21:36 - scheduler - INFO - [w3][book][b623] Start
+2025-12-03 12:21:37 - scheduler - INFO - [manager] Unchanged: 627
+2025-12-03 12:21:37 - scheduler - INFO - [w1][book][b622] Start
+2025-12-03 12:21:37 - scheduler - INFO - [manager] Unchanged: 625
+2025-12-03 12:21:37 - scheduler - INFO - [w2][book][b621] Start
+2025-12-03 12:21:38 - scheduler - INFO - [manager] Unchanged: 626
+2025-12-03 12:21:38 - scheduler - INFO - [w5][book][b620] Start
+2025-12-03 12:21:38 - scheduler - INFO - [manager] Unchanged: 624
+2025-12-03 12:21:38 - scheduler - INFO - [w4][book][b619] Start
+2025-12-03 12:21:39 - scheduler - INFO - [manager] Unchanged: 623
+2025-12-03 12:21:39 - scheduler - INFO - [w3][book][b618] Start
+2025-12-03 12:21:40 - scheduler - INFO - [manager] Unchanged: 621
+2025-12-03 12:21:40 - scheduler - INFO - [w2][book][b617] Start
+2025-12-03 12:21:41 - scheduler - INFO - [manager] Unchanged: 620
+2025-12-03 12:21:41 - scheduler - INFO - [w5][book][b616] Start
+2025-12-03 12:21:41 - scheduler - INFO - [manager] Unchanged: 622
+2025-12-03 12:21:41 - scheduler - INFO - [w1][book][b615] Start
+2025-12-03 12:21:42 - scheduler - INFO - [manager] Unchanged: 619
+2025-12-03 12:21:42 - scheduler - INFO - [w4][book][b614] Start
+2025-12-03 12:21:43 - scheduler - INFO - [manager] Unchanged: 618
+2025-12-03 12:21:43 - scheduler - INFO - [w3][book][b613] Start
+2025-12-03 12:21:43 - scheduler - INFO - [manager] Unchanged: 617
+2025-12-03 12:21:43 - scheduler - INFO - [w2][book][b612] Start
+2025-12-03 12:21:44 - scheduler - INFO - [manager] Unchanged: 614
+2025-12-03 12:21:44 - scheduler - INFO - [w4][book][b611] Start
+2025-12-03 12:21:45 - scheduler - INFO - [manager] Unchanged: 615
+2025-12-03 12:21:45 - scheduler - INFO - [manager] Unchanged: 616
+2025-12-03 12:21:45 - scheduler - INFO - [w1][book][b610] Start
+2025-12-03 12:21:46 - scheduler - INFO - [w5][book][b609] Start
+2025-12-03 12:21:47 - scheduler - INFO - [manager] Unchanged: 613
+2025-12-03 12:21:47 - scheduler - INFO - [w3][book][b608] Start
+2025-12-03 12:21:48 - scheduler - INFO - [manager] Unchanged: 612
+2025-12-03 12:21:48 - scheduler - INFO - [w2][book][b607] Start
+2025-12-03 12:21:49 - scheduler - INFO - [manager] Unchanged: 611
+2025-12-03 12:21:49 - scheduler - INFO - [w4][book][b606] Start
+2025-12-03 12:21:49 - scheduler - INFO - [manager] Unchanged: 609
+2025-12-03 12:21:49 - scheduler - INFO - [manager] Unchanged: 610
+2025-12-03 12:21:49 - scheduler - INFO - [w5][book][b605] Start
+2025-12-03 12:21:50 - scheduler - INFO - [w1][book][b604] Start
+2025-12-03 12:21:51 - scheduler - INFO - [manager] Unchanged: 608
+2025-12-03 12:21:51 - scheduler - INFO - [w3][book][b603] Start
+2025-12-03 12:21:52 - scheduler - INFO - [manager] Unchanged: 604
+2025-12-03 12:21:52 - scheduler - INFO - [w1][book][b602] Start
+2025-12-03 12:21:52 - scheduler - INFO - [manager] Unchanged: 605
+2025-12-03 12:21:52 - scheduler - INFO - [manager] Unchanged: 606
+2025-12-03 12:21:52 - scheduler - INFO - [w5][book][b601] Start
+2025-12-03 12:21:53 - scheduler - INFO - [w4][book][b600] Start
+2025-12-03 12:21:54 - scheduler - INFO - [manager] Unchanged: 607
+2025-12-03 12:21:54 - scheduler - INFO - [w2][book][b599] Start
+2025-12-03 12:21:54 - scheduler - INFO - [manager] Unchanged: 603
+2025-12-03 12:21:54 - scheduler - INFO - [w3][book][b598] Start
+2025-12-03 12:21:55 - scheduler - INFO - [manager] Unchanged: 602
+2025-12-03 12:21:55 - scheduler - INFO - [manager] Unchanged: 600
+2025-12-03 12:21:55 - scheduler - INFO - [manager] Unchanged: 601
+2025-12-03 12:21:55 - scheduler - INFO - [w1][book][b597] Start
+2025-12-03 12:21:56 - scheduler - INFO - [w4][book][b596] Start
+2025-12-03 12:21:56 - scheduler - INFO - [w5][book][b595] Start
+2025-12-03 12:21:57 - scheduler - INFO - [manager] Unchanged: 599
+2025-12-03 12:21:57 - scheduler - INFO - [w2][book][b594] Start
+2025-12-03 12:21:58 - scheduler - INFO - [manager] Unchanged: 598
+2025-12-03 12:21:58 - scheduler - INFO - [w3][book][b593] Start
+2025-12-03 12:21:59 - scheduler - INFO - [manager] Unchanged: 595
+2025-12-03 12:21:59 - scheduler - INFO - [manager] Unchanged: 597
+2025-12-03 12:21:59 - scheduler - INFO - [w5][book][b592] Start
+2025-12-03 12:22:00 - scheduler - INFO - [w1][book][b591] Start
+2025-12-03 12:22:00 - scheduler - INFO - [manager] Unchanged: 594
+2025-12-03 12:22:00 - scheduler - INFO - [w2][book][b590] Start
+2025-12-03 12:22:02 - scheduler - INFO - [manager] Unchanged: 593
+2025-12-03 12:22:02 - scheduler - INFO - [w3][book][b589] Start
+2025-12-03 12:22:02 - scheduler - INFO - [manager] Unchanged: 596
+2025-12-03 12:22:02 - scheduler - INFO - [w4][book][b588] Start
+2025-12-03 12:22:03 - scheduler - INFO - [manager] Unchanged: 592
+2025-12-03 12:22:03 - scheduler - INFO - [w5][book][b587] Start
+2025-12-03 12:22:04 - scheduler - INFO - [manager] Unchanged: 591
+2025-12-03 12:22:04 - scheduler - INFO - [w1][book][b586] Start
+2025-12-03 12:22:05 - scheduler - INFO - [manager] Unchanged: 590
+2025-12-03 12:22:05 - scheduler - INFO - [w2][book][b585] Start
+2025-12-03 12:22:06 - scheduler - INFO - [manager] Unchanged: 588
+2025-12-03 12:22:06 - scheduler - INFO - [manager] Unchanged: 586
+2025-12-03 12:22:06 - scheduler - INFO - [manager] Unchanged: 587
+2025-12-03 12:22:06 - scheduler - INFO - [w4][book][b584] Start
+2025-12-03 12:22:06 - scheduler - INFO - [manager] Unchanged: 589
+2025-12-03 12:22:06 - scheduler - INFO - [w1][book][b583] Start
+2025-12-03 12:22:07 - scheduler - INFO - [w5][book][b582] Start
+2025-12-03 12:22:08 - scheduler - INFO - [w3][book][b581] Start
+2025-12-03 12:22:09 - scheduler - INFO - [manager] Unchanged: 585
+2025-12-03 12:22:09 - scheduler - INFO - [w2][book][b580] Start
+2025-12-03 12:22:10 - scheduler - INFO - [manager] Unchanged: 584
+2025-12-03 12:22:10 - scheduler - INFO - [manager] Unchanged: 582
+2025-12-03 12:22:10 - scheduler - INFO - [manager] Unchanged: 583
+2025-12-03 12:22:10 - scheduler - INFO - [w4][book][b579] Start
+2025-12-03 12:22:11 - scheduler - INFO - [w5][book][b578] Start
+2025-12-03 12:22:12 - scheduler - INFO - [w1][book][b577] Start
+2025-12-03 12:22:12 - scheduler - INFO - [manager] Unchanged: 581
+2025-12-03 12:22:12 - scheduler - INFO - [w3][book][b576] Start
+2025-12-03 12:22:13 - scheduler - INFO - [manager] Unchanged: 580
+2025-12-03 12:22:13 - scheduler - INFO - [w2][book][b575] Start
+2025-12-03 12:22:14 - scheduler - INFO - [manager] Unchanged: 578
+2025-12-03 12:22:14 - scheduler - INFO - [w5][book][b574] Start
+2025-12-03 12:22:15 - scheduler - INFO - [manager] Unchanged: 577
+2025-12-03 12:22:15 - scheduler - INFO - [manager] Unchanged: 579
+2025-12-03 12:22:15 - scheduler - INFO - [w1][book][b573] Start
+2025-12-03 12:22:16 - scheduler - INFO - [w4][book][b572] Start
+2025-12-03 12:22:17 - scheduler - INFO - [manager] Unchanged: 576
+2025-12-03 12:22:17 - scheduler - INFO - [w3][book][b571] Start
+2025-12-03 12:22:18 - scheduler - INFO - [manager] Unchanged: 573
+2025-12-03 12:22:18 - scheduler - INFO - [manager] Unchanged: 574
+2025-12-03 12:22:18 - scheduler - INFO - [w1][book][b570] Start
+2025-12-03 12:22:18 - scheduler - INFO - [w5][book][b569] Start
+2025-12-03 12:22:19 - scheduler - INFO - [manager] Unchanged: 572
+2025-12-03 12:22:19 - scheduler - INFO - [manager] Unchanged: 575
+2025-12-03 12:22:19 - scheduler - INFO - [w4][book][b568] Start
+2025-12-03 12:22:20 - scheduler - INFO - [w2][book][b567] Start
+2025-12-03 12:22:21 - scheduler - INFO - [manager] Unchanged: 571
+2025-12-03 12:22:21 - scheduler - INFO - [w3][book][b566] Start
+2025-12-03 12:22:21 - scheduler - INFO - [manager] Unchanged: 570
+2025-12-03 12:22:21 - scheduler - INFO - [w1][book][b565] Start
+2025-12-03 12:22:22 - scheduler - INFO - [manager] Unchanged: 569
+2025-12-03 12:22:22 - scheduler - INFO - [manager] Unchanged: 567
+2025-12-03 12:22:22 - scheduler - INFO - [manager] Unchanged: 568
+2025-12-03 12:22:22 - scheduler - INFO - [w5][book][b564] Start
+2025-12-03 12:22:23 - scheduler - INFO - [w2][book][b563] Start
+2025-12-03 12:22:23 - scheduler - INFO - [w4][book][b562] Start
+2025-12-03 12:22:24 - scheduler - INFO - [manager] Unchanged: 566
+2025-12-03 12:22:24 - scheduler - INFO - [w3][book][b561] Start
+2025-12-03 12:22:25 - scheduler - INFO - [manager] Unchanged: 565
+2025-12-03 12:22:25 - scheduler - INFO - [w1][book][b560] Start
+2025-12-03 12:22:26 - scheduler - INFO - [manager] Unchanged: 563
+2025-12-03 12:22:26 - scheduler - INFO - [w2][book][b559] Start
+2025-12-03 12:22:26 - scheduler - INFO - [manager] Unchanged: 564
+2025-12-03 12:22:26 - scheduler - INFO - [w5][book][b558] Start
+2025-12-03 12:22:27 - scheduler - INFO - [manager] Unchanged: 561
+2025-12-03 12:22:27 - scheduler - INFO - [manager] Unchanged: 562
+2025-12-03 12:22:27 - scheduler - INFO - [w3][book][b557] Start
+2025-12-03 12:22:27 - scheduler - INFO - [w4][book][b556] Start
+2025-12-03 12:22:28 - scheduler - INFO - [manager] Unchanged: 560
+2025-12-03 12:22:28 - scheduler - INFO - [w1][book][b555] Start
+2025-12-03 12:22:29 - scheduler - INFO - [manager] Unchanged: 559
+2025-12-03 12:22:29 - scheduler - INFO - [w2][book][b554] Start
+2025-12-03 12:22:30 - scheduler - INFO - [manager] Unchanged: 555
+2025-12-03 12:22:30 - scheduler - INFO - [w1][book][b553] Start
+2025-12-03 12:22:31 - scheduler - INFO - [manager] Unchanged: 558
+2025-12-03 12:22:31 - scheduler - INFO - [w5][book][b552] Start
+2025-12-03 12:22:31 - scheduler - INFO - [manager] Unchanged: 557
+2025-12-03 12:22:31 - scheduler - INFO - [w3][book][b551] Start
+2025-12-03 12:22:32 - scheduler - INFO - [manager] Unchanged: 556
+2025-12-03 12:22:32 - scheduler - INFO - [w4][book][b550] Start
+2025-12-03 12:22:33 - scheduler - INFO - [manager] Unchanged: 554
+2025-12-03 12:22:33 - scheduler - INFO - [w2][book][b549] Start
+2025-12-03 12:22:34 - scheduler - INFO - [manager] Unchanged: 553
+2025-12-03 12:22:34 - scheduler - INFO - [w1][book][b548] Start
+2025-12-03 12:22:35 - scheduler - INFO - [manager] Unchanged: 549
+2025-12-03 12:22:35 - scheduler - INFO - [w2][book][b547] Start
+2025-12-03 12:22:35 - scheduler - INFO - [manager] Unchanged: 551
+2025-12-03 12:22:35 - scheduler - INFO - [manager] Unchanged: 552
+2025-12-03 12:22:35 - scheduler - INFO - [w3][book][b546] Start
+2025-12-03 12:22:36 - scheduler - INFO - [w5][book][b545] Start
+2025-12-03 12:22:36 - scheduler - INFO - [manager] Book updated: 550
+2025-12-03 12:22:37 - scheduler - INFO - [manager] Unchanged: 548
+2025-12-03 12:22:37 - scheduler - INFO - [w1][book][b544] Start
+2025-12-03 12:22:37 - scheduler - INFO - [manager] Unchanged: 547
+2025-12-03 12:22:37 - scheduler - INFO - [manager] Unchanged: 545
+2025-12-03 12:22:37 - scheduler - INFO - [w2][book][b543] Start
+2025-12-03 12:22:38 - scheduler - INFO - [w5][book][b542] Start
+2025-12-03 12:22:39 - scheduler - INFO - [manager] Unchanged: 546
+2025-12-03 12:22:39 - scheduler - INFO - [w3][book][b541] Start
+2025-12-03 12:22:39 - scheduler - INFO - [manager] Alert email sent for update event: 550
+2025-12-03 12:22:39 - scheduler - INFO - [w4][book][b540] Start
+2025-12-03 12:22:40 - scheduler - INFO - [manager] Unchanged: 542
+2025-12-03 12:22:40 - scheduler - INFO - [w5][book][b539] Start
+2025-12-03 12:22:41 - scheduler - INFO - [manager] Unchanged: 544
+2025-12-03 12:22:41 - scheduler - INFO - [manager] Unchanged: 543
+2025-12-03 12:22:41 - scheduler - INFO - [w1][book][b538] Start
+2025-12-03 12:22:42 - scheduler - INFO - [w2][book][b537] Start
+2025-12-03 12:22:43 - scheduler - INFO - [manager] Unchanged: 541
+2025-12-03 12:22:43 - scheduler - INFO - [w3][book][b536] Start
+2025-12-03 12:22:43 - scheduler - INFO - [manager] Unchanged: 539
+2025-12-03 12:22:43 - scheduler - INFO - [w5][book][b535] Start
+2025-12-03 12:22:44 - scheduler - INFO - [manager] Unchanged: 537
+2025-12-03 12:22:44 - scheduler - INFO - [manager] Unchanged: 540
+2025-12-03 12:22:44 - scheduler - INFO - [w2][book][b534] Start
+2025-12-03 12:22:44 - scheduler - INFO - [w4][book][b533] Start
+2025-12-03 12:22:45 - scheduler - INFO - [manager] Unchanged: 538
+2025-12-03 12:22:45 - scheduler - INFO - [w1][book][b532] Start
+2025-12-03 12:22:46 - scheduler - INFO - [manager] Unchanged: 536
+2025-12-03 12:22:46 - scheduler - INFO - [w3][book][b531] Start
+2025-12-03 12:22:47 - scheduler - INFO - [manager] Unchanged: 533
+2025-12-03 12:22:47 - scheduler - INFO - [manager] Unchanged: 534
+2025-12-03 12:22:47 - scheduler - INFO - [w4][book][b530] Start
+2025-12-03 12:22:47 - scheduler - INFO - [w2][book][b529] Start
+2025-12-03 12:22:48 - scheduler - INFO - [manager] Unchanged: 535
+2025-12-03 12:22:48 - scheduler - INFO - [w5][book][b528] Start
+2025-12-03 12:22:49 - scheduler - INFO - [manager] Unchanged: 532
+2025-12-03 12:22:49 - scheduler - INFO - [w1][book][b527] Start
+2025-12-03 12:22:50 - scheduler - INFO - [manager] Unchanged: 530
+2025-12-03 12:22:50 - scheduler - INFO - [w4][book][b526] Start
+2025-12-03 12:22:50 - scheduler - INFO - [manager] Unchanged: 529
+2025-12-03 12:22:50 - scheduler - INFO - [w2][book][b525] Start
+2025-12-03 12:22:51 - scheduler - INFO - [manager] Unchanged: 531
+2025-12-03 12:22:51 - scheduler - INFO - [manager] Unchanged: 528
+2025-12-03 12:22:51 - scheduler - INFO - [w3][book][b524] Start
+2025-12-03 12:22:52 - scheduler - INFO - [w5][book][b523] Start
+2025-12-03 12:22:53 - scheduler - INFO - [manager] Unchanged: 527
+2025-12-03 12:22:53 - scheduler - INFO - [w1][book][b522] Start
+2025-12-03 12:22:54 - scheduler - INFO - [manager] Unchanged: 526
+2025-12-03 12:22:54 - scheduler - INFO - [manager] Unchanged: 525
+2025-12-03 12:22:54 - scheduler - INFO - [w4][book][b521] Start
+2025-12-03 12:22:54 - scheduler - INFO - [w2][book][b520] Start
+2025-12-03 12:22:55 - scheduler - INFO - [manager] Unchanged: 524
+2025-12-03 12:22:55 - scheduler - INFO - [manager] Unchanged: 522
+2025-12-03 12:22:55 - scheduler - INFO - [w3][book][b519] Start
+2025-12-03 12:22:56 - scheduler - INFO - [w1][book][b518] Start
+2025-12-03 12:22:57 - scheduler - INFO - [manager] Unchanged: 523
+2025-12-03 12:22:57 - scheduler - INFO - [w5][book][b517] Start
+2025-12-03 12:22:58 - scheduler - INFO - [manager] Unchanged: 520
+2025-12-03 12:22:58 - scheduler - INFO - [w2][book][b516] Start
+2025-12-03 12:22:59 - scheduler - INFO - [manager] Unchanged: 521
+2025-12-03 12:22:59 - scheduler - INFO - [w4][book][b515] Start
+2025-12-03 12:23:00 - scheduler - INFO - [manager] Unchanged: 517
+2025-12-03 12:23:00 - scheduler - INFO - [manager] Unchanged: 518
+2025-12-03 12:23:00 - scheduler - INFO - [w5][book][b514] Start
+2025-12-03 12:23:00 - scheduler - INFO - [w1][book][b513] Start
+2025-12-03 12:23:01 - scheduler - INFO - [manager] Unchanged: 519
+2025-12-03 12:23:01 - scheduler - INFO - [w3][book][b512] Start
+2025-12-03 12:23:02 - scheduler - INFO - [manager] Unchanged: 516
+2025-12-03 12:23:02 - scheduler - INFO - [w2][book][b511] Start
+2025-12-03 12:23:03 - scheduler - INFO - [manager] Unchanged: 515
+2025-12-03 12:23:03 - scheduler - INFO - [manager] Unchanged: 514
+2025-12-03 12:23:03 - scheduler - INFO - [w4][book][b510] Start
+2025-12-03 12:23:03 - scheduler - INFO - [w5][book][b509] Start
+2025-12-03 12:23:04 - scheduler - INFO - [manager] Unchanged: 513
+2025-12-03 12:23:04 - scheduler - INFO - [w1][book][b508] Start
+2025-12-03 12:23:05 - scheduler - INFO - [manager] Unchanged: 512
+2025-12-03 12:23:05 - scheduler - INFO - [w3][book][b507] Start
+2025-12-03 12:23:06 - scheduler - INFO - [manager] Unchanged: 511
+2025-12-03 12:23:06 - scheduler - INFO - [w2][book][b506] Start
+2025-12-03 12:23:07 - scheduler - INFO - [manager] Unchanged: 509
+2025-12-03 12:23:07 - scheduler - INFO - [manager] Unchanged: 508
+2025-12-03 12:23:07 - scheduler - INFO - [w5][book][b505] Start
+2025-12-03 12:23:07 - scheduler - INFO - [w1][book][b504] Start
+2025-12-03 12:23:08 - scheduler - INFO - [manager] Unchanged: 510
+2025-12-03 12:23:08 - scheduler - INFO - [w4][book][b503] Start
+2025-12-03 12:23:08 - scheduler - INFO - [manager] Unchanged: 507
+2025-12-03 12:23:08 - scheduler - INFO - [w3][book][b502] Start
+2025-12-03 12:23:09 - scheduler - INFO - [manager] Unchanged: 506
+2025-12-03 12:23:09 - scheduler - INFO - [w2][book][b501] Start
+2025-12-03 12:23:10 - scheduler - INFO - [manager] Unchanged: 505
+2025-12-03 12:23:10 - scheduler - INFO - [manager] Unchanged: 503
+2025-12-03 12:23:10 - scheduler - INFO - [manager] Unchanged: 504
+2025-12-03 12:23:10 - scheduler - INFO - [manager] Unchanged: 502
+2025-12-03 12:23:10 - scheduler - INFO - [w5][book][b500] Start
+2025-12-03 12:23:11 - scheduler - INFO - [w4][book][b499] Start
+2025-12-03 12:23:11 - scheduler - INFO - [w1][book][b498] Start
+2025-12-03 12:23:12 - scheduler - INFO - [w3][book][b497] Start
+2025-12-03 12:23:13 - scheduler - INFO - [manager] Unchanged: 501
+2025-12-03 12:23:13 - scheduler - INFO - [w2][book][b496] Start
+2025-12-03 12:23:14 - scheduler - INFO - [manager] Unchanged: 497
+2025-12-03 12:23:14 - scheduler - INFO - [manager] Unchanged: 500
+2025-12-03 12:23:14 - scheduler - INFO - [manager] Unchanged: 499
+2025-12-03 12:23:14 - scheduler - INFO - [w3][book][b495] Start
+2025-12-03 12:23:15 - scheduler - INFO - [w5][book][b494] Start
+2025-12-03 12:23:15 - scheduler - INFO - [w4][book][b493] Start
+2025-12-03 12:23:16 - scheduler - INFO - [manager] Unchanged: 498
+2025-12-03 12:23:16 - scheduler - INFO - [w1][book][b492] Start
+2025-12-03 12:23:17 - scheduler - INFO - [manager] Unchanged: 496
+2025-12-03 12:23:17 - scheduler - INFO - [w2][book][b491] Start
+2025-12-03 12:23:18 - scheduler - INFO - [manager] Unchanged: 494
+2025-12-03 12:23:18 - scheduler - INFO - [w5][book][b490] Start
+2025-12-03 12:23:18 - scheduler - INFO - [manager] Unchanged: 493
+2025-12-03 12:23:18 - scheduler - INFO - [manager] Unchanged: 495
+2025-12-03 12:23:18 - scheduler - INFO - [w4][book][b489] Start
+2025-12-03 12:23:19 - scheduler - INFO - [manager] Unchanged: 492
+2025-12-03 12:23:19 - scheduler - INFO - [w3][book][b488] Start
+2025-12-03 12:23:20 - scheduler - INFO - [w1][book][b487] Start
+2025-12-03 12:23:21 - scheduler - INFO - [manager] Unchanged: 491
+2025-12-03 12:23:21 - scheduler - INFO - [w2][book][b486] Start
+2025-12-03 12:23:22 - scheduler - INFO - [manager] Unchanged: 487
+2025-12-03 12:23:22 - scheduler - INFO - [manager] Unchanged: 489
+2025-12-03 12:23:22 - scheduler - INFO - [w1][book][b485] Start
+2025-12-03 12:23:23 - scheduler - INFO - [manager] Unchanged: 488
+2025-12-03 12:23:23 - scheduler - INFO - [w4][book][b484] Start
+2025-12-03 12:23:24 - scheduler - INFO - [w3][book][b483] Start
+2025-12-03 12:23:24 - scheduler - INFO - [manager] Unchanged: 490
+2025-12-03 12:23:24 - scheduler - INFO - [w5][book][b482] Start
+2025-12-03 12:23:25 - scheduler - INFO - [manager] Unchanged: 486
+2025-12-03 12:23:25 - scheduler - INFO - [w2][book][b481] Start
+2025-12-03 12:23:26 - scheduler - INFO - [manager] Unchanged: 485
+2025-12-03 12:23:26 - scheduler - INFO - [w1][book][b480] Start
+2025-12-03 12:23:27 - scheduler - INFO - [manager] Unchanged: 484
+2025-12-03 12:23:27 - scheduler - INFO - [w4][book][b479] Start
+2025-12-03 12:23:27 - scheduler - INFO - [manager] Unchanged: 483
+2025-12-03 12:23:27 - scheduler - INFO - [w3][book][b478] Start
+2025-12-03 12:23:28 - scheduler - INFO - [manager] Unchanged: 480
+2025-12-03 12:23:28 - scheduler - INFO - [manager] Unchanged: 482
+2025-12-03 12:23:28 - scheduler - INFO - [w1][book][b477] Start
+2025-12-03 12:23:29 - scheduler - INFO - [w5][book][b476] Start
+2025-12-03 12:23:29 - scheduler - INFO - [manager] Unchanged: 481
+2025-12-03 12:23:29 - scheduler - INFO - [w2][book][b475] Start
+2025-12-03 12:23:30 - scheduler - INFO - [manager] Unchanged: 479
+2025-12-03 12:23:30 - scheduler - INFO - [w4][book][b474] Start
+2025-12-03 12:23:31 - scheduler - INFO - [manager] Unchanged: 478
+2025-12-03 12:23:31 - scheduler - INFO - [w3][book][b473] Start
+2025-12-03 12:23:32 - scheduler - INFO - [manager] Unchanged: 475
+2025-12-03 12:23:32 - scheduler - INFO - [manager] Unchanged: 476
+2025-12-03 12:23:32 - scheduler - INFO - [manager] Unchanged: 477
+2025-12-03 12:23:32 - scheduler - INFO - [w2][book][b472] Start
+2025-12-03 12:23:32 - scheduler - INFO - [w5][book][b471] Start
+2025-12-03 12:23:33 - scheduler - INFO - [w1][book][b470] Start
+2025-12-03 12:23:34 - scheduler - INFO - [manager] Unchanged: 474
+2025-12-03 12:23:34 - scheduler - INFO - [w4][book][b469] Start
+2025-12-03 12:23:35 - scheduler - INFO - [manager] Unchanged: 472
+2025-12-03 12:23:35 - scheduler - INFO - [manager] Unchanged: 471
+2025-12-03 12:23:35 - scheduler - INFO - [manager] Unchanged: 473
+2025-12-03 12:23:35 - scheduler - INFO - [w2][book][b468] Start
+2025-12-03 12:23:35 - scheduler - INFO - [w5][book][b467] Start
+2025-12-03 12:23:36 - scheduler - INFO - [w3][book][b466] Start
+2025-12-03 12:23:37 - scheduler - INFO - [manager] Unchanged: 470
+2025-12-03 12:23:37 - scheduler - INFO - [w1][book][b465] Start
+2025-12-03 12:23:38 - scheduler - INFO - [manager] Unchanged: 469
+2025-12-03 12:23:38 - scheduler - INFO - [w4][book][b464] Start
+2025-12-03 12:23:38 - scheduler - INFO - [manager] Unchanged: 468
+2025-12-03 12:23:38 - scheduler - INFO - [w2][book][b463] Start
+2025-12-03 12:23:39 - scheduler - INFO - [manager] Unchanged: 467
+2025-12-03 12:23:39 - scheduler - INFO - [manager] Unchanged: 465
+2025-12-03 12:23:39 - scheduler - INFO - [w5][book][b462] Start
+2025-12-03 12:23:40 - scheduler - INFO - [w1][book][b461] Start
+2025-12-03 12:23:40 - scheduler - INFO - [manager] Unchanged: 466
+2025-12-03 12:23:40 - scheduler - INFO - [w3][book][b460] Start
+2025-12-03 12:23:41 - scheduler - INFO - [manager] Unchanged: 464
+2025-12-03 12:23:41 - scheduler - INFO - [w4][book][b459] Start
+2025-12-03 12:23:42 - scheduler - INFO - [manager] Unchanged: 463
+2025-12-03 12:23:42 - scheduler - INFO - [manager] Unchanged: 462
+2025-12-03 12:23:42 - scheduler - INFO - [manager] Unchanged: 460
+2025-12-03 12:23:42 - scheduler - INFO - [manager] Unchanged: 461
+2025-12-03 12:23:42 - scheduler - INFO - [w2][book][b458] Start
+2025-12-03 12:23:42 - scheduler - INFO - [w5][book][b457] Start
+2025-12-03 12:23:43 - scheduler - INFO - [w3][book][b456] Start
+2025-12-03 12:23:44 - scheduler - INFO - [w1][book][b455] Start
+2025-12-03 12:23:45 - scheduler - INFO - [manager] Unchanged: 459
+2025-12-03 12:23:45 - scheduler - INFO - [w4][book][b454] Start
+2025-12-03 12:23:45 - scheduler - INFO - [manager] Unchanged: 457
+2025-12-03 12:23:45 - scheduler - INFO - [manager] Unchanged: 456
+2025-12-03 12:23:45 - scheduler - INFO - [manager] Unchanged: 455
+2025-12-03 12:23:45 - scheduler - INFO - [w5][book][b453] Start
+2025-12-03 12:23:46 - scheduler - INFO - [w3][book][b452] Start
+2025-12-03 12:23:46 - scheduler - INFO - [w1][book][b451] Start
+2025-12-03 12:23:47 - scheduler - INFO - [manager] Unchanged: 458
+2025-12-03 12:23:47 - scheduler - INFO - [w2][book][b450] Start
+2025-12-03 12:23:51 - scheduler - INFO - [manager] Unchanged: 454
+2025-12-03 12:23:51 - scheduler - INFO - [w4][book][b449] Start
+2025-12-03 12:23:52 - scheduler - INFO - [manager] Unchanged: 452
+2025-12-03 12:23:52 - scheduler - INFO - [w3][book][b448] Start
+2025-12-03 12:23:52 - scheduler - INFO - [manager] Unchanged: 451
+2025-12-03 12:23:52 - scheduler - INFO - [manager] Unchanged: 450
+2025-12-03 12:23:52 - scheduler - INFO - [manager] Unchanged: 453
+2025-12-03 12:23:52 - scheduler - INFO - [w1][book][b447] Start
+2025-12-03 12:23:53 - scheduler - INFO - [w2][book][b446] Start
+2025-12-03 12:23:54 - scheduler - INFO - [w5][book][b445] Start
+2025-12-03 12:23:58 - scheduler - INFO - [manager] Unchanged: 449
+2025-12-03 12:23:58 - scheduler - INFO - [w4][book][b444] Start
+2025-12-03 12:23:59 - scheduler - INFO - [manager] Unchanged: 447
+2025-12-03 12:23:59 - scheduler - INFO - [w1][book][b443] Start
+2025-12-03 12:23:59 - scheduler - INFO - [manager] Unchanged: 445
+2025-12-03 12:23:59 - scheduler - INFO - [manager] Unchanged: 448
+2025-12-03 12:23:59 - scheduler - INFO - [w5][book][b442] Start
+2025-12-03 12:24:00 - scheduler - INFO - [w3][book][b441] Start
+2025-12-03 12:24:01 - scheduler - INFO - [manager] Unchanged: 446
+2025-12-03 12:24:01 - scheduler - INFO - [w2][book][b440] Start
+2025-12-03 12:24:02 - scheduler - INFO - [manager] Unchanged: 444
+2025-12-03 12:24:02 - scheduler - INFO - [w4][book][b439] Start
+2025-12-03 12:24:02 - scheduler - INFO - [manager] Unchanged: 443
+2025-12-03 12:24:02 - scheduler - INFO - [w1][book][b438] Start
+2025-12-03 12:24:03 - scheduler - INFO - [manager] Unchanged: 441
+2025-12-03 12:24:03 - scheduler - INFO - [manager] Unchanged: 442
+2025-12-03 12:24:03 - scheduler - INFO - [w3][book][b437] Start
+2025-12-03 12:24:04 - scheduler - INFO - [w5][book][b436] Start
+2025-12-03 12:24:05 - scheduler - INFO - [manager] Unchanged: 440
+2025-12-03 12:24:05 - scheduler - INFO - [w2][book][b435] Start
+2025-12-03 12:24:05 - scheduler - INFO - [manager] Unchanged: 439
+2025-12-03 12:24:05 - scheduler - INFO - [w4][book][b434] Start
+2025-12-03 12:24:06 - scheduler - INFO - [manager] Unchanged: 438
+2025-12-03 12:24:06 - scheduler - INFO - [w1][book][b433] Start
+2025-12-03 12:24:07 - scheduler - INFO - [manager] Unchanged: 437
+2025-12-03 12:24:07 - scheduler - INFO - [manager] Unchanged: 436
+2025-12-03 12:24:07 - scheduler - INFO - [w3][book][b432] Start
+2025-12-03 12:24:08 - scheduler - INFO - [w5][book][b431] Start
+2025-12-03 12:24:08 - scheduler - INFO - [manager] Unchanged: 435
+2025-12-03 12:24:08 - scheduler - INFO - [w2][book][b430] Start
+2025-12-03 12:24:09 - scheduler - INFO - [manager] Unchanged: 434
+2025-12-03 12:24:09 - scheduler - INFO - [w4][book][b429] Start
+2025-12-03 12:24:10 - scheduler - INFO - [manager] Unchanged: 432
+2025-12-03 12:24:10 - scheduler - INFO - [w3][book][b428] Start
+2025-12-03 12:24:10 - scheduler - INFO - [manager] Unchanged: 433
+2025-12-03 12:24:10 - scheduler - INFO - [w1][book][b427] Start
+2025-12-03 12:24:11 - scheduler - INFO - [manager] Unchanged: 431
+2025-12-03 12:24:11 - scheduler - INFO - [w5][book][b426] Start
+2025-12-03 12:24:12 - scheduler - INFO - [manager] Unchanged: 430
+2025-12-03 12:24:12 - scheduler - INFO - [w2][book][b425] Start
+2025-12-03 12:24:13 - scheduler - INFO - [manager] Unchanged: 429
+2025-12-03 12:24:13 - scheduler - INFO - [w4][book][b424] Start
+2025-12-03 12:24:14 - scheduler - INFO - [manager] Unchanged: 426
+2025-12-03 12:24:14 - scheduler - INFO - [w5][book][b423] Start
+2025-12-03 12:24:14 - scheduler - INFO - [manager] Unchanged: 427
+2025-12-03 12:24:14 - scheduler - INFO - [manager] Unchanged: 425
+2025-12-03 12:24:14 - scheduler - INFO - [w1][book][b422] Start
+2025-12-03 12:24:15 - scheduler - INFO - [manager] Unchanged: 428
+2025-12-03 12:24:15 - scheduler - INFO - [w2][book][b421] Start
+2025-12-03 12:24:15 - scheduler - INFO - [w3][book][b400] Start
+2025-12-03 12:24:16 - scheduler - INFO - [manager] Unchanged: 424
+2025-12-03 12:24:16 - scheduler - INFO - [w4][book][b399] Start
+2025-12-03 12:24:17 - scheduler - INFO - [manager] Unchanged: 423
+2025-12-03 12:24:17 - scheduler - INFO - [w5][book][b398] Start
+2025-12-03 12:24:18 - scheduler - INFO - [manager] Unchanged: 400
+2025-12-03 12:24:18 - scheduler - INFO - [manager] Unchanged: 421
+2025-12-03 12:24:18 - scheduler - INFO - [manager] Unchanged: 422
+2025-12-03 12:24:18 - scheduler - INFO - [w3][book][b397] Start
+2025-12-03 12:24:18 - scheduler - INFO - [w2][book][b396] Start
+2025-12-03 12:24:19 - scheduler - INFO - [w1][book][b395] Start
+2025-12-03 12:24:20 - scheduler - INFO - [manager] Unchanged: 399
+2025-12-03 12:24:20 - scheduler - INFO - [w4][book][b394] Start
+2025-12-03 12:24:22 - scheduler - INFO - [manager] Unchanged: 398
+2025-12-03 12:24:22 - scheduler - INFO - [manager] Unchanged: 397
+2025-12-03 12:24:22 - scheduler - INFO - [manager] Unchanged: 396
+2025-12-03 12:24:22 - scheduler - INFO - [manager] Unchanged: 395
+2025-12-03 12:24:22 - scheduler - INFO - [w5][book][b393] Start
+2025-12-03 12:24:23 - scheduler - INFO - [w3][book][b392] Start
+2025-12-03 12:24:23 - scheduler - INFO - [w2][book][b391] Start
+2025-12-03 12:24:24 - scheduler - INFO - [w1][book][b390] Start
+2025-12-03 12:24:25 - scheduler - INFO - [manager] Unchanged: 394
+2025-12-03 12:24:25 - scheduler - INFO - [w4][book][b389] Start
+2025-12-03 12:24:26 - scheduler - INFO - [manager] Unchanged: 390
+2025-12-03 12:24:26 - scheduler - INFO - [w1][book][b388] Start
+2025-12-03 12:24:26 - scheduler - INFO - [manager] Unchanged: 393
+2025-12-03 12:24:26 - scheduler - INFO - [w5][book][b387] Start
+2025-12-03 12:24:27 - scheduler - INFO - [manager] Unchanged: 392
+2025-12-03 12:24:27 - scheduler - INFO - [manager] Unchanged: 391
+2025-12-03 12:24:27 - scheduler - INFO - [w3][book][b386] Start
+2025-12-03 12:24:27 - scheduler - INFO - [w2][book][b385] Start
+2025-12-03 12:24:28 - scheduler - INFO - [manager] Unchanged: 389
+2025-12-03 12:24:28 - scheduler - INFO - [w4][book][b384] Start
+2025-12-03 12:24:29 - scheduler - INFO - [manager] Unchanged: 388
+2025-12-03 12:24:29 - scheduler - INFO - [w1][book][b383] Start
+2025-12-03 12:24:30 - scheduler - INFO - [manager] Unchanged: 385
+2025-12-03 12:24:30 - scheduler - INFO - [manager] Unchanged: 387
+2025-12-03 12:24:30 - scheduler - INFO - [manager] Unchanged: 384
+2025-12-03 12:24:30 - scheduler - INFO - [manager] Unchanged: 386
+2025-12-03 12:24:30 - scheduler - INFO - [w2][book][b382] Start
+2025-12-03 12:24:30 - scheduler - INFO - [w5][book][b381] Start
+2025-12-03 12:24:31 - scheduler - INFO - [w4][book][b420] Start
+2025-12-03 12:24:32 - scheduler - INFO - [w3][book][b419] Start
+2025-12-03 12:24:33 - scheduler - INFO - [manager] Unchanged: 383
+2025-12-03 12:24:33 - scheduler - INFO - [w1][book][b418] Start
+2025-12-03 12:24:33 - scheduler - INFO - [manager] Unchanged: 420
+2025-12-03 12:24:33 - scheduler - INFO - [w4][book][b417] Start
+2025-12-03 12:24:34 - scheduler - INFO - [manager] Unchanged: 381
+2025-12-03 12:24:34 - scheduler - INFO - [w5][book][b416] Start
+2025-12-03 12:24:34 - scheduler - INFO - [manager] Unchanged: 419
+2025-12-03 12:24:34 - scheduler - INFO - [manager] Unchanged: 382
+2025-12-03 12:24:34 - scheduler - INFO - [w3][book][b415] Start
+2025-12-03 12:24:35 - scheduler - INFO - [w2][book][b414] Start
+2025-12-03 12:24:36 - scheduler - INFO - [manager] Unchanged: 418
+2025-12-03 12:24:36 - scheduler - INFO - [w1][book][b413] Start
+2025-12-03 12:24:37 - scheduler - INFO - [manager] Unchanged: 417
+2025-12-03 12:24:37 - scheduler - INFO - [manager] Unchanged: 414
+2025-12-03 12:24:37 - scheduler - INFO - [manager] Unchanged: 415
+2025-12-03 12:24:37 - scheduler - INFO - [w4][book][b412] Start
+2025-12-03 12:24:37 - scheduler - INFO - [manager] Unchanged: 416
+2025-12-03 12:24:37 - scheduler - INFO - [w2][book][b411] Start
+2025-12-03 12:24:38 - scheduler - INFO - [w3][book][b410] Start
+2025-12-03 12:24:38 - scheduler - INFO - [w5][book][b409] Start
+2025-12-03 12:24:39 - scheduler - INFO - [manager] Unchanged: 413
+2025-12-03 12:24:39 - scheduler - INFO - [w1][book][b408] Start
+2025-12-03 12:24:40 - scheduler - INFO - [manager] Unchanged: 411
+2025-12-03 12:24:40 - scheduler - INFO - [manager] Unchanged: 412
+2025-12-03 12:24:40 - scheduler - INFO - [w2][book][b407] Start
+2025-12-03 12:24:41 - scheduler - INFO - [w4][book][b406] Start
+2025-12-03 12:24:41 - scheduler - INFO - [manager] Unchanged: 410
+2025-12-03 12:24:41 - scheduler - INFO - [w3][book][b405] Start
+2025-12-03 12:24:42 - scheduler - INFO - [manager] Unchanged: 409
+2025-12-03 12:24:42 - scheduler - INFO - [w5][book][b404] Start
+2025-12-03 12:24:43 - scheduler - INFO - [manager] Unchanged: 406
+2025-12-03 12:24:43 - scheduler - INFO - [w4][book][b403] Start
+2025-12-03 12:24:44 - scheduler - INFO - [manager] Unchanged: 407
+2025-12-03 12:24:44 - scheduler - INFO - [manager] Unchanged: 408
+2025-12-03 12:24:44 - scheduler - INFO - [manager] Unchanged: 404
+2025-12-03 12:24:44 - scheduler - INFO - [w2][book][b402] Start
+2025-12-03 12:24:44 - scheduler - INFO - [w1][book][b401] Start
+2025-12-03 12:24:45 - scheduler - INFO - [w5][book][b380] Start
+2025-12-03 12:24:46 - scheduler - INFO - [manager] Unchanged: 405
+2025-12-03 12:24:46 - scheduler - INFO - [w3][book][b379] Start
+2025-12-03 12:24:46 - scheduler - INFO - [manager] Unchanged: 403
+2025-12-03 12:24:46 - scheduler - INFO - [w4][book][b378] Start
+2025-12-03 12:24:47 - scheduler - INFO - [manager] Unchanged: 380
+2025-12-03 12:24:47 - scheduler - INFO - [manager] Unchanged: 401
+2025-12-03 12:24:47 - scheduler - INFO - [manager] Unchanged: 402
+2025-12-03 12:24:47 - scheduler - INFO - [w5][book][b377] Start
+2025-12-03 12:24:48 - scheduler - INFO - [w1][book][b376] Start
+2025-12-03 12:24:49 - scheduler - INFO - [w2][book][b375] Start
+2025-12-03 12:24:50 - scheduler - INFO - [manager] Unchanged: 379
+2025-12-03 12:24:50 - scheduler - INFO - [w3][book][b374] Start
+2025-12-03 12:24:51 - scheduler - INFO - [manager] Unchanged: 378
+2025-12-03 12:24:51 - scheduler - INFO - [w4][book][b373] Start
+2025-12-03 12:24:52 - scheduler - INFO - [manager] Unchanged: 375
+2025-12-03 12:24:52 - scheduler - INFO - [w2][book][b372] Start
+2025-12-03 12:24:53 - scheduler - INFO - [manager] Unchanged: 376
+2025-12-03 12:24:53 - scheduler - INFO - [manager] Unchanged: 377
+2025-12-03 12:24:53 - scheduler - INFO - [w1][book][b371] Start
+2025-12-03 12:24:53 - scheduler - INFO - [w5][book][b370] Start
+2025-12-03 12:24:54 - scheduler - INFO - [manager] Unchanged: 374
+2025-12-03 12:24:54 - scheduler - INFO - [w3][book][b369] Start
+2025-12-03 12:24:55 - scheduler - INFO - [manager] Unchanged: 371
+2025-12-03 12:24:55 - scheduler - INFO - [manager] Unchanged: 370
+2025-12-03 12:24:55 - scheduler - INFO - [manager] Unchanged: 372
+2025-12-03 12:24:55 - scheduler - INFO - [w1][book][b368] Start
+2025-12-03 12:24:57 - scheduler - INFO - [w5][book][b367] Start
+2025-12-03 12:24:57 - scheduler - INFO - [w2][book][b366] Start
+2025-12-03 12:24:58 - scheduler - INFO - [manager] Unchanged: 373
+2025-12-03 12:24:58 - scheduler - INFO - [w4][book][b365] Start
+2025-12-03 12:24:59 - scheduler - INFO - [manager] Unchanged: 369
+2025-12-03 12:24:59 - scheduler - INFO - [w3][book][b364] Start
+2025-12-03 12:25:00 - scheduler - INFO - [manager] Unchanged: 366
+2025-12-03 12:25:00 - scheduler - INFO - [manager] Unchanged: 368
+2025-12-03 12:25:00 - scheduler - INFO - [w2][book][b363] Start
+2025-12-03 12:25:00 - scheduler - INFO - [w1][book][b362] Start
+2025-12-03 12:25:01 - scheduler - INFO - [manager] Unchanged: 365
+2025-12-03 12:25:01 - scheduler - INFO - [manager] Unchanged: 367
+2025-12-03 12:25:01 - scheduler - INFO - [w4][book][b361] Start
+2025-12-03 12:25:02 - scheduler - INFO - [w5][book][b360] Start
+2025-12-03 12:25:03 - scheduler - INFO - [manager] Unchanged: 364
+2025-12-03 12:25:03 - scheduler - INFO - [w3][book][b359] Start
+2025-12-03 12:25:04 - scheduler - INFO - [manager] Unchanged: 363
+2025-12-03 12:25:04 - scheduler - INFO - [w2][book][b358] Start
+2025-12-03 12:25:05 - scheduler - INFO - [manager] Unchanged: 362
+2025-12-03 12:25:05 - scheduler - INFO - [w1][book][b357] Start
+2025-12-03 12:25:05 - scheduler - INFO - [manager] Unchanged: 361
+2025-12-03 12:25:05 - scheduler - INFO - [manager] Unchanged: 360
+2025-12-03 12:25:05 - scheduler - INFO - [w4][book][b356] Start
+2025-12-03 12:25:06 - scheduler - INFO - [w5][book][b355] Start
+2025-12-03 12:25:06 - scheduler - INFO - [manager] Unchanged: 359
+2025-12-03 12:25:06 - scheduler - INFO - [w3][book][b354] Start
+2025-12-03 12:25:07 - scheduler - INFO - [manager] Unchanged: 358
+2025-12-03 12:25:07 - scheduler - INFO - [manager] Unchanged: 357
+2025-12-03 12:25:07 - scheduler - INFO - [manager] Unchanged: 356
+2025-12-03 12:25:07 - scheduler - INFO - [w2][book][b353] Start
+2025-12-03 12:25:08 - scheduler - INFO - [w1][book][b352] Start
+2025-12-03 12:25:09 - scheduler - INFO - [w4][book][b351] Start
+2025-12-03 12:25:10 - scheduler - INFO - [manager] Unchanged: 355
+2025-12-03 12:25:10 - scheduler - INFO - [w5][book][b350] Start
+2025-12-03 12:25:11 - scheduler - INFO - [manager] Unchanged: 353
+2025-12-03 12:25:11 - scheduler - INFO - [w2][book][b349] Start
+2025-12-03 12:25:12 - scheduler - INFO - [manager] Unchanged: 354
+2025-12-03 12:25:12 - scheduler - INFO - [manager] Unchanged: 350
+2025-12-03 12:25:12 - scheduler - INFO - [manager] Unchanged: 352
+2025-12-03 12:25:12 - scheduler - INFO - [w3][book][b348] Start
+2025-12-03 12:25:13 - scheduler - INFO - [w5][book][b347] Start
+2025-12-03 12:25:14 - scheduler - INFO - [w1][book][b346] Start
+2025-12-03 12:25:15 - scheduler - INFO - [manager] Unchanged: 349
+2025-12-03 12:25:15 - scheduler - INFO - [manager] Unchanged: 351
+2025-12-03 12:25:15 - scheduler - INFO - [w2][book][b345] Start
+2025-12-03 12:25:16 - scheduler - INFO - [w4][book][b344] Start
+2025-12-03 12:25:16 - scheduler - INFO - [manager] Unchanged: 348
+2025-12-03 12:25:16 - scheduler - INFO - [w3][book][b343] Start
+2025-12-03 12:25:17 - scheduler - INFO - [manager] Unchanged: 347
+2025-12-03 12:25:17 - scheduler - INFO - [w5][book][b342] Start
+2025-12-03 12:25:18 - scheduler - INFO - [manager] Unchanged: 346
+2025-12-03 12:25:18 - scheduler - INFO - [w1][book][b341] Start
+2025-12-03 12:25:19 - scheduler - INFO - [manager] Unchanged: 345
+2025-12-03 12:25:19 - scheduler - INFO - [manager] Unchanged: 344
+2025-12-03 12:25:19 - scheduler - INFO - [w2][book][b340] Start
+2025-12-03 12:25:20 - scheduler - INFO - [w4][book][b339] Start
+2025-12-03 12:25:21 - scheduler - INFO - [manager] Unchanged: 343
+2025-12-03 12:25:21 - scheduler - INFO - [w3][book][b338] Start
+2025-12-03 12:25:22 - scheduler - INFO - [manager] Unchanged: 341
+2025-12-03 12:25:22 - scheduler - INFO - [w1][book][b337] Start
+2025-12-03 12:25:23 - scheduler - INFO - [manager] Unchanged: 342
+2025-12-03 12:25:23 - scheduler - INFO - [w5][book][b336] Start
+2025-12-03 12:25:23 - scheduler - INFO - [manager] Unchanged: 340
+2025-12-03 12:25:23 - scheduler - INFO - [manager] Unchanged: 338
+2025-12-03 12:25:23 - scheduler - INFO - [w2][book][b335] Start
+2025-12-03 12:25:24 - scheduler - INFO - [w3][book][b334] Start
+2025-12-03 12:25:25 - scheduler - INFO - [manager] Unchanged: 339
+2025-12-03 12:25:25 - scheduler - INFO - [w4][book][b333] Start
+2025-12-03 12:25:26 - scheduler - INFO - [manager] Unchanged: 336
+2025-12-03 12:25:26 - scheduler - INFO - [manager] Unchanged: 337
+2025-12-03 12:25:26 - scheduler - INFO - [w5][book][b332] Start
+2025-12-03 12:25:26 - scheduler - INFO - [w1][book][b331] Start
+2025-12-03 12:25:27 - scheduler - INFO - [manager] Unchanged: 334
+2025-12-03 12:25:27 - scheduler - INFO - [w3][book][b330] Start
+2025-12-03 12:25:28 - scheduler - INFO - [manager] Unchanged: 335
+2025-12-03 12:25:28 - scheduler - INFO - [w2][book][b329] Start
+2025-12-03 12:25:29 - scheduler - INFO - [manager] Unchanged: 333
+2025-12-03 12:25:29 - scheduler - INFO - [manager] Unchanged: 332
+2025-12-03 12:25:29 - scheduler - INFO - [w4][book][b328] Start
+2025-12-03 12:25:29 - scheduler - INFO - [manager] Unchanged: 331
+2025-12-03 12:25:29 - scheduler - INFO - [w5][book][b327] Start
+2025-12-03 12:25:30 - scheduler - INFO - [w1][book][b326] Start
+2025-12-03 12:25:31 - scheduler - INFO - [manager] Unchanged: 329
+2025-12-03 12:25:31 - scheduler - INFO - [w2][book][b325] Start
+2025-12-03 12:25:32 - scheduler - INFO - [manager] Unchanged: 330
+2025-12-03 12:25:32 - scheduler - INFO - [manager] Unchanged: 327
+2025-12-03 12:25:32 - scheduler - INFO - [manager] Unchanged: 326
+2025-12-03 12:25:32 - scheduler - INFO - [manager] Unchanged: 328
+2025-12-03 12:25:32 - scheduler - INFO - [w3][book][b324] Start
+2025-12-03 12:25:32 - scheduler - INFO - [w5][book][b323] Start
+2025-12-03 12:25:33 - scheduler - INFO - [w1][book][b322] Start
+2025-12-03 12:25:33 - scheduler - INFO - [w4][book][b321] Start
+2025-12-03 12:25:35 - scheduler - INFO - [manager] Unchanged: 324
+2025-12-03 12:25:35 - scheduler - INFO - [w3][book][b300] Start
+2025-12-03 12:25:35 - scheduler - INFO - [manager] Unchanged: 325
+2025-12-03 12:25:35 - scheduler - INFO - [w2][book][b299] Start
+2025-12-03 12:25:36 - scheduler - INFO - [manager] Unchanged: 321
+2025-12-03 12:25:36 - scheduler - INFO - [manager] Unchanged: 322
+2025-12-03 12:25:36 - scheduler - INFO - [manager] Unchanged: 323
+2025-12-03 12:25:36 - scheduler - INFO - [w4][book][b298] Start
+2025-12-03 12:25:36 - scheduler - INFO - [w1][book][b297] Start
+2025-12-03 12:25:37 - scheduler - INFO - [w5][book][b296] Start
+2025-12-03 12:25:38 - scheduler - INFO - [manager] Unchanged: 300
+2025-12-03 12:25:38 - scheduler - INFO - [w3][book][b295] Start
+2025-12-03 12:25:39 - scheduler - INFO - [manager] Unchanged: 299
+2025-12-03 12:25:39 - scheduler - INFO - [manager] Unchanged: 298
+2025-12-03 12:25:39 - scheduler - INFO - [manager] Unchanged: 296
+2025-12-03 12:25:39 - scheduler - INFO - [manager] Unchanged: 297
+2025-12-03 12:25:39 - scheduler - INFO - [w2][book][b294] Start
+2025-12-03 12:25:39 - scheduler - INFO - [w4][book][b293] Start
+2025-12-03 12:25:40 - scheduler - INFO - [w5][book][b292] Start
+2025-12-03 12:25:40 - scheduler - INFO - [w1][book][b291] Start
+2025-12-03 12:25:43 - scheduler - INFO - [manager] Unchanged: 292
+2025-12-03 12:25:43 - scheduler - INFO - [manager] Unchanged: 295
+2025-12-03 12:25:43 - scheduler - INFO - [w5][book][b290] Start
+2025-12-03 12:25:43 - scheduler - INFO - [w3][book][b289] Start
+2025-12-03 12:25:45 - scheduler - INFO - [manager] Unchanged: 293
+2025-12-03 12:25:45 - scheduler - INFO - [w4][book][b288] Start
+2025-12-03 12:25:45 - scheduler - INFO - [manager] Unchanged: 294
+2025-12-03 12:25:45 - scheduler - INFO - [manager] Unchanged: 291
+2025-12-03 12:25:45 - scheduler - INFO - [w2][book][b287] Start
+2025-12-03 12:25:46 - scheduler - INFO - [w1][book][b286] Start
+2025-12-03 12:25:49 - scheduler - INFO - [manager] Unchanged: 289
+2025-12-03 12:25:49 - scheduler - INFO - [manager] Unchanged: 290
+2025-12-03 12:25:49 - scheduler - INFO - [w3][book][b285] Start
+2025-12-03 12:25:49 - scheduler - INFO - [w5][book][b284] Start
+2025-12-03 12:25:51 - scheduler - INFO - [manager] Unchanged: 287
+2025-12-03 12:25:51 - scheduler - INFO - [manager] Unchanged: 288
+2025-12-03 12:25:51 - scheduler - INFO - [w2][book][b283] Start
+2025-12-03 12:25:51 - scheduler - INFO - [manager] Unchanged: 286
+2025-12-03 12:25:51 - scheduler - INFO - [w4][book][b282] Start
+2025-12-03 12:25:52 - scheduler - INFO - [w1][book][b281] Start
+2025-12-03 12:25:55 - scheduler - INFO - [manager] Unchanged: 284
+2025-12-03 12:25:55 - scheduler - INFO - [manager] Unchanged: 285
+2025-12-03 12:25:55 - scheduler - INFO - [w5][book][b280] Start
+2025-12-03 12:25:55 - scheduler - INFO - [w3][book][b279] Start
+2025-12-03 12:25:57 - scheduler - INFO - [manager] Unchanged: 283
+2025-12-03 12:25:57 - scheduler - INFO - [w2][book][b278] Start
+2025-12-03 12:25:59 - scheduler - INFO - [manager] Unchanged: 282
+2025-12-03 12:25:59 - scheduler - INFO - [w4][book][b277] Start
+2025-12-03 12:25:59 - scheduler - INFO - [manager] Unchanged: 281
+2025-12-03 12:25:59 - scheduler - INFO - [w1][book][b276] Start
+2025-12-03 12:26:01 - scheduler - INFO - [manager] Unchanged: 280
+2025-12-03 12:26:01 - scheduler - INFO - [manager] Unchanged: 279
+2025-12-03 12:26:01 - scheduler - INFO - [w5][book][b275] Start
+2025-12-03 12:26:01 - scheduler - INFO - [w3][book][b274] Start
+2025-12-03 12:26:03 - scheduler - INFO - [manager] Unchanged: 278
+2025-12-03 12:26:03 - scheduler - INFO - [w2][book][b273] Start
+2025-12-03 12:26:05 - scheduler - INFO - [manager] Unchanged: 276
+2025-12-03 12:26:05 - scheduler - INFO - [manager] Unchanged: 277
+2025-12-03 12:26:05 - scheduler - INFO - [w1][book][b272] Start
+2025-12-03 12:26:05 - scheduler - INFO - [w4][book][b271] Start
+2025-12-03 12:26:07 - scheduler - INFO - [manager] Unchanged: 274
+2025-12-03 12:26:07 - scheduler - INFO - [manager] Unchanged: 275
+2025-12-03 12:26:07 - scheduler - INFO - [w3][book][b270] Start
+2025-12-03 12:26:08 - scheduler - INFO - [w5][book][b269] Start
+2025-12-03 12:26:09 - scheduler - INFO - [manager] Unchanged: 273
+2025-12-03 12:26:09 - scheduler - INFO - [w2][book][b268] Start
+2025-12-03 12:26:11 - scheduler - INFO - [manager] Unchanged: 272
+2025-12-03 12:26:11 - scheduler - INFO - [manager] Unchanged: 271
+2025-12-03 12:26:11 - scheduler - INFO - [w1][book][b267] Start
+2025-12-03 12:26:11 - scheduler - INFO - [w4][book][b266] Start
+2025-12-03 12:26:12 - scheduler - INFO - [manager] Unchanged: 269
+2025-12-03 12:26:12 - scheduler - INFO - [w5][book][b265] Start
+2025-12-03 12:26:13 - scheduler - INFO - [manager] Unchanged: 270
+2025-12-03 12:26:13 - scheduler - INFO - [w3][book][b264] Start
+2025-12-03 12:26:14 - scheduler - INFO - [manager] Unchanged: 268
+2025-12-03 12:26:14 - scheduler - INFO - [w2][book][b263] Start
+2025-12-03 12:26:14 - scheduler - INFO - [manager] Unchanged: 266
+2025-12-03 12:26:14 - scheduler - INFO - [manager] Unchanged: 267
+2025-12-03 12:26:14 - scheduler - INFO - [w4][book][b262] Start
+2025-12-03 12:26:15 - scheduler - INFO - [w1][book][b261] Start
+2025-12-03 12:26:16 - scheduler - INFO - [manager] Unchanged: 264
+2025-12-03 12:26:16 - scheduler - INFO - [manager] Unchanged: 265
+2025-12-03 12:26:16 - scheduler - INFO - [w3][book][b320] Start
+2025-12-03 12:26:17 - scheduler - INFO - [w5][book][b319] Start
+2025-12-03 12:26:18 - scheduler - INFO - [manager] Unchanged: 263
+2025-12-03 12:26:18 - scheduler - INFO - [w2][book][b318] Start
+2025-12-03 12:26:20 - scheduler - INFO - [manager] Unchanged: 261
+2025-12-03 12:26:20 - scheduler - INFO - [w1][book][b317] Start
+2025-12-03 12:26:21 - scheduler - INFO - [manager] Unchanged: 262
+2025-12-03 12:26:21 - scheduler - INFO - [w4][book][b316] Start
+2025-12-03 12:26:23 - scheduler - INFO - [manager] Unchanged: 319
+2025-12-03 12:26:23 - scheduler - INFO - [manager] Unchanged: 320
+2025-12-03 12:26:23 - scheduler - INFO - [manager] Unchanged: 318
+2025-12-03 12:26:23 - scheduler - INFO - [w5][book][b315] Start
+2025-12-03 12:26:24 - scheduler - INFO - [w3][book][b314] Start
+2025-12-03 12:26:25 - scheduler - INFO - [w2][book][b313] Start
+2025-12-03 12:26:26 - scheduler - INFO - [manager] Unchanged: 317
+2025-12-03 12:26:26 - scheduler - INFO - [w1][book][b312] Start
+2025-12-03 12:26:27 - scheduler - INFO - [manager] Unchanged: 316
+2025-12-03 12:26:27 - scheduler - INFO - [w4][book][b311] Start
+2025-12-03 12:26:28 - scheduler - INFO - [manager] Unchanged: 315
+2025-12-03 12:26:28 - scheduler - INFO - [w5][book][b310] Start
+2025-12-03 12:26:28 - scheduler - INFO - [manager] Unchanged: 313
+2025-12-03 12:26:28 - scheduler - INFO - [manager] Unchanged: 314
+2025-12-03 12:26:28 - scheduler - INFO - [w2][book][b309] Start
+2025-12-03 12:26:29 - scheduler - INFO - [w3][book][b308] Start
+2025-12-03 12:26:31 - scheduler - INFO - [manager] Unchanged: 311
+2025-12-03 12:26:31 - scheduler - INFO - [manager] Unchanged: 312
+2025-12-03 12:26:31 - scheduler - INFO - [w4][book][b307] Start
+2025-12-03 12:26:31 - scheduler - INFO - [w1][book][b306] Start
+2025-12-03 12:26:32 - scheduler - INFO - [manager] Unchanged: 310
+2025-12-03 12:26:32 - scheduler - INFO - [w5][book][b305] Start
+2025-12-03 12:26:33 - scheduler - INFO - [manager] Unchanged: 308
+2025-12-03 12:26:33 - scheduler - INFO - [w3][book][b304] Start
+2025-12-03 12:26:34 - scheduler - INFO - [manager] Unchanged: 309
+2025-12-03 12:26:34 - scheduler - INFO - [w2][book][b303] Start
+2025-12-03 12:26:34 - scheduler - INFO - [manager] Unchanged: 306
+2025-12-03 12:26:34 - scheduler - INFO - [manager] Unchanged: 307
+2025-12-03 12:26:34 - scheduler - INFO - [w1][book][b302] Start
+2025-12-03 12:26:35 - scheduler - INFO - [w4][book][b301] Start
+2025-12-03 12:26:36 - scheduler - INFO - [manager] Unchanged: 305
+2025-12-03 12:26:36 - scheduler - INFO - [w5][book][b260] Start
+2025-12-03 12:26:37 - scheduler - INFO - [manager] Unchanged: 304
+2025-12-03 12:26:37 - scheduler - INFO - [manager] Unchanged: 303
+2025-12-03 12:26:37 - scheduler - INFO - [manager] Unchanged: 302
+2025-12-03 12:26:37 - scheduler - INFO - [w3][book][b259] Start
+2025-12-03 12:26:38 - scheduler - INFO - [w2][book][b258] Start
+2025-12-03 12:26:39 - scheduler - INFO - [w1][book][b257] Start
+2025-12-03 12:26:39 - scheduler - INFO - [manager] Unchanged: 301
+2025-12-03 12:26:39 - scheduler - INFO - [w4][book][b256] Start
+2025-12-03 12:26:40 - scheduler - INFO - [manager] Unchanged: 260
+2025-12-03 12:26:40 - scheduler - INFO - [w5][book][b255] Start
+2025-12-03 12:26:41 - scheduler - INFO - [manager] Unchanged: 259
+2025-12-03 12:26:41 - scheduler - INFO - [w3][book][b254] Start
+2025-12-03 12:26:42 - scheduler - INFO - [manager] Unchanged: 258
+2025-12-03 12:26:42 - scheduler - INFO - [manager] Unchanged: 257
+2025-12-03 12:26:42 - scheduler - INFO - [manager] Unchanged: 256
+2025-12-03 12:26:42 - scheduler - INFO - [w2][book][b253] Start
+2025-12-03 12:26:42 - scheduler - INFO - [w1][book][b252] Start
+2025-12-03 12:26:43 - scheduler - INFO - [w4][book][b251] Start
+2025-12-03 12:26:44 - scheduler - INFO - [manager] Unchanged: 255
+2025-12-03 12:26:44 - scheduler - INFO - [w5][book][b250] Start
+2025-12-03 12:26:45 - scheduler - INFO - [manager] Unchanged: 254
+2025-12-03 12:26:45 - scheduler - INFO - [w3][book][b249] Start
+2025-12-03 12:26:45 - scheduler - INFO - [manager] Unchanged: 252
+2025-12-03 12:26:45 - scheduler - INFO - [manager] Unchanged: 253
+2025-12-03 12:26:45 - scheduler - INFO - [w1][book][b248] Start
+2025-12-03 12:26:46 - scheduler - INFO - [w2][book][b247] Start
+2025-12-03 12:26:47 - scheduler - INFO - [manager] Unchanged: 251
+2025-12-03 12:26:47 - scheduler - INFO - [w4][book][b246] Start
+2025-12-03 12:26:48 - scheduler - INFO - [manager] Unchanged: 248
+2025-12-03 12:26:48 - scheduler - INFO - [w1][book][b245] Start
+2025-12-03 12:26:48 - scheduler - INFO - [manager] Unchanged: 250
+2025-12-03 12:26:48 - scheduler - INFO - [manager] Unchanged: 247
+2025-12-03 12:26:48 - scheduler - INFO - [manager] Unchanged: 249
+2025-12-03 12:26:48 - scheduler - INFO - [w5][book][b244] Start
+2025-12-03 12:26:49 - scheduler - INFO - [w2][book][b243] Start
+2025-12-03 12:26:49 - scheduler - INFO - [w3][book][b242] Start
+2025-12-03 12:26:50 - scheduler - INFO - [manager] Unchanged: 246
+2025-12-03 12:26:50 - scheduler - INFO - [w4][book][b241] Start
+2025-12-03 12:26:51 - scheduler - INFO - [manager] Unchanged: 242
+2025-12-03 12:26:51 - scheduler - INFO - [w3][book][b240] Start
+2025-12-03 12:26:52 - scheduler - INFO - [manager] Unchanged: 244
+2025-12-03 12:26:52 - scheduler - INFO - [manager] Unchanged: 245
+2025-12-03 12:26:52 - scheduler - INFO - [manager] Unchanged: 243
+2025-12-03 12:26:52 - scheduler - INFO - [manager] Unchanged: 241
+2025-12-03 12:26:52 - scheduler - INFO - [w5][book][b239] Start
+2025-12-03 12:26:53 - scheduler - INFO - [w1][book][b238] Start
+2025-12-03 12:26:53 - scheduler - INFO - [w2][book][b237] Start
+2025-12-03 12:26:54 - scheduler - INFO - [w4][book][b236] Start
+2025-12-03 12:26:55 - scheduler - INFO - [manager] Unchanged: 240
+2025-12-03 12:26:55 - scheduler - INFO - [w3][book][b235] Start
+2025-12-03 12:26:56 - scheduler - INFO - [manager] Unchanged: 239
+2025-12-03 12:26:56 - scheduler - INFO - [manager] Unchanged: 238
+2025-12-03 12:26:56 - scheduler - INFO - [w5][book][b234] Start
+2025-12-03 12:26:56 - scheduler - INFO - [w1][book][b233] Start
+2025-12-03 12:26:57 - scheduler - INFO - [manager] Unchanged: 237
+2025-12-03 12:26:57 - scheduler - INFO - [w2][book][b232] Start
+2025-12-03 12:26:57 - scheduler - INFO - [manager] Unchanged: 236
+2025-12-03 12:26:57 - scheduler - INFO - [w4][book][b231] Start
+2025-12-03 12:26:59 - scheduler - INFO - [manager] Unchanged: 233
+2025-12-03 12:26:59 - scheduler - INFO - [w1][book][b230] Start
+2025-12-03 12:26:59 - scheduler - INFO - [manager] Unchanged: 235
+2025-12-03 12:26:59 - scheduler - INFO - [manager] Unchanged: 234
+2025-12-03 12:26:59 - scheduler - INFO - [w3][book][b229] Start
+2025-12-03 12:27:00 - scheduler - INFO - [w5][book][b228] Start
+2025-12-03 12:27:01 - scheduler - INFO - [manager] Unchanged: 231
+2025-12-03 12:27:01 - scheduler - INFO - [w4][book][b227] Start
+2025-12-03 12:27:01 - scheduler - INFO - [manager] Unchanged: 232
+2025-12-03 12:27:01 - scheduler - INFO - [w2][book][b226] Start
+2025-12-03 12:27:03 - scheduler - INFO - [manager] Unchanged: 230
+2025-12-03 12:27:03 - scheduler - INFO - [manager] Unchanged: 228
+2025-12-03 12:27:03 - scheduler - INFO - [w1][book][b225] Start
+2025-12-03 12:27:03 - scheduler - INFO - [w5][book][b224] Start
+2025-12-03 12:27:04 - scheduler - INFO - [manager] Unchanged: 229
+2025-12-03 12:27:04 - scheduler - INFO - [w3][book][b223] Start
+2025-12-03 12:27:05 - scheduler - INFO - [manager] Unchanged: 226
+2025-12-03 12:27:05 - scheduler - INFO - [w2][book][b222] Start
+2025-12-03 12:27:06 - scheduler - INFO - [manager] Unchanged: 227
+2025-12-03 12:27:06 - scheduler - INFO - [w4][book][b221] Start
+2025-12-03 12:27:07 - scheduler - INFO - [manager] Unchanged: 224
+2025-12-03 12:27:07 - scheduler - INFO - [manager] Unchanged: 223
+2025-12-03 12:27:07 - scheduler - INFO - [w5][book][b220] Start
+2025-12-03 12:27:07 - scheduler - INFO - [w3][book][b219] Start
+2025-12-03 12:27:08 - scheduler - INFO - [manager] Unchanged: 225
+2025-12-03 12:27:08 - scheduler - INFO - [w1][book][b218] Start
+2025-12-03 12:27:09 - scheduler - INFO - [manager] Unchanged: 221
+2025-12-03 12:27:09 - scheduler - INFO - [w4][book][b217] Start
+2025-12-03 12:27:09 - scheduler - INFO - [manager] Unchanged: 222
+2025-12-03 12:27:09 - scheduler - INFO - [w2][book][b216] Start
+2025-12-03 12:27:10 - scheduler - INFO - [manager] Unchanged: 219
+2025-12-03 12:27:10 - scheduler - INFO - [w3][book][b215] Start
+2025-12-03 12:27:11 - scheduler - INFO - [manager] Unchanged: 217
+2025-12-03 12:27:11 - scheduler - INFO - [w4][book][b214] Start
+2025-12-03 12:27:12 - scheduler - INFO - [manager] Unchanged: 218
+2025-12-03 12:27:12 - scheduler - INFO - [manager] Unchanged: 220
+2025-12-03 12:27:12 - scheduler - INFO - [w1][book][b213] Start
+2025-12-03 12:27:12 - scheduler - INFO - [w5][book][b212] Start
+2025-12-03 12:27:13 - scheduler - INFO - [manager] Unchanged: 216
+2025-12-03 12:27:13 - scheduler - INFO - [w2][book][b211] Start
+2025-12-03 12:27:14 - scheduler - INFO - [manager] Unchanged: 215
+2025-12-03 12:27:14 - scheduler - INFO - [w3][book][b210] Start
+2025-12-03 12:27:15 - scheduler - INFO - [manager] Unchanged: 211
+2025-12-03 12:27:15 - scheduler - INFO - [w2][book][b209] Start
+2025-12-03 12:27:15 - scheduler - INFO - [manager] Unchanged: 212
+2025-12-03 12:27:15 - scheduler - INFO - [w5][book][b208] Start
+2025-12-03 12:27:16 - scheduler - INFO - [manager] Unchanged: 213
+2025-12-03 12:27:16 - scheduler - INFO - [manager] Unchanged: 214
+2025-12-03 12:27:16 - scheduler - INFO - [w1][book][b207] Start
+2025-12-03 12:27:17 - scheduler - INFO - [w4][book][b206] Start
+2025-12-03 12:27:17 - scheduler - INFO - [manager] Unchanged: 210
+2025-12-03 12:27:17 - scheduler - INFO - [w3][book][b205] Start
+2025-12-03 12:27:18 - scheduler - INFO - [manager] Unchanged: 209
+2025-12-03 12:27:18 - scheduler - INFO - [w2][book][b204] Start
+2025-12-03 12:27:19 - scheduler - INFO - [manager] Unchanged: 208
+2025-12-03 12:27:19 - scheduler - INFO - [w5][book][b203] Start
+2025-12-03 12:27:20 - scheduler - INFO - [manager] Unchanged: 206
+2025-12-03 12:27:20 - scheduler - INFO - [manager] Unchanged: 207
+2025-12-03 12:27:20 - scheduler - INFO - [w4][book][b202] Start
+2025-12-03 12:27:20 - scheduler - INFO - [w1][book][b201] Start
+2025-12-03 12:27:21 - scheduler - INFO - [manager] Unchanged: 204
+2025-12-03 12:27:21 - scheduler - INFO - [w2][book][b200] Start
+2025-12-03 12:27:22 - scheduler - INFO - [manager] Unchanged: 205
+2025-12-03 12:27:22 - scheduler - INFO - [w3][book][b199] Start
+2025-12-03 12:27:23 - scheduler - INFO - [manager] Unchanged: 203
+2025-12-03 12:27:23 - scheduler - INFO - [manager] Unchanged: 202
+2025-12-03 12:27:23 - scheduler - INFO - [manager] Unchanged: 201
+2025-12-03 12:27:23 - scheduler - INFO - [w5][book][b198] Start
+2025-12-03 12:27:23 - scheduler - INFO - [w4][book][b197] Start
+2025-12-03 12:27:24 - scheduler - INFO - [w1][book][b196] Start
+2025-12-03 12:27:25 - scheduler - INFO - [manager] Unchanged: 199
+2025-12-03 12:27:25 - scheduler - INFO - [w3][book][b195] Start
+2025-12-03 12:27:26 - scheduler - INFO - [manager] Book added: 200
+2025-12-03 12:27:26 - scheduler - INFO - [manager] Unchanged: 196
+2025-12-03 12:27:26 - scheduler - INFO - [manager] Unchanged: 198
+2025-12-03 12:27:26 - scheduler - INFO - [manager] Unchanged: 197
+2025-12-03 12:27:26 - scheduler - INFO - [w1][book][b194] Start
+2025-12-03 12:27:27 - scheduler - INFO - [w5][book][b193] Start
+2025-12-03 12:27:28 - scheduler - INFO - [w4][book][b192] Start
+2025-12-03 12:27:29 - scheduler - INFO - [manager] Unchanged: 195
+2025-12-03 12:27:29 - scheduler - INFO - [w3][book][b191] Start
+2025-12-03 12:27:30 - scheduler - INFO - [manager] Alert email sent for add event: 200
+2025-12-03 12:27:30 - scheduler - INFO - [w2][book][b190] Start
+2025-12-03 12:27:31 - scheduler - INFO - [manager] Unchanged: 193
+2025-12-03 12:27:31 - scheduler - INFO - [manager] Unchanged: 194
+2025-12-03 12:27:31 - scheduler - INFO - [w5][book][b189] Start
+2025-12-03 12:27:32 - scheduler - INFO - [w1][book][b188] Start
+2025-12-03 12:27:33 - scheduler - INFO - [manager] Unchanged: 192
+2025-12-03 12:27:33 - scheduler - INFO - [w4][book][b187] Start
+2025-12-03 12:27:34 - scheduler - INFO - [manager] Unchanged: 191
+2025-12-03 12:27:34 - scheduler - INFO - [manager] Unchanged: 190
+2025-12-03 12:27:34 - scheduler - INFO - [w3][book][b186] Start
+2025-12-03 12:27:34 - scheduler - INFO - [w2][book][b185] Start
+2025-12-03 12:27:37 - scheduler - INFO - [manager] Unchanged: 189
+2025-12-03 12:27:37 - scheduler - INFO - [w5][book][b184] Start
+2025-12-03 12:27:37 - scheduler - INFO - [manager] Unchanged: 188
+2025-12-03 12:27:37 - scheduler - INFO - [w1][book][b183] Start
+2025-12-03 12:27:38 - scheduler - INFO - [manager] Unchanged: 185
+2025-12-03 12:27:38 - scheduler - INFO - [w2][book][b182] Start
+2025-12-03 12:27:39 - scheduler - INFO - [manager] Unchanged: 187
+2025-12-03 12:27:39 - scheduler - INFO - [manager] Unchanged: 186
+2025-12-03 12:27:39 - scheduler - INFO - [w4][book][b181] Start
+2025-12-03 12:27:39 - scheduler - INFO - [w3][book][b180] Start
+2025-12-03 12:27:40 - scheduler - INFO - [manager] Unchanged: 183
+2025-12-03 12:27:40 - scheduler - INFO - [w1][book][b179] Start
+2025-12-03 12:27:41 - scheduler - INFO - [manager] Unchanged: 184
+2025-12-03 12:27:41 - scheduler - INFO - [w5][book][b178] Start
+2025-12-03 12:27:42 - scheduler - INFO - [manager] Unchanged: 182
+2025-12-03 12:27:42 - scheduler - INFO - [w2][book][b177] Start
+2025-12-03 12:27:43 - scheduler - INFO - [manager] Unchanged: 181
+2025-12-03 12:27:43 - scheduler - INFO - [manager] Unchanged: 180
+2025-12-03 12:27:43 - scheduler - INFO - [manager] Unchanged: 179
+2025-12-03 12:27:43 - scheduler - INFO - [w4][book][b176] Start
+2025-12-03 12:27:44 - scheduler - INFO - [w3][book][b175] Start
+2025-12-03 12:27:44 - scheduler - INFO - [w1][book][b174] Start
+2025-12-03 12:27:45 - scheduler - INFO - [manager] Unchanged: 178
+2025-12-03 12:27:45 - scheduler - INFO - [w5][book][b173] Start
+2025-12-03 12:27:46 - scheduler - INFO - [manager] Unchanged: 177
+2025-12-03 12:27:46 - scheduler - INFO - [w2][book][b172] Start
+2025-12-03 12:27:47 - scheduler - INFO - [manager] Unchanged: 175
+2025-12-03 12:27:47 - scheduler - INFO - [w3][book][b171] Start
+2025-12-03 12:27:47 - scheduler - INFO - [manager] Unchanged: 176
+2025-12-03 12:27:47 - scheduler - INFO - [manager] Unchanged: 174
+2025-12-03 12:27:47 - scheduler - INFO - [w4][book][b170] Start
+2025-12-03 12:27:48 - scheduler - INFO - [w1][book][b169] Start
+2025-12-03 12:27:49 - scheduler - INFO - [manager] Unchanged: 173
+2025-12-03 12:27:49 - scheduler - INFO - [w5][book][b168] Start
+2025-12-03 12:27:50 - scheduler - INFO - [manager] Unchanged: 170
+2025-12-03 12:27:50 - scheduler - INFO - [w4][book][b167] Start
+2025-12-03 12:27:50 - scheduler - INFO - [manager] Unchanged: 172
+2025-12-03 12:27:50 - scheduler - INFO - [manager] Unchanged: 171
+2025-12-03 12:27:50 - scheduler - INFO - [w2][book][b166] Start
+2025-12-03 12:27:51 - scheduler - INFO - [w3][book][b165] Start
+2025-12-03 12:27:52 - scheduler - INFO - [manager] Unchanged: 168
+2025-12-03 12:27:52 - scheduler - INFO - [w5][book][b164] Start
+2025-12-03 12:27:52 - scheduler - INFO - [manager] Unchanged: 169
+2025-12-03 12:27:52 - scheduler - INFO - [w1][book][b163] Start
+2025-12-03 12:27:53 - scheduler - INFO - [manager] Unchanged: 165
+2025-12-03 12:27:53 - scheduler - INFO - [manager] Unchanged: 167
+2025-12-03 12:27:53 - scheduler - INFO - [manager] Unchanged: 166
+2025-12-03 12:27:53 - scheduler - INFO - [w3][book][b162] Start
+2025-12-03 12:27:54 - scheduler - INFO - [w4][book][b161] Start
+2025-12-03 12:27:55 - scheduler - INFO - [w2][book][b160] Start
+2025-12-03 12:27:55 - scheduler - INFO - [manager] Unchanged: 164
+2025-12-03 12:27:55 - scheduler - INFO - [w5][book][b159] Start
+2025-12-03 12:27:56 - scheduler - INFO - [manager] Unchanged: 163
+2025-12-03 12:27:56 - scheduler - INFO - [w1][book][b158] Start
+2025-12-03 12:27:57 - scheduler - INFO - [manager] Unchanged: 160
+2025-12-03 12:27:57 - scheduler - INFO - [manager] Unchanged: 161
+2025-12-03 12:27:57 - scheduler - INFO - [manager] Unchanged: 159
+2025-12-03 12:27:57 - scheduler - INFO - [w2][book][b157] Start
+2025-12-03 12:27:58 - scheduler - INFO - [w4][book][b156] Start
+2025-12-03 12:27:58 - scheduler - INFO - [w5][book][b155] Start
+2025-12-03 12:27:59 - scheduler - INFO - [manager] Unchanged: 162
+2025-12-03 12:27:59 - scheduler - INFO - [w3][book][b154] Start
+2025-12-03 12:28:00 - scheduler - INFO - [manager] Unchanged: 158
+2025-12-03 12:28:00 - scheduler - INFO - [w1][book][b153] Start
+2025-12-03 12:28:01 - scheduler - INFO - [manager] Unchanged: 157
+2025-12-03 12:28:01 - scheduler - INFO - [manager] Unchanged: 156
+2025-12-03 12:28:01 - scheduler - INFO - [w2][book][b152] Start
+2025-12-03 12:28:01 - scheduler - INFO - [w4][book][b151] Start
+2025-12-03 12:28:02 - scheduler - INFO - [manager] Unchanged: 154
+2025-12-03 12:28:02 - scheduler - INFO - [w3][book][b150] Start
+2025-12-03 12:28:03 - scheduler - INFO - [manager] Unchanged: 155
+2025-12-03 12:28:03 - scheduler - INFO - [w5][book][b149] Start
+2025-12-03 12:28:04 - scheduler - INFO - [manager] Unchanged: 153
+2025-12-03 12:28:04 - scheduler - INFO - [manager] Unchanged: 152
+2025-12-03 12:28:04 - scheduler - INFO - [w1][book][b148] Start
+2025-12-03 12:28:04 - scheduler - INFO - [w2][book][b147] Start
+2025-12-03 12:28:05 - scheduler - INFO - [manager] Unchanged: 151
+2025-12-03 12:28:05 - scheduler - INFO - [w4][book][b146] Start
+2025-12-03 12:28:06 - scheduler - INFO - [manager] Book updated: 150
+2025-12-03 12:28:06 - scheduler - INFO - [manager] Unchanged: 149
+2025-12-03 12:28:06 - scheduler - INFO - [w5][book][b145] Start
+2025-12-03 12:28:07 - scheduler - INFO - [manager] Unchanged: 146
+2025-12-03 12:28:07 - scheduler - INFO - [w4][book][b144] Start
+2025-12-03 12:28:08 - scheduler - INFO - [manager] Unchanged: 148
+2025-12-03 12:28:08 - scheduler - INFO - [w1][book][b143] Start
+2025-12-03 12:28:09 - scheduler - INFO - [manager] Unchanged: 145
+2025-12-03 12:28:09 - scheduler - INFO - [w5][book][b142] Start
+2025-12-03 12:28:09 - scheduler - INFO - [manager] Alert email sent for update event: 150
+2025-12-03 12:28:09 - scheduler - INFO - [w3][book][b141] Start
+2025-12-03 12:28:10 - scheduler - INFO - [manager] Unchanged: 147
+2025-12-03 12:28:10 - scheduler - INFO - [w2][book][b140] Start
+2025-12-03 12:28:10 - scheduler - INFO - [manager] Unchanged: 144
+2025-12-03 12:28:10 - scheduler - INFO - [w4][book][b139] Start
+2025-12-03 12:28:11 - scheduler - INFO - [manager] Unchanged: 143
+2025-12-03 12:28:11 - scheduler - INFO - [w1][book][b138] Start
+2025-12-03 12:28:12 - scheduler - INFO - [manager] Unchanged: 142
+2025-12-03 12:28:12 - scheduler - INFO - [w5][book][b137] Start
+2025-12-03 12:28:13 - scheduler - INFO - [manager] Unchanged: 141
+2025-12-03 12:28:13 - scheduler - INFO - [w3][book][b136] Start
+2025-12-03 12:28:14 - scheduler - INFO - [manager] Unchanged: 140
+2025-12-03 12:28:14 - scheduler - INFO - [manager] Unchanged: 139
+2025-12-03 12:28:14 - scheduler - INFO - [w2][book][b135] Start
+2025-12-03 12:28:14 - scheduler - INFO - [w4][book][b134] Start
+2025-12-03 12:28:15 - scheduler - INFO - [manager] Unchanged: 138
+2025-12-03 12:28:15 - scheduler - INFO - [w1][book][b133] Start
+2025-12-03 12:28:16 - scheduler - INFO - [manager] Unchanged: 137
+2025-12-03 12:28:16 - scheduler - INFO - [w5][book][b132] Start
+2025-12-03 12:28:17 - scheduler - INFO - [manager] Unchanged: 136
+2025-12-03 12:28:17 - scheduler - INFO - [manager] Unchanged: 135
+2025-12-03 12:28:17 - scheduler - INFO - [manager] Unchanged: 134
+2025-12-03 12:28:17 - scheduler - INFO - [w3][book][b131] Start
+2025-12-03 12:28:18 - scheduler - INFO - [w2][book][b130] Start
+2025-12-03 12:28:18 - scheduler - INFO - [w4][book][b129] Start
+2025-12-03 12:28:19 - scheduler - INFO - [manager] Unchanged: 133
+2025-12-03 12:28:19 - scheduler - INFO - [w1][book][b128] Start
+2025-12-03 12:28:20 - scheduler - INFO - [manager] Unchanged: 132
+2025-12-03 12:28:20 - scheduler - INFO - [w5][book][b127] Start
+2025-12-03 12:28:21 - scheduler - INFO - [manager] Unchanged: 131
+2025-12-03 12:28:21 - scheduler - INFO - [manager] Unchanged: 129
+2025-12-03 12:28:21 - scheduler - INFO - [w3][book][b126] Start
+2025-12-03 12:28:22 - scheduler - INFO - [w4][book][b125] Start
+2025-12-03 12:28:22 - scheduler - INFO - [manager] Unchanged: 130
+2025-12-03 12:28:22 - scheduler - INFO - [w2][book][b124] Start
+2025-12-03 12:28:23 - scheduler - INFO - [manager] Unchanged: 128
+2025-12-03 12:28:23 - scheduler - INFO - [w1][book][b123] Start
+2025-12-03 12:28:24 - scheduler - INFO - [manager] Unchanged: 127
+2025-12-03 12:28:24 - scheduler - INFO - [w5][book][b122] Start
+2025-12-03 12:28:25 - scheduler - INFO - [manager] Unchanged: 126
+2025-12-03 12:28:25 - scheduler - INFO - [manager] Unchanged: 124
+2025-12-03 12:28:25 - scheduler - INFO - [w3][book][b121] Start
+2025-12-03 12:28:25 - scheduler - INFO - [w2][book][b120] Start
+2025-12-03 12:28:26 - scheduler - INFO - [manager] Unchanged: 125
+2025-12-03 12:28:26 - scheduler - INFO - [w4][book][b119] Start
+2025-12-03 12:28:27 - scheduler - INFO - [manager] Unchanged: 123
+2025-12-03 12:28:27 - scheduler - INFO - [w1][book][b118] Start
+2025-12-03 12:28:27 - scheduler - INFO - [manager] Unchanged: 122
+2025-12-03 12:28:27 - scheduler - INFO - [w5][book][b117] Start
+2025-12-03 12:28:28 - scheduler - INFO - [manager] Unchanged: 120
+2025-12-03 12:28:28 - scheduler - INFO - [manager] Unchanged: 119
+2025-12-03 12:28:28 - scheduler - INFO - [w2][book][b116] Start
+2025-12-03 12:28:29 - scheduler - INFO - [w4][book][b115] Start
+2025-12-03 12:28:29 - scheduler - INFO - [manager] Unchanged: 121
+2025-12-03 12:28:29 - scheduler - INFO - [w3][book][b114] Start
+2025-12-03 12:28:30 - scheduler - INFO - [manager] Unchanged: 118
+2025-12-03 12:28:30 - scheduler - INFO - [w1][book][b113] Start
+2025-12-03 12:28:31 - scheduler - INFO - [manager] Unchanged: 117
+2025-12-03 12:28:31 - scheduler - INFO - [w5][book][b112] Start
+2025-12-03 12:28:32 - scheduler - INFO - [manager] Unchanged: 113
+2025-12-03 12:28:32 - scheduler - INFO - [w1][book][b111] Start
+2025-12-03 12:28:33 - scheduler - INFO - [manager] Unchanged: 115
+2025-12-03 12:28:33 - scheduler - INFO - [manager] Unchanged: 114
+2025-12-03 12:28:33 - scheduler - INFO - [w4][book][b110] Start
+2025-12-03 12:28:33 - scheduler - INFO - [w3][book][b109] Start
+2025-12-03 12:28:34 - scheduler - INFO - [manager] Unchanged: 116
+2025-12-03 12:28:34 - scheduler - INFO - [w2][book][b108] Start
+2025-12-03 12:28:35 - scheduler - INFO - [manager] Unchanged: 112
+2025-12-03 12:28:35 - scheduler - INFO - [w5][book][b107] Start
+2025-12-03 12:28:36 - scheduler - INFO - [manager] Unchanged: 111
+2025-12-03 12:28:36 - scheduler - INFO - [manager] Unchanged: 108
+2025-12-03 12:28:36 - scheduler - INFO - [manager] Unchanged: 110
+2025-12-03 12:28:36 - scheduler - INFO - [manager] Unchanged: 109
+2025-12-03 12:28:36 - scheduler - INFO - [w1][book][b106] Start
+2025-12-03 12:28:37 - scheduler - INFO - [w2][book][b105] Start
+2025-12-03 12:28:37 - scheduler - INFO - [w4][book][b104] Start
+2025-12-03 12:28:38 - scheduler - INFO - [w3][book][b103] Start
+2025-12-03 12:28:39 - scheduler - INFO - [manager] Unchanged: 107
+2025-12-03 12:28:39 - scheduler - INFO - [w5][book][b102] Start
+2025-12-03 12:28:41 - scheduler - INFO - [manager] Unchanged: 105
+2025-12-03 12:28:41 - scheduler - INFO - [w2][book][b101] Start
+2025-12-03 12:28:41 - scheduler - INFO - [manager] Unchanged: 103
+2025-12-03 12:28:41 - scheduler - INFO - [manager] Unchanged: 104
+2025-12-03 12:28:41 - scheduler - INFO - [manager] Unchanged: 106
+2025-12-03 12:28:41 - scheduler - INFO - [w3][book][b100] Start
+2025-12-03 12:28:42 - scheduler - INFO - [w4][book][b99] Start
+2025-12-03 12:28:43 - scheduler - INFO - [w1][book][b98] Start
+2025-12-03 12:28:44 - scheduler - INFO - [manager] Unchanged: 102
+2025-12-03 12:28:44 - scheduler - INFO - [manager] Unchanged: 101
+2025-12-03 12:28:44 - scheduler - INFO - [w5][book][b97] Start
+2025-12-03 12:28:44 - scheduler - INFO - [w2][book][b96] Start
+2025-12-03 12:28:45 - scheduler - INFO - [manager] Unchanged: 98
+2025-12-03 12:28:45 - scheduler - INFO - [manager] Unchanged: 100
+2025-12-03 12:28:45 - scheduler - INFO - [manager] Unchanged: 99
+2025-12-03 12:28:45 - scheduler - INFO - [w1][book][b95] Start
+2025-12-03 12:28:46 - scheduler - INFO - [w3][book][b94] Start
+2025-12-03 12:28:46 - scheduler - INFO - [w4][book][b93] Start
+2025-12-03 12:28:47 - scheduler - INFO - [manager] Unchanged: 97
+2025-12-03 12:28:47 - scheduler - INFO - [w5][book][b92] Start
+2025-12-03 12:28:48 - scheduler - INFO - [manager] Unchanged: 96
+2025-12-03 12:28:48 - scheduler - INFO - [manager] Unchanged: 93
+2025-12-03 12:28:48 - scheduler - INFO - [manager] Unchanged: 94
+2025-12-03 12:28:48 - scheduler - INFO - [w2][book][b91] Start
+2025-12-03 12:28:49 - scheduler - INFO - [w4][book][b90] Start
+2025-12-03 12:28:49 - scheduler - INFO - [w3][book][b89] Start
+2025-12-03 12:28:50 - scheduler - INFO - [manager] Unchanged: 95
+2025-12-03 12:28:50 - scheduler - INFO - [w1][book][b88] Start
+2025-12-03 12:28:51 - scheduler - INFO - [manager] Unchanged: 92
+2025-12-03 12:28:51 - scheduler - INFO - [w5][book][b87] Start
+2025-12-03 12:28:52 - scheduler - INFO - [manager] Unchanged: 89
+2025-12-03 12:28:52 - scheduler - INFO - [w3][book][b86] Start
+2025-12-03 12:28:53 - scheduler - INFO - [manager] Unchanged: 91
+2025-12-03 12:28:53 - scheduler - INFO - [manager] Unchanged: 90
+2025-12-03 12:28:53 - scheduler - INFO - [w2][book][b85] Start
+2025-12-03 12:28:53 - scheduler - INFO - [w4][book][b84] Start
+2025-12-03 12:28:54 - scheduler - INFO - [manager] Unchanged: 88
+2025-12-03 12:28:54 - scheduler - INFO - [w1][book][b83] Start
+2025-12-03 12:28:55 - scheduler - INFO - [manager] Unchanged: 85
+2025-12-03 12:28:55 - scheduler - INFO - [manager] Unchanged: 84
+2025-12-03 12:28:55 - scheduler - INFO - [w2][book][b82] Start
+2025-12-03 12:28:56 - scheduler - INFO - [w4][book][b81] Start
+2025-12-03 12:28:56 - scheduler - INFO - [manager] Unchanged: 87
+2025-12-03 12:28:56 - scheduler - INFO - [manager] Unchanged: 86
+2025-12-03 12:28:56 - scheduler - INFO - [w5][book][b80] Start
+2025-12-03 12:28:57 - scheduler - INFO - [w3][book][b79] Start
+2025-12-03 12:28:58 - scheduler - INFO - [manager] Unchanged: 83
+2025-12-03 12:28:58 - scheduler - INFO - [w1][book][b78] Start
+2025-12-03 12:28:59 - scheduler - INFO - [manager] Unchanged: 81
+2025-12-03 12:28:59 - scheduler - INFO - [w4][book][b77] Start
+2025-12-03 12:28:59 - scheduler - INFO - [manager] Unchanged: 82
+2025-12-03 12:28:59 - scheduler - INFO - [w2][book][b76] Start
+2025-12-03 12:29:00 - scheduler - INFO - [manager] Unchanged: 80
+2025-12-03 12:29:00 - scheduler - INFO - [manager] Unchanged: 79
+2025-12-03 12:29:00 - scheduler - INFO - [w5][book][b75] Start
+2025-12-03 12:29:00 - scheduler - INFO - [w3][book][b74] Start
+2025-12-03 12:29:01 - scheduler - INFO - [manager] Unchanged: 78
+2025-12-03 12:29:01 - scheduler - INFO - [w1][book][b73] Start
+2025-12-03 12:29:02 - scheduler - INFO - [manager] Unchanged: 77
+2025-12-03 12:29:02 - scheduler - INFO - [w4][book][b72] Start
+2025-12-03 12:29:02 - scheduler - INFO - [manager] Unchanged: 76
+2025-12-03 12:29:02 - scheduler - INFO - [w2][book][b71] Start
+2025-12-03 12:29:03 - scheduler - INFO - [manager] Unchanged: 74
+2025-12-03 12:29:03 - scheduler - INFO - [w3][book][b70] Start
+2025-12-03 12:29:04 - scheduler - INFO - [manager] Unchanged: 75
+2025-12-03 12:29:04 - scheduler - INFO - [w5][book][b69] Start
+2025-12-03 12:29:04 - scheduler - INFO - [manager] Unchanged: 73
+2025-12-03 12:29:04 - scheduler - INFO - [w1][book][b68] Start
+2025-12-03 12:29:05 - scheduler - INFO - [manager] Unchanged: 72
+2025-12-03 12:29:05 - scheduler - INFO - [w4][book][b67] Start
+2025-12-03 12:29:06 - scheduler - INFO - [manager] Unchanged: 71
+2025-12-03 12:29:06 - scheduler - INFO - [w2][book][b66] Start
+2025-12-03 12:29:07 - scheduler - INFO - [manager] Book added: 70
+2025-12-03 12:29:07 - scheduler - INFO - [manager] Unchanged: 69
+2025-12-03 12:29:07 - scheduler - INFO - [w5][book][b65] Start
+2025-12-03 12:29:08 - scheduler - INFO - [manager] Unchanged: 67
+2025-12-03 12:29:08 - scheduler - INFO - [w4][book][b64] Start
+2025-12-03 12:29:08 - scheduler - INFO - [manager] Unchanged: 68
+2025-12-03 12:29:08 - scheduler - INFO - [w1][book][b63] Start
+2025-12-03 12:29:09 - scheduler - INFO - [manager] Unchanged: 66
+2025-12-03 12:29:09 - scheduler - INFO - [w2][book][b62] Start
+2025-12-03 12:29:10 - scheduler - INFO - [manager] Unchanged: 65
+2025-12-03 12:29:10 - scheduler - INFO - [w5][book][b61] Start
+2025-12-03 12:29:11 - scheduler - INFO - [manager] Unchanged: 64
+2025-12-03 12:29:11 - scheduler - INFO - [w4][book][b60] Start
+2025-12-03 12:29:11 - scheduler - INFO - [manager] Alert email sent for add event: 70
+2025-12-03 12:29:11 - scheduler - INFO - [w3][book][b59] Start
+2025-12-03 12:29:12 - scheduler - INFO - [manager] Unchanged: 63
+2025-12-03 12:29:12 - scheduler - INFO - [w1][book][b58] Start
+2025-12-03 12:29:13 - scheduler - INFO - [manager] Unchanged: 62
+2025-12-03 12:29:13 - scheduler - INFO - [w2][book][b57] Start
+2025-12-03 12:29:13 - scheduler - INFO - [manager] Unchanged: 61
+2025-12-03 12:29:13 - scheduler - INFO - [w5][book][b56] Start
+2025-12-03 12:29:14 - scheduler - INFO - [manager] Unchanged: 60
+2025-12-03 12:29:14 - scheduler - INFO - [w4][book][b55] Start
+2025-12-03 12:29:15 - scheduler - INFO - [manager] Unchanged: 59
+2025-12-03 12:29:15 - scheduler - INFO - [manager] Unchanged: 57
+2025-12-03 12:29:15 - scheduler - INFO - [manager] Unchanged: 58
+2025-12-03 12:29:15 - scheduler - INFO - [w3][book][b54] Start
+2025-12-03 12:29:16 - scheduler - INFO - [w2][book][b53] Start
+2025-12-03 12:29:16 - scheduler - INFO - [w1][book][b52] Start
+2025-12-03 12:29:17 - scheduler - INFO - [manager] Unchanged: 56
+2025-12-03 12:29:17 - scheduler - INFO - [w5][book][b51] Start
+2025-12-03 12:29:18 - scheduler - INFO - [manager] Unchanged: 55
+2025-12-03 12:29:18 - scheduler - INFO - [w4][book][b50] Start
+2025-12-03 12:29:19 - scheduler - INFO - [manager] Unchanged: 54
+2025-12-03 12:29:19 - scheduler - INFO - [manager] Unchanged: 53
+2025-12-03 12:29:19 - scheduler - INFO - [w3][book][b49] Start
+2025-12-03 12:29:19 - scheduler - INFO - [w2][book][b48] Start
+2025-12-03 12:29:20 - scheduler - INFO - [manager] Unchanged: 52
+2025-12-03 12:29:20 - scheduler - INFO - [w1][book][b47] Start
+2025-12-03 12:29:21 - scheduler - INFO - [manager] Unchanged: 51
+2025-12-03 12:29:21 - scheduler - INFO - [w5][book][b46] Start
+2025-12-03 12:29:21 - scheduler - INFO - [manager] Book added: 50
+2025-12-03 12:29:22 - scheduler - INFO - [manager] Unchanged: 48
+2025-12-03 12:29:22 - scheduler - INFO - [manager] Unchanged: 49
+2025-12-03 12:29:22 - scheduler - INFO - [w2][book][b45] Start
+2025-12-03 12:29:23 - scheduler - INFO - [w3][book][b44] Start
+2025-12-03 12:29:23 - scheduler - INFO - [manager] Unchanged: 47
+2025-12-03 12:29:23 - scheduler - INFO - [w1][book][b43] Start
+2025-12-03 12:29:24 - scheduler - INFO - [manager] Unchanged: 46
+2025-12-03 12:29:24 - scheduler - INFO - [w5][book][b42] Start
+2025-12-03 12:29:25 - scheduler - INFO - [manager] Alert email sent for add event: 50
+2025-12-03 12:29:25 - scheduler - INFO - [w4][book][b41] Start
+2025-12-03 12:29:25 - scheduler - INFO - [manager] Unchanged: 44
+2025-12-03 12:29:25 - scheduler - INFO - [manager] Unchanged: 45
+2025-12-03 12:29:25 - scheduler - INFO - [w3][book][b40] Start
+2025-12-03 12:29:26 - scheduler - INFO - [w2][book][b39] Start
+2025-12-03 12:29:27 - scheduler - INFO - [manager] Unchanged: 43
+2025-12-03 12:29:27 - scheduler - INFO - [w1][book][b38] Start
+2025-12-03 12:29:28 - scheduler - INFO - [manager] Unchanged: 42
+2025-12-03 12:29:28 - scheduler - INFO - [manager] Unchanged: 39
+2025-12-03 12:29:28 - scheduler - INFO - [manager] Unchanged: 41
+2025-12-03 12:29:28 - scheduler - INFO - [manager] Unchanged: 40
+2025-12-03 12:29:28 - scheduler - INFO - [w5][book][b37] Start
+2025-12-03 12:29:28 - scheduler - INFO - [w2][book][b36] Start
+2025-12-03 12:29:29 - scheduler - INFO - [w4][book][b35] Start
+2025-12-03 12:29:30 - scheduler - INFO - [w3][book][b34] Start
+2025-12-03 12:29:31 - scheduler - INFO - [manager] Unchanged: 38
+2025-12-03 12:29:31 - scheduler - INFO - [w1][book][b33] Start
+2025-12-03 12:29:32 - scheduler - INFO - [manager] Unchanged: 37
+2025-12-03 12:29:32 - scheduler - INFO - [manager] Unchanged: 35
+2025-12-03 12:29:32 - scheduler - INFO - [manager] Unchanged: 34
+2025-12-03 12:29:32 - scheduler - INFO - [w5][book][b32] Start
+2025-12-03 12:29:32 - scheduler - INFO - [w4][book][b31] Start
+2025-12-03 12:29:33 - scheduler - INFO - [w3][book][b30] Start
+2025-12-03 12:29:33 - scheduler - INFO - [manager] Unchanged: 36
+2025-12-03 12:29:33 - scheduler - INFO - [w2][book][b29] Start
+2025-12-03 12:29:35 - scheduler - INFO - [manager] Unchanged: 33
+2025-12-03 12:29:35 - scheduler - INFO - [w1][book][b28] Start
+2025-12-03 12:29:35 - scheduler - INFO - [manager] Unchanged: 31
+2025-12-03 12:29:35 - scheduler - INFO - [manager] Unchanged: 32
+2025-12-03 12:29:35 - scheduler - INFO - [manager] Unchanged: 29
+2025-12-03 12:29:35 - scheduler - INFO - [w4][book][b27] Start
+2025-12-03 12:29:36 - scheduler - INFO - [w5][book][b26] Start
+2025-12-03 12:29:36 - scheduler - INFO - [w2][book][b25] Start
+2025-12-03 12:29:37 - scheduler - INFO - [manager] Unchanged: 30
+2025-12-03 12:29:37 - scheduler - INFO - [w3][book][b24] Start
+2025-12-03 12:29:38 - scheduler - INFO - [manager] Unchanged: 28
+2025-12-03 12:29:38 - scheduler - INFO - [w1][book][b23] Start
+2025-12-03 12:29:39 - scheduler - INFO - [manager] Unchanged: 26
+2025-12-03 12:29:39 - scheduler - INFO - [w5][book][b22] Start
+2025-12-03 12:29:41 - scheduler - INFO - [manager] Unchanged: 27
+2025-12-03 12:29:41 - scheduler - INFO - [w4][book][b21] Start
+2025-12-03 12:29:42 - scheduler - INFO - [manager] Unchanged: 25
+2025-12-03 12:29:42 - scheduler - INFO - [manager] Unchanged: 24
+2025-12-03 12:29:42 - scheduler - INFO - [w2][book][b20] Start
+2025-12-03 12:29:43 - scheduler - INFO - [w3][book][b19] Start
+2025-12-03 12:29:44 - scheduler - INFO - [manager] Unchanged: 23
+2025-12-03 12:29:44 - scheduler - INFO - [manager] Unchanged: 22
+2025-12-03 12:29:44 - scheduler - INFO - [w1][book][b18] Start
+2025-12-03 12:29:45 - scheduler - INFO - [w5][book][b17] Start
+2025-12-03 12:29:47 - scheduler - INFO - [manager] Unchanged: 21
+2025-12-03 12:29:47 - scheduler - INFO - [manager] Unchanged: 20
+2025-12-03 12:29:47 - scheduler - INFO - [w4][book][b16] Start
+2025-12-03 12:29:48 - scheduler - INFO - [w2][book][b15] Start
+2025-12-03 12:29:48 - scheduler - INFO - [manager] Unchanged: 19
+2025-12-03 12:29:48 - scheduler - INFO - [w3][book][b14] Start
+2025-12-03 12:29:49 - scheduler - INFO - [manager] Unchanged: 17
+2025-12-03 12:29:49 - scheduler - INFO - [w5][book][b13] Start
+2025-12-03 12:29:50 - scheduler - INFO - [manager] Unchanged: 18
+2025-12-03 12:29:50 - scheduler - INFO - [w1][book][b12] Start
+2025-12-03 12:29:51 - scheduler - INFO - [manager] Unchanged: 15
+2025-12-03 12:29:51 - scheduler - INFO - [manager] Unchanged: 16
+2025-12-03 12:29:51 - scheduler - INFO - [w2][book][b11] Start
+2025-12-03 12:29:52 - scheduler - INFO - [w4][book][b10] Start
+2025-12-03 12:29:53 - scheduler - INFO - [manager] Book added: 14
+2025-12-03 12:29:53 - scheduler - INFO - [manager] Unchanged: 13
+2025-12-03 12:29:53 - scheduler - INFO - [w5][book][b9] Start
+2025-12-03 12:29:54 - scheduler - INFO - [manager] Unchanged: 12
+2025-12-03 12:29:54 - scheduler - INFO - [w1][book][b8] Start
+2025-12-03 12:29:55 - scheduler - INFO - [manager] Unchanged: 11
+2025-12-03 12:29:55 - scheduler - INFO - [manager] Unchanged: 10
+2025-12-03 12:29:55 - scheduler - INFO - [w2][book][b7] Start
+2025-12-03 12:29:55 - scheduler - INFO - [w4][book][b6] Start
+2025-12-03 12:29:56 - scheduler - INFO - [manager] Alert email sent for add event: 14
+2025-12-03 12:29:56 - scheduler - INFO - [w3][book][b5] Start
+2025-12-03 12:29:57 - scheduler - INFO - [manager] Unchanged: 9
+2025-12-03 12:29:57 - scheduler - INFO - [w5][book][b4] Start
+2025-12-03 12:29:57 - scheduler - INFO - [manager] Unchanged: 6
+2025-12-03 12:29:57 - scheduler - INFO - [w4][book][b3] Start
+2025-12-03 12:29:58 - scheduler - INFO - [manager] Unchanged: 7
+2025-12-03 12:29:58 - scheduler - INFO - [w2][book][b2] Start
+2025-12-03 12:29:59 - scheduler - INFO - [manager] Unchanged: 4
+2025-12-03 12:29:59 - scheduler - INFO - [w5][book][b1] Start
+2025-12-03 12:30:00 - scheduler - INFO - [manager] Unchanged: 5
+2025-12-03 12:30:00 - scheduler - INFO - [manager] Unchanged: 8
+2025-12-03 12:30:00 - scheduler - INFO - [w3][book][b687] Retry 1
+2025-12-03 12:30:00 - scheduler - INFO - [w1][book][b688] Retry 1
+2025-12-03 12:30:01 - scheduler - INFO - [manager] Unchanged: 3
+2025-12-03 12:30:01 - scheduler - INFO - [w4][book][b686] Retry 1
+2025-12-03 12:30:02 - scheduler - INFO - [manager] Unchanged: 2
+2025-12-03 12:30:02 - scheduler - INFO - [w2][book][b685] Retry 1
+2025-12-03 12:30:03 - scheduler - INFO - [manager] Unchanged: 687
+2025-12-03 12:30:03 - scheduler - INFO - [w3][book][b689] Retry 1
+2025-12-03 12:30:03 - scheduler - INFO - [manager] Unchanged: 688
+2025-12-03 12:30:03 - scheduler - INFO - [manager] Unchanged: 1
+2025-12-03 12:30:03 - scheduler - INFO - [manager] Unchanged: 686
+2025-12-03 12:30:04 - scheduler - INFO - [manager] Unchanged: 685
+2025-12-03 12:30:04 - scheduler - INFO - [manager] Unchanged: 689
+2025-12-03 12:30:08 - scheduler - INFO - [manager] No new queue entry for 5 seconds...
+2025-12-03 12:30:08 - scheduler - INFO - [manager] Shutting down workers...
+2025-12-03 12:30:08 - scheduler - INFO - [manager] Worker w1 stopped
+2025-12-03 12:30:08 - scheduler - INFO - [manager] Worker w5 stopped
+2025-12-03 12:30:08 - scheduler - INFO - [manager] Worker w4 stopped
+2025-12-03 12:30:09 - scheduler - INFO - [manager] Worker w2 stopped
+2025-12-03 12:30:09 - scheduler - INFO - [manager] Worker w3 stopped

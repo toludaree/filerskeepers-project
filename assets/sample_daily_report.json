@@ -1,0 +1,73 @@
+{
+    "report_date": "2025-12-03",
+    "summary": {
+        "added": 5,
+        "updated": 3,
+        "total": 8
+    },
+    "changelog": [
+        {
+            "bts_id": 990,
+            "event": "add",
+            "timestamp": "2025-12-03 12:16:38",
+            "changes": {}
+        },
+        {
+            "bts_id": 887,
+            "event": "update",
+            "timestamp": "2025-12-03 12:17:45",
+            "changes": {
+                "price": {
+                    "old": 24,
+                    "new": 36.72
+                }
+            }
+        },
+        {
+            "bts_id": 550,
+            "event": "update",
+            "timestamp": "2025-12-03 12:22:36",
+            "changes": {
+                "rating": {
+                    "old": 4,
+                    "new": 3
+                }
+            }
+        },
+        {
+            "bts_id": 200,
+            "event": "add",
+            "timestamp": "2025-12-03 12:27:26",
+            "changes": {}
+        },
+        {
+            "bts_id": 150,
+            "event": "update",
+            "timestamp": "2025-12-03 12:28:06",
+            "changes": {
+                "stock_count": {
+                    "old": 0,
+                    "new": 3
+                }
+            }
+        },
+        {
+            "bts_id": 70,
+            "event": "add",
+            "timestamp": "2025-12-03 12:29:07",
+            "changes": {}
+        },
+        {
+            "bts_id": 50,
+            "event": "add",
+            "timestamp": "2025-12-03 12:29:21",
+            "changes": {}
+        },
+        {
+            "bts_id": 14,
+            "event": "add",
+            "timestamp": "2025-12-03 12:29:53",
+            "changes": {}
+        }
+    ]
+}
