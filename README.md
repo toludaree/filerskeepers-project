@@ -96,7 +96,7 @@ Your responsibilities include:
 - HTML snapshots of the books found or updated are stored in `bookstoscrape/snapshots/scheduler`.
 
 #### Notes
-- The scheduler uses [APScheduler](https://pypi.org/project/APScheduler/) and currently runs in a blocking mode. This is because APScheduler is typically embedded within an existing application, whereas it is being used here as a standalone service.
+- The scheduler uses [APScheduler](https://apscheduler.readthedocs.io) and currently runs in a blocking mode. This is because APScheduler is typically embedded within an existing application, whereas it is being used here as a standalone service.
 - MongoDB is used to store scheduled jobs, which means the scheduler can be started or stopped at any time. The default `MISFIRE_GRACE_TIME` is set to 5 hours, allowing a job to remain valid for that duration after its expected run time. You can adjust this value in [settings.py](./bookstoscrape/settings.py). The jobs are stored in the `MONGODB_SCHEDULED_JOBS_COLLECTION` collection.
 - [BooksToScrape](https://books.toscrape.com/index.html) provides [HTTP Etags](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/ETag) for each book page, and these are stored during the crawler run. During scheduler runs, the stored Etags are used to detect changes efficiently and avoid unnecessary processing when a page hasn’t changed.
 - [BooksToScrape](https://books.toscrape.com/index.html) is mostly static therefore the scheduler would naturally find no changes. However, we can simulate changes by deleting and updating books in the book collection. Run this mongosh commands before the next scheduler run to simulate these changes:
