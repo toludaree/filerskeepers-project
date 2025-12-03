@@ -15,7 +15,7 @@ def build_cli_parser() -> ArgumentParser:
         "--env",
         choices=["dev", "prod"],
         default="prod",
-        help="Enviroment to run the crawler in. If `dev`, only the first page will be crawled"
+        help="Enviroment to run the crawler in. If dev, only the first page will be crawled"
     )
     parser.add_argument(
         "--restart",
