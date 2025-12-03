@@ -52,6 +52,12 @@ Your responsibilities include:
 ## Usage
 > Ensure that you are in the `filerskeepers-project` directory before executing the instructions below. Do not navigate into any subfolders or parent folders.
 
+### Tests
+The crawler [process](./bookstoscrape/crawler/process.py) and [utils](./bookstoscrape/utils/crawler.py) logic is [tested](./bookstoscrape/tests/crawler.py) thoroughly. Confirm that all tests are still passing before moving forward:
+```bash
+python -m unittest bookstoscrape.tests.crawler
+```
+
 ### Crawler
 - The crawler is accessible via a simple CLI
     ![crawler_cli_help](./assets/crawler_cli_help.png)
