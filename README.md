@@ -61,7 +61,7 @@ python -m unittest bookstoscrape.tests.crawler
 ### Crawler
 - The crawler is accessible via a simple CLI
     ![crawler_cli_help](./assets/crawler_cli_help.png)
-- Run the crawler with no parameters. This would use the default parameter values: `--env dev` and `--restart`.
+- Run the crawler with no parameters. This would use the default parameter values: `--env prod` and `--restart`.
     ```bash
     python -m bookstoscrape.crawler.main
     ```
@@ -84,7 +84,7 @@ python -m unittest bookstoscrape.tests.crawler
 - If an issue occurs, diagnose it using the logs and re-run the crawler with `--no-restart`. This would ensure that the crawler begins the new run from the last saved crawler state.
 - Running the crawler with `--env dev` would only crawl the first page.
 - Running the crawler with `--restart` renews the `MONGODB_BOOK_COLLECTION` collection with the results of the current run. The `MONGODB_CHANGELOG_COLLECTION` collection is dropped and will have no documents until the scheduler is run.
-- You can change specific crawler settings in [settings.py](./bookstoscrape/settings.py). You can add proxy config, configure the number of workers, change the maximum number of retries and consecutive failures, and more.
+- You can change specific crawler settings in [settings.py](./bookstoscrape/settings.py). You can add a proxy url, configure the number of workers, change the maximum number of retries and consecutive failures, and more.
 
 ### Scheduler
 > The scheduler depends on the crawler to run its job. Therefore, the crawler [manager](./bookstoscrape/crawler/manager.py) has features for both the crawler and the scheduler.
